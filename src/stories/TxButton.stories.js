@@ -78,7 +78,7 @@ export const Loading = {
   ),
   args: {
     onClick: () => {
-      console.log(123123);
+      console.log("Click me");
     },
   },
 };
