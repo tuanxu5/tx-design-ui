@@ -1,9 +1,8 @@
 import React from "react";
 
-var styles = { test: "_3ybTi" };
+var styles = { test: "_styles-module__test__3ybTi" };
 
-var ExampleComponent = function ExampleComponent(_ref) {
-  var text = _ref.text;
+const ExampleComponent = ({ text }) => {
   return /*#__PURE__*/ React.createElement(
     "div",
     {
