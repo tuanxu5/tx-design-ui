@@ -37,6 +37,7 @@ const StyledTxInput = styled.input`
     color: #8c9bab;
   }
 
+  /* Dynamic padding based on prefix/suffix */
   ${props => {
     const prefixPadding = props.prefixWidth ? `${props.prefixWidth + 16}px` : "40px";
     return props.prefix
@@ -55,6 +56,7 @@ const StyledTxInput = styled.input`
       : "";
   }}
 
+  /* Status styles */
   &.tx-ui-tx-input--success {
     border-color: #52c41a;
     color: #52c41a;
@@ -103,7 +105,6 @@ const StyledTxInput = styled.input`
     cursor: not-allowed;
     background-color: #f3f3f4;
     color: #a0a1a7;
-
     &::placeholder {
       color: #a0a1a7;
       opacity: 0.7;
@@ -133,7 +134,7 @@ const PrefixWrapper = styled.div`
   transform: translateY(-50%);
   display: flex;
   align-items: center;
-  color: #1c252e;
+  color: ${props => props.color || "#1c252e"};
   font-size: 14px;
   width: 20px;
 `;
@@ -145,18 +146,40 @@ const SuffixWrapper = styled.div`
   transform: translateY(-50%);
   display: flex;
   align-items: center;
-  color: #1c252e;
+  color: ${props => props.color || "#1c252e"};
   font-size: 14px;
-  width: 20px;
+  gap: 8px;
 `;
 
 const PasswordToggle = styled.div`
   cursor: pointer;
   display: flex;
   align-items: center;
-  color: #1c252e;
+  color: ${props => props.color || "#1c252e"};
   width: 16px;
   font-size: 14px;
 `;
 
-export { PasswordToggle, PrefixWrapper, StyledInputWrapper, StyledTxInput, SuffixWrapper };
+const ClearButton = styled.div`
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: ${props => props.color || "#8c9bab"};
+  width: 16px;
+  height: 16px;
+  font-size: 14px;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+`;
+
+export { ClearButton, PasswordToggle, PrefixWrapper, StyledInputWrapper, StyledTxInput, SuffixWrapper };

@@ -65,6 +65,15 @@ export const FillVariants = {
   ),
 };
 
+export const ClearInput = {
+  render: args => (
+    <div style={{ width: "300px", display: "flex", flexDirection: "column", gap: "20px" }}>
+      <TxInput {...args} allowClear placeholder="Clear input" />
+      <TxInput {...args} allowClear fill placeholder="Clear fill input" />
+    </div>
+  ),
+};
+
 // Status States
 export const StatusStates = {
   render: args => (
@@ -138,7 +147,13 @@ export const CombinedFeatures = {
         size="large"
         placeholder="Success with prefix"
       />
-      <TxInput {...args} suffix="%" status="warning" fill placeholder="Warning fill with suffix" />
+      <TxInput
+        {...args}
+        suffix={<SvgIcon.IconCursor04 />}
+        status="warning"
+        fill
+        placeholder="Warning fill with suffix"
+      />
       <TxInput {...args} password status="error" size="small" placeholder="Error password small" />
       <TxInput
         {...args}
