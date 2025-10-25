@@ -7,30 +7,162 @@ import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
 import CodeBlock from "@theme/CodeBlock";
 
-## Setup
+## Prerequisites
+
+Before installing TX Design UI, make sure you have:
+
+- **Node.js** >= 14.0.0
+- **React** >= 16.8.0
+- **React DOM** >= 16.8.0
+
+## Installation
+
+Install TX Design UI using your preferred package manager:
 
 <Tabs>
-  <TabItem value="npm" label="Npm" default>
-    <CodeBlock language="jsx">npm install --save tx-design-ui</CodeBlock>
+  <TabItem value="npm" label="npm" default>
+    <CodeBlock language="bash">npm install --save tx-design-ui</CodeBlock>
   </TabItem>
-  <TabItem value="yarn" label="Yarn">
-    <CodeBlock language="jsx">yarn add tx-design-ui</CodeBlock>
+  <TabItem value="yarn" label="yarn">
+    <CodeBlock language="bash">yarn add tx-design-ui</CodeBlock>
+  </TabItem>
+  <TabItem value="pnpm" label="pnpm">
+    <CodeBlock language="bash">pnpm add tx-design-ui</CodeBlock>
   </TabItem>
 </Tabs>
 
-## Usage
+## Peer Dependencies
 
-```jsx npm
-import React, { Component } from "react";
-import { TxMyComponent } from "tx-design-ui";
+TX Design UI requires the following peer dependencies:
 
-class App extends Component {
-  render() {
-    return <TxMyComponent {...props} />;
-  }
+```json
+{
+  "react": ">=16.8.0",
+  "react-dom": ">=16.8.0",
+  "styled-components": ">=5.0.0"
 }
 ```
 
+If you don't have these installed, install them:
+
+<Tabs>
+  <TabItem value="npm" label="npm" default>
+    <CodeBlock language="bash">npm install react react-dom styled-components</CodeBlock>
+  </TabItem>
+  <TabItem value="yarn" label="yarn">
+    <CodeBlock language="bash">yarn add react react-dom styled-components</CodeBlock>
+  </TabItem>
+</Tabs>
+
+## Basic Usage
+
+After installation, you can import and use components:
+
+```jsx
+import React from "react";
+import { TxButton, TxInput, TxCheckbox } from "tx-design-ui";
+
+function App() {
+  return (
+    <div>
+      <TxButton label="Click me" onClick={() => alert("Clicked!")} />
+      <TxInput placeholder="Enter text" />
+      <TxCheckbox label="Accept terms" />
+    </div>
+  );
+}
+
+export default App;
+```
+
+## Using with TypeScript
+
+TX Design UI is written in JavaScript but provides type definitions. To use with TypeScript:
+
+```tsx
+import React, { useState } from "react";
+import { TxButton, TxInput } from "tx-design-ui";
+
+const App: React.FC = () => {
+  const [value, setValue] = useState<string>("");
+
+  return (
+    <div>
+      <TxInput value={value} onChange={e => setValue(e.target.value)} placeholder="Type something" />
+      <TxButton label="Submit" onClick={() => console.log(value)} />
+    </div>
+  );
+};
+
+export default App;
+```
+
+## Import Components
+
+You can import components in two ways:
+
+### Named Imports (Recommended)
+
+```jsx
+import { TxButton, TxInput, TxCheckbox } from "tx-design-ui";
+```
+
+### Individual Imports
+
+```jsx
+import TxButton from "tx-design-ui/lib/components/tx-button";
+import TxInput from "tx-design-ui/lib/components/tx-input";
+```
+
+## Using Theme Colors
+
+TX Design UI provides a centralized color system:
+
+```jsx
+import { colors, theme } from "tx-design-ui";
+
+// Use individual colors
+const primaryColor = colors.primary; // "#03030f"
+const dangerColor = colors.danger; // "#e45649"
+
+// Use theme object
+const buttonBg = theme.button.primary.bg;
+```
+
+See the [Theme Colors documentation](/docs/getting-started/overview#design-principles) for more information.
+
+## Next Steps
+
+- Explore the [Component Documentation](/docs/component/button)
+- Learn about [Customization](/docs/getting-started/overview)
+- Check out [Examples](https://github.com/Tuanxu5/tx-design-ui/tree/master/examples)
+
+## Troubleshooting
+
+### styled-components not found
+
+If you see an error about styled-components, make sure it's installed:
+
+```bash
+npm install styled-components
+```
+
+### Module not found
+
+If you get module not found errors, try:
+
+1. Clear your node_modules and package-lock.json
+2. Reinstall dependencies
+
+```bash
+rm -rf node_modules package-lock.json
+npm install
+```
+
+### Version Conflicts
+
+Make sure all peer dependencies meet the minimum version requirements.
+
 ## License
 
-MIT © [<b style={{color: "#cb3837"}}>Tuanxu5</b>](https://github.com/Tuanxu5).
+MIT © [Tuanxu5](https://github.com/Tuanxu5)

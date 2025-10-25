@@ -14,25 +14,39 @@ npm install --save tx-design-ui
 
 ### Available Components
 
+**Form Components:**
+
 - **TxButton** - Customizable button component
 - **TxInput** - Input field with multiple variants
-- **TxAvatar** - Avatar/profile picture component
 - **TxCheckbox** - Checkbox with multiple states
+- **TxRadio** - Radio button for single selection
+- **TxSelect** - Dropdown select component
+- **TxInputNumber** - Numeric input with controls
+- **TxDatePicker** - Date and time picker
+- **TxColorPicker** - Color selection with presets
+
+**Display Components:**
+
+- **TxAvatar** - Avatar/profile picture component
 
 ## Usage
 
 ### Basic Example
 
 ```jsx
-import React from "react";
-import { TxButton, TxInput, TxCheckbox } from "tx-design-ui";
+import React, { useState } from "react";
+import { TxButton, TxInput, TxCheckbox, TxSelect, TxRadio } from "tx-design-ui";
 
 function App() {
+  const [value, setValue] = useState("");
+
   return (
     <div>
       <TxButton label="Click Me" />
-      <TxInput placeholder="Enter text" />
+      <TxInput placeholder="Enter text" value={value} onChange={e => setValue(e.target.value)} />
       <TxCheckbox label="Accept terms" />
+      <TxSelect options={[{ label: "Option 1", value: "1" }]} />
+      <TxRadio label="Radio option" />
     </div>
   );
 }

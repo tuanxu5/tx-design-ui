@@ -1,3 +1,9 @@
 export { default as TxAvatar } from "./tx-avatar/tx-avatar";
 export { default as TxButton } from "./tx-button/tx-button";
 export { default as TxCheckbox } from "./tx-checkbox/tx-checkbox";
+export { default as TxColorPicker } from "./tx-color-picker/tx-color-picker";
+export { default as TxDatePicker } from "./tx-date-picker/tx-date-picker";
+export { default as TxInputNumber } from "./tx-input-number/tx-input-number";
+export { default as TxInput } from "./tx-input/tx-input";
+export { default as TxRadio } from "./tx-radio/tx-radio";
+export { default as TxSelect } from "./tx-select/tx-select";

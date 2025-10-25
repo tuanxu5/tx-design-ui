@@ -1,6 +1,20 @@
+---
+sidebar_position: 4
+title: Checkbox
+featured: true
+component: true
+description: Checkbox component for selecting single values or multiple options from a list.
+---
+
 # Checkbox
 
-A customizable checkbox component for selecting options.
+A customizable checkbox component for selecting options. Checkboxes are used when there are multiple options and the user may select any number of choices, including zero, one, or several.
+
+## When To Use
+
+- Used for selecting multiple values from several options
+- If you use only one checkbox, it is the same as using Switch to toggle between two states
+- The difference with Switch is that Checkbox will trigger a state change when it is clicked, while Switch will trigger a state change when it is toggled
 
 ## Import
 
@@ -8,9 +22,11 @@ A customizable checkbox component for selecting options.
 import { TxCheckbox } from "tx-design-ui";
 ```
 
-## Usage
+## Examples
 
-### Basic
+### Basic Usage
+
+The simplest use of Checkbox.
 
 ```jsx
 import { TxCheckbox } from "tx-design-ui";
@@ -27,8 +43,10 @@ function App() {
 
 ### Disabled
 
+Disabled checkbox.
+
 ```jsx
-<TxCheckbox label="Disabled" checked={false} disabled />
+<TxCheckbox label="Disabled Unchecked" checked={false} disabled />
 <TxCheckbox label="Disabled Checked" checked={true} disabled />
 ```
 
@@ -52,7 +70,7 @@ Use the `danger` prop to indicate a destructive or critical action.
 
 ### Indeterminate State
 
-The indeterminate state is useful when you have a parent checkbox that represents the state of multiple child checkboxes.
+The indeterminate state is useful when you have a parent checkbox that represents the state of multiple child checkboxes. Perfect for "Select All" functionality.
 
 ```jsx
 import { TxCheckbox } from "tx-design-ui";
@@ -143,19 +161,19 @@ function App() {
 
 ## API
 
-| Property      | Type                             | Default    | Description                                                             |
-| ------------- | -------------------------------- | ---------- | ----------------------------------------------------------------------- |
-| label         | `string \| ReactNode`            | -          | The label text or element for the checkbox                              |
-| checked       | `boolean`                        | `false`    | Whether the checkbox is checked                                         |
-| onChange      | `function(e)`                    | -          | Callback function triggered when the checkbox state changes             |
-| disabled      | `boolean`                        | `false`    | Whether the checkbox is disabled                                        |
-| indeterminate | `boolean`                        | `false`    | Set the indeterminate state (only visual, doesn't affect checked state) |
-| size          | `'small' \| 'medium' \| 'large'` | `'medium'` | The size of the checkbox                                                |
-| danger        | `boolean`                        | `false`    | Set checkbox style to danger state                                      |
-| color         | `string`                         | -          | Custom label text color                                                 |
-| value         | `string`                         | -          | The value of the checkbox (useful in checkbox groups)                   |
-| name          | `string`                         | -          | The name attribute for the checkbox input                               |
-| id            | `string`                         | -          | The id attribute for the checkbox input                                 |
+| Property      | Type                             | Default    | Description                                                              |
+| ------------- | -------------------------------- | ---------- | ------------------------------------------------------------------------ |
+| label         | `string \| ReactNode`            | -          | The label text or element for the checkbox                               |
+| checked       | `boolean`                        | `false`    | Whether the checkbox is checked                                          |
+| onChange      | `function(e)`                    | -          | Callback function triggered when the checkbox state changes              |
+| disabled      | `boolean`                        | `false`    | Whether the checkbox is disabled                                         |
+| indeterminate | `boolean`                        | `false`    | Set the indeterminate state (only visual, doesn't affect checked state)  |
+| size          | `'small' \| 'medium' \| 'large'` | `'medium'` | The size of the checkbox                                                 |
+| danger        | `boolean`                        | `false`    | Set checkbox style to danger state                                       |
+| color         | `string`                         | -          | Custom label text color                                                  |
+| value         | `string`                         | -          | The value of the checkbox (useful in checkbox groups)                    |
+| name          | `string`                         | -          | The name attribute for the checkbox input                                |
+| id            | `string`                         | -          | The id attribute for the checkbox input (auto-generated if not provided) |
 
 ## Notes
 

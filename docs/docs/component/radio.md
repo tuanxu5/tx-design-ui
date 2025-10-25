@@ -1,0 +1,149 @@
+---
+sidebar_position: 5
+title: Radio
+featured: true
+component: true
+description: Radio buttons allow users to select a single option from a set.
+---
+
+# Radio
+
+Radio buttons allow users to select a single option from a set. Use radio buttons when the user needs to see all available options.
+
+## When To Use
+
+- Used to select a single state from multiple options
+- The difference from Select is that Radio is visible to the user and can facilitate the comparison of choice
+- If you use only one radio button, it should be a Checkbox instead
+
+## Import
+
+```jsx
+import { TxRadio } from "tx-design-ui";
+```
+
+## Examples
+
+### Basic Usage
+
+The simplest use of Radio.
+
+```jsx
+import { TxRadio } from "tx-design-ui";
+import { useState } from "react";
+
+function App() {
+  const [selected, setSelected] = useState("option1");
+
+  return (
+    <>
+      <TxRadio
+        label="Option 1"
+        value="option1"
+        checked={selected === "option1"}
+        onChange={() => setSelected("option1")}
+      />
+      <TxRadio
+        label="Option 2"
+        value="option2"
+        checked={selected === "option2"}
+        onChange={() => setSelected("option2")}
+      />
+    </>
+  );
+}
+```
+
+### Radio Group
+
+A group of radio components.
+
+```jsx
+import { TxRadio } from "tx-design-ui";
+import { useState } from "react";
+
+function App() {
+  const [value, setValue] = useState("option1");
+
+  return (
+    <TxRadio.Group value={value} onChange={val => setValue(val)}>
+      <TxRadio label="Option 1" value="option1" />
+      <TxRadio label="Option 2" value="option2" />
+      <TxRadio label="Option 3" value="option3" />
+    </TxRadio.Group>
+  );
+}
+```
+
+### Horizontal Layout
+
+Set `direction="horizontal"` for horizontal radio group.
+
+```jsx
+<TxRadio.Group value={value} onChange={setValue} direction="horizontal">
+  <TxRadio label="Option 1" value="option1" />
+  <TxRadio label="Option 2" value="option2" />
+  <TxRadio label="Option 3" value="option3" />
+</TxRadio.Group>
+```
+
+### Disabled
+
+Radio buttons can be disabled.
+
+```jsx
+<TxRadio label="Disabled" disabled />
+<TxRadio label="Disabled Checked" checked disabled />
+```
+
+### Sizes
+
+Radio comes in three sizes: `small`, `medium` (default), and `large`.
+
+```jsx
+<TxRadio label="Small" size="small" />
+<TxRadio label="Medium" size="medium" />
+<TxRadio label="Large" size="large" />
+```
+
+### Danger State
+
+Use the `danger` prop to indicate a critical choice.
+
+```jsx
+<TxRadio label="Delete permanently" danger checked />
+```
+
+## API
+
+### TxRadio
+
+| Property | Type                             | Default    | Description                    |
+| -------- | -------------------------------- | ---------- | ------------------------------ |
+| label    | `string \| ReactNode`            | -          | The label for the radio button |
+| checked  | `boolean`                        | `false`    | Whether the radio is checked   |
+| onChange | `function(e)`                    | -          | Callback when radio is changed |
+| disabled | `boolean`                        | `false`    | Whether the radio is disabled  |
+| size     | `'small' \| 'medium' \| 'large'` | `'medium'` | The size of the radio button   |
+| danger   | `boolean`                        | `false`    | Set danger style               |
+| color    | `string`                         | -          | Custom label text color        |
+| value    | `string`                         | -          | The value of the radio         |
+| name     | `string`                         | -          | The name attribute             |
+| id       | `string`                         | -          | The id attribute               |
+
+### TxRadio.Group
+
+| Property  | Type                         | Default      | Description                                                    |
+| --------- | ---------------------------- | ------------ | -------------------------------------------------------------- |
+| value     | `string`                     | -            | Used for setting the currently selected value                  |
+| onChange  | `function(value, event)`     | -            | The callback function that is triggered when the state changes |
+| name      | `string`                     | -            | The name property of all input[type="radio"] children          |
+| direction | `'horizontal' \| 'vertical'` | `'vertical'` | Direction of radio group                                       |
+| disabled  | `boolean`                    | `false`      | Disable all radio buttons                                      |
+
+## Notes
+
+- Radio buttons should have a group name to ensure only one can be selected
+- Use Radio.Group for better state management
+- The `danger` prop should be used carefully as it indicates critical actions
+- Radio automatically generates unique IDs if not provided
