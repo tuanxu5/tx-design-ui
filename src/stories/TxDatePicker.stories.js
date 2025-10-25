@@ -2,7 +2,7 @@ import { useState } from "react";
 import { TxDatePicker } from "../components";
 
 const TxDatePickerStory = {
-  title: "tx-design-ui/TxDatePicker",
+  title: "tx-design-ui/Data Entry/TxDatePicker",
   component: TxDatePicker,
   parameters: {
     layout: "centered",

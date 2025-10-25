@@ -40,6 +40,16 @@ npm install --save tx-design-ui
 - **TxTooltip** - Tooltip on hover
 - **TxLoading** - Loading spinner
 
+**Navigation Components:**
+
+- **TxTabs** - Tab navigation
+- **TxSteps** - Step-by-step wizard
+- **TxPagination** - Pagination controls
+- **TxMenu** - Navigation menu
+- **TxDropdown** - Dropdown menu
+- **TxBreadcrumb** - Breadcrumb navigation
+- **TxAnchor** - Anchor links
+
 ## Usage
 
 ### Basic Example

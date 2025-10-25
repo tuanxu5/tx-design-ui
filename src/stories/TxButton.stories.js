@@ -1,10 +1,9 @@
 import { fn } from "@storybook/addon-actions";
-import React from "react";
 import { SvgIcon } from "../assets/icons";
 import { TxButton } from "../components";
 
 const TxButtonStory = {
-  title: "tx-design-ui/TxButton",
+  title: "tx-design-ui/Data Entry/TxButton",
   component: TxButton,
   parameters: {
     layout: "centered",

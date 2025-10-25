@@ -2,7 +2,7 @@ import TxButton from "../components/tx-button/tx-button";
 import TxTooltip from "../components/tx-tooltip/tx-tooltip";
 
 const TxTooltipStory = {
-  title: "tx-design-ui/TxTooltip",
+  title: "tx-design-ui/Feedback/TxTooltip",
   component: TxTooltip,
   parameters: {
     layout: "centered",

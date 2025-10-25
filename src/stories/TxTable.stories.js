@@ -3,7 +3,7 @@ import TxTable from "../components/tx-table/tx-table";
 import TxTag from "../components/tx-tag/tx-tag";
 
 const TxTableStory = {
-  title: "tx-design-ui/TxTable",
+  title: "tx-design-ui/Data Display/TxTable",
   component: TxTable,
   parameters: {
     layout: "centered",

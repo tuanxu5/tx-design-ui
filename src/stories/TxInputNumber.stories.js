@@ -2,7 +2,7 @@ import { useState } from "react";
 import { TxInputNumber } from "../components";
 
 const TxInputNumberStory = {
-  title: "tx-design-ui/TxInputNumber",
+  title: "tx-design-ui/Data Entry/TxInputNumber",
   component: TxInputNumber,
   parameters: {
     layout: "centered",

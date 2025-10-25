@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
 * {
-  font-family: "Nunito", sans-serif !important;
+  font-family: "Outfit", sans-serif !important;
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 15px;
@@ -46,6 +46,28 @@
 .theme-doc-sidebar-container {
   border: none !important;
 }
+
+/* Sidebar menu styles */
+.menu__link {
+  color: var(--ifm-font-color-base) !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}
+
+.menu__list-item-collapsible .menu__link {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+}
+
+.theme-doc-sidebar-item-link-level-1 .menu__link {
+  font-size: 14px !important;
+}
+
+.menu__link--active {
+  color: var(--ifm-menu-color-active) !important;
+  font-weight: 600 !important;
+}
+
 .navbar {
   justify-content: center;
 }
@@ -66,12 +88,18 @@
   font-weight: 700;
 }
 
-.menu__list-item-collapsible {
-  font-weight: 700;
+.menu__list-item-collapsible > a {
+  color: var(--ifm-font-color-base) !important;
 }
 
-.theme-doc-sidebar-item-link-level-1 {
-  font-weight: 700;
+.theme-doc-sidebar-item-link-level-1 > a {
+  color: var(--ifm-font-color-base) !important;
+  font-weight: 600 !important;
+}
+
+.theme-doc-sidebar-item-category-level-1 {
+  color: var(--ifm-font-color-base) !important;
+  font-weight: 600 !important;
 }
 
 .menu__caret:hover {

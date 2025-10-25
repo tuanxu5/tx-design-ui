@@ -4,7 +4,7 @@ import { StyledNotificationContainer } from "../components/tx-notification/style
 import TxNotification from "../components/tx-notification/tx-notification";
 
 const TxNotificationStory = {
-  title: "tx-design-ui/TxNotification",
+  title: "tx-design-ui/Feedback/TxNotification",
   component: TxNotification,
   parameters: {
     layout: "centered",

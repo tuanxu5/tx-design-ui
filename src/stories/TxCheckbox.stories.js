@@ -2,7 +2,7 @@ import { useState } from "react";
 import { TxCheckbox } from "../components";
 
 const TxCheckboxStory = {
-  title: "tx-design-ui/TxCheckbox",
+  title: "tx-design-ui/Data Entry/TxCheckbox",
   component: TxCheckbox,
   parameters: {
     layout: "centered",

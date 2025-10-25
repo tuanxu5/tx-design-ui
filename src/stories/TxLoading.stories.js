@@ -1,7 +1,7 @@
 import TxLoading from "../components/tx-loading/tx-loading";
 
 const TxLoadingStory = {
-  title: "tx-design-ui/TxLoading",
+  title: "tx-design-ui/Feedback/TxLoading",
   component: TxLoading,
   parameters: {
     layout: "centered",

@@ -3,7 +3,7 @@ import TxButton from "../components/tx-button/tx-button";
 import TxDrawer from "../components/tx-drawer/tx-drawer";
 
 const TxDrawerStory = {
-  title: "tx-design-ui/TxDrawer",
+  title: "tx-design-ui/Feedback/TxDrawer",
   component: TxDrawer,
   parameters: {
     layout: "centered",

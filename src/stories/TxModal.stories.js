@@ -3,7 +3,7 @@ import TxButton from "../components/tx-button/tx-button";
 import TxModal from "../components/tx-modal/tx-modal";
 
 const TxModalStory = {
-  title: "tx-design-ui/TxModal",
+  title: "tx-design-ui/Feedback/TxModal",
   component: TxModal,
   parameters: {
     layout: "centered",

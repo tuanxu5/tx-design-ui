@@ -2,7 +2,7 @@ import TxButton from "../components/tx-button/tx-button";
 import TxPopconfirm from "../components/tx-popconfirm/tx-popconfirm";
 
 const TxPopconfirmStory = {
-  title: "tx-design-ui/TxPopconfirm",
+  title: "tx-design-ui/Feedback/TxPopconfirm",
   component: TxPopconfirm,
   parameters: {
     layout: "centered",

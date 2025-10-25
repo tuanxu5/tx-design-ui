@@ -4,7 +4,7 @@ import { TxAvatar } from "../components";
 import { urlImageAvatar } from "../utils/string";
 
 const TxAvatarStory = {
-  title: "tx-design-ui/TxAvatar",
+  title: "tx-design-ui/Data Display/TxAvatar",
   component: TxAvatar,
   parameters: {
     layout: "centered",

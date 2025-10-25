@@ -2,7 +2,7 @@ import { useState } from "react";
 import { TxRadio } from "../components";
 
 const TxRadioStory = {
-  title: "tx-design-ui/TxRadio",
+  title: "tx-design-ui/Data Entry/TxRadio",
   component: TxRadio,
   parameters: {
     layout: "centered",

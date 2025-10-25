@@ -1,0 +1,115 @@
+# Tabs
+
+Tabs organize content into separate views where only one view can be visible at a time.
+
+## When To Use
+
+- When you need to organize content into different sections
+- When you want to reduce cognitive load by separating content
+- For navigation between related pages or sections
+
+## Basic Usage
+
+```jsx
+import { TxTabs } from "tx-design-ui";
+
+const items = [
+  {
+    key: "1",
+    label: "Tab 1",
+    children: <div>Content of Tab 1</div>,
+  },
+  {
+    key: "2",
+    label: "Tab 2",
+    children: <div>Content of Tab 2</div>,
+  },
+  {
+    key: "3",
+    label: "Tab 3",
+    children: <div>Content of Tab 3</div>,
+  },
+];
+
+<TxTabs items={items} />;
+```
+
+## Types
+
+Two types of tabs are available: `line` (default) and `card`.
+
+```jsx
+// Line type (default)
+<TxTabs items={items} type="line" />
+
+// Card type
+<TxTabs items={items} type="card" />
+```
+
+## Sizes
+
+Three sizes are available: `small`, `medium` (default), and `large`.
+
+```jsx
+<TxTabs items={items} size="small" />
+<TxTabs items={items} size="medium" />
+<TxTabs items={items} size="large" />
+```
+
+## Controlled Mode
+
+Use `activeKey` and `onChange` for controlled mode.
+
+```jsx
+function Example() {
+  const [activeKey, setActiveKey] = useState("1");
+
+  return <TxTabs items={items} activeKey={activeKey} onChange={key => setActiveKey(key)} />;
+}
+```
+
+## Disabled Tab
+
+Set `disabled: true` in item to disable a tab.
+
+```jsx
+const items = [
+  {
+    key: "1",
+    label: "Tab 1",
+    children: <div>Content 1</div>,
+  },
+  {
+    key: "2",
+    label: "Disabled Tab",
+    children: <div>Content 2</div>,
+    disabled: true,
+  },
+];
+```
+
+## API
+
+| Property         | Type                             | Default    | Description                  |
+| ---------------- | -------------------------------- | ---------- | ---------------------------- |
+| defaultActiveKey | `string`                         | -          | Initial active tab key       |
+| activeKey        | `string`                         | -          | Current active tab key       |
+| onChange         | `function(key)`                  | -          | Callback when tab is changed |
+| items            | `Array<TabItem>`                 | `[]`       | Tabs data                    |
+| type             | `'line' \| 'card'`               | `'line'`   | Type of tabs                 |
+| size             | `'small' \| 'medium' \| 'large'` | `'medium'` | Size of tabs                 |
+
+### TabItem
+
+| Property | Type        | Default | Description             |
+| -------- | ----------- | ------- | ----------------------- |
+| key      | `string`    | -       | Unique key (required)   |
+| label    | `ReactNode` | -       | Tab label (required)    |
+| children | `ReactNode` | -       | Tab content             |
+| disabled | `boolean`   | `false` | Whether tab is disabled |
+
+## Notes
+
+- Use controlled mode when you need to control the active tab from parent component
+- Card type is more suitable for content-heavy sections
+- Consider using Steps component for step-by-step processes instead of tabs

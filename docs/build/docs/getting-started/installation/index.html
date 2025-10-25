@@ -34,8 +34,8 @@
     <meta data-rh="true" name="docsearch:version" content="current" />
     <meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current" />
     <meta data-rh="true" property="og:title" content="Installation | Tx UI" />
-    <meta data-rh="true" name="description" content="Setup" />
-    <meta data-rh="true" property="og:description" content="Setup" />
+    <meta data-rh="true" name="description" content="Prerequisites" />
+    <meta data-rh="true" property="og:description" content="Prerequisites" />
     <link data-rh="true" rel="icon" href="/img/favicon.svg" />
     <link data-rh="true" rel="canonical" href="https://docs-tx-design.pages.dev/docs/getting-started/installation" />
     <link
@@ -53,8 +53,8 @@
     <link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Tx UI RSS Feed" />
     <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Tx UI Atom Feed" />
     <link rel="stylesheet" href="/assets/css/styles.cb7a6374.css" />
-    <script src="/assets/js/runtime~main.db632257.js" defer="defer"></script>
-    <script src="/assets/js/main.75b2b67d.js" defer="defer"></script>
+    <script src="/assets/js/runtime~main.7141b419.js" defer="defer"></script>
+    <script src="/assets/js/main.1b76a7ad.js" defer="defer"></script>
   </head>
   <body class="navigation-with-keyboard">
     <script>
@@ -132,7 +132,7 @@
               class="navbar__item navbar__link"
               >GitHub</a
             ><a
-              href="https://github.com/Tuanxu5/tx-design-ui"
+              href="https://storybook-tx-design.pages.dev"
               target="_blank"
               rel="noopener noreferrer"
               class="navbar__item navbar__link"
@@ -317,15 +317,31 @@
                         </div>
                         <div class="theme-doc-markdown markdown">
                           <header><h1>Installation</h1></header>
-                          <h2 class="anchor anchorWithStickyNavbar_LWe7" id="setup">
-                            Setup<a
-                              href="#setup"
+                          <h2 class="anchor anchorWithStickyNavbar_LWe7" id="prerequisites">
+                            Prerequisites<a
+                              href="#prerequisites"
                               class="hash-link"
-                              aria-label="Direct link to Setup"
-                              title="Direct link to Setup"
+                              aria-label="Direct link to Prerequisites"
+                              title="Direct link to Prerequisites"
                               >​</a
                             >
                           </h2>
+                          <p>Before installing TX Design UI, make sure you have:</p>
+                          <ul>
+                            <li><strong>Node.js</strong> &gt;= 14.0.0</li>
+                            <li><strong>React</strong> &gt;= 16.8.0</li>
+                            <li><strong>React DOM</strong> &gt;= 16.8.0</li>
+                          </ul>
+                          <h2 class="anchor anchorWithStickyNavbar_LWe7" id="installation">
+                            Installation<a
+                              href="#installation"
+                              class="hash-link"
+                              aria-label="Direct link to Installation"
+                              title="Direct link to Installation"
+                              >​</a
+                            >
+                          </h2>
+                          <p>Install TX Design UI using your preferred package manager:</p>
                           <div class="tabs-container tabList__CuJ">
                             <ul role="tablist" aria-orientation="horizontal" class="tabs">
                               <li
@@ -334,24 +350,27 @@
                                 aria-selected="true"
                                 class="tabs__item tabItem_LNqP tabs__item--active"
                               >
-                                Npm
+                                npm
                               </li>
                               <li role="tab" tabindex="-1" aria-selected="false" class="tabs__item tabItem_LNqP">
-                                Yarn
+                                yarn
+                              </li>
+                              <li role="tab" tabindex="-1" aria-selected="false" class="tabs__item tabItem_LNqP">
+                                pnpm
                               </li>
                             </ul>
                             <div class="margin-top--md">
                               <div role="tabpanel" class="tabItem_Ymn6">
                                 <div
-                                  class="language-jsx codeBlockContainer_Ckt0 theme-code-block"
+                                  class="language-bash codeBlockContainer_Ckt0 theme-code-block"
                                   style="--prism-color: #393a34; --prism-background-color: #f6f8fa"
                                 >
                                   <div class="codeBlockContent_biex">
                                     <pre
                                       tabindex="0"
-                                      class="prism-code language-jsx codeBlock_bY9V thin-scrollbar"
+                                      class="prism-code language-bash codeBlock_bY9V thin-scrollbar"
                                       style="color: #393a34; background-color: #f6f8fa"
-                                    ><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">npm install </span><span class="token operator" style="color:#393A34">--</span><span class="token plain">save tx</span><span class="token operator" style="color:#393A34">-</span><span class="token plain">design</span><span class="token operator" style="color:#393A34">-</span><span class="token plain">ui</span><br></span></code></pre>
+                                    ><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">npm install --save tx-design-ui</span><br></span></code></pre>
                                     <div class="buttonGroup__atx">
                                       <button
                                         type="button"
@@ -378,15 +397,50 @@
                               </div>
                               <div role="tabpanel" class="tabItem_Ymn6" hidden="">
                                 <div
-                                  class="language-jsx codeBlockContainer_Ckt0 theme-code-block"
+                                  class="language-bash codeBlockContainer_Ckt0 theme-code-block"
                                   style="--prism-color: #393a34; --prism-background-color: #f6f8fa"
                                 >
                                   <div class="codeBlockContent_biex">
                                     <pre
                                       tabindex="0"
-                                      class="prism-code language-jsx codeBlock_bY9V thin-scrollbar"
+                                      class="prism-code language-bash codeBlock_bY9V thin-scrollbar"
                                       style="color: #393a34; background-color: #f6f8fa"
-                                    ><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">yarn add tx</span><span class="token operator" style="color:#393A34">-</span><span class="token plain">design</span><span class="token operator" style="color:#393A34">-</span><span class="token plain">ui</span><br></span></code></pre>
+                                    ><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">yarn add tx-design-ui</span><br></span></code></pre>
+                                    <div class="buttonGroup__atx">
+                                      <button
+                                        type="button"
+                                        aria-label="Copy code to clipboard"
+                                        title="Copy"
+                                        class="clean-btn"
+                                      >
+                                        <span class="copyButtonIcons_eSgA" aria-hidden="true"
+                                          ><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N">
+                                            <path
+                                              fill="currentColor"
+                                              d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"
+                                            ></path></svg
+                                          ><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS">
+                                            <path
+                                              fill="currentColor"
+                                              d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"
+                                            ></path></svg
+                                        ></span>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div role="tabpanel" class="tabItem_Ymn6" hidden="">
+                                <div
+                                  class="language-bash codeBlockContainer_Ckt0 theme-code-block"
+                                  style="--prism-color: #393a34; --prism-background-color: #f6f8fa"
+                                >
+                                  <div class="codeBlockContent_biex">
+                                    <pre
+                                      tabindex="0"
+                                      class="prism-code language-bash codeBlock_bY9V thin-scrollbar"
+                                      style="color: #393a34; background-color: #f6f8fa"
+                                    ><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">pnpm add tx-design-ui</span><br></span></code></pre>
                                     <div class="buttonGroup__atx">
                                       <button
                                         type="button"
@@ -413,25 +467,26 @@
                               </div>
                             </div>
                           </div>
-                          <h2 class="anchor anchorWithStickyNavbar_LWe7" id="usage">
-                            Usage<a
-                              href="#usage"
+                          <h2 class="anchor anchorWithStickyNavbar_LWe7" id="peer-dependencies">
+                            Peer Dependencies<a
+                              href="#peer-dependencies"
                               class="hash-link"
-                              aria-label="Direct link to Usage"
-                              title="Direct link to Usage"
+                              aria-label="Direct link to Peer Dependencies"
+                              title="Direct link to Peer Dependencies"
                               >​</a
                             >
                           </h2>
+                          <p>TX Design UI requires the following peer dependencies:</p>
                           <div
-                            class="language-jsx codeBlockContainer_Ckt0 theme-code-block"
+                            class="language-json codeBlockContainer_Ckt0 theme-code-block"
                             style="--prism-color: #393a34; --prism-background-color: #f6f8fa"
                           >
                             <div class="codeBlockContent_biex">
                               <pre
                                 tabindex="0"
-                                class="prism-code language-jsx codeBlock_bY9V thin-scrollbar"
+                                class="prism-code language-json codeBlock_bY9V thin-scrollbar"
                                 style="color: #393a34; background-color: #f6f8fa"
-                              ><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword module" style="color:#00009f">import</span><span class="token plain"> </span><span class="token imports maybe-class-name">React</span><span class="token imports punctuation" style="color:#393A34">,</span><span class="token imports"> </span><span class="token imports punctuation" style="color:#393A34">{</span><span class="token imports"> </span><span class="token imports maybe-class-name">Component</span><span class="token imports"> </span><span class="token imports punctuation" style="color:#393A34">}</span><span class="token plain"> </span><span class="token keyword module" style="color:#00009f">from</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;react&quot;</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword module" style="color:#00009f">import</span><span class="token plain"> </span><span class="token imports punctuation" style="color:#393A34">{</span><span class="token imports"> </span><span class="token imports maybe-class-name">TxMyComponent</span><span class="token imports"> </span><span class="token imports punctuation" style="color:#393A34">}</span><span class="token plain"> </span><span class="token keyword module" style="color:#00009f">from</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;tx-design-ui&quot;</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">class</span><span class="token plain"> </span><span class="token class-name">App</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">extends</span><span class="token plain"> </span><span class="token class-name">Component</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token function" style="color:#d73a49">render</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword control-flow" style="color:#00009f">return</span><span class="token plain"> </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag class-name" style="color:#00009f">TxMyComponent</span><span class="token tag" style="color:#00009f"> </span><span class="token tag spread punctuation" style="color:#393A34">{</span><span class="token tag spread operator" style="color:#393A34">...</span><span class="token tag spread" style="color:#00009f">props</span><span class="token tag spread punctuation" style="color:#393A34">}</span><span class="token tag" style="color:#00009f"> </span><span class="token tag punctuation" style="color:#393A34">/&gt;</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><br></span></code></pre>
+                              ><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">&quot;react&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;&gt;=16.8.0&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">&quot;react-dom&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;&gt;=16.8.0&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">&quot;styled-components&quot;</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;&gt;=5.0.0&quot;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><br></span></code></pre>
                               <div class="buttonGroup__atx">
                                 <button
                                   type="button"
@@ -455,6 +510,455 @@
                               </div>
                             </div>
                           </div>
+                          <p>If you don&#x27;t have these installed, install them:</p>
+                          <div class="tabs-container tabList__CuJ">
+                            <ul role="tablist" aria-orientation="horizontal" class="tabs">
+                              <li
+                                role="tab"
+                                tabindex="0"
+                                aria-selected="true"
+                                class="tabs__item tabItem_LNqP tabs__item--active"
+                              >
+                                npm
+                              </li>
+                              <li role="tab" tabindex="-1" aria-selected="false" class="tabs__item tabItem_LNqP">
+                                yarn
+                              </li>
+                            </ul>
+                            <div class="margin-top--md">
+                              <div role="tabpanel" class="tabItem_Ymn6">
+                                <div
+                                  class="language-bash codeBlockContainer_Ckt0 theme-code-block"
+                                  style="--prism-color: #393a34; --prism-background-color: #f6f8fa"
+                                >
+                                  <div class="codeBlockContent_biex">
+                                    <pre
+                                      tabindex="0"
+                                      class="prism-code language-bash codeBlock_bY9V thin-scrollbar"
+                                      style="color: #393a34; background-color: #f6f8fa"
+                                    ><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">npm install react react-dom styled-components</span><br></span></code></pre>
+                                    <div class="buttonGroup__atx">
+                                      <button
+                                        type="button"
+                                        aria-label="Copy code to clipboard"
+                                        title="Copy"
+                                        class="clean-btn"
+                                      >
+                                        <span class="copyButtonIcons_eSgA" aria-hidden="true"
+                                          ><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N">
+                                            <path
+                                              fill="currentColor"
+                                              d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"
+                                            ></path></svg
+                                          ><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS">
+                                            <path
+                                              fill="currentColor"
+                                              d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"
+                                            ></path></svg
+                                        ></span>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div role="tabpanel" class="tabItem_Ymn6" hidden="">
+                                <div
+                                  class="language-bash codeBlockContainer_Ckt0 theme-code-block"
+                                  style="--prism-color: #393a34; --prism-background-color: #f6f8fa"
+                                >
+                                  <div class="codeBlockContent_biex">
+                                    <pre
+                                      tabindex="0"
+                                      class="prism-code language-bash codeBlock_bY9V thin-scrollbar"
+                                      style="color: #393a34; background-color: #f6f8fa"
+                                    ><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">yarn add react react-dom styled-components</span><br></span></code></pre>
+                                    <div class="buttonGroup__atx">
+                                      <button
+                                        type="button"
+                                        aria-label="Copy code to clipboard"
+                                        title="Copy"
+                                        class="clean-btn"
+                                      >
+                                        <span class="copyButtonIcons_eSgA" aria-hidden="true"
+                                          ><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N">
+                                            <path
+                                              fill="currentColor"
+                                              d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"
+                                            ></path></svg
+                                          ><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS">
+                                            <path
+                                              fill="currentColor"
+                                              d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"
+                                            ></path></svg
+                                        ></span>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <h2 class="anchor anchorWithStickyNavbar_LWe7" id="basic-usage">
+                            Basic Usage<a
+                              href="#basic-usage"
+                              class="hash-link"
+                              aria-label="Direct link to Basic Usage"
+                              title="Direct link to Basic Usage"
+                              >​</a
+                            >
+                          </h2>
+                          <p>After installation, you can import and use components:</p>
+                          <div
+                            class="language-jsx codeBlockContainer_Ckt0 theme-code-block"
+                            style="--prism-color: #393a34; --prism-background-color: #f6f8fa"
+                          >
+                            <div class="codeBlockContent_biex">
+                              <pre
+                                tabindex="0"
+                                class="prism-code language-jsx codeBlock_bY9V thin-scrollbar"
+                                style="color: #393a34; background-color: #f6f8fa"
+                              ><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword module" style="color:#00009f">import</span><span class="token plain"> </span><span class="token imports maybe-class-name">React</span><span class="token plain"> </span><span class="token keyword module" style="color:#00009f">from</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;react&quot;</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword module" style="color:#00009f">import</span><span class="token plain"> </span><span class="token imports punctuation" style="color:#393A34">{</span><span class="token imports"> </span><span class="token imports maybe-class-name">TxButton</span><span class="token imports punctuation" style="color:#393A34">,</span><span class="token imports"> </span><span class="token imports maybe-class-name">TxInput</span><span class="token imports punctuation" style="color:#393A34">,</span><span class="token imports"> </span><span class="token imports maybe-class-name">TxCheckbox</span><span class="token imports"> </span><span class="token imports punctuation" style="color:#393A34">}</span><span class="token plain"> </span><span class="token keyword module" style="color:#00009f">from</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;tx-design-ui&quot;</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">function</span><span class="token plain"> </span><span class="token function maybe-class-name" style="color:#d73a49">App</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword control-flow" style="color:#00009f">return</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">div</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain-text"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain-text">      </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag class-name" style="color:#00009f">TxButton</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">label</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">Click me</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">onClick</span><span class="token tag script language-javascript script-punctuation punctuation" style="color:#393A34">=</span><span class="token tag script language-javascript punctuation" style="color:#393A34">{</span><span class="token tag script language-javascript punctuation" style="color:#393A34">(</span><span class="token tag script language-javascript punctuation" style="color:#393A34">)</span><span class="token tag script language-javascript" style="color:#00009f"> </span><span class="token tag script language-javascript arrow operator" style="color:#393A34">=&gt;</span><span class="token tag script language-javascript" style="color:#00009f"> </span><span class="token tag script language-javascript function" style="color:#d73a49">alert</span><span class="token tag script language-javascript punctuation" style="color:#393A34">(</span><span class="token tag script language-javascript string" style="color:#e3116c">&quot;Clicked!&quot;</span><span class="token tag script language-javascript punctuation" style="color:#393A34">)</span><span class="token tag script language-javascript punctuation" style="color:#393A34">}</span><span class="token tag" style="color:#00009f"> </span><span class="token tag punctuation" style="color:#393A34">/&gt;</span><span class="token plain-text"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain-text">      </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag class-name" style="color:#00009f">TxInput</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">placeholder</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">Enter text</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag" style="color:#00009f"> </span><span class="token tag punctuation" style="color:#393A34">/&gt;</span><span class="token plain-text"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain-text">      </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag class-name" style="color:#00009f">TxCheckbox</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">label</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">Accept terms</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag" style="color:#00009f"> </span><span class="token tag punctuation" style="color:#393A34">/&gt;</span><span class="token plain-text"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain-text">    </span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">div</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword module" style="color:#00009f">export</span><span class="token plain"> </span><span class="token keyword module" style="color:#00009f">default</span><span class="token plain"> </span><span class="token maybe-class-name">App</span><span class="token punctuation" style="color:#393A34">;</span><br></span></code></pre>
+                              <div class="buttonGroup__atx">
+                                <button
+                                  type="button"
+                                  aria-label="Copy code to clipboard"
+                                  title="Copy"
+                                  class="clean-btn"
+                                >
+                                  <span class="copyButtonIcons_eSgA" aria-hidden="true"
+                                    ><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N">
+                                      <path
+                                        fill="currentColor"
+                                        d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"
+                                      ></path></svg
+                                    ><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS">
+                                      <path
+                                        fill="currentColor"
+                                        d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"
+                                      ></path></svg
+                                  ></span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <h2 class="anchor anchorWithStickyNavbar_LWe7" id="using-with-typescript">
+                            Using with TypeScript<a
+                              href="#using-with-typescript"
+                              class="hash-link"
+                              aria-label="Direct link to Using with TypeScript"
+                              title="Direct link to Using with TypeScript"
+                              >​</a
+                            >
+                          </h2>
+                          <p>
+                            TX Design UI is written in JavaScript but provides type definitions. To use with TypeScript:
+                          </p>
+                          <div
+                            class="language-tsx codeBlockContainer_Ckt0 theme-code-block"
+                            style="--prism-color: #393a34; --prism-background-color: #f6f8fa"
+                          >
+                            <div class="codeBlockContent_biex">
+                              <pre
+                                tabindex="0"
+                                class="prism-code language-tsx codeBlock_bY9V thin-scrollbar"
+                                style="color: #393a34; background-color: #f6f8fa"
+                              ><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">import</span><span class="token plain"> </span><span class="token imports maybe-class-name">React</span><span class="token imports punctuation" style="color:#393A34">,</span><span class="token imports"> </span><span class="token imports punctuation" style="color:#393A34">{</span><span class="token imports"> useState </span><span class="token imports punctuation" style="color:#393A34">}</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">from</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;react&quot;</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">import</span><span class="token plain"> </span><span class="token imports punctuation" style="color:#393A34">{</span><span class="token imports"> </span><span class="token imports maybe-class-name">TxButton</span><span class="token imports punctuation" style="color:#393A34">,</span><span class="token imports"> </span><span class="token imports maybe-class-name">TxInput</span><span class="token imports"> </span><span class="token imports punctuation" style="color:#393A34">}</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">from</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;tx-design-ui&quot;</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> </span><span class="token maybe-class-name">App</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token maybe-class-name">React</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method-variable function-variable method function property-access maybe-class-name" style="color:#d73a49">FC</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token arrow operator" style="color:#393A34">=&gt;</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">value</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> setValue</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token generic-function function" style="color:#d73a49">useState</span><span class="token generic-function generic class-name operator" style="color:#393A34">&lt;</span><span class="token generic-function generic class-name builtin">string</span><span class="token generic-function generic class-name operator" style="color:#393A34">&gt;</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&quot;&quot;</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">div</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain-text"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain-text">      </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag class-name" style="color:#00009f">TxInput</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">value</span><span class="token tag script language-javascript script-punctuation punctuation" style="color:#393A34">=</span><span class="token tag script language-javascript punctuation" style="color:#393A34">{</span><span class="token tag script language-javascript" style="color:#00009f">value</span><span class="token tag script language-javascript punctuation" style="color:#393A34">}</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">onChange</span><span class="token tag script language-javascript script-punctuation punctuation" style="color:#393A34">=</span><span class="token tag script language-javascript punctuation" style="color:#393A34">{</span><span class="token tag script language-javascript" style="color:#00009f">e </span><span class="token tag script language-javascript arrow operator" style="color:#393A34">=&gt;</span><span class="token tag script language-javascript" style="color:#00009f"> </span><span class="token tag script language-javascript function" style="color:#d73a49">setValue</span><span class="token tag script language-javascript punctuation" style="color:#393A34">(</span><span class="token tag script language-javascript" style="color:#00009f">e</span><span class="token tag script language-javascript punctuation" style="color:#393A34">.</span><span class="token tag script language-javascript property-access" style="color:#00009f">target</span><span class="token tag script language-javascript punctuation" style="color:#393A34">.</span><span class="token tag script language-javascript property-access" style="color:#00009f">value</span><span class="token tag script language-javascript punctuation" style="color:#393A34">)</span><span class="token tag script language-javascript punctuation" style="color:#393A34">}</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">placeholder</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">Type something</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag" style="color:#00009f"> </span><span class="token tag punctuation" style="color:#393A34">/&gt;</span><span class="token plain-text"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain-text">      </span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag class-name" style="color:#00009f">TxButton</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">label</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">Submit</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">onClick</span><span class="token tag script language-javascript script-punctuation punctuation" style="color:#393A34">=</span><span class="token tag script language-javascript punctuation" style="color:#393A34">{</span><span class="token tag script language-javascript punctuation" style="color:#393A34">(</span><span class="token tag script language-javascript punctuation" style="color:#393A34">)</span><span class="token tag script language-javascript" style="color:#00009f"> </span><span class="token tag script language-javascript arrow operator" style="color:#393A34">=&gt;</span><span class="token tag script language-javascript" style="color:#00009f"> </span><span class="token tag script language-javascript console class-name" style="color:#00009f">console</span><span class="token tag script language-javascript punctuation" style="color:#393A34">.</span><span class="token tag script language-javascript method function property-access" style="color:#d73a49">log</span><span class="token tag script language-javascript punctuation" style="color:#393A34">(</span><span class="token tag script language-javascript" style="color:#00009f">value</span><span class="token tag script language-javascript punctuation" style="color:#393A34">)</span><span class="token tag script language-javascript punctuation" style="color:#393A34">}</span><span class="token tag" style="color:#00009f"> </span><span class="token tag punctuation" style="color:#393A34">/&gt;</span><span class="token plain-text"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain-text">    </span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">div</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">export</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">default</span><span class="token plain"> </span><span class="token maybe-class-name">App</span><span class="token punctuation" style="color:#393A34">;</span><br></span></code></pre>
+                              <div class="buttonGroup__atx">
+                                <button
+                                  type="button"
+                                  aria-label="Copy code to clipboard"
+                                  title="Copy"
+                                  class="clean-btn"
+                                >
+                                  <span class="copyButtonIcons_eSgA" aria-hidden="true"
+                                    ><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N">
+                                      <path
+                                        fill="currentColor"
+                                        d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"
+                                      ></path></svg
+                                    ><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS">
+                                      <path
+                                        fill="currentColor"
+                                        d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"
+                                      ></path></svg
+                                  ></span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <h2 class="anchor anchorWithStickyNavbar_LWe7" id="import-components">
+                            Import Components<a
+                              href="#import-components"
+                              class="hash-link"
+                              aria-label="Direct link to Import Components"
+                              title="Direct link to Import Components"
+                              >​</a
+                            >
+                          </h2>
+                          <p>You can import components in two ways:</p>
+                          <h3 class="anchor anchorWithStickyNavbar_LWe7" id="named-imports-recommended">
+                            Named Imports (Recommended)<a
+                              href="#named-imports-recommended"
+                              class="hash-link"
+                              aria-label="Direct link to Named Imports (Recommended)"
+                              title="Direct link to Named Imports (Recommended)"
+                              >​</a
+                            >
+                          </h3>
+                          <div
+                            class="language-jsx codeBlockContainer_Ckt0 theme-code-block"
+                            style="--prism-color: #393a34; --prism-background-color: #f6f8fa"
+                          >
+                            <div class="codeBlockContent_biex">
+                              <pre
+                                tabindex="0"
+                                class="prism-code language-jsx codeBlock_bY9V thin-scrollbar"
+                                style="color: #393a34; background-color: #f6f8fa"
+                              ><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword module" style="color:#00009f">import</span><span class="token plain"> </span><span class="token imports punctuation" style="color:#393A34">{</span><span class="token imports"> </span><span class="token imports maybe-class-name">TxButton</span><span class="token imports punctuation" style="color:#393A34">,</span><span class="token imports"> </span><span class="token imports maybe-class-name">TxInput</span><span class="token imports punctuation" style="color:#393A34">,</span><span class="token imports"> </span><span class="token imports maybe-class-name">TxCheckbox</span><span class="token imports"> </span><span class="token imports punctuation" style="color:#393A34">}</span><span class="token plain"> </span><span class="token keyword module" style="color:#00009f">from</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;tx-design-ui&quot;</span><span class="token punctuation" style="color:#393A34">;</span><br></span></code></pre>
+                              <div class="buttonGroup__atx">
+                                <button
+                                  type="button"
+                                  aria-label="Copy code to clipboard"
+                                  title="Copy"
+                                  class="clean-btn"
+                                >
+                                  <span class="copyButtonIcons_eSgA" aria-hidden="true"
+                                    ><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N">
+                                      <path
+                                        fill="currentColor"
+                                        d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"
+                                      ></path></svg
+                                    ><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS">
+                                      <path
+                                        fill="currentColor"
+                                        d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"
+                                      ></path></svg
+                                  ></span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <h3 class="anchor anchorWithStickyNavbar_LWe7" id="individual-imports">
+                            Individual Imports<a
+                              href="#individual-imports"
+                              class="hash-link"
+                              aria-label="Direct link to Individual Imports"
+                              title="Direct link to Individual Imports"
+                              >​</a
+                            >
+                          </h3>
+                          <div
+                            class="language-jsx codeBlockContainer_Ckt0 theme-code-block"
+                            style="--prism-color: #393a34; --prism-background-color: #f6f8fa"
+                          >
+                            <div class="codeBlockContent_biex">
+                              <pre
+                                tabindex="0"
+                                class="prism-code language-jsx codeBlock_bY9V thin-scrollbar"
+                                style="color: #393a34; background-color: #f6f8fa"
+                              ><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword module" style="color:#00009f">import</span><span class="token plain"> </span><span class="token imports maybe-class-name">TxButton</span><span class="token plain"> </span><span class="token keyword module" style="color:#00009f">from</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;tx-design-ui/lib/components/tx-button&quot;</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword module" style="color:#00009f">import</span><span class="token plain"> </span><span class="token imports maybe-class-name">TxInput</span><span class="token plain"> </span><span class="token keyword module" style="color:#00009f">from</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;tx-design-ui/lib/components/tx-input&quot;</span><span class="token punctuation" style="color:#393A34">;</span><br></span></code></pre>
+                              <div class="buttonGroup__atx">
+                                <button
+                                  type="button"
+                                  aria-label="Copy code to clipboard"
+                                  title="Copy"
+                                  class="clean-btn"
+                                >
+                                  <span class="copyButtonIcons_eSgA" aria-hidden="true"
+                                    ><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N">
+                                      <path
+                                        fill="currentColor"
+                                        d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"
+                                      ></path></svg
+                                    ><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS">
+                                      <path
+                                        fill="currentColor"
+                                        d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"
+                                      ></path></svg
+                                  ></span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <h2 class="anchor anchorWithStickyNavbar_LWe7" id="using-theme-colors">
+                            Using Theme Colors<a
+                              href="#using-theme-colors"
+                              class="hash-link"
+                              aria-label="Direct link to Using Theme Colors"
+                              title="Direct link to Using Theme Colors"
+                              >​</a
+                            >
+                          </h2>
+                          <p>TX Design UI provides a centralized color system:</p>
+                          <div
+                            class="language-jsx codeBlockContainer_Ckt0 theme-code-block"
+                            style="--prism-color: #393a34; --prism-background-color: #f6f8fa"
+                          >
+                            <div class="codeBlockContent_biex">
+                              <pre
+                                tabindex="0"
+                                class="prism-code language-jsx codeBlock_bY9V thin-scrollbar"
+                                style="color: #393a34; background-color: #f6f8fa"
+                              ><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword module" style="color:#00009f">import</span><span class="token plain"> </span><span class="token imports punctuation" style="color:#393A34">{</span><span class="token imports"> colors</span><span class="token imports punctuation" style="color:#393A34">,</span><span class="token imports"> theme </span><span class="token imports punctuation" style="color:#393A34">}</span><span class="token plain"> </span><span class="token keyword module" style="color:#00009f">from</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;tx-design-ui&quot;</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic">// Use individual colors</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> primaryColor </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> colors</span><span class="token punctuation" style="color:#393A34">.</span><span class="token property-access">primary</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> </span><span class="token comment" style="color:#999988;font-style:italic">// &quot;#03030f&quot;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> dangerColor </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> colors</span><span class="token punctuation" style="color:#393A34">.</span><span class="token property-access">danger</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> </span><span class="token comment" style="color:#999988;font-style:italic">// &quot;#e45649&quot;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic">// Use theme object</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> buttonBg </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> theme</span><span class="token punctuation" style="color:#393A34">.</span><span class="token property-access">button</span><span class="token punctuation" style="color:#393A34">.</span><span class="token property-access">primary</span><span class="token punctuation" style="color:#393A34">.</span><span class="token property-access">bg</span><span class="token punctuation" style="color:#393A34">;</span><br></span></code></pre>
+                              <div class="buttonGroup__atx">
+                                <button
+                                  type="button"
+                                  aria-label="Copy code to clipboard"
+                                  title="Copy"
+                                  class="clean-btn"
+                                >
+                                  <span class="copyButtonIcons_eSgA" aria-hidden="true"
+                                    ><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N">
+                                      <path
+                                        fill="currentColor"
+                                        d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"
+                                      ></path></svg
+                                    ><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS">
+                                      <path
+                                        fill="currentColor"
+                                        d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"
+                                      ></path></svg
+                                  ></span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <p>
+                            See the
+                            <a href="/docs/getting-started/overview#design-principles">Theme Colors documentation</a>
+                            for more information.
+                          </p>
+                          <h2 class="anchor anchorWithStickyNavbar_LWe7" id="next-steps">
+                            Next Steps<a
+                              href="#next-steps"
+                              class="hash-link"
+                              aria-label="Direct link to Next Steps"
+                              title="Direct link to Next Steps"
+                              >​</a
+                            >
+                          </h2>
+                          <ul>
+                            <li>Explore the <a href="/docs/component/button">Component Documentation</a></li>
+                            <li>Learn about <a href="/docs/getting-started/overview">Customization</a></li>
+                            <li>
+                              Check out
+                              <a
+                                href="https://github.com/Tuanxu5/tx-design-ui/tree/master/examples"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >Examples</a
+                              >
+                            </li>
+                          </ul>
+                          <h2 class="anchor anchorWithStickyNavbar_LWe7" id="troubleshooting">
+                            Troubleshooting<a
+                              href="#troubleshooting"
+                              class="hash-link"
+                              aria-label="Direct link to Troubleshooting"
+                              title="Direct link to Troubleshooting"
+                              >​</a
+                            >
+                          </h2>
+                          <h3 class="anchor anchorWithStickyNavbar_LWe7" id="styled-components-not-found">
+                            styled-components not found<a
+                              href="#styled-components-not-found"
+                              class="hash-link"
+                              aria-label="Direct link to styled-components not found"
+                              title="Direct link to styled-components not found"
+                              >​</a
+                            >
+                          </h3>
+                          <p>If you see an error about styled-components, make sure it&#x27;s installed:</p>
+                          <div
+                            class="language-bash codeBlockContainer_Ckt0 theme-code-block"
+                            style="--prism-color: #393a34; --prism-background-color: #f6f8fa"
+                          >
+                            <div class="codeBlockContent_biex">
+                              <pre
+                                tabindex="0"
+                                class="prism-code language-bash codeBlock_bY9V thin-scrollbar"
+                                style="color: #393a34; background-color: #f6f8fa"
+                              ><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">npm install styled-components</span><br></span></code></pre>
+                              <div class="buttonGroup__atx">
+                                <button
+                                  type="button"
+                                  aria-label="Copy code to clipboard"
+                                  title="Copy"
+                                  class="clean-btn"
+                                >
+                                  <span class="copyButtonIcons_eSgA" aria-hidden="true"
+                                    ><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N">
+                                      <path
+                                        fill="currentColor"
+                                        d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"
+                                      ></path></svg
+                                    ><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS">
+                                      <path
+                                        fill="currentColor"
+                                        d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"
+                                      ></path></svg
+                                  ></span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <h3 class="anchor anchorWithStickyNavbar_LWe7" id="module-not-found">
+                            Module not found<a
+                              href="#module-not-found"
+                              class="hash-link"
+                              aria-label="Direct link to Module not found"
+                              title="Direct link to Module not found"
+                              >​</a
+                            >
+                          </h3>
+                          <p>If you get module not found errors, try:</p>
+                          <ol>
+                            <li>Clear your node_modules and package-lock.json</li>
+                            <li>Reinstall dependencies</li>
+                          </ol>
+                          <div
+                            class="language-bash codeBlockContainer_Ckt0 theme-code-block"
+                            style="--prism-color: #393a34; --prism-background-color: #f6f8fa"
+                          >
+                            <div class="codeBlockContent_biex">
+                              <pre
+                                tabindex="0"
+                                class="prism-code language-bash codeBlock_bY9V thin-scrollbar"
+                                style="color: #393a34; background-color: #f6f8fa"
+                              ><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">rm -rf node_modules package-lock.json</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">npm install</span><br></span></code></pre>
+                              <div class="buttonGroup__atx">
+                                <button
+                                  type="button"
+                                  aria-label="Copy code to clipboard"
+                                  title="Copy"
+                                  class="clean-btn"
+                                >
+                                  <span class="copyButtonIcons_eSgA" aria-hidden="true"
+                                    ><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N">
+                                      <path
+                                        fill="currentColor"
+                                        d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"
+                                      ></path></svg
+                                    ><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS">
+                                      <path
+                                        fill="currentColor"
+                                        d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"
+                                      ></path></svg
+                                  ></span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <h3 class="anchor anchorWithStickyNavbar_LWe7" id="version-conflicts">
+                            Version Conflicts<a
+                              href="#version-conflicts"
+                              class="hash-link"
+                              aria-label="Direct link to Version Conflicts"
+                              title="Direct link to Version Conflicts"
+                              >​</a
+                            >
+                          </h3>
+                          <p>Make sure all peer dependencies meet the minimum version requirements.</p>
                           <h2 class="anchor anchorWithStickyNavbar_LWe7" id="license">
                             License<a
                               href="#license"
@@ -466,9 +970,7 @@
                           </h2>
                           <p>
                             MIT ©
-                            <a href="https://github.com/Tuanxu5" target="_blank" rel="noopener noreferrer"
-                              ><b style="color: #cb3837">Tuanxu5</b></a
-                            >.
+                            <a href="https://github.com/Tuanxu5" target="_blank" rel="noopener noreferrer">Tuanxu5</a>
                           </p>
                         </div>
                         <footer class="theme-doc-footer docusaurus-mt-lg">
@@ -513,8 +1015,64 @@
                   <div class="col col--3">
                     <div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop">
                       <ul class="table-of-contents table-of-contents__left-border">
-                        <li><a href="#setup" class="table-of-contents__link toc-highlight">Setup</a></li>
-                        <li><a href="#usage" class="table-of-contents__link toc-highlight">Usage</a></li>
+                        <li>
+                          <a href="#prerequisites" class="table-of-contents__link toc-highlight">Prerequisites</a>
+                        </li>
+                        <li><a href="#installation" class="table-of-contents__link toc-highlight">Installation</a></li>
+                        <li>
+                          <a href="#peer-dependencies" class="table-of-contents__link toc-highlight"
+                            >Peer Dependencies</a
+                          >
+                        </li>
+                        <li><a href="#basic-usage" class="table-of-contents__link toc-highlight">Basic Usage</a></li>
+                        <li>
+                          <a href="#using-with-typescript" class="table-of-contents__link toc-highlight"
+                            >Using with TypeScript</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#import-components" class="table-of-contents__link toc-highlight"
+                            >Import Components</a
+                          >
+                          <ul>
+                            <li>
+                              <a href="#named-imports-recommended" class="table-of-contents__link toc-highlight"
+                                >Named Imports (Recommended)</a
+                              >
+                            </li>
+                            <li>
+                              <a href="#individual-imports" class="table-of-contents__link toc-highlight"
+                                >Individual Imports</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#using-theme-colors" class="table-of-contents__link toc-highlight"
+                            >Using Theme Colors</a
+                          >
+                        </li>
+                        <li><a href="#next-steps" class="table-of-contents__link toc-highlight">Next Steps</a></li>
+                        <li>
+                          <a href="#troubleshooting" class="table-of-contents__link toc-highlight">Troubleshooting</a>
+                          <ul>
+                            <li>
+                              <a href="#styled-components-not-found" class="table-of-contents__link toc-highlight"
+                                >styled-components not found</a
+                              >
+                            </li>
+                            <li>
+                              <a href="#module-not-found" class="table-of-contents__link toc-highlight"
+                                >Module not found</a
+                              >
+                            </li>
+                            <li>
+                              <a href="#version-conflicts" class="table-of-contents__link toc-highlight"
+                                >Version Conflicts</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
                         <li><a href="#license" class="table-of-contents__link toc-highlight">License</a></li>
                       </ul>
                     </div>

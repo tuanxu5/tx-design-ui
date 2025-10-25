@@ -2,7 +2,7 @@ import { useState } from "react";
 import { TxSelect } from "../components";
 
 const TxSelectStory = {
-  title: "tx-design-ui/TxSelect",
+  title: "tx-design-ui/Data Entry/TxSelect",
   component: TxSelect,
   parameters: {
     layout: "centered",

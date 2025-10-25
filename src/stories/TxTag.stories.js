@@ -1,7 +1,7 @@
 import TxTag from "../components/tx-tag/tx-tag";
 
 const TxTagStory = {
-  title: "tx-design-ui/TxTag",
+  title: "tx-design-ui/Data Display/TxTag",
   component: TxTag,
   parameters: {
     layout: "centered",
