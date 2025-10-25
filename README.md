@@ -28,6 +28,17 @@ npm install --save tx-design-ui
 **Display Components:**
 
 - **TxAvatar** - Avatar/profile picture component
+- **TxTag** - Tag labels for categorization
+- **TxTable** - Data table display
+
+**Feedback Components:**
+
+- **TxModal** - Modal dialog
+- **TxDrawer** - Side panel drawer
+- **TxNotification** - Notification messages
+- **TxPopconfirm** - Confirmation popover
+- **TxTooltip** - Tooltip on hover
+- **TxLoading** - Loading spinner
 
 ## Usage
 

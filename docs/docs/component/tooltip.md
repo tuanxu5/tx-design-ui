@@ -1,0 +1,82 @@
+# Tooltip
+
+A simple text popup tip that appears when hovering over or clicking on an element.
+
+## When To Use
+
+- The tooltip is used to provide additional information when hovering over an element
+- As an alternative to the system tooltip for better styling control
+
+## Basic Usage
+
+```jsx
+import { TxTooltip } from "tx-design-ui";
+
+<TxTooltip title="Tooltip text">
+  <button>Hover me</button>
+</TxTooltip>;
+```
+
+## Placement
+
+Set the position of the tooltip relative to the target element.
+
+```jsx
+<TxTooltip title="Top tooltip" placement="top">
+  <button>Top</button>
+</TxTooltip>
+
+<TxTooltip title="Bottom tooltip" placement="bottom">
+  <button>Bottom</button>
+</TxTooltip>
+
+<TxTooltip title="Left tooltip" placement="left">
+  <button>Left</button>
+</TxTooltip>
+
+<TxTooltip title="Right tooltip" placement="right">
+  <button>Right</button>
+</TxTooltip>
+```
+
+## Custom Color
+
+Customize the background color of the tooltip.
+
+```jsx
+<TxTooltip title="Custom color" color="#6253e1">
+  <button>Custom Color</button>
+</TxTooltip>
+```
+
+## Trigger
+
+Control how the tooltip is triggered.
+
+```jsx
+// Hover trigger (default)
+<TxTooltip title="Hover to show" trigger="hover">
+  <button>Hover me</button>
+</TxTooltip>
+
+// Click trigger
+<TxTooltip title="Click to toggle" trigger="click">
+  <button>Click me</button>
+</TxTooltip>
+```
+
+## API
+
+| Property  | Type                                     | Default   | Description               |
+| --------- | ---------------------------------------- | --------- | ------------------------- |
+| children  | `ReactNode`                              | -         | Target element (required) |
+| title     | `string \| ReactNode`                    | -         | Tooltip content           |
+| placement | `'top' \| 'bottom' \| 'left' \| 'right'` | `'top'`   | Position of the tooltip   |
+| color     | `string`                                 | -         | Background color          |
+| trigger   | `'hover' \| 'click'`                     | `'hover'` | How tooltip is triggered  |
+
+## Notes
+
+- Keep tooltip text concise and informative
+- Avoid putting interactive elements inside tooltips
+- Consider using Popconfirm for confirmation actions instead of tooltips
