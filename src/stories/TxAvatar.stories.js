@@ -1,5 +1,4 @@
 import { fn } from "@storybook/addon-actions";
-import React from "react";
 import { SvgIcon } from "../assets/icons";
 import { TxAvatar } from "../components";
 import { urlImageAvatar } from "../utils/string";
