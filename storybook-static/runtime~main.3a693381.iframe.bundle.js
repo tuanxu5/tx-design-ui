@@ -78,22 +78,120 @@
         )
       )),
     (__webpack_require__.u = chunkId =>
-      (424 === chunkId ? "stories-TxAvatar-stories" : chunkId) +
+      (({
+        114: "stories-TxColorPicker-stories",
+        162: "stories-TxInputNumber-stories",
+        163: "stories-TxButton-stories",
+        216: "stories-TxRadio-stories",
+        281: "stories-TxDatePicker-stories",
+        313: "stories-TxCarousel-stories",
+        331: "stories-TxUpload-stories",
+        424: "stories-TxAvatar-stories",
+        463: "stories-TxTabs-stories",
+        514: "stories-TxMenu-stories",
+        636: "stories-TxBadge-stories",
+        660: "stories-TxCheckbox-stories",
+        661: "stories-TxForm-stories",
+        709: "stories-TxLoading-stories",
+        712: "stories-TxAnchor-stories",
+        728: "stories-TxBreadcrumb-stories",
+        777: "stories-TxTag-stories",
+        886: "stories-TxTimeline-stories",
+        888: "stories-TxSlider-stories",
+        911: "stories-TxSelect-stories",
+        939: "stories-TxPagination-stories",
+        995: "stories-TxSwitch-stories",
+      }[chunkId] || chunkId) +
       "." +
       {
         25: "64f370d6",
+        41: "8de2c7e6",
+        88: "324c557c",
+        114: "65f87e9c",
         122: "68ec214d",
-        134: "671be020",
+        162: "39b5b8f8",
+        163: "14e4be4c",
+        173: "3c1cf6cf",
+        216: "23df266e",
         227: "049f5955",
+        229: "bef8cc7d",
+        233: "39711312",
         253: "497fad62",
+        281: "b936bd1c",
+        310: "9777901c",
+        313: "dfc466f4",
+        323: "2af52a00",
+        331: "09940853",
         364: "634d6541",
-        424: "93b6550b",
-        642: "0b242dde",
-        685: "b171919e",
+        385: "bd097208",
+        419: "915bcd3c",
+        424: "887543f3",
+        435: "7c710d24",
+        463: "88b7e179",
+        467: "91c25fd5",
+        486: "9f4ac715",
+        514: "ca37126b",
+        564: "08e2fd7a",
+        636: "0e901edd",
+        660: "1bada2d7",
+        661: "23e2ad76",
+        691: "f98bbc1a",
+        709: "cbf7f7ca",
+        712: "52125d73",
+        728: "2655b3a9",
         735: "27ac6bc2",
+        777: "734aee71",
+        817: "14b80f8f",
+        868: "cfd12eac",
+        886: "53afbee5",
+        888: "7d691f23",
+        911: "eee384fd",
+        939: "9118e55e",
+        969: "0a416e7c",
+        982: "9689a724",
+        995: "ccc9c146",
       }[chunkId] +
-      ".iframe.bundle.js"),
-    (__webpack_require__.miniCssF = chunkId => "static/css/stories-TxAvatar-stories.ad7b064c.chunk.css"),
+      ".iframe.bundle.js")),
+    (__webpack_require__.miniCssF = chunkId =>
+      "static/css/" +
+      {
+        114: "stories-TxColorPicker-stories",
+        162: "stories-TxInputNumber-stories",
+        163: "stories-TxButton-stories",
+        216: "stories-TxRadio-stories",
+        281: "stories-TxDatePicker-stories",
+        424: "stories-TxAvatar-stories",
+        463: "stories-TxTabs-stories",
+        514: "stories-TxMenu-stories",
+        660: "stories-TxCheckbox-stories",
+        661: "stories-TxForm-stories",
+        709: "stories-TxLoading-stories",
+        712: "stories-TxAnchor-stories",
+        728: "stories-TxBreadcrumb-stories",
+        777: "stories-TxTag-stories",
+        911: "stories-TxSelect-stories",
+        939: "stories-TxPagination-stories",
+      }[chunkId] +
+      "." +
+      {
+        114: "4549d3d8",
+        162: "4549d3d8",
+        163: "4549d3d8",
+        216: "4549d3d8",
+        281: "4549d3d8",
+        424: "4549d3d8",
+        463: "4549d3d8",
+        514: "4549d3d8",
+        660: "4549d3d8",
+        661: "4549d3d8",
+        709: "4549d3d8",
+        712: "4549d3d8",
+        728: "4549d3d8",
+        777: "4549d3d8",
+        911: "4549d3d8",
+        939: "4549d3d8",
+      }[chunkId] +
+      ".chunk.css"),
     (__webpack_require__.g = (function () {
       if ("object" == typeof globalThis) return globalThis;
       try {
@@ -222,7 +320,24 @@
           installedCssChunks[chunkId]
             ? promises.push(installedCssChunks[chunkId])
             : 0 !== installedCssChunks[chunkId] &&
-              { 424: 1 }[chunkId] &&
+              {
+                114: 1,
+                162: 1,
+                163: 1,
+                216: 1,
+                281: 1,
+                424: 1,
+                463: 1,
+                514: 1,
+                660: 1,
+                661: 1,
+                709: 1,
+                712: 1,
+                728: 1,
+                777: 1,
+                911: 1,
+                939: 1,
+              }[chunkId] &&
               promises.push(
                 (installedCssChunks[chunkId] = loadStylesheet(chunkId).then(
                   () => {
@@ -242,7 +357,7 @@
         var installedChunkData = __webpack_require__.o(installedChunks, chunkId) ? installedChunks[chunkId] : void 0;
         if (0 !== installedChunkData)
           if (installedChunkData) promises.push(installedChunkData[2]);
-          else if (/^(35|42)4$/.test(chunkId)) installedChunks[chunkId] = 0;
+          else if (/^(354|661)$/.test(chunkId)) installedChunks[chunkId] = 0;
           else {
             var promise = new Promise(
               (resolve, reject) => (installedChunkData = installedChunks[chunkId] = [resolve, reject])

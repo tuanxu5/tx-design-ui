@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../../theme/colors";
+import colors from "../../theme/colors";
 
 export const SwitchWrapper = styled.label`
   display: inline-flex;
@@ -40,7 +40,7 @@ export const SwitchSlider = styled.span`
 
 export const SwitchLabel = styled.span`
   font-size: 14px;
-  color: ${colors.text.primary};
+  color: ${colors.textPrimary};
   user-select: none;
   font-weight: 400;
 `;

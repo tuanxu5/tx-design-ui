@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../../theme/colors";
+import colors from "../../theme/colors";
 
 export const SliderWrapper = styled.div`
   display: flex;
@@ -22,7 +22,7 @@ export const SliderTrack = styled.div`
   position: absolute;
   width: 100%;
   height: 4px;
-  background-color: ${colors.background.secondary};
+  background-color: ${colors.bgFillLight};
   border-radius: 2px;
 `;
 
@@ -77,7 +77,7 @@ export const SliderInput = styled.input`
 export const SliderValue = styled.div`
   min-width: 40px;
   font-size: 14px;
-  color: ${colors.text.primary};
+  color: ${colors.textPrimary};
   text-align: center;
   font-weight: 400;
 `;
@@ -93,7 +93,7 @@ export const SliderMark = styled.div`
   left: ${props => props.percent}%;
   transform: translateX(-50%);
   font-size: 12px;
-  color: ${colors.text.secondary};
+  color: ${colors.textSecondary};
   white-space: nowrap;
 
   &::before {
@@ -104,6 +104,6 @@ export const SliderMark = styled.div`
     transform: translateX(-50%);
     width: 2px;
     height: 4px;
-    background-color: ${colors.border.default};
+    background-color: ${colors.borderDefault};
   }
 `;

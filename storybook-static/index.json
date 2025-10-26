@@ -1,166 +1,2147 @@
 {
   "v": 5,
   "entries": {
-    "tx-design-ui-txavatar--docs": {
-      "id": "tx-design-ui-txavatar--docs",
-      "title": "tx-design-ui/TxAvatar",
+    "tx-design-ui-foundation-icons--docs": {
+      "id": "tx-design-ui-foundation-icons--docs",
+      "title": "tx-design-ui/Foundation/Icons",
+      "name": "Docs",
+      "importPath": "./src/stories/IconLibrary.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-foundation-icons--all-icons": {
+      "type": "story",
+      "id": "tx-design-ui-foundation-icons--all-icons",
+      "name": "All Icons",
+      "title": "tx-design-ui/Foundation/Icons",
+      "importPath": "./src/stories/IconLibrary.stories.js",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-foundation-icons--usage": {
+      "type": "story",
+      "id": "tx-design-ui-foundation-icons--usage",
+      "name": "Usage",
+      "title": "tx-design-ui/Foundation/Icons",
+      "importPath": "./src/stories/IconLibrary.stories.js",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txanchor--docs": {
+      "id": "tx-design-ui-navigation-txanchor--docs",
+      "title": "tx-design-ui/Navigation/TxAnchor",
+      "name": "Docs",
+      "importPath": "./src/stories/TxAnchor.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-navigation-txanchor--preview": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txanchor--preview",
+      "name": "Preview",
+      "title": "tx-design-ui/Navigation/TxAnchor",
+      "importPath": "./src/stories/TxAnchor.stories.js",
+      "componentPath": "./src/components/tx-anchor/tx-anchor.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txanchor--basic-usage": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txanchor--basic-usage",
+      "name": "Basic Usage",
+      "title": "tx-design-ui/Navigation/TxAnchor",
+      "importPath": "./src/stories/TxAnchor.stories.js",
+      "componentPath": "./src/components/tx-anchor/tx-anchor.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txavatar--docs": {
+      "id": "tx-design-ui-data-display-txavatar--docs",
+      "title": "tx-design-ui/Data Display/TxAvatar",
       "name": "Docs",
       "importPath": "./src/stories/TxAvatar.stories.js",
       "type": "docs",
       "tags": ["dev", "test", "autodocs"],
       "storiesImports": []
     },
-    "tx-design-ui-txavatar--preview-avatar": {
+    "tx-design-ui-data-display-txavatar--preview-avatar": {
       "type": "story",
-      "id": "tx-design-ui-txavatar--preview-avatar",
+      "id": "tx-design-ui-data-display-txavatar--preview-avatar",
       "name": "Preview Avatar",
-      "title": "tx-design-ui/TxAvatar",
+      "title": "tx-design-ui/Data Display/TxAvatar",
       "importPath": "./src/stories/TxAvatar.stories.js",
       "componentPath": "./src/components",
       "tags": ["dev", "test", "autodocs"]
     },
-    "tx-design-ui-txavatar--size": {
+    "tx-design-ui-data-display-txavatar--size": {
       "type": "story",
-      "id": "tx-design-ui-txavatar--size",
+      "id": "tx-design-ui-data-display-txavatar--size",
       "name": "Size",
-      "title": "tx-design-ui/TxAvatar",
+      "title": "tx-design-ui/Data Display/TxAvatar",
       "importPath": "./src/stories/TxAvatar.stories.js",
       "componentPath": "./src/components",
       "tags": ["dev", "test", "autodocs"]
     },
-    "tx-design-ui-txavatar--shape": {
+    "tx-design-ui-data-display-txavatar--shape": {
       "type": "story",
-      "id": "tx-design-ui-txavatar--shape",
+      "id": "tx-design-ui-data-display-txavatar--shape",
       "name": "Shape",
-      "title": "tx-design-ui/TxAvatar",
+      "title": "tx-design-ui/Data Display/TxAvatar",
       "importPath": "./src/stories/TxAvatar.stories.js",
       "componentPath": "./src/components",
       "tags": ["dev", "test", "autodocs"]
     },
-    "tx-design-ui-txavatar--icon": {
+    "tx-design-ui-data-display-txavatar--icon": {
       "type": "story",
-      "id": "tx-design-ui-txavatar--icon",
+      "id": "tx-design-ui-data-display-txavatar--icon",
       "name": "Icon",
-      "title": "tx-design-ui/TxAvatar",
+      "title": "tx-design-ui/Data Display/TxAvatar",
       "importPath": "./src/stories/TxAvatar.stories.js",
       "componentPath": "./src/components",
       "tags": ["dev", "test", "autodocs"]
     },
-    "tx-design-ui-txavatar--url": {
+    "tx-design-ui-data-display-txavatar--url": {
       "type": "story",
-      "id": "tx-design-ui-txavatar--url",
+      "id": "tx-design-ui-data-display-txavatar--url",
       "name": "Url",
-      "title": "tx-design-ui/TxAvatar",
+      "title": "tx-design-ui/Data Display/TxAvatar",
       "importPath": "./src/stories/TxAvatar.stories.js",
       "componentPath": "./src/components",
       "tags": ["dev", "test", "autodocs"]
     },
-    "tx-design-ui-txavatar--badge": {
+    "tx-design-ui-data-display-txavatar--badge": {
       "type": "story",
-      "id": "tx-design-ui-txavatar--badge",
+      "id": "tx-design-ui-data-display-txavatar--badge",
       "name": "Badge",
-      "title": "tx-design-ui/TxAvatar",
+      "title": "tx-design-ui/Data Display/TxAvatar",
       "importPath": "./src/stories/TxAvatar.stories.js",
       "componentPath": "./src/components",
       "tags": ["dev", "test", "autodocs"]
     },
-    "tx-design-ui-txavatar--group": {
+    "tx-design-ui-data-display-txavatar--group": {
       "type": "story",
-      "id": "tx-design-ui-txavatar--group",
+      "id": "tx-design-ui-data-display-txavatar--group",
       "name": "Group",
-      "title": "tx-design-ui/TxAvatar",
+      "title": "tx-design-ui/Data Display/TxAvatar",
       "importPath": "./src/stories/TxAvatar.stories.js",
       "componentPath": "./src/components",
       "tags": ["dev", "test", "autodocs"]
     },
-    "tx-design-ui-txbutton--docs": {
-      "id": "tx-design-ui-txbutton--docs",
-      "title": "tx-design-ui/TxButton",
+    "tx-design-ui-data-display-txbadge--docs": {
+      "id": "tx-design-ui-data-display-txbadge--docs",
+      "title": "tx-design-ui/Data Display/TxBadge",
+      "name": "Docs",
+      "importPath": "./src/stories/TxBadge.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-data-display-txbadge--basic": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txbadge--basic",
+      "name": "Basic",
+      "title": "tx-design-ui/Data Display/TxBadge",
+      "importPath": "./src/stories/TxBadge.stories.js",
+      "componentPath": "./src/components/tx-badge/tx-badge.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txbadge--overflow-count": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txbadge--overflow-count",
+      "name": "Overflow Count",
+      "title": "tx-design-ui/Data Display/TxBadge",
+      "importPath": "./src/stories/TxBadge.stories.js",
+      "componentPath": "./src/components/tx-badge/tx-badge.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txbadge--dot": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txbadge--dot",
+      "name": "Dot",
+      "title": "tx-design-ui/Data Display/TxBadge",
+      "importPath": "./src/stories/TxBadge.stories.js",
+      "componentPath": "./src/components/tx-badge/tx-badge.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txbadge--status": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txbadge--status",
+      "name": "Status",
+      "title": "tx-design-ui/Data Display/TxBadge",
+      "importPath": "./src/stories/TxBadge.stories.js",
+      "componentPath": "./src/components/tx-badge/tx-badge.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txbadge--standalone": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txbadge--standalone",
+      "name": "Standalone",
+      "title": "tx-design-ui/Data Display/TxBadge",
+      "importPath": "./src/stories/TxBadge.stories.js",
+      "componentPath": "./src/components/tx-badge/tx-badge.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txbadge--ribbon": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txbadge--ribbon",
+      "name": "Ribbon",
+      "title": "tx-design-ui/Data Display/TxBadge",
+      "importPath": "./src/stories/TxBadge.stories.js",
+      "componentPath": "./src/components/tx-badge/tx-badge.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txbadge--ribbon-status": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txbadge--ribbon-status",
+      "name": "Ribbon Status",
+      "title": "tx-design-ui/Data Display/TxBadge",
+      "importPath": "./src/stories/TxBadge.stories.js",
+      "componentPath": "./src/components/tx-badge/tx-badge.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txbreadcrumb--docs": {
+      "id": "tx-design-ui-navigation-txbreadcrumb--docs",
+      "title": "tx-design-ui/Navigation/TxBreadcrumb",
+      "name": "Docs",
+      "importPath": "./src/stories/TxBreadcrumb.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-navigation-txbreadcrumb--preview": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txbreadcrumb--preview",
+      "name": "Preview",
+      "title": "tx-design-ui/Navigation/TxBreadcrumb",
+      "importPath": "./src/stories/TxBreadcrumb.stories.js",
+      "componentPath": "./src/components/tx-breadcrumb/tx-breadcrumb.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txbreadcrumb--basic-usage": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txbreadcrumb--basic-usage",
+      "name": "Basic Usage",
+      "title": "tx-design-ui/Navigation/TxBreadcrumb",
+      "importPath": "./src/stories/TxBreadcrumb.stories.js",
+      "componentPath": "./src/components/tx-breadcrumb/tx-breadcrumb.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txbreadcrumb--custom-separator": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txbreadcrumb--custom-separator",
+      "name": "Custom Separator",
+      "title": "tx-design-ui/Navigation/TxBreadcrumb",
+      "importPath": "./src/stories/TxBreadcrumb.stories.js",
+      "componentPath": "./src/components/tx-breadcrumb/tx-breadcrumb.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txbreadcrumb--without-links": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txbreadcrumb--without-links",
+      "name": "Without Links",
+      "title": "tx-design-ui/Navigation/TxBreadcrumb",
+      "importPath": "./src/stories/TxBreadcrumb.stories.js",
+      "componentPath": "./src/components/tx-breadcrumb/tx-breadcrumb.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txbutton--docs": {
+      "id": "tx-design-ui-data-entry-txbutton--docs",
+      "title": "tx-design-ui/Data Entry/TxButton",
       "name": "Docs",
       "importPath": "./src/stories/TxButton.stories.js",
       "type": "docs",
       "tags": ["dev", "test", "autodocs"],
       "storiesImports": []
     },
-    "tx-design-ui-txbutton--preview-button": {
+    "tx-design-ui-data-entry-txbutton--preview-button": {
       "type": "story",
-      "id": "tx-design-ui-txbutton--preview-button",
+      "id": "tx-design-ui-data-entry-txbutton--preview-button",
       "name": "Preview Button",
-      "title": "tx-design-ui/TxButton",
+      "title": "tx-design-ui/Data Entry/TxButton",
       "importPath": "./src/stories/TxButton.stories.js",
       "componentPath": "./src/components",
       "tags": ["dev", "test", "autodocs"]
     },
-    "tx-design-ui-txbutton--type": {
+    "tx-design-ui-data-entry-txbutton--type": {
       "type": "story",
-      "id": "tx-design-ui-txbutton--type",
+      "id": "tx-design-ui-data-entry-txbutton--type",
       "name": "Type",
-      "title": "tx-design-ui/TxButton",
+      "title": "tx-design-ui/Data Entry/TxButton",
       "importPath": "./src/stories/TxButton.stories.js",
       "componentPath": "./src/components",
       "tags": ["dev", "test", "autodocs"]
     },
-    "tx-design-ui-txbutton--disabled": {
+    "tx-design-ui-data-entry-txbutton--disabled": {
       "type": "story",
-      "id": "tx-design-ui-txbutton--disabled",
+      "id": "tx-design-ui-data-entry-txbutton--disabled",
       "name": "Disabled",
-      "title": "tx-design-ui/TxButton",
+      "title": "tx-design-ui/Data Entry/TxButton",
       "importPath": "./src/stories/TxButton.stories.js",
       "componentPath": "./src/components",
       "tags": ["dev", "test", "autodocs"]
     },
-    "tx-design-ui-txbutton--loading": {
+    "tx-design-ui-data-entry-txbutton--loading": {
       "type": "story",
-      "id": "tx-design-ui-txbutton--loading",
+      "id": "tx-design-ui-data-entry-txbutton--loading",
       "name": "Loading",
-      "title": "tx-design-ui/TxButton",
+      "title": "tx-design-ui/Data Entry/TxButton",
       "importPath": "./src/stories/TxButton.stories.js",
       "componentPath": "./src/components",
       "tags": ["dev", "test", "autodocs"]
     },
-    "tx-design-ui-txbutton--danger": {
+    "tx-design-ui-data-entry-txbutton--danger": {
       "type": "story",
-      "id": "tx-design-ui-txbutton--danger",
+      "id": "tx-design-ui-data-entry-txbutton--danger",
       "name": "Danger",
-      "title": "tx-design-ui/TxButton",
+      "title": "tx-design-ui/Data Entry/TxButton",
       "importPath": "./src/stories/TxButton.stories.js",
       "componentPath": "./src/components",
       "tags": ["dev", "test", "autodocs"]
     },
-    "tx-design-ui-txbutton--size": {
+    "tx-design-ui-data-entry-txbutton--size": {
       "type": "story",
-      "id": "tx-design-ui-txbutton--size",
+      "id": "tx-design-ui-data-entry-txbutton--size",
       "name": "Size",
-      "title": "tx-design-ui/TxButton",
+      "title": "tx-design-ui/Data Entry/TxButton",
       "importPath": "./src/stories/TxButton.stories.js",
       "componentPath": "./src/components",
       "tags": ["dev", "test", "autodocs"]
     },
-    "tx-design-ui-txbutton--icon": {
+    "tx-design-ui-data-entry-txbutton--icon": {
       "type": "story",
-      "id": "tx-design-ui-txbutton--icon",
+      "id": "tx-design-ui-data-entry-txbutton--icon",
       "name": "Icon",
-      "title": "tx-design-ui/TxButton",
+      "title": "tx-design-ui/Data Entry/TxButton",
       "importPath": "./src/stories/TxButton.stories.js",
       "componentPath": "./src/components",
       "tags": ["dev", "test", "autodocs"]
     },
-    "tx-design-ui-txbutton--shape": {
+    "tx-design-ui-data-entry-txbutton--shape": {
       "type": "story",
-      "id": "tx-design-ui-txbutton--shape",
+      "id": "tx-design-ui-data-entry-txbutton--shape",
       "name": "Shape",
-      "title": "tx-design-ui/TxButton",
+      "title": "tx-design-ui/Data Entry/TxButton",
       "importPath": "./src/stories/TxButton.stories.js",
       "componentPath": "./src/components",
       "tags": ["dev", "test", "autodocs"]
     },
-    "tx-design-ui-txbutton--gradient-background": {
+    "tx-design-ui-data-entry-txbutton--gradient-background": {
       "type": "story",
-      "id": "tx-design-ui-txbutton--gradient-background",
+      "id": "tx-design-ui-data-entry-txbutton--gradient-background",
       "name": "Gradient Background",
-      "title": "tx-design-ui/TxButton",
+      "title": "tx-design-ui/Data Entry/TxButton",
       "importPath": "./src/stories/TxButton.stories.js",
       "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txcarousel--docs": {
+      "id": "tx-design-ui-data-display-txcarousel--docs",
+      "title": "tx-design-ui/Data Display/TxCarousel",
+      "name": "Docs",
+      "importPath": "./src/stories/TxCarousel.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-data-display-txcarousel--basic": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txcarousel--basic",
+      "name": "Basic",
+      "title": "tx-design-ui/Data Display/TxCarousel",
+      "importPath": "./src/stories/TxCarousel.stories.js",
+      "componentPath": "./src/components/tx-carousel/tx-carousel.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txcarousel--autoplay": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txcarousel--autoplay",
+      "name": "Autoplay",
+      "title": "tx-design-ui/Data Display/TxCarousel",
+      "importPath": "./src/stories/TxCarousel.stories.js",
+      "componentPath": "./src/components/tx-carousel/tx-carousel.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txcarousel--with-counter": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txcarousel--with-counter",
+      "name": "With Counter",
+      "title": "tx-design-ui/Data Display/TxCarousel",
+      "importPath": "./src/stories/TxCarousel.stories.js",
+      "componentPath": "./src/components/tx-carousel/tx-carousel.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txcarousel--no-dots": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txcarousel--no-dots",
+      "name": "No Dots",
+      "title": "tx-design-ui/Data Display/TxCarousel",
+      "importPath": "./src/stories/TxCarousel.stories.js",
+      "componentPath": "./src/components/tx-carousel/tx-carousel.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txcarousel--no-arrows": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txcarousel--no-arrows",
+      "name": "No Arrows",
+      "title": "tx-design-ui/Data Display/TxCarousel",
+      "importPath": "./src/stories/TxCarousel.stories.js",
+      "componentPath": "./src/components/tx-carousel/tx-carousel.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txcarousel--not-infinite": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txcarousel--not-infinite",
+      "name": "Not Infinite",
+      "title": "tx-design-ui/Data Display/TxCarousel",
+      "importPath": "./src/stories/TxCarousel.stories.js",
+      "componentPath": "./src/components/tx-carousel/tx-carousel.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txcarousel--custom-height": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txcarousel--custom-height",
+      "name": "Custom Height",
+      "title": "tx-design-ui/Data Display/TxCarousel",
+      "importPath": "./src/stories/TxCarousel.stories.js",
+      "componentPath": "./src/components/tx-carousel/tx-carousel.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txcarousel--with-images": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txcarousel--with-images",
+      "name": "With Images",
+      "title": "tx-design-ui/Data Display/TxCarousel",
+      "importPath": "./src/stories/TxCarousel.stories.js",
+      "componentPath": "./src/components/tx-carousel/tx-carousel.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txcarousel--with-content": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txcarousel--with-content",
+      "name": "With Content",
+      "title": "tx-design-ui/Data Display/TxCarousel",
+      "importPath": "./src/stories/TxCarousel.stories.js",
+      "componentPath": "./src/components/tx-carousel/tx-carousel.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txcheckbox--docs": {
+      "id": "tx-design-ui-data-entry-txcheckbox--docs",
+      "title": "tx-design-ui/Data Entry/TxCheckbox",
+      "name": "Docs",
+      "importPath": "./src/stories/TxCheckbox.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-data-entry-txcheckbox--preview-checkbox": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txcheckbox--preview-checkbox",
+      "name": "Preview Checkbox",
+      "title": "tx-design-ui/Data Entry/TxCheckbox",
+      "importPath": "./src/stories/TxCheckbox.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txcheckbox--basic-usage": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txcheckbox--basic-usage",
+      "name": "Basic Usage",
+      "title": "tx-design-ui/Data Entry/TxCheckbox",
+      "importPath": "./src/stories/TxCheckbox.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txcheckbox--disabled": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txcheckbox--disabled",
+      "name": "Disabled",
+      "title": "tx-design-ui/Data Entry/TxCheckbox",
+      "importPath": "./src/stories/TxCheckbox.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txcheckbox--size": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txcheckbox--size",
+      "name": "Size",
+      "title": "tx-design-ui/Data Entry/TxCheckbox",
+      "importPath": "./src/stories/TxCheckbox.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txcheckbox--danger": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txcheckbox--danger",
+      "name": "Danger",
+      "title": "tx-design-ui/Data Entry/TxCheckbox",
+      "importPath": "./src/stories/TxCheckbox.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txcheckbox--indeterminate": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txcheckbox--indeterminate",
+      "name": "Indeterminate",
+      "title": "tx-design-ui/Data Entry/TxCheckbox",
+      "importPath": "./src/stories/TxCheckbox.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txcheckbox--checkbox-group": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txcheckbox--checkbox-group",
+      "name": "Checkbox Group",
+      "title": "tx-design-ui/Data Entry/TxCheckbox",
+      "importPath": "./src/stories/TxCheckbox.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-txcolorpicker--docs": {
+      "id": "tx-design-ui-txcolorpicker--docs",
+      "title": "tx-design-ui/TxColorPicker",
+      "name": "Docs",
+      "importPath": "./src/stories/TxColorPicker.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-txcolorpicker--preview-color-picker": {
+      "type": "story",
+      "id": "tx-design-ui-txcolorpicker--preview-color-picker",
+      "name": "Preview Color Picker",
+      "title": "tx-design-ui/TxColorPicker",
+      "importPath": "./src/stories/TxColorPicker.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-txcolorpicker--size": {
+      "type": "story",
+      "id": "tx-design-ui-txcolorpicker--size",
+      "name": "Size",
+      "title": "tx-design-ui/TxColorPicker",
+      "importPath": "./src/stories/TxColorPicker.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-txcolorpicker--with-label": {
+      "type": "story",
+      "id": "tx-design-ui-txcolorpicker--with-label",
+      "name": "With Label",
+      "title": "tx-design-ui/TxColorPicker",
+      "importPath": "./src/stories/TxColorPicker.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-txcolorpicker--without-input": {
+      "type": "story",
+      "id": "tx-design-ui-txcolorpicker--without-input",
+      "name": "Without Input",
+      "title": "tx-design-ui/TxColorPicker",
+      "importPath": "./src/stories/TxColorPicker.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-txcolorpicker--with-presets": {
+      "type": "story",
+      "id": "tx-design-ui-txcolorpicker--with-presets",
+      "name": "With Presets",
+      "title": "tx-design-ui/TxColorPicker",
+      "importPath": "./src/stories/TxColorPicker.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-txcolorpicker--disabled": {
+      "type": "story",
+      "id": "tx-design-ui-txcolorpicker--disabled",
+      "name": "Disabled",
+      "title": "tx-design-ui/TxColorPicker",
+      "importPath": "./src/stories/TxColorPicker.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-txcolorpicker--custom-presets": {
+      "type": "story",
+      "id": "tx-design-ui-txcolorpicker--custom-presets",
+      "name": "Custom Presets",
+      "title": "tx-design-ui/TxColorPicker",
+      "importPath": "./src/stories/TxColorPicker.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-txdatepicker--docs": {
+      "id": "tx-design-ui-txdatepicker--docs",
+      "title": "tx-design-ui/TxDatePicker",
+      "name": "Docs",
+      "importPath": "./src/stories/TxDatePicker.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-txdatepicker--preview-date-picker": {
+      "type": "story",
+      "id": "tx-design-ui-txdatepicker--preview-date-picker",
+      "name": "Preview Date Picker",
+      "title": "tx-design-ui/TxDatePicker",
+      "importPath": "./src/stories/TxDatePicker.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-txdatepicker--size": {
+      "type": "story",
+      "id": "tx-design-ui-txdatepicker--size",
+      "name": "Size",
+      "title": "tx-design-ui/TxDatePicker",
+      "importPath": "./src/stories/TxDatePicker.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-txdatepicker--type": {
+      "type": "story",
+      "id": "tx-design-ui-txdatepicker--type",
+      "name": "Type",
+      "title": "tx-design-ui/TxDatePicker",
+      "importPath": "./src/stories/TxDatePicker.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-txdatepicker--min-max": {
+      "type": "story",
+      "id": "tx-design-ui-txdatepicker--min-max",
+      "name": "Min Max",
+      "title": "tx-design-ui/TxDatePicker",
+      "importPath": "./src/stories/TxDatePicker.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-txdatepicker--disabled": {
+      "type": "story",
+      "id": "tx-design-ui-txdatepicker--disabled",
+      "name": "Disabled",
+      "title": "tx-design-ui/TxDatePicker",
+      "importPath": "./src/stories/TxDatePicker.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-txdatepicker--status": {
+      "type": "story",
+      "id": "tx-design-ui-txdatepicker--status",
+      "name": "Status",
+      "title": "tx-design-ui/TxDatePicker",
+      "importPath": "./src/stories/TxDatePicker.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-txdatepicker--full-width": {
+      "type": "story",
+      "id": "tx-design-ui-txdatepicker--full-width",
+      "name": "Full Width",
+      "title": "tx-design-ui/TxDatePicker",
+      "importPath": "./src/stories/TxDatePicker.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txdrawer--docs": {
+      "id": "tx-design-ui-feedback-txdrawer--docs",
+      "title": "tx-design-ui/Feedback/TxDrawer",
+      "name": "Docs",
+      "importPath": "./src/stories/TxDrawer.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-feedback-txdrawer--preview": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txdrawer--preview",
+      "name": "Preview",
+      "title": "tx-design-ui/Feedback/TxDrawer",
+      "importPath": "./src/stories/TxDrawer.stories.js",
+      "componentPath": "./src/components/tx-drawer/tx-drawer.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txdrawer--basic-usage": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txdrawer--basic-usage",
+      "name": "Basic Usage",
+      "title": "tx-design-ui/Feedback/TxDrawer",
+      "importPath": "./src/stories/TxDrawer.stories.js",
+      "componentPath": "./src/components/tx-drawer/tx-drawer.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txdrawer--placements": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txdrawer--placements",
+      "name": "Placements",
+      "title": "tx-design-ui/Feedback/TxDrawer",
+      "importPath": "./src/stories/TxDrawer.stories.js",
+      "componentPath": "./src/components/tx-drawer/tx-drawer.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txdrawer--with-footer": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txdrawer--with-footer",
+      "name": "With Footer",
+      "title": "tx-design-ui/Feedback/TxDrawer",
+      "importPath": "./src/stories/TxDrawer.stories.js",
+      "componentPath": "./src/components/tx-drawer/tx-drawer.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txdrawer--custom-size": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txdrawer--custom-size",
+      "name": "Custom Size",
+      "title": "tx-design-ui/Feedback/TxDrawer",
+      "importPath": "./src/stories/TxDrawer.stories.js",
+      "componentPath": "./src/components/tx-drawer/tx-drawer.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txdropdown--docs": {
+      "id": "tx-design-ui-navigation-txdropdown--docs",
+      "title": "tx-design-ui/Navigation/TxDropdown",
+      "name": "Docs",
+      "importPath": "./src/stories/TxDropdown.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-navigation-txdropdown--preview": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txdropdown--preview",
+      "name": "Preview",
+      "title": "tx-design-ui/Navigation/TxDropdown",
+      "importPath": "./src/stories/TxDropdown.stories.js",
+      "componentPath": "./src/components/tx-dropdown/tx-dropdown.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txdropdown--basic-usage": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txdropdown--basic-usage",
+      "name": "Basic Usage",
+      "title": "tx-design-ui/Navigation/TxDropdown",
+      "importPath": "./src/stories/TxDropdown.stories.js",
+      "componentPath": "./src/components/tx-dropdown/tx-dropdown.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txdropdown--click-trigger": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txdropdown--click-trigger",
+      "name": "Click Trigger",
+      "title": "tx-design-ui/Navigation/TxDropdown",
+      "importPath": "./src/stories/TxDropdown.stories.js",
+      "componentPath": "./src/components/tx-dropdown/tx-dropdown.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txdropdown--with-divider": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txdropdown--with-divider",
+      "name": "With Divider",
+      "title": "tx-design-ui/Navigation/TxDropdown",
+      "importPath": "./src/stories/TxDropdown.stories.js",
+      "componentPath": "./src/components/tx-dropdown/tx-dropdown.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txdropdown--with-danger": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txdropdown--with-danger",
+      "name": "With Danger",
+      "title": "tx-design-ui/Navigation/TxDropdown",
+      "importPath": "./src/stories/TxDropdown.stories.js",
+      "componentPath": "./src/components/tx-dropdown/tx-dropdown.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txdropdown--placements": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txdropdown--placements",
+      "name": "Placements",
+      "title": "tx-design-ui/Navigation/TxDropdown",
+      "importPath": "./src/stories/TxDropdown.stories.js",
+      "componentPath": "./src/components/tx-dropdown/tx-dropdown.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txform--docs": {
+      "id": "tx-design-ui-data-entry-txform--docs",
+      "title": "tx-design-ui/Data Entry/TxForm",
+      "name": "Docs",
+      "importPath": "./src/stories/TxForm.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-data-entry-txform--basic": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txform--basic",
+      "name": "Basic",
+      "title": "tx-design-ui/Data Entry/TxForm",
+      "importPath": "./src/stories/TxForm.stories.js",
+      "componentPath": "./src/components/tx-form/tx-form.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txform--horizontal-layout": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txform--horizontal-layout",
+      "name": "Horizontal Layout",
+      "title": "tx-design-ui/Data Entry/TxForm",
+      "importPath": "./src/stories/TxForm.stories.js",
+      "componentPath": "./src/components/tx-form/tx-form.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txform--with-validation": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txform--with-validation",
+      "name": "With Validation",
+      "title": "tx-design-ui/Data Entry/TxForm",
+      "importPath": "./src/stories/TxForm.stories.js",
+      "componentPath": "./src/components/tx-form/tx-form.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txform--complete-form": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txform--complete-form",
+      "name": "Complete Form",
+      "title": "tx-design-ui/Data Entry/TxForm",
+      "importPath": "./src/stories/TxForm.stories.js",
+      "componentPath": "./src/components/tx-form/tx-form.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txinput--docs": {
+      "id": "tx-design-ui-data-entry-txinput--docs",
+      "title": "tx-design-ui/Data Entry/TxInput",
+      "name": "Docs",
+      "importPath": "./src/stories/TxInput.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-data-entry-txinput--default": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txinput--default",
+      "name": "Default",
+      "title": "tx-design-ui/Data Entry/TxInput",
+      "importPath": "./src/stories/TxInput.stories.js",
+      "componentPath": "./src/components/tx-input/tx-input.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txinput--sizes": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txinput--sizes",
+      "name": "Sizes",
+      "title": "tx-design-ui/Data Entry/TxInput",
+      "importPath": "./src/stories/TxInput.stories.js",
+      "componentPath": "./src/components/tx-input/tx-input.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txinput--fill-variants": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txinput--fill-variants",
+      "name": "Fill Variants",
+      "title": "tx-design-ui/Data Entry/TxInput",
+      "importPath": "./src/stories/TxInput.stories.js",
+      "componentPath": "./src/components/tx-input/tx-input.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txinput--clear-input": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txinput--clear-input",
+      "name": "Clear Input",
+      "title": "tx-design-ui/Data Entry/TxInput",
+      "importPath": "./src/stories/TxInput.stories.js",
+      "componentPath": "./src/components/tx-input/tx-input.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txinput--status-states": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txinput--status-states",
+      "name": "Status States",
+      "title": "tx-design-ui/Data Entry/TxInput",
+      "importPath": "./src/stories/TxInput.stories.js",
+      "componentPath": "./src/components/tx-input/tx-input.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txinput--password-input": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txinput--password-input",
+      "name": "Password Input",
+      "title": "tx-design-ui/Data Entry/TxInput",
+      "importPath": "./src/stories/TxInput.stories.js",
+      "componentPath": "./src/components/tx-input/tx-input.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txinput--disabled-state": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txinput--disabled-state",
+      "name": "Disabled State",
+      "title": "tx-design-ui/Data Entry/TxInput",
+      "importPath": "./src/stories/TxInput.stories.js",
+      "componentPath": "./src/components/tx-input/tx-input.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txinput--prefix-suffix": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txinput--prefix-suffix",
+      "name": "Prefix Suffix",
+      "title": "tx-design-ui/Data Entry/TxInput",
+      "importPath": "./src/stories/TxInput.stories.js",
+      "componentPath": "./src/components/tx-input/tx-input.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txinput--max-length": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txinput--max-length",
+      "name": "Max Length",
+      "title": "tx-design-ui/Data Entry/TxInput",
+      "importPath": "./src/stories/TxInput.stories.js",
+      "componentPath": "./src/components/tx-input/tx-input.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txinput--combined-features": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txinput--combined-features",
+      "name": "Combined Features",
+      "title": "tx-design-ui/Data Entry/TxInput",
+      "importPath": "./src/stories/TxInput.stories.js",
+      "componentPath": "./src/components/tx-input/tx-input.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txinputnumber--docs": {
+      "id": "tx-design-ui-data-entry-txinputnumber--docs",
+      "title": "tx-design-ui/Data Entry/TxInputNumber",
+      "name": "Docs",
+      "importPath": "./src/stories/TxInputNumber.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-data-entry-txinputnumber--preview-input-number": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txinputnumber--preview-input-number",
+      "name": "Preview Input Number",
+      "title": "tx-design-ui/Data Entry/TxInputNumber",
+      "importPath": "./src/stories/TxInputNumber.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txinputnumber--size": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txinputnumber--size",
+      "name": "Size",
+      "title": "tx-design-ui/Data Entry/TxInputNumber",
+      "importPath": "./src/stories/TxInputNumber.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txinputnumber--min-max": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txinputnumber--min-max",
+      "name": "Min Max",
+      "title": "tx-design-ui/Data Entry/TxInputNumber",
+      "importPath": "./src/stories/TxInputNumber.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txinputnumber--step": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txinputnumber--step",
+      "name": "Step",
+      "title": "tx-design-ui/Data Entry/TxInputNumber",
+      "importPath": "./src/stories/TxInputNumber.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txinputnumber--disabled": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txinputnumber--disabled",
+      "name": "Disabled",
+      "title": "tx-design-ui/Data Entry/TxInputNumber",
+      "importPath": "./src/stories/TxInputNumber.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txinputnumber--status": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txinputnumber--status",
+      "name": "Status",
+      "title": "tx-design-ui/Data Entry/TxInputNumber",
+      "importPath": "./src/stories/TxInputNumber.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txinputnumber--full-width": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txinputnumber--full-width",
+      "name": "Full Width",
+      "title": "tx-design-ui/Data Entry/TxInputNumber",
+      "importPath": "./src/stories/TxInputNumber.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txloading--docs": {
+      "id": "tx-design-ui-feedback-txloading--docs",
+      "title": "tx-design-ui/Feedback/TxLoading",
+      "name": "Docs",
+      "importPath": "./src/stories/TxLoading.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-feedback-txloading--preview": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txloading--preview",
+      "name": "Preview",
+      "title": "tx-design-ui/Feedback/TxLoading",
+      "importPath": "./src/stories/TxLoading.stories.js",
+      "componentPath": "./src/components/tx-loading/tx-loading.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txloading--basic-usage": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txloading--basic-usage",
+      "name": "Basic Usage",
+      "title": "tx-design-ui/Feedback/TxLoading",
+      "importPath": "./src/stories/TxLoading.stories.js",
+      "componentPath": "./src/components/tx-loading/tx-loading.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txloading--with-text": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txloading--with-text",
+      "name": "With Text",
+      "title": "tx-design-ui/Feedback/TxLoading",
+      "importPath": "./src/stories/TxLoading.stories.js",
+      "componentPath": "./src/components/tx-loading/tx-loading.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txloading--sizes": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txloading--sizes",
+      "name": "Sizes",
+      "title": "tx-design-ui/Feedback/TxLoading",
+      "importPath": "./src/stories/TxLoading.stories.js",
+      "componentPath": "./src/components/tx-loading/tx-loading.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txloading--custom-colors": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txloading--custom-colors",
+      "name": "Custom Colors",
+      "title": "tx-design-ui/Feedback/TxLoading",
+      "importPath": "./src/stories/TxLoading.stories.js",
+      "componentPath": "./src/components/tx-loading/tx-loading.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txmenu--docs": {
+      "id": "tx-design-ui-navigation-txmenu--docs",
+      "title": "tx-design-ui/Navigation/TxMenu",
+      "name": "Docs",
+      "importPath": "./src/stories/TxMenu.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-navigation-txmenu--preview": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txmenu--preview",
+      "name": "Preview",
+      "title": "tx-design-ui/Navigation/TxMenu",
+      "importPath": "./src/stories/TxMenu.stories.js",
+      "componentPath": "./src/components/tx-menu/tx-menu.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txmenu--basic-usage": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txmenu--basic-usage",
+      "name": "Basic Usage",
+      "title": "tx-design-ui/Navigation/TxMenu",
+      "importPath": "./src/stories/TxMenu.stories.js",
+      "componentPath": "./src/components/tx-menu/tx-menu.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txmenu--with-submenu": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txmenu--with-submenu",
+      "name": "With Submenu",
+      "title": "tx-design-ui/Navigation/TxMenu",
+      "importPath": "./src/stories/TxMenu.stories.js",
+      "componentPath": "./src/components/tx-menu/tx-menu.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txmenu--horizontal": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txmenu--horizontal",
+      "name": "Horizontal",
+      "title": "tx-design-ui/Navigation/TxMenu",
+      "importPath": "./src/stories/TxMenu.stories.js",
+      "componentPath": "./src/components/tx-menu/tx-menu.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txmenu--interactive": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txmenu--interactive",
+      "name": "Interactive",
+      "title": "tx-design-ui/Navigation/TxMenu",
+      "importPath": "./src/stories/TxMenu.stories.js",
+      "componentPath": "./src/components/tx-menu/tx-menu.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txmessage--docs": {
+      "id": "tx-design-ui-feedback-txmessage--docs",
+      "title": "tx-design-ui/Feedback/TxMessage",
+      "name": "Docs",
+      "importPath": "./src/stories/TxMessage.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-feedback-txmessage--basic": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txmessage--basic",
+      "name": "Basic",
+      "title": "tx-design-ui/Feedback/TxMessage",
+      "importPath": "./src/stories/TxMessage.stories.js",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txmessage--with-description": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txmessage--with-description",
+      "name": "With Description",
+      "title": "tx-design-ui/Feedback/TxMessage",
+      "importPath": "./src/stories/TxMessage.stories.js",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txmessage--custom-duration": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txmessage--custom-duration",
+      "name": "Custom Duration",
+      "title": "tx-design-ui/Feedback/TxMessage",
+      "importPath": "./src/stories/TxMessage.stories.js",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txmessage--closable": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txmessage--closable",
+      "name": "Closable",
+      "title": "tx-design-ui/Feedback/TxMessage",
+      "importPath": "./src/stories/TxMessage.stories.js",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txmessage--multiple-messages": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txmessage--multiple-messages",
+      "name": "Multiple Messages",
+      "title": "tx-design-ui/Feedback/TxMessage",
+      "importPath": "./src/stories/TxMessage.stories.js",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txmessage--long-content": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txmessage--long-content",
+      "name": "Long Content",
+      "title": "tx-design-ui/Feedback/TxMessage",
+      "importPath": "./src/stories/TxMessage.stories.js",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txmodal--docs": {
+      "id": "tx-design-ui-feedback-txmodal--docs",
+      "title": "tx-design-ui/Feedback/TxModal",
+      "name": "Docs",
+      "importPath": "./src/stories/TxModal.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-feedback-txmodal--preview": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txmodal--preview",
+      "name": "Preview",
+      "title": "tx-design-ui/Feedback/TxModal",
+      "importPath": "./src/stories/TxModal.stories.js",
+      "componentPath": "./src/components/tx-modal/tx-modal.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txmodal--basic-usage": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txmodal--basic-usage",
+      "name": "Basic Usage",
+      "title": "tx-design-ui/Feedback/TxModal",
+      "importPath": "./src/stories/TxModal.stories.js",
+      "componentPath": "./src/components/tx-modal/tx-modal.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txmodal--with-footer": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txmodal--with-footer",
+      "name": "With Footer",
+      "title": "tx-design-ui/Feedback/TxModal",
+      "importPath": "./src/stories/TxModal.stories.js",
+      "componentPath": "./src/components/tx-modal/tx-modal.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txmodal--custom-width": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txmodal--custom-width",
+      "name": "Custom Width",
+      "title": "tx-design-ui/Feedback/TxModal",
+      "importPath": "./src/stories/TxModal.stories.js",
+      "componentPath": "./src/components/tx-modal/tx-modal.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txmodal--long-content": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txmodal--long-content",
+      "name": "Long Content",
+      "title": "tx-design-ui/Feedback/TxModal",
+      "importPath": "./src/stories/TxModal.stories.js",
+      "componentPath": "./src/components/tx-modal/tx-modal.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txnotification--docs": {
+      "id": "tx-design-ui-feedback-txnotification--docs",
+      "title": "tx-design-ui/Feedback/TxNotification",
+      "name": "Docs",
+      "importPath": "./src/stories/TxNotification.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-feedback-txnotification--preview": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txnotification--preview",
+      "name": "Preview",
+      "title": "tx-design-ui/Feedback/TxNotification",
+      "importPath": "./src/stories/TxNotification.stories.js",
+      "componentPath": "./src/components/tx-notification/tx-notification.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txnotification--basic-usage": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txnotification--basic-usage",
+      "name": "Basic Usage",
+      "title": "tx-design-ui/Feedback/TxNotification",
+      "importPath": "./src/stories/TxNotification.stories.js",
+      "componentPath": "./src/components/tx-notification/tx-notification.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txnotification--types": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txnotification--types",
+      "name": "Types",
+      "title": "tx-design-ui/Feedback/TxNotification",
+      "importPath": "./src/stories/TxNotification.stories.js",
+      "componentPath": "./src/components/tx-notification/tx-notification.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txnotification--without-description": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txnotification--without-description",
+      "name": "Without Description",
+      "title": "tx-design-ui/Feedback/TxNotification",
+      "importPath": "./src/stories/TxNotification.stories.js",
+      "componentPath": "./src/components/tx-notification/tx-notification.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txpagination--docs": {
+      "id": "tx-design-ui-navigation-txpagination--docs",
+      "title": "tx-design-ui/Navigation/TxPagination",
+      "name": "Docs",
+      "importPath": "./src/stories/TxPagination.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-navigation-txpagination--preview": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txpagination--preview",
+      "name": "Preview",
+      "title": "tx-design-ui/Navigation/TxPagination",
+      "importPath": "./src/stories/TxPagination.stories.js",
+      "componentPath": "./src/components/tx-pagination/tx-pagination.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txpagination--basic-usage": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txpagination--basic-usage",
+      "name": "Basic Usage",
+      "title": "tx-design-ui/Navigation/TxPagination",
+      "importPath": "./src/stories/TxPagination.stories.js",
+      "componentPath": "./src/components/tx-pagination/tx-pagination.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txpagination--sizes": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txpagination--sizes",
+      "name": "Sizes",
+      "title": "tx-design-ui/Navigation/TxPagination",
+      "importPath": "./src/stories/TxPagination.stories.js",
+      "componentPath": "./src/components/tx-pagination/tx-pagination.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txpagination--many-pages": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txpagination--many-pages",
+      "name": "Many Pages",
+      "title": "tx-design-ui/Navigation/TxPagination",
+      "importPath": "./src/stories/TxPagination.stories.js",
+      "componentPath": "./src/components/tx-pagination/tx-pagination.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txpagination--interactive": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txpagination--interactive",
+      "name": "Interactive",
+      "title": "tx-design-ui/Navigation/TxPagination",
+      "importPath": "./src/stories/TxPagination.stories.js",
+      "componentPath": "./src/components/tx-pagination/tx-pagination.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txpopconfirm--docs": {
+      "id": "tx-design-ui-feedback-txpopconfirm--docs",
+      "title": "tx-design-ui/Feedback/TxPopconfirm",
+      "name": "Docs",
+      "importPath": "./src/stories/TxPopconfirm.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-feedback-txpopconfirm--preview": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txpopconfirm--preview",
+      "name": "Preview",
+      "title": "tx-design-ui/Feedback/TxPopconfirm",
+      "importPath": "./src/stories/TxPopconfirm.stories.js",
+      "componentPath": "./src/components/tx-popconfirm/tx-popconfirm.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txpopconfirm--basic-usage": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txpopconfirm--basic-usage",
+      "name": "Basic Usage",
+      "title": "tx-design-ui/Feedback/TxPopconfirm",
+      "importPath": "./src/stories/TxPopconfirm.stories.js",
+      "componentPath": "./src/components/tx-popconfirm/tx-popconfirm.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txpopconfirm--placements": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txpopconfirm--placements",
+      "name": "Placements",
+      "title": "tx-design-ui/Feedback/TxPopconfirm",
+      "importPath": "./src/stories/TxPopconfirm.stories.js",
+      "componentPath": "./src/components/tx-popconfirm/tx-popconfirm.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txpopconfirm--custom-text": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txpopconfirm--custom-text",
+      "name": "Custom Text",
+      "title": "tx-design-ui/Feedback/TxPopconfirm",
+      "importPath": "./src/stories/TxPopconfirm.stories.js",
+      "componentPath": "./src/components/tx-popconfirm/tx-popconfirm.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txpopconfirm--long-title": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txpopconfirm--long-title",
+      "name": "Long Title",
+      "title": "tx-design-ui/Feedback/TxPopconfirm",
+      "importPath": "./src/stories/TxPopconfirm.stories.js",
+      "componentPath": "./src/components/tx-popconfirm/tx-popconfirm.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txprogress--docs": {
+      "id": "tx-design-ui-feedback-txprogress--docs",
+      "title": "tx-design-ui/Feedback/TxProgress",
+      "name": "Docs",
+      "importPath": "./src/stories/TxProgress.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-feedback-txprogress--basic": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txprogress--basic",
+      "name": "Basic",
+      "title": "tx-design-ui/Feedback/TxProgress",
+      "importPath": "./src/stories/TxProgress.stories.js",
+      "componentPath": "./src/components/tx-progress/tx-progress.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txprogress--sizes": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txprogress--sizes",
+      "name": "Sizes",
+      "title": "tx-design-ui/Feedback/TxProgress",
+      "importPath": "./src/stories/TxProgress.stories.js",
+      "componentPath": "./src/components/tx-progress/tx-progress.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txprogress--status": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txprogress--status",
+      "name": "Status",
+      "title": "tx-design-ui/Feedback/TxProgress",
+      "importPath": "./src/stories/TxProgress.stories.js",
+      "componentPath": "./src/components/tx-progress/tx-progress.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txprogress--hide-info": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txprogress--hide-info",
+      "name": "Hide Info",
+      "title": "tx-design-ui/Feedback/TxProgress",
+      "importPath": "./src/stories/TxProgress.stories.js",
+      "componentPath": "./src/components/tx-progress/tx-progress.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txprogress--dynamic": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txprogress--dynamic",
+      "name": "Dynamic",
+      "title": "tx-design-ui/Feedback/TxProgress",
+      "importPath": "./src/stories/TxProgress.stories.js",
+      "componentPath": "./src/components/tx-progress/tx-progress.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txprogress--circle": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txprogress--circle",
+      "name": "Circle",
+      "title": "tx-design-ui/Feedback/TxProgress",
+      "importPath": "./src/stories/TxProgress.stories.js",
+      "componentPath": "./src/components/tx-progress/tx-progress.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txprogress--circle-status": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txprogress--circle-status",
+      "name": "Circle Status",
+      "title": "tx-design-ui/Feedback/TxProgress",
+      "importPath": "./src/stories/TxProgress.stories.js",
+      "componentPath": "./src/components/tx-progress/tx-progress.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txprogress--circle-sizes": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txprogress--circle-sizes",
+      "name": "Circle Sizes",
+      "title": "tx-design-ui/Feedback/TxProgress",
+      "importPath": "./src/stories/TxProgress.stories.js",
+      "componentPath": "./src/components/tx-progress/tx-progress.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txprogress--steps": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txprogress--steps",
+      "name": "Steps",
+      "title": "tx-design-ui/Feedback/TxProgress",
+      "importPath": "./src/stories/TxProgress.stories.js",
+      "componentPath": "./src/components/tx-progress/tx-progress.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txprogress--custom-format": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txprogress--custom-format",
+      "name": "Custom Format",
+      "title": "tx-design-ui/Feedback/TxProgress",
+      "importPath": "./src/stories/TxProgress.stories.js",
+      "componentPath": "./src/components/tx-progress/tx-progress.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txprogress--mini-circle": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txprogress--mini-circle",
+      "name": "Mini Circle",
+      "title": "tx-design-ui/Feedback/TxProgress",
+      "importPath": "./src/stories/TxProgress.stories.js",
+      "componentPath": "./src/components/tx-progress/tx-progress.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txradio--docs": {
+      "id": "tx-design-ui-data-entry-txradio--docs",
+      "title": "tx-design-ui/Data Entry/TxRadio",
+      "name": "Docs",
+      "importPath": "./src/stories/TxRadio.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-data-entry-txradio--preview-radio": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txradio--preview-radio",
+      "name": "Preview Radio",
+      "title": "tx-design-ui/Data Entry/TxRadio",
+      "importPath": "./src/stories/TxRadio.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txradio--basic-usage": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txradio--basic-usage",
+      "name": "Basic Usage",
+      "title": "tx-design-ui/Data Entry/TxRadio",
+      "importPath": "./src/stories/TxRadio.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txradio--disabled": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txradio--disabled",
+      "name": "Disabled",
+      "title": "tx-design-ui/Data Entry/TxRadio",
+      "importPath": "./src/stories/TxRadio.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txradio--size": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txradio--size",
+      "name": "Size",
+      "title": "tx-design-ui/Data Entry/TxRadio",
+      "importPath": "./src/stories/TxRadio.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txradio--danger": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txradio--danger",
+      "name": "Danger",
+      "title": "tx-design-ui/Data Entry/TxRadio",
+      "importPath": "./src/stories/TxRadio.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txradio--radio-group": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txradio--radio-group",
+      "name": "Radio Group",
+      "title": "tx-design-ui/Data Entry/TxRadio",
+      "importPath": "./src/stories/TxRadio.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txradio--radio-group-disabled": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txradio--radio-group-disabled",
+      "name": "Radio Group Disabled",
+      "title": "tx-design-ui/Data Entry/TxRadio",
+      "importPath": "./src/stories/TxRadio.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txselect--docs": {
+      "id": "tx-design-ui-data-entry-txselect--docs",
+      "title": "tx-design-ui/Data Entry/TxSelect",
+      "name": "Docs",
+      "importPath": "./src/stories/TxSelect.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-data-entry-txselect--preview-select": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txselect--preview-select",
+      "name": "Preview Select",
+      "title": "tx-design-ui/Data Entry/TxSelect",
+      "importPath": "./src/stories/TxSelect.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txselect--size": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txselect--size",
+      "name": "Size",
+      "title": "tx-design-ui/Data Entry/TxSelect",
+      "importPath": "./src/stories/TxSelect.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txselect--disabled": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txselect--disabled",
+      "name": "Disabled",
+      "title": "tx-design-ui/Data Entry/TxSelect",
+      "importPath": "./src/stories/TxSelect.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txselect--status": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txselect--status",
+      "name": "Status",
+      "title": "tx-design-ui/Data Entry/TxSelect",
+      "importPath": "./src/stories/TxSelect.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txselect--full-width": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txselect--full-width",
+      "name": "Full Width",
+      "title": "tx-design-ui/Data Entry/TxSelect",
+      "importPath": "./src/stories/TxSelect.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txselect--empty": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txselect--empty",
+      "name": "Empty",
+      "title": "tx-design-ui/Data Entry/TxSelect",
+      "importPath": "./src/stories/TxSelect.stories.js",
+      "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txslider--docs": {
+      "id": "tx-design-ui-data-entry-txslider--docs",
+      "title": "tx-design-ui/Data Entry/TxSlider",
+      "name": "Docs",
+      "importPath": "./src/stories/TxSlider.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-data-entry-txslider--basic": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txslider--basic",
+      "name": "Basic",
+      "title": "tx-design-ui/Data Entry/TxSlider",
+      "importPath": "./src/stories/TxSlider.stories.js",
+      "componentPath": "./src/components/tx-slider/tx-slider.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txslider--with-value": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txslider--with-value",
+      "name": "With Value",
+      "title": "tx-design-ui/Data Entry/TxSlider",
+      "importPath": "./src/stories/TxSlider.stories.js",
+      "componentPath": "./src/components/tx-slider/tx-slider.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txslider--disabled": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txslider--disabled",
+      "name": "Disabled",
+      "title": "tx-design-ui/Data Entry/TxSlider",
+      "importPath": "./src/stories/TxSlider.stories.js",
+      "componentPath": "./src/components/tx-slider/tx-slider.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txslider--custom-range": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txslider--custom-range",
+      "name": "Custom Range",
+      "title": "tx-design-ui/Data Entry/TxSlider",
+      "importPath": "./src/stories/TxSlider.stories.js",
+      "componentPath": "./src/components/tx-slider/tx-slider.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txslider--with-marks": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txslider--with-marks",
+      "name": "With Marks",
+      "title": "tx-design-ui/Data Entry/TxSlider",
+      "importPath": "./src/stories/TxSlider.stories.js",
+      "componentPath": "./src/components/tx-slider/tx-slider.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txslider--step-marks": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txslider--step-marks",
+      "name": "Step Marks",
+      "title": "tx-design-ui/Data Entry/TxSlider",
+      "importPath": "./src/stories/TxSlider.stories.js",
+      "componentPath": "./src/components/tx-slider/tx-slider.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txsteps--docs": {
+      "id": "tx-design-ui-navigation-txsteps--docs",
+      "title": "tx-design-ui/Navigation/TxSteps",
+      "name": "Docs",
+      "importPath": "./src/stories/TxSteps.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-navigation-txsteps--preview": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txsteps--preview",
+      "name": "Preview",
+      "title": "tx-design-ui/Navigation/TxSteps",
+      "importPath": "./src/stories/TxSteps.stories.js",
+      "componentPath": "./src/components/tx-steps/tx-steps.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txsteps--basic-usage": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txsteps--basic-usage",
+      "name": "Basic Usage",
+      "title": "tx-design-ui/Navigation/TxSteps",
+      "importPath": "./src/stories/TxSteps.stories.js",
+      "componentPath": "./src/components/tx-steps/tx-steps.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txsteps--vertical": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txsteps--vertical",
+      "name": "Vertical",
+      "title": "tx-design-ui/Navigation/TxSteps",
+      "importPath": "./src/stories/TxSteps.stories.js",
+      "componentPath": "./src/components/tx-steps/tx-steps.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txsteps--with-error": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txsteps--with-error",
+      "name": "With Error",
+      "title": "tx-design-ui/Navigation/TxSteps",
+      "importPath": "./src/stories/TxSteps.stories.js",
+      "componentPath": "./src/components/tx-steps/tx-steps.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txsteps--interactive": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txsteps--interactive",
+      "name": "Interactive",
+      "title": "tx-design-ui/Navigation/TxSteps",
+      "importPath": "./src/stories/TxSteps.stories.js",
+      "componentPath": "./src/components/tx-steps/tx-steps.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txswitch--docs": {
+      "id": "tx-design-ui-data-entry-txswitch--docs",
+      "title": "tx-design-ui/Data Entry/TxSwitch",
+      "name": "Docs",
+      "importPath": "./src/stories/TxSwitch.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-data-entry-txswitch--basic": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txswitch--basic",
+      "name": "Basic",
+      "title": "tx-design-ui/Data Entry/TxSwitch",
+      "importPath": "./src/stories/TxSwitch.stories.js",
+      "componentPath": "./src/components/tx-switch/tx-switch.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txswitch--disabled": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txswitch--disabled",
+      "name": "Disabled",
+      "title": "tx-design-ui/Data Entry/TxSwitch",
+      "importPath": "./src/stories/TxSwitch.stories.js",
+      "componentPath": "./src/components/tx-switch/tx-switch.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txswitch--sizes": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txswitch--sizes",
+      "name": "Sizes",
+      "title": "tx-design-ui/Data Entry/TxSwitch",
+      "importPath": "./src/stories/TxSwitch.stories.js",
+      "componentPath": "./src/components/tx-switch/tx-switch.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txswitch--with-text": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txswitch--with-text",
+      "name": "With Text",
+      "title": "tx-design-ui/Data Entry/TxSwitch",
+      "importPath": "./src/stories/TxSwitch.stories.js",
+      "componentPath": "./src/components/tx-switch/tx-switch.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txswitch--loading": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txswitch--loading",
+      "name": "Loading",
+      "title": "tx-design-ui/Data Entry/TxSwitch",
+      "importPath": "./src/stories/TxSwitch.stories.js",
+      "componentPath": "./src/components/tx-switch/tx-switch.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txtable--docs": {
+      "id": "tx-design-ui-data-display-txtable--docs",
+      "title": "tx-design-ui/Data Display/TxTable",
+      "name": "Docs",
+      "importPath": "./src/stories/TxTable.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-data-display-txtable--preview": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txtable--preview",
+      "name": "Preview",
+      "title": "tx-design-ui/Data Display/TxTable",
+      "importPath": "./src/stories/TxTable.stories.js",
+      "componentPath": "./src/components/tx-table/tx-table.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txtable--basic-usage": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txtable--basic-usage",
+      "name": "Basic Usage",
+      "title": "tx-design-ui/Data Display/TxTable",
+      "importPath": "./src/stories/TxTable.stories.js",
+      "componentPath": "./src/components/tx-table/tx-table.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txtable--with-actions": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txtable--with-actions",
+      "name": "With Actions",
+      "title": "tx-design-ui/Data Display/TxTable",
+      "importPath": "./src/stories/TxTable.stories.js",
+      "componentPath": "./src/components/tx-table/tx-table.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txtable--with-tags": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txtable--with-tags",
+      "name": "With Tags",
+      "title": "tx-design-ui/Data Display/TxTable",
+      "importPath": "./src/stories/TxTable.stories.js",
+      "componentPath": "./src/components/tx-table/tx-table.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txtable--sizes": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txtable--sizes",
+      "name": "Sizes",
+      "title": "tx-design-ui/Data Display/TxTable",
+      "importPath": "./src/stories/TxTable.stories.js",
+      "componentPath": "./src/components/tx-table/tx-table.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txtable--alignment": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txtable--alignment",
+      "name": "Alignment",
+      "title": "tx-design-ui/Data Display/TxTable",
+      "importPath": "./src/stories/TxTable.stories.js",
+      "componentPath": "./src/components/tx-table/tx-table.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txtable--empty-state": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txtable--empty-state",
+      "name": "Empty State",
+      "title": "tx-design-ui/Data Display/TxTable",
+      "importPath": "./src/stories/TxTable.stories.js",
+      "componentPath": "./src/components/tx-table/tx-table.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txtabs--docs": {
+      "id": "tx-design-ui-navigation-txtabs--docs",
+      "title": "tx-design-ui/Navigation/TxTabs",
+      "name": "Docs",
+      "importPath": "./src/stories/TxTabs.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-navigation-txtabs--preview": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txtabs--preview",
+      "name": "Preview",
+      "title": "tx-design-ui/Navigation/TxTabs",
+      "importPath": "./src/stories/TxTabs.stories.js",
+      "componentPath": "./src/components/tx-tabs/tx-tabs.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txtabs--basic-usage": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txtabs--basic-usage",
+      "name": "Basic Usage",
+      "title": "tx-design-ui/Navigation/TxTabs",
+      "importPath": "./src/stories/TxTabs.stories.js",
+      "componentPath": "./src/components/tx-tabs/tx-tabs.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txtabs--card-type": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txtabs--card-type",
+      "name": "Card Type",
+      "title": "tx-design-ui/Navigation/TxTabs",
+      "importPath": "./src/stories/TxTabs.stories.js",
+      "componentPath": "./src/components/tx-tabs/tx-tabs.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txtabs--sizes": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txtabs--sizes",
+      "name": "Sizes",
+      "title": "tx-design-ui/Navigation/TxTabs",
+      "importPath": "./src/stories/TxTabs.stories.js",
+      "componentPath": "./src/components/tx-tabs/tx-tabs.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txtabs--with-disabled": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txtabs--with-disabled",
+      "name": "With Disabled",
+      "title": "tx-design-ui/Navigation/TxTabs",
+      "importPath": "./src/stories/TxTabs.stories.js",
+      "componentPath": "./src/components/tx-tabs/tx-tabs.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txtag--docs": {
+      "id": "tx-design-ui-data-display-txtag--docs",
+      "title": "tx-design-ui/Data Display/TxTag",
+      "name": "Docs",
+      "importPath": "./src/stories/TxTag.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-data-display-txtag--preview": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txtag--preview",
+      "name": "Preview",
+      "title": "tx-design-ui/Data Display/TxTag",
+      "importPath": "./src/stories/TxTag.stories.js",
+      "componentPath": "./src/components/tx-tag/tx-tag.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txtag--basic-usage": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txtag--basic-usage",
+      "name": "Basic Usage",
+      "title": "tx-design-ui/Data Display/TxTag",
+      "importPath": "./src/stories/TxTag.stories.js",
+      "componentPath": "./src/components/tx-tag/tx-tag.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txtag--closable": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txtag--closable",
+      "name": "Closable",
+      "title": "tx-design-ui/Data Display/TxTag",
+      "importPath": "./src/stories/TxTag.stories.js",
+      "componentPath": "./src/components/tx-tag/tx-tag.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txtag--sizes": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txtag--sizes",
+      "name": "Sizes",
+      "title": "tx-design-ui/Data Display/TxTag",
+      "importPath": "./src/stories/TxTag.stories.js",
+      "componentPath": "./src/components/tx-tag/tx-tag.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txtag--bordered": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txtag--bordered",
+      "name": "Bordered",
+      "title": "tx-design-ui/Data Display/TxTag",
+      "importPath": "./src/stories/TxTag.stories.js",
+      "componentPath": "./src/components/tx-tag/tx-tag.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txtimeline--docs": {
+      "id": "tx-design-ui-data-display-txtimeline--docs",
+      "title": "tx-design-ui/Data Display/TxTimeline",
+      "name": "Docs",
+      "importPath": "./src/stories/TxTimeline.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-data-display-txtimeline--basic": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txtimeline--basic",
+      "name": "Basic",
+      "title": "tx-design-ui/Data Display/TxTimeline",
+      "importPath": "./src/stories/TxTimeline.stories.js",
+      "componentPath": "./src/components/tx-timeline/tx-timeline.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txtimeline--with-colors": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txtimeline--with-colors",
+      "name": "With Colors",
+      "title": "tx-design-ui/Data Display/TxTimeline",
+      "importPath": "./src/stories/TxTimeline.stories.js",
+      "componentPath": "./src/components/tx-timeline/tx-timeline.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txtimeline--with-icons": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txtimeline--with-icons",
+      "name": "With Icons",
+      "title": "tx-design-ui/Data Display/TxTimeline",
+      "importPath": "./src/stories/TxTimeline.stories.js",
+      "componentPath": "./src/components/tx-timeline/tx-timeline.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txtimeline--with-time": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txtimeline--with-time",
+      "name": "With Time",
+      "title": "tx-design-ui/Data Display/TxTimeline",
+      "importPath": "./src/stories/TxTimeline.stories.js",
+      "componentPath": "./src/components/tx-timeline/tx-timeline.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txtimeline--with-labels": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txtimeline--with-labels",
+      "name": "With Labels",
+      "title": "tx-design-ui/Data Display/TxTimeline",
+      "importPath": "./src/stories/TxTimeline.stories.js",
+      "componentPath": "./src/components/tx-timeline/tx-timeline.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txtimeline--alternate-mode": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txtimeline--alternate-mode",
+      "name": "Alternate Mode",
+      "title": "tx-design-ui/Data Display/TxTimeline",
+      "importPath": "./src/stories/TxTimeline.stories.js",
+      "componentPath": "./src/components/tx-timeline/tx-timeline.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txtimeline--custom-content": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txtimeline--custom-content",
+      "name": "Custom Content",
+      "title": "tx-design-ui/Data Display/TxTimeline",
+      "importPath": "./src/stories/TxTimeline.stories.js",
+      "componentPath": "./src/components/tx-timeline/tx-timeline.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txtooltip--docs": {
+      "id": "tx-design-ui-feedback-txtooltip--docs",
+      "title": "tx-design-ui/Feedback/TxTooltip",
+      "name": "Docs",
+      "importPath": "./src/stories/TxTooltip.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-feedback-txtooltip--preview": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txtooltip--preview",
+      "name": "Preview",
+      "title": "tx-design-ui/Feedback/TxTooltip",
+      "importPath": "./src/stories/TxTooltip.stories.js",
+      "componentPath": "./src/components/tx-tooltip/tx-tooltip.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txtooltip--basic-usage": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txtooltip--basic-usage",
+      "name": "Basic Usage",
+      "title": "tx-design-ui/Feedback/TxTooltip",
+      "importPath": "./src/stories/TxTooltip.stories.js",
+      "componentPath": "./src/components/tx-tooltip/tx-tooltip.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txtooltip--placements": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txtooltip--placements",
+      "name": "Placements",
+      "title": "tx-design-ui/Feedback/TxTooltip",
+      "importPath": "./src/stories/TxTooltip.stories.js",
+      "componentPath": "./src/components/tx-tooltip/tx-tooltip.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txtooltip--custom-color": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txtooltip--custom-color",
+      "name": "Custom Color",
+      "title": "tx-design-ui/Feedback/TxTooltip",
+      "importPath": "./src/stories/TxTooltip.stories.js",
+      "componentPath": "./src/components/tx-tooltip/tx-tooltip.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txtooltip--click-trigger": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txtooltip--click-trigger",
+      "name": "Click Trigger",
+      "title": "tx-design-ui/Feedback/TxTooltip",
+      "importPath": "./src/stories/TxTooltip.stories.js",
+      "componentPath": "./src/components/tx-tooltip/tx-tooltip.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txupload--docs": {
+      "id": "tx-design-ui-data-entry-txupload--docs",
+      "title": "tx-design-ui/Data Entry/TxUpload",
+      "name": "Docs",
+      "importPath": "./src/stories/TxUpload.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-data-entry-txupload--basic": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txupload--basic",
+      "name": "Basic",
+      "title": "tx-design-ui/Data Entry/TxUpload",
+      "importPath": "./src/stories/TxUpload.stories.js",
+      "componentPath": "./src/components/tx-upload/tx-upload.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txupload--default-file-list": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txupload--default-file-list",
+      "name": "Default File List",
+      "title": "tx-design-ui/Data Entry/TxUpload",
+      "importPath": "./src/stories/TxUpload.stories.js",
+      "componentPath": "./src/components/tx-upload/tx-upload.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txupload--multiple": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txupload--multiple",
+      "name": "Multiple",
+      "title": "tx-design-ui/Data Entry/TxUpload",
+      "importPath": "./src/stories/TxUpload.stories.js",
+      "componentPath": "./src/components/tx-upload/tx-upload.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txupload--picture-card": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txupload--picture-card",
+      "name": "Picture Card",
+      "title": "tx-design-ui/Data Entry/TxUpload",
+      "importPath": "./src/stories/TxUpload.stories.js",
+      "componentPath": "./src/components/tx-upload/tx-upload.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txupload--disabled": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txupload--disabled",
+      "name": "Disabled",
+      "title": "tx-design-ui/Data Entry/TxUpload",
+      "importPath": "./src/stories/TxUpload.stories.js",
+      "componentPath": "./src/components/tx-upload/tx-upload.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txupload--custom-accept": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txupload--custom-accept",
+      "name": "Custom Accept",
+      "title": "tx-design-ui/Data Entry/TxUpload",
+      "importPath": "./src/stories/TxUpload.stories.js",
+      "componentPath": "./src/components/tx-upload/tx-upload.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txupload--with-max-size": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txupload--with-max-size",
+      "name": "With Max Size",
+      "title": "tx-design-ui/Data Entry/TxUpload",
+      "importPath": "./src/stories/TxUpload.stories.js",
+      "componentPath": "./src/components/tx-upload/tx-upload.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txupload--custom-children": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txupload--custom-children",
+      "name": "Custom Children",
+      "title": "tx-design-ui/Data Entry/TxUpload",
+      "importPath": "./src/stories/TxUpload.stories.js",
+      "componentPath": "./src/components/tx-upload/tx-upload.jsx",
       "tags": ["dev", "test", "autodocs"]
     }
   }

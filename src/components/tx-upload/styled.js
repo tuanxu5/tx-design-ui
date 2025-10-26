@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../../theme/colors";
+import colors from "../../theme/colors";
 
 export const UploadWrapper = styled.div`
   display: inline-block;
@@ -11,9 +11,9 @@ export const UploadArea = styled.div`
   width: ${props => (props.listType === "picture-card" ? "104px" : "100%")};
   height: ${props => (props.listType === "picture-card" ? "104px" : "auto")};
   padding: ${props => (props.listType === "picture-card" ? "8px" : "16px")};
-  border: 2px dashed ${props => (props.isDragging ? colors.primary[500] : colors.border.default)};
+  border: 2px dashed ${props => (props.isDragging ? colors.primary[500] : colors.borderDefault)};
   border-radius: 8px;
-  background-color: ${props => (props.isDragging ? colors.primary[50] : colors.background.default)};
+  background-color: ${props => (props.isDragging ? colors.primary[50] : colors.bgWhite)};
   cursor: ${props => (props.disabled ? "not-allowed" : "pointer")};
   transition: all 0.3s ease;
   flex-direction: column;
@@ -22,8 +22,8 @@ export const UploadArea = styled.div`
   opacity: ${props => (props.disabled ? 0.5 : 1)};
 
   &:hover {
-    border-color: ${props => (props.disabled ? colors.border.default : colors.primary[500])};
-    background-color: ${props => (props.disabled ? colors.background.default : colors.primary[50])};
+    border-color: ${props => (props.disabled ? colors.borderDefault : colors.primary[500])};
+    background-color: ${props => (props.disabled ? colors.bgWhite : colors.primary[50])};
   }
 `;
 
@@ -47,14 +47,14 @@ export const UploadIcon = styled.div`
 
 export const UploadText = styled.div`
   font-size: ${props => (props.listType === "picture-card" ? "12px" : "14px")};
-  color: ${colors.text.primary};
+  color: ${colors.textPrimary};
   text-align: center;
   font-weight: 400;
 `;
 
 export const UploadHint = styled.div`
   font-size: 12px;
-  color: ${colors.text.secondary};
+  color: ${colors.textSecondary};
   margin-top: 4px;
   text-align: center;
 `;
@@ -70,12 +70,12 @@ export const FileItem = styled.div`
   display: ${props => (props.listType === "picture-card" ? "inline-flex" : "flex")};
   align-items: center;
   padding: ${props => (props.listType === "picture-card" ? "0" : "8px 12px")};
-  background-color: ${props => (props.listType === "picture-card" ? "transparent" : colors.background.secondary)};
+  background-color: ${props => (props.listType === "picture-card" ? "transparent" : colors.bgFillLight)};
   border-radius: 6px;
   margin-bottom: ${props => (props.listType === "picture-card" ? "0" : "8px")};
   width: ${props => (props.listType === "picture-card" ? "104px" : "100%")};
   height: ${props => (props.listType === "picture-card" ? "104px" : "auto")};
-  border: ${props => (props.listType === "picture-card" ? `1px solid ${colors.border.default}` : "none")};
+  border: ${props => (props.listType === "picture-card" ? `1px solid ${colors.borderDefault}` : "none")};
   position: relative;
   overflow: hidden;
 
@@ -108,7 +108,7 @@ export const FileIcon = styled.div`
 export const FileName = styled.span`
   flex: 1;
   font-size: 14px;
-  color: ${colors.text.primary};
+  color: ${colors.textPrimary};
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -138,7 +138,7 @@ export const FileAction = styled.button`
   align-items: center;
   justify-content: center;
   color: ${props =>
-    props.listType === "picture-card" ? "white" : props.danger ? colors.danger[500] : colors.text.secondary};
+    props.listType === "picture-card" ? "white" : props.danger ? colors.danger[500] : colors.textSecondary};
   transition: all 0.3s ease;
 
   &:hover {
@@ -156,7 +156,7 @@ export const FileAction = styled.button`
 export const UploadProgress = styled.div`
   width: 100%;
   height: 4px;
-  background-color: ${colors.background.secondary};
+  background-color: ${colors.bgFillLight};
   border-radius: 2px;
   margin-top: 8px;
   overflow: hidden;

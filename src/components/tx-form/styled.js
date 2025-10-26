@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../../theme/colors";
+import colors from "../../theme/colors";
 
 export const FormWrapper = styled.form`
   width: 100%;
@@ -20,7 +20,7 @@ export const FormLabel = styled.label`
   display: block;
   font-size: 14px;
   font-weight: 500;
-  color: ${colors.text.primary};
+  color: ${colors.textPrimary};
   margin-bottom: ${props => (props.layout === "horizontal" ? "0" : "8px")};
   margin-right: ${props => (props.layout === "horizontal" ? "16px" : "0")};
   min-width: ${props => (props.layout === "horizontal" ? "120px" : "auto")};
@@ -68,7 +68,7 @@ export const FormError = styled.div`
 
 export const FormHelp = styled.div`
   font-size: 12px;
-  color: ${colors.text.secondary};
+  color: ${colors.textSecondary};
   margin-top: 4px;
 `;
 

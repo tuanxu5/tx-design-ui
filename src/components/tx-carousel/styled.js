@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../../theme/colors";
+import colors from "../../theme/colors";
 
 export const CarouselWrapper = styled.div`
   position: relative;
@@ -19,7 +19,7 @@ export const CarouselSlide = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ${colors.background.secondary};
+  background-color: ${colors.bgFillLight};
   border-radius: 8px;
   min-height: ${props => props.height || "300px"};
 `;
@@ -34,7 +34,7 @@ export const CarouselArrow = styled.button`
   border-radius: 50%;
   border: none;
   background-color: rgba(255, 255, 255, 0.9);
-  color: ${colors.text.primary};
+  color: ${colors.textPrimary};
   cursor: pointer;
   display: flex;
   align-items: center;

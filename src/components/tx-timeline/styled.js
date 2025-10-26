@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../../theme/colors";
+import colors from "../../theme/colors";
 
 export const TimelineWrapper = styled.ul`
   margin: 0;
@@ -19,7 +19,7 @@ export const TimelineItem = styled.li`
     top: 20px;
     bottom: 0;
     width: 2px;
-    background-color: ${colors.border.default};
+    background-color: ${colors.borderDefault};
     display: ${props => (props.isLast ? "none" : "block")};
   }
 `;
@@ -87,21 +87,21 @@ export const TimelineContent = styled.div`
 export const TimelineTitle = styled.div`
   font-size: 14px;
   font-weight: 600;
-  color: ${colors.text.primary};
+  color: ${colors.textPrimary};
   margin-bottom: 4px;
   line-height: 1.5;
 `;
 
 export const TimelineDescription = styled.div`
   font-size: 13px;
-  color: ${colors.text.secondary};
+  color: ${colors.textSecondary};
   line-height: 1.5;
   font-weight: 400;
 `;
 
 export const TimelineTime = styled.div`
   font-size: 12px;
-  color: ${colors.text.tertiary};
+  color: ${colors.textTertiary};
   margin-top: 4px;
 `;
 
@@ -113,7 +113,7 @@ export const TimelineLabel = styled.div`
   width: 100px;
   text-align: ${props => (props.mode === "left" ? "left" : "right")};
   font-size: 12px;
-  color: ${colors.text.tertiary};
+  color: ${colors.textTertiary};
 `;
 
 export const TimelineAlternate = styled.ul`
@@ -129,7 +129,7 @@ export const TimelineAlternate = styled.ul`
     top: 0;
     bottom: 0;
     width: 2px;
-    background-color: ${colors.border.default};
+    background-color: ${colors.borderDefault};
     transform: translateX(-50%);
   }
 `;

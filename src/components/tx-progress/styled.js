@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../../theme/colors";
+import colors from "../../theme/colors";
 
 export const ProgressWrapper = styled.div`
   width: 100%;
@@ -23,7 +23,7 @@ export const ProgressTrack = styled.div`
         return "8px";
     }
   }};
-  background-color: ${colors.background.secondary};
+  background-color: ${colors.bgFillLight};
   border-radius: ${props => {
     switch (props.size) {
       case "small":
@@ -78,7 +78,7 @@ export const ProgressBar = styled.div`
 
 export const ProgressText = styled.div`
   font-size: 14px;
-  color: ${colors.text.primary};
+  color: ${colors.textPrimary};
   min-width: 40px;
   text-align: right;
   font-weight: 500;
@@ -115,7 +115,7 @@ export const ProgressCircleSvg = styled.svg`
 
 export const ProgressCircleTrack = styled.circle`
   fill: none;
-  stroke: ${colors.background.secondary};
+  stroke: ${colors.bgFillLight};
   stroke-width: ${props => props.strokeWidth};
 `;
 
@@ -140,7 +140,7 @@ export const ProgressCircleText = styled.div`
   transform: translate(-50%, -50%);
   font-size: ${props => (props.width < 80 ? "12px" : "16px")};
   font-weight: 600;
-  color: ${colors.text.primary};
+  color: ${colors.textPrimary};
   text-align: center;
   line-height: 1;
 
@@ -187,7 +187,7 @@ export const ProgressStep = styled.div`
         : props.status === "success"
         ? colors.success[500]
         : colors.primary[500]
-      : colors.background.secondary};
+      : colors.bgFillLight};
   border-radius: ${props => {
     switch (props.size) {
       case "small":

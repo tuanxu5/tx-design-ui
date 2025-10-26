@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import { colors } from "../../theme/colors";
+import colors from "../../theme/colors";
 
 const slideDown = keyframes`
   from {
@@ -103,13 +103,13 @@ export const MessageContent = styled.div`
 export const MessageTitle = styled.div`
   font-size: 14px;
   font-weight: 600;
-  color: ${colors.text.primary};
+  color: ${colors.textPrimary};
   line-height: 1.4;
 `;
 
 export const MessageDescription = styled.div`
   font-size: 13px;
-  color: ${colors.text.secondary};
+  color: ${colors.textSecondary};
   line-height: 1.4;
   font-weight: 400;
 `;
@@ -122,12 +122,12 @@ export const MessageClose = styled.button`
   border: none;
   cursor: pointer;
   padding: 4px;
-  color: ${colors.text.secondary};
+  color: ${colors.textSecondary};
   flex-shrink: 0;
   transition: all 0.3s ease;
 
   &:hover {
-    color: ${colors.text.primary};
+    color: ${colors.textPrimary};
     transform: scale(1.1);
   }
 
