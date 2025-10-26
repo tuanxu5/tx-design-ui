@@ -164,10 +164,6 @@
   transition: transform var(--ifm-transition-fast) linear !important;
 }
 
-main {
-  padding: 1rem 2.5rem !important;
-}
-
 h1 {
   font-size: 2.5rem !important;
 }

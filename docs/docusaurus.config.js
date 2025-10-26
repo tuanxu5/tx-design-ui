@@ -61,11 +61,6 @@ const config = {
           position: "right",
         },
         {
-          to: "https://storybook-tx-design.pages.dev",
-          label: "Storybook",
-          position: "right",
-        },
-        {
           type: "localeDropdown",
           position: "right",
           dropdownItemsAfter: [

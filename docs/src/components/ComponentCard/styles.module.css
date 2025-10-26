@@ -56,8 +56,13 @@ a:hover {
 
 [data-theme="dark"] .card {
   background: #1a1a1a;
+  border-color: #333;
 }
 
 [data-theme="dark"] .card:hover {
   background: #242424;
+}
+
+[data-theme="dark"] .name {
+  background-color: #1a1a1a;
 }
