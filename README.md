@@ -24,12 +24,19 @@ npm install --save tx-design-ui
 - **TxInputNumber** - Numeric input with controls
 - **TxDatePicker** - Date and time picker
 - **TxColorPicker** - Color selection with presets
+- **TxSwitch** - Toggle switch component
+- **TxSlider** - Slider for value selection
+- **TxUpload** - File upload with drag and drop
+- **TxForm** - Form with validation
 
 **Display Components:**
 
 - **TxAvatar** - Avatar/profile picture component
 - **TxTag** - Tag labels for categorization
 - **TxTable** - Data table display
+- **TxBadge** - Badge for counts and status
+- **TxTimeline** - Vertical timeline display
+- **TxCarousel** - Carousel/slider for images and content
 
 **Feedback Components:**
 
@@ -39,6 +46,8 @@ npm install --save tx-design-ui
 - **TxPopconfirm** - Confirmation popover
 - **TxTooltip** - Tooltip on hover
 - **TxLoading** - Loading spinner
+- **TxMessage** - Global message feedback
+- **TxProgress** - Progress indicator
 
 **Navigation Components:**
 
@@ -144,6 +153,211 @@ function Example() {
 <TxCheckbox danger label="Danger" />
 <TxCheckbox disabled label="Disabled" />
 <TxCheckbox indeterminate label="Indeterminate" />
+```
+
+### Switch
+
+```jsx
+import { TxSwitch } from 'tx-design-ui';
+import { useState } from 'react';
+
+function Example() {
+  const [checked, setChecked] = useState(false);
+
+  return (
+    <TxSwitch checked={checked} onChange={setChecked} />
+  );
+}
+
+// With text
+<TxSwitch checkedChildren="ON" unCheckedChildren="OFF" />
+
+// Sizes
+<TxSwitch size="small" />
+<TxSwitch size="large" />
+
+// Loading
+<TxSwitch loading />
+```
+
+### Slider
+
+```jsx
+import { TxSlider } from "tx-design-ui";
+import { useState } from "react";
+
+function Example() {
+  const [value, setValue] = useState(30);
+
+  return <TxSlider value={value} onChange={setValue} showValue />;
+}
+
+// With marks
+const marks = { 0: "0°C", 26: "26°C", 37: "37°C", 100: "100°C" };
+<TxSlider marks={marks} defaultValue={37} />;
+```
+
+### Upload
+
+```jsx
+import { TxUpload } from 'tx-design-ui';
+import { useState } from 'react';
+
+function Example() {
+  const [fileList, setFileList] = useState([]);
+
+  return (
+    <TxUpload
+      fileList={fileList}
+      onChange={setFileList}
+      multiple
+    />
+  );
+}
+
+// Picture card
+<TxUpload listType="picture-card" accept="image/*" />
+
+// With max size
+<TxUpload maxSize={2} /> // 2MB max
+```
+
+### Form
+
+```jsx
+import { TxForm, TxFormItem } from "tx-design-ui";
+import { TxInput, TxButton } from "tx-design-ui";
+
+function Example() {
+  const [formData, setFormData] = useState({ username: "", email: "" });
+
+  return (
+    <TxForm onSubmit={e => console.log("Submit", formData)}>
+      <TxFormItem label="Username" required>
+        <TxInput value={formData.username} onChange={e => setFormData({ ...formData, username: e.target.value })} />
+      </TxFormItem>
+      <TxFormItem label="Email" required>
+        <TxInput
+          type="email"
+          value={formData.email}
+          onChange={e => setFormData({ ...formData, email: e.target.value })}
+        />
+      </TxFormItem>
+      <TxForm.Footer>
+        <TxButton type="submit" variant="primary">
+          Submit
+        </TxButton>
+      </TxForm.Footer>
+    </TxForm>
+  );
+}
+```
+
+### Message
+
+```jsx
+import { TxMessage } from "tx-design-ui";
+
+// Simple usage
+TxMessage.success("Operation successful!");
+TxMessage.error("Something went wrong");
+TxMessage.warning("Please check your input");
+TxMessage.info("Information message");
+
+// With description
+TxMessage.open({
+  type: "success",
+  content: "Success!",
+  description: "Your operation has been completed.",
+  duration: 3000,
+});
+```
+
+### Badge
+
+```jsx
+import { TxBadge } from 'tx-design-ui';
+
+// Basic badge
+<TxBadge count={5}>
+  <div>Content</div>
+</TxBadge>
+
+// Standalone
+<TxBadge count={25} />
+
+// Status colors
+<TxBadge count={5} status="success" />
+<TxBadge count={5} status="error" />
+
+// Dot
+<TxBadge dot>
+  <span>🔔</span>
+</TxBadge>
+
+// Ribbon
+<TxBadge.Ribbon text="New">
+  <div>Content</div>
+</TxBadge.Ribbon>
+```
+
+### Progress
+
+```jsx
+import { TxProgress } from 'tx-design-ui';
+
+// Line progress
+<TxProgress percent={50} />
+<TxProgress percent={100} status="success" />
+<TxProgress percent={70} status="exception" />
+
+// Circle progress
+<TxProgress type="circle" percent={75} />
+
+// With steps
+<TxProgress percent={50} steps={5} />
+```
+
+### Timeline
+
+```jsx
+import { TxTimeline } from 'tx-design-ui';
+
+const items = [
+  {
+    title: 'Create a services site',
+    description: '2015-09-01',
+    color: 'success'
+  },
+  {
+    title: 'Solve initial problems',
+    description: '2015-09-01',
+    color: 'processing'
+  }
+];
+
+<TxTimeline items={items} />
+
+// Alternate mode
+<TxTimeline items={items} mode="alternate" />
+```
+
+### Carousel
+
+```jsx
+import { TxCarousel } from 'tx-design-ui';
+
+<TxCarousel autoplay autoplaySpeed={3000}>
+  <div>Slide 1</div>
+  <div>Slide 2</div>
+  <div>Slide 3</div>
+</TxCarousel>
+
+// With counter
+<TxCarousel showCounter>
+  <div>Slide 1</div>
+  <div>Slide 2</div>
+</TxCarousel>
 ```
 
 ## Theme & Colors

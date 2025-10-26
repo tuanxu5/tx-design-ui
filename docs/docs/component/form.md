@@ -1,0 +1,190 @@
+# Form
+
+High performance Form component with data scope management, including data collection, verification, and styles.
+
+## When To Use
+
+- When you need to create an instance or collect information
+- When you need to validate fields in certain rules
+
+## Examples
+
+### Basic Usage
+
+```jsx
+import { TxForm, TxFormItem } from "tx-design-ui";
+import { TxInput } from "tx-design-ui";
+import { TxButton } from "tx-design-ui";
+import { useState } from "react";
+
+function App() {
+  const [formData, setFormData] = useState({ username: "", password: "" });
+
+  const handleSubmit = e => {
+    console.log("Form submitted:", formData);
+  };
+
+  return (
+    <TxForm onSubmit={handleSubmit}>
+      <TxFormItem label="Username" required>
+        <TxInput
+          placeholder="Enter username"
+          value={formData.username}
+          onChange={e => setFormData({ ...formData, username: e.target.value })}
+        />
+      </TxFormItem>
+      <TxFormItem label="Password" required>
+        <TxInput
+          type="password"
+          placeholder="Enter password"
+          value={formData.password}
+          onChange={e => setFormData({ ...formData, password: e.target.value })}
+        />
+      </TxFormItem>
+      <TxForm.Footer>
+        <TxButton type="submit" variant="primary">
+          Submit
+        </TxButton>
+        <TxButton type="button">Cancel</TxButton>
+      </TxForm.Footer>
+    </TxForm>
+  );
+}
+```
+
+### Horizontal Layout
+
+```jsx
+<TxForm layout="horizontal">
+  <TxFormItem label="Username" required layout="horizontal">
+    <TxInput placeholder="Enter username" />
+  </TxFormItem>
+  <TxFormItem label="Email" required layout="horizontal">
+    <TxInput type="email" placeholder="Enter email" />
+  </TxFormItem>
+  <TxForm.Footer layout="horizontal">
+    <TxButton type="submit" variant="primary">
+      Submit
+    </TxButton>
+    <TxButton type="button">Cancel</TxButton>
+  </TxForm.Footer>
+</TxForm>
+```
+
+### Form Validation
+
+```jsx
+const [formData, setFormData] = useState({ email: "", password: "" });
+const [errors, setErrors] = useState({});
+
+const validate = () => {
+  const newErrors = {};
+  if (!formData.email) {
+    newErrors.email = "Email is required";
+  } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+    newErrors.email = "Email is invalid";
+  }
+  if (!formData.password) {
+    newErrors.password = "Password is required";
+  } else if (formData.password.length < 6) {
+    newErrors.password = "Password must be at least 6 characters";
+  }
+  setErrors(newErrors);
+  return Object.keys(newErrors).length === 0;
+};
+
+const handleSubmit = e => {
+  if (validate()) {
+    console.log("Form is valid:", formData);
+  }
+};
+
+return (
+  <TxForm onSubmit={handleSubmit}>
+    <TxFormItem label="Email" required error={errors.email}>
+      <TxInput
+        type="email"
+        placeholder="Enter email"
+        value={formData.email}
+        onChange={e => setFormData({ ...formData, email: e.target.value })}
+        status={errors.email ? "error" : ""}
+      />
+    </TxFormItem>
+    <TxFormItem
+      label="Password"
+      required
+      error={errors.password}
+      help={!errors.password && "Password must be at least 6 characters"}
+    >
+      <TxInput
+        type="password"
+        placeholder="Enter password"
+        value={formData.password}
+        onChange={e => setFormData({ ...formData, password: e.target.value })}
+        status={errors.password ? "error" : ""}
+      />
+    </TxFormItem>
+    <TxForm.Footer>
+      <TxButton type="submit" variant="primary">
+        Submit
+      </TxButton>
+    </TxForm.Footer>
+  </TxForm>
+);
+```
+
+### Help Text
+
+```jsx
+<TxFormItem label="Username" help="Please enter your username">
+  <TxInput placeholder="Username" />
+</TxFormItem>
+```
+
+### Footer Alignment
+
+```jsx
+<TxForm.Footer align="left">
+  <TxButton>Left</TxButton>
+</TxForm.Footer>
+
+<TxForm.Footer align="center">
+  <TxButton>Center</TxButton>
+</TxForm.Footer>
+
+<TxForm.Footer align="right">
+  <TxButton>Right</TxButton>
+</TxForm.Footer>
+```
+
+## API
+
+### TxForm
+
+| Property  | Description                     | Type                       | Default    |
+| --------- | ------------------------------- | -------------------------- | ---------- |
+| layout    | Form layout                     | 'vertical' \| 'horizontal' | 'vertical' |
+| onSubmit  | Callback when form is submitted | function(event)            | -          |
+| className | Additional CSS class            | string                     | -          |
+
+### TxFormItem
+
+| Property  | Description                              | Type                       | Default    |
+| --------- | ---------------------------------------- | -------------------------- | ---------- |
+| label     | Label text                               | string                     | -          |
+| required  | Show required asterisk                   | boolean                    | false      |
+| error     | Error message                            | string                     | ''         |
+| help      | Help text                                | string                     | ''         |
+| layout    | Item layout                              | 'vertical' \| 'horizontal' | 'vertical' |
+| colon     | Show colon after label (horizontal only) | boolean                    | true       |
+| noMargin  | Remove bottom margin                     | boolean                    | false      |
+| className | Additional CSS class                     | string                     | -          |
+
+### TxForm.Footer
+
+| Property   | Description                   | Type                          | Default    |
+| ---------- | ----------------------------- | ----------------------------- | ---------- |
+| align      | Footer alignment              | 'left' \| 'center' \| 'right' | 'left'     |
+| layout     | Layout mode                   | 'vertical' \| 'horizontal'    | 'vertical' |
+| labelWidth | Label width (horizontal only) | string                        | '120px'    |
+| className  | Additional CSS class          | string                        | -          |
