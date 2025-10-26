@@ -111,7 +111,7 @@
 }
 
 .navbar__inner {
-  max-width: 1400px;
+  max-width: 1400px !important;
 }
 
 .docsWrapper_node_modules-\@docusaurus-theme-classic-lib-theme-DocRoot-Layout-styles-module {
@@ -119,11 +119,11 @@
 }
 
 .docRoot_node_modules-\@docusaurus-theme-classic-lib-theme-DocRoot-Layout-styles-module {
-  max-width: 1400px;
+  max-width: 1400px !important;
 }
 
 .table-of-contents__link--active {
-  font-weight: 500;
+  font-weight: 500 !important;
 }
 
 .menu__list-item-collapsible > a {
@@ -141,29 +141,39 @@
 }
 
 .menu__caret:hover {
-  background-color: none;
+  background-color: none !important;
 }
 
 .menu__caret:before {
   content: "";
   background: var(--ifm-menu-link-sublist-icon) 50% / 1.3rem 2rem;
   filter: var(--ifm-menu-link-sublist-icon-filter);
-  height: 1.5rem;
-  transform: rotate(180deg);
-  width: 1.5rem;
-  transition: transform var(--ifm-transition-fast) linear;
+  height: 1.5rem !important;
+  transform: rotate(180deg) !important;
+  width: 1.5rem !important;
+  transition: transform var(--ifm-transition-fast) linear !important;
+}
+
+.menu__link--sublist-caret:after {
+  content: "";
+  background: var(--ifm-menu-link-sublist-icon) 50% / 1.3rem 2rem;
+  filter: var(--ifm-menu-link-sublist-icon-filter);
+  height: 1.5rem !important;
+  transform: rotate(180deg) !important;
+  width: 1.5rem !important;
+  transition: transform var(--ifm-transition-fast) linear !important;
 }
 
 main {
-  padding: 1rem 2.5rem;
+  padding: 1rem 2.5rem !important;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.5rem !important;
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.8rem !important;
 }
 
 ::-webkit-scrollbar {
