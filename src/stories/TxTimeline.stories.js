@@ -1,6 +1,6 @@
 import { TxTimeline } from "../components/tx-timeline/tx-timeline";
 
-export default {
+const TxTimelineStory = {
   title: "tx-design-ui/Data Display/TxTimeline",
   component: TxTimeline,
   parameters: {
@@ -14,6 +14,8 @@ export default {
     },
   },
 };
+
+export default TxTimelineStory;
 
 const basicItems = [
   {

@@ -1,7 +1,7 @@
 import { TxAvatar } from "../components/tx-avatar/tx-avatar";
 import { TxBadge } from "../components/tx-badge/tx-badge";
 
-export default {
+const TxBadgeStory = {
   title: "tx-design-ui/Data Display/TxBadge",
   component: TxBadge,
   parameters: {
@@ -19,6 +19,8 @@ export default {
     },
   },
 };
+
+export default TxBadgeStory;
 
 export const Basic = {
   render: args => (

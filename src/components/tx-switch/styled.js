@@ -28,10 +28,8 @@ export const SwitchSlider = styled.span`
     position: absolute;
     height: ${props => (props.size === "small" ? "12px" : props.size === "large" ? "22px" : "18px")};
     width: ${props => (props.size === "small" ? "12px" : props.size === "large" ? "22px" : "18px")};
-    left: ${props =>
-      props.checked
-        ? "calc(100% - ${props.size === 'small' ? '14px' : props.size === 'large' ? '24px' : '20px'})"
-        : "2px"};
+    left: ${({ checked, size }) =>
+      checked ? `calc(100% - ${size === "small" ? "14px" : size === "large" ? "24px" : "20px"})` : "2px"};
     bottom: 2px;
     background-color: white;
     border-radius: 50%;

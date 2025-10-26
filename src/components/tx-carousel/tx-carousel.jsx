@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import PropTypes from "prop-types";
 import { useEffect, useRef, useState } from "react";
 import {
@@ -12,8 +13,8 @@ import {
 
 export const TxCarousel = ({
   children,
-  autoplay = false,
-  autoplaySpeed = 3000,
+  autoPlay = false,
+  autoPlaySpeed = 3000,
   speed = 500,
   dots = true,
   arrows = true,
@@ -32,10 +33,10 @@ export const TxCarousel = ({
   const totalSlides = slides.length;
 
   useEffect(() => {
-    if (autoplay && !isHovered && totalSlides > 1) {
+    if (autoPlay && !isHovered && totalSlides > 1) {
       autoplayRef.current = setInterval(() => {
         goToNext();
-      }, autoplaySpeed);
+      }, autoPlaySpeed);
     }
 
     return () => {
@@ -43,7 +44,7 @@ export const TxCarousel = ({
         clearInterval(autoplayRef.current);
       }
     };
-  }, [autoplay, autoplaySpeed, isHovered, currentSlide]);
+  }, [autoPlay, autoPlaySpeed, isHovered, currentSlide]);
 
   const goToNext = () => {
     setCurrentSlide(prev => {
@@ -130,8 +131,8 @@ export const TxCarousel = ({
 
 TxCarousel.propTypes = {
   children: PropTypes.node.isRequired,
-  autoplay: PropTypes.bool,
-  autoplaySpeed: PropTypes.number,
+  autoPlay: PropTypes.bool,
+  autoPlaySpeed: PropTypes.number,
   speed: PropTypes.number,
   dots: PropTypes.bool,
   arrows: PropTypes.bool,
@@ -144,8 +145,8 @@ TxCarousel.propTypes = {
 };
 
 TxCarousel.defaultProps = {
-  autoplay: false,
-  autoplaySpeed: 3000,
+  autoPlay: false,
+  autoPlaySpeed: 3000,
   speed: 500,
   dots: true,
   arrows: true,

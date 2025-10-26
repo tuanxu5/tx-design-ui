@@ -2,7 +2,7 @@ import { useState } from "react";
 import { TxButton } from "../components/tx-button/tx-button";
 import { TxProgress } from "../components/tx-progress/tx-progress";
 
-export default {
+const TxProgressStory = {
   title: "tx-design-ui/Feedback/TxProgress",
   component: TxProgress,
   parameters: {
@@ -26,6 +26,8 @@ export default {
     showInfo: { control: "boolean" },
   },
 };
+
+export default TxProgressStory;
 
 export const Basic = {
   args: {

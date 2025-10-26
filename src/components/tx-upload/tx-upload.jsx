@@ -41,8 +41,8 @@ export const TxUpload = ({
   const currentFiles = fileList.length > 0 ? fileList : files;
 
   const handleClick = () => {
-    if (!disabled) {
-      inputRef.current?.click();
+    if (!disabled && inputRef.current) {
+      inputRef.current.click();
     }
   };
 

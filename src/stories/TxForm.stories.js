@@ -4,7 +4,7 @@ import { TxCheckbox } from "../components/tx-checkbox/tx-checkbox";
 import { TxForm, TxFormItem } from "../components/tx-form/tx-form";
 import { TxInput } from "../components/tx-input/tx-input";
 
-export default {
+const TxFormStory = {
   title: "tx-design-ui/Data Entry/TxForm",
   component: TxForm,
   parameters: {
@@ -19,6 +19,8 @@ export default {
     onSubmit: { action: "submitted" },
   },
 };
+
+export default TxFormStory;
 
 export const Basic = {
   render: function BasicComponent() {

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { TxSwitch } from "../components/tx-switch/tx-switch";
 
-export default {
+const TxSwitchStory = {
   title: "tx-design-ui/Data Entry/TxSwitch",
   component: TxSwitch,
   parameters: {
@@ -20,6 +20,8 @@ export default {
     onChange: { action: "changed" },
   },
 };
+
+export default TxSwitchStory;
 
 export const Basic = {
   render: function BasicComponent(args) {

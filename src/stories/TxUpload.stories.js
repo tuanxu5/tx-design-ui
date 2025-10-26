@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { TxUpload } from "../components/tx-upload/tx-upload";
 
-export default {
+const TxUploadStory = {
   title: "tx-design-ui/Data Entry/TxUpload",
   component: TxUpload,
   parameters: {
@@ -20,6 +20,8 @@ export default {
     onRemove: { action: "removed" },
   },
 };
+
+export default TxUploadStory;
 
 export const Basic = {
   render: function BasicComponent(args) {

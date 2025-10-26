@@ -1,13 +1,15 @@
 import { TxButton } from "../components/tx-button/tx-button";
 import { TxMessage } from "../components/tx-message/tx-message";
 
-export default {
+const TxMessageStory = {
   title: "tx-design-ui/Feedback/TxMessage",
   parameters: {
     layout: "centered",
   },
   tags: ["autodocs"],
 };
+
+export default TxMessageStory;
 
 export const Basic = {
   render: () => (

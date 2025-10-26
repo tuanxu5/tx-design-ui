@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { TxSlider } from "../components/tx-slider/tx-slider";
 
-export default {
+const TxSliderStory = {
   title: "tx-design-ui/Data Entry/TxSlider",
   component: TxSlider,
   parameters: {
@@ -18,6 +18,8 @@ export default {
     onAfterChange: { action: "after changed" },
   },
 };
+
+export default TxSliderStory;
 
 export const Basic = {
   render: function BasicComponent(args) {

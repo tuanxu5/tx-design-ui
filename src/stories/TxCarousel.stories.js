@@ -1,6 +1,6 @@
 import { TxCarousel } from "../components/tx-carousel/tx-carousel";
 
-export default {
+const TxCarouselStory = {
   title: "tx-design-ui/Data Display/TxCarousel",
   component: TxCarousel,
   parameters: {
@@ -8,8 +8,8 @@ export default {
   },
   tags: ["autodocs"],
   argTypes: {
-    autoplay: { control: "boolean" },
-    autoplaySpeed: { control: "number" },
+    autoPlay: { control: "boolean" },
+    autoPlaySpeed: { control: "number" },
     speed: { control: "number" },
     dots: { control: "boolean" },
     arrows: { control: "boolean" },
@@ -18,6 +18,8 @@ export default {
     onChange: { action: "slide changed" },
   },
 };
+
+export default TxCarouselStory;
 
 const slideStyle = {
   width: "100%",
@@ -46,7 +48,7 @@ export const Basic = {
 export const Autoplay = {
   render: () => (
     <div style={{ width: "600px" }}>
-      <TxCarousel autoplay autoplaySpeed={2000}>
+      <TxCarousel autoPlay autoPlaySpeed={2000}>
         <div style={{ ...slideStyle, background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)" }}>Slide 1</div>
         <div style={{ ...slideStyle, background: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)" }}>Slide 2</div>
         <div style={{ ...slideStyle, background: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)" }}>Slide 3</div>
@@ -122,7 +124,7 @@ export const CustomHeight = {
 export const WithImages = {
   render: () => (
     <div style={{ width: "700px" }}>
-      <TxCarousel autoplay autoplaySpeed={3000}>
+      <TxCarousel autoPlay autoPlaySpeed={3000}>
         <div style={{ width: "100%", height: "400px" }}>
           <img
             src="https://picsum.photos/700/400?random=1"
@@ -152,7 +154,7 @@ export const WithImages = {
 export const WithContent = {
   render: () => (
     <div style={{ width: "700px" }}>
-      <TxCarousel autoplay>
+      <TxCarousel autoPlay>
         <div
           style={{
             ...slideStyle,

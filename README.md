@@ -347,7 +347,7 @@ const items = [
 ```jsx
 import { TxCarousel } from 'tx-design-ui';
 
-<TxCarousel autoplay autoplaySpeed={3000}>
+<TxCarousel autoPlay autoPlaySpeed={3000}>
   <div>Slide 1</div>
   <div>Slide 2</div>
   <div>Slide 3</div>

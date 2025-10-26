@@ -1,14 +1,5 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import { colors } from "../../theme/colors";
-
-const spin = keyframes`
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-`;
 
 export const ProgressWrapper = styled.div`
   width: 100%;

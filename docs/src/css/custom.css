@@ -28,6 +28,9 @@
   --ifm-color-primary-light: #1ac5ff;
   --ifm-color-primary-lighter: #33ccff;
   --ifm-color-primary-lightest: #66d9ff;
+  --ifm-color-code: #f759ab;
+  --ifm-color-background-code: #fff0f6;
+  --ifm-color-border-code: #ffadd2;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-font-weight-bold: 600;
@@ -43,6 +46,9 @@
   --ifm-color-primary-light: #1ac5ff;
   --ifm-color-primary-lighter: #33ccff;
   --ifm-color-primary-lightest: #66d9ff;
+  --ifm-color-code: #a02669;
+  --ifm-color-background-code: #291321;
+  --ifm-color-border-code: #551c3b;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --ifm-font-weight-bold: 600;
   --ifm-menu-color-background-active: #58afdf1a;
@@ -74,6 +80,30 @@
 .menu__link--active {
   color: var(--ifm-menu-color-active) !important;
   font-weight: 600 !important;
+}
+
+/* Category headers level 2 (DATA ENTRY, DATA DISPLAY, etc) */
+/* For both collapsible and non-collapsible categories at level 2 */
+.menu__list .menu__list > li.menu__list-item-collapsible > .menu__link,
+.menu__list .menu__list > li.menu__list-item-collapsible > a,
+.menu__list .menu__list > li > .menu__list-item-collapsible > .menu__link {
+  color: #777777 !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 8px 16px !important;
+  cursor: default !important;
+}
+
+/* Links inside level 2 categories (actual component links) should remain normal */
+.menu__list .menu__list > li > .menu__list .menu__link {
+  color: var(--ifm-font-color-base) !important;
+  font-size: 14px !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+  font-weight: 400 !important;
+  padding: 10px 16px !important;
 }
 
 .navbar {
@@ -148,13 +178,13 @@ h2 {
   border-radius: 10px !important;
 }
 
-.table-of-contents__link .toc-highlight {
-  font-size: 10px !important;
+.table-of-contents__link {
+  font-size: 13px !important;
 }
 
 code {
-  background-color: #fff0f6;
-  border: 1px solid #ffadd2;
+  background-color: var(--ifm-color-background-code);
+  border: 1px solid var(--ifm-color-border-code);
   color: #f759ab;
   border-radius: 6px;
   font-family: var(--ifm-font-family-monospace);

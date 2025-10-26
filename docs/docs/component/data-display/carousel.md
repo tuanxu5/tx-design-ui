@@ -195,7 +195,7 @@ function App() {
 | ------------- | --------------------------------------- | --------------- | ------- |
 | children      | Carousel slides (each child is a slide) | ReactNode       | -       |
 | autoPlay      | Enable automatic sliding                | boolean         | false   |
-| autoPlaySpeed | AutoPlay interval in milliseconds       | number          | 3000    |
+| autoPlaySpeed | Autoplay interval in milliseconds       | number          | 3000    |
 | speed         | Transition speed in milliseconds        | number          | 500     |
 | dots          | Show navigation dots                    | boolean         | true    |
 | arrows        | Show navigation arrows                  | boolean         | true    |
