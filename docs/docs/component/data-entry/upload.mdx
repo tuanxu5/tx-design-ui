@@ -1,0 +1,179 @@
+---
+title: Upload
+featured: true
+component: true
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Upload
+
+Upload file by selecting or dragging.
+
+## When To Use
+
+Uploading is the process of publishing information (web pages, text, pictures, video, etc.) to a remote server via a web page or upload tool.
+
+- When you need to upload one or more files
+- When you need to show the process of uploading
+- When you need to upload files by dragging and dropping
+
+## Examples
+
+### Basic Usage
+
+```jsx
+import { TxUpload } from "tx-design-ui";
+import { useState } from "react";
+
+function App() {
+  const [fileList, setFileList] = useState([]);
+
+  return <TxUpload fileList={fileList} onChange={setFileList} />;
+}
+```
+
+### Default File List
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?viewMode=story&id=tx-design-ui-data-entry-txupload--basic"
+      width="100%"
+      height="200px"
+      style={{border: '1px solid #ddd', borderRadius: '8px', background: 'white'}}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+
+```jsx
+const defaultFiles = [
+  {
+    uid: "1",
+    name: "document.pdf",
+    status: "done",
+    url: "https://example.com/document.pdf",
+  },
+  {
+    uid: "2",
+    name: "image.png",
+    status: "done",
+    url: "https://example.com/image.png",
+  },
+];
+
+<TxUpload defaultFileList={defaultFiles} />;
+```
+
+  </TabItem>
+</Tabs>
+
+### Multiple Files
+
+```jsx
+const [fileList, setFileList] = useState([]);
+
+<TxUpload multiple fileList={fileList} onChange={setFileList} />;
+```
+
+### Picture Card
+
+Use `listType="picture-card"` for image upload preview.
+
+```jsx
+const [fileList, setFileList] = useState([]);
+
+<TxUpload listType="picture-card" accept="image/*" multiple fileList={fileList} onChange={setFileList} />;
+```
+
+### Disabled
+
+```jsx
+<TxUpload disabled />
+```
+
+### Custom Accept
+
+Limit file types using the `accept` prop.
+
+```jsx
+<TxUpload accept="image/*" multiple />
+<TxUpload accept=".pdf,.doc,.docx" />
+```
+
+### Max File Size
+
+Set maximum file size in MB.
+
+```jsx
+<TxUpload maxSize={2} /> {/* Max 2MB */}
+```
+
+### Custom Upload Area
+
+```jsx
+<TxUpload>
+  <div
+    style={{
+      padding: "20px",
+      border: "2px dashed #00a4db",
+      borderRadius: "8px",
+      textAlign: "center",
+      cursor: "pointer",
+    }}
+  >
+    <div>📁</div>
+    <div>Drop files here or click to browse</div>
+  </div>
+</TxUpload>
+```
+
+### Drag and Drop
+
+Drag and drop is supported by default. Simply drag files over the upload area.
+
+## API
+
+| Property        | Description                                   | Type                                  | Default |
+| --------------- | --------------------------------------------- | ------------------------------------- | ------- |
+| accept          | File types that can be accepted               | string                                | '\*'    |
+| multiple        | Allow multiple file upload                    | boolean                               | false   |
+| disabled        | Disable upload                                | boolean                               | false   |
+| maxSize         | Max file size in MB                           | number                                | -       |
+| fileList        | List of files (controlled)                    | array                                 | []      |
+| defaultFileList | Default list of files                         | array                                 | []      |
+| listType        | Built-in stylesheets                          | 'text' \| 'picture' \| 'picture-card' | 'text'  |
+| showUploadList  | Show file list                                | boolean                               | true    |
+| children        | Custom upload area content                    | ReactNode                             | -       |
+| onChange        | Callback when file list changes               | function(fileList)                    | -       |
+| onRemove        | Callback when file is removed                 | function(file)                        | -       |
+| beforeUpload    | Hook before uploading, return false to cancel | function(file)                        | -       |
+| customRequest   | Override default upload behavior              | function(options)                     | -       |
+| className       | Additional CSS class                          | string                                | -       |
+
+### customRequest Options
+
+The `customRequest` function receives an options object with the following properties:
+
+```typescript
+{
+  file: File; // The file to upload
+  onProgress: (percent: number) => void; // Update progress
+  onSuccess: () => void; // Called when upload succeeds
+  onError: () => void; // Called when upload fails
+}
+```
+
+### File Object
+
+```typescript
+{
+  uid: string; // Unique file id
+  name: string; // File name
+  status: string; // 'uploading' | 'done' | 'error'
+  percent: number; // Upload progress (0-100)
+  originFileObj: File; // Original file object
+  url: string; // File URL
+}
+```

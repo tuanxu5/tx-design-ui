@@ -1,0 +1,270 @@
+---
+sidebar_position: 4
+title: Checkbox
+featured: true
+component: true
+description: Checkbox component for selecting single values or multiple options from a list.
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Checkbox
+
+A customizable checkbox component for selecting options. Checkboxes are used when there are multiple options and the user may select any number of choices, including zero, one, or several.
+
+## When To Use
+
+- Used for selecting multiple values from several options
+- If you use only one checkbox, it is the same as using Switch to toggle between two states
+- The difference with Switch is that Checkbox will trigger a state change when it is clicked, while Switch will trigger a state change when it is toggled
+
+## Import
+
+```jsx
+import { TxCheckbox } from "tx-design-ui";
+```
+
+## Examples
+
+### Basic Usage
+
+The simplest use of Checkbox.
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?viewMode=story&id=tx-design-ui-data-entry-txcheckbox--basic-usage"
+      width="100%"
+      height="200px"
+      style={{border: '1px solid #ddd', borderRadius: '8px', background: 'white'}}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+
+```jsx
+import { TxCheckbox } from "tx-design-ui";
+import { useState } from "react";
+
+function App() {
+  const [checked, setChecked] = useState(false);
+
+  return (
+    <TxCheckbox label="Accept terms and conditions" checked={checked} onChange={e => setChecked(e.target.checked)} />
+  );
+}
+```
+
+  </TabItem>
+</Tabs>
+
+### Disabled
+
+Disabled checkbox.
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?viewMode=story&id=tx-design-ui-data-entry-txcheckbox--disabled"
+      width="100%"
+      height="150px"
+      style={{border: '1px solid #ddd', borderRadius: '8px', background: 'white'}}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+
+```jsx
+<TxCheckbox label="Disabled Unchecked" checked={false} disabled />
+<TxCheckbox label="Disabled Checked" checked={true} disabled />
+```
+
+  </TabItem>
+</Tabs>
+
+### Sizes
+
+The checkbox comes in three sizes: `small`, `medium` (default), and `large`.
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?viewMode=story&id=tx-design-ui-data-entry-txcheckbox--size"
+      width="100%"
+      height="200px"
+      style={{border: '1px solid #ddd', borderRadius: '8px', background: 'white'}}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+
+```jsx
+<TxCheckbox label="Small" size="small" />
+<TxCheckbox label="Medium" size="medium" />
+<TxCheckbox label="Large" size="large" />
+```
+
+  </TabItem>
+</Tabs>
+
+### Danger State
+
+Use the `danger` prop to indicate a destructive or critical action.
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?viewMode=story&id=tx-design-ui-data-entry-txcheckbox--danger"
+      width="100%"
+      height="150px"
+      style={{border: '1px solid #ddd', borderRadius: '8px', background: 'white'}}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+
+```jsx
+<TxCheckbox label="Delete all data" danger checked={checked} onChange={handleChange} />
+```
+
+  </TabItem>
+</Tabs>
+
+### Indeterminate State
+
+The indeterminate state is useful when you have a parent checkbox that represents the state of multiple child checkboxes. Perfect for "Select All" functionality.
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?viewMode=story&id=tx-design-ui-data-entry-txcheckbox--indeterminate"
+      width="100%"
+      height="250px"
+      style={{border: '1px solid #ddd', borderRadius: '8px', background: 'white'}}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+
+```jsx
+import { TxCheckbox } from "tx-design-ui";
+import { useState } from "react";
+
+function App() {
+  const [checkedItems, setCheckedItems] = useState({
+    option1: false,
+    option2: false,
+    option3: false,
+  });
+
+  const allChecked = Object.values(checkedItems).every(Boolean);
+  const someChecked = Object.values(checkedItems).some(Boolean) && !allChecked;
+
+  const handleCheckAll = e => {
+    const newChecked = e.target.checked;
+    setCheckedItems({
+      option1: newChecked,
+      option2: newChecked,
+      option3: newChecked,
+    });
+  };
+
+  const handleCheckItem = key => e => {
+    setCheckedItems({
+      ...checkedItems,
+      [key]: e.target.checked,
+    });
+  };
+
+  return (
+    <div>
+      <TxCheckbox label="Check All" checked={allChecked} indeterminate={someChecked} onChange={handleCheckAll} />
+      <div style={{ marginLeft: "24px" }}>
+        <TxCheckbox label="Option 1" checked={checkedItems.option1} onChange={handleCheckItem("option1")} />
+        <TxCheckbox label="Option 2" checked={checkedItems.option2} onChange={handleCheckItem("option2")} />
+        <TxCheckbox label="Option 3" checked={checkedItems.option3} onChange={handleCheckItem("option3")} />
+      </div>
+    </div>
+  );
+}
+```
+
+  </TabItem>
+</Tabs>
+
+### Checkbox Group
+
+You can use multiple checkboxes together as a group to allow users to select multiple options.
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?viewMode=story&id=tx-design-ui-data-entry-txcheckbox--checkbox-group"
+      width="100%"
+      height="300px"
+      style={{border: '1px solid #ddd', borderRadius: '8px', background: 'white'}}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+
+```jsx
+import { TxCheckbox } from "tx-design-ui";
+import { useState } from "react";
+
+function App() {
+  const [checkedValues, setCheckedValues] = useState(["option2"]);
+
+  const handleCheckboxChange = value => e => {
+    if (e.target.checked) {
+      setCheckedValues([...checkedValues, value]);
+    } else {
+      setCheckedValues(checkedValues.filter(v => v !== value));
+    }
+  };
+
+  return (
+    <div>
+      <TxCheckbox
+        label="Email Notifications"
+        value="option1"
+        checked={checkedValues.includes("option1")}
+        onChange={handleCheckboxChange("option1")}
+      />
+      <TxCheckbox
+        label="SMS Notifications"
+        value="option2"
+        checked={checkedValues.includes("option2")}
+        onChange={handleCheckboxChange("option2")}
+      />
+      <TxCheckbox
+        label="Push Notifications"
+        value="option3"
+        checked={checkedValues.includes("option3")}
+        onChange={handleCheckboxChange("option3")}
+      />
+    </div>
+  );
+}
+```
+
+  </TabItem>
+</Tabs>
+
+## API
+
+| Property      | Type                             | Default    | Description                                                              |
+| ------------- | -------------------------------- | ---------- | ------------------------------------------------------------------------ |
+| label         | `string \| ReactNode`            | -          | The label text or element for the checkbox                               |
+| checked       | `boolean`                        | `false`    | Whether the checkbox is checked                                          |
+| onChange      | `function(e)`                    | -          | Callback function triggered when the checkbox state changes              |
+| disabled      | `boolean`                        | `false`    | Whether the checkbox is disabled                                         |
+| indeterminate | `boolean`                        | `false`    | Set the indeterminate state (only visual, doesn't affect checked state)  |
+| size          | `'small' \| 'medium' \| 'large'` | `'medium'` | The size of the checkbox                                                 |
+| danger        | `boolean`                        | `false`    | Set checkbox style to danger state                                       |
+| color         | `string`                         | -          | Custom label text color                                                  |
+| value         | `string`                         | -          | The value of the checkbox (useful in checkbox groups)                    |
+| name          | `string`                         | -          | The name attribute for the checkbox input                                |
+| id            | `string`                         | -          | The id attribute for the checkbox input (auto-generated if not provided) |
+
+## Notes
+
+- The checkbox automatically generates a unique ID if one is not provided
+- The `indeterminate` state is only visual and doesn't affect the `checked` state
+- When using checkbox groups, manage the state in the parent component
+- The checkbox label can be a string or any React node for custom content

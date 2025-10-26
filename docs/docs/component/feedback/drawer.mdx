@@ -1,0 +1,126 @@
+---
+title: Drawer
+featured: true
+component: true
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Drawer
+
+A panel that slides in from the edge of the screen.
+
+## When To Use
+
+- Use Drawer for displaying content that is supplementary to the main screen
+- When you need more screen space than a Modal provides
+- For showing detailed information or forms without navigating away
+
+## Basic Usage
+
+```jsx
+import { useState } from "react";
+import { TxDrawer, TxButton } from "tx-design-ui";
+
+function Example() {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <>
+      <TxButton onClick={() => setOpen(true)}>Open Drawer</TxButton>
+      <TxDrawer open={open} onClose={() => setOpen(false)} title="Basic Drawer">
+        <p>This is the drawer content.</p>
+      </TxDrawer>
+    </>
+  );
+}
+```
+
+## Placement
+
+The drawer can slide in from different edges of the screen.
+
+```jsx
+// From right (default)
+<TxDrawer placement="right" open={open} onClose={() => setOpen(false)} title="Right Drawer">
+  <p>Drawer from right</p>
+</TxDrawer>
+
+// From left
+<TxDrawer placement="left" open={open} onClose={() => setOpen(false)} title="Left Drawer">
+  <p>Drawer from left</p>
+</TxDrawer>
+
+// From top
+<TxDrawer placement="top" open={open} onClose={() => setOpen(false)} title="Top Drawer">
+  <p>Drawer from top</p>
+</TxDrawer>
+
+// From bottom
+<TxDrawer placement="bottom" open={open} onClose={() => setOpen(false)} title="Bottom Drawer">
+  <p>Drawer from bottom</p>
+</TxDrawer>
+```
+
+## With Footer
+
+Add action buttons in the footer.
+
+```jsx
+function Example() {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <>
+      <TxButton onClick={() => setOpen(true)}>Open Drawer</TxButton>
+      <TxDrawer
+        open={open}
+        onClose={() => setOpen(false)}
+        title="Drawer with Footer"
+        footer={
+          <>
+            <TxButton onClick={() => setOpen(false)}>Cancel</TxButton>
+            <TxButton type="primary" onClick={() => setOpen(false)}>
+              Submit
+            </TxButton>
+          </>
+        }
+      >
+        <p>This drawer has a footer.</p>
+      </TxDrawer>
+    </>
+  );
+}
+```
+
+## Custom Size
+
+Set custom width (for left/right) or height (for top/bottom).
+
+```jsx
+<TxDrawer open={open} onClose={() => setOpen(false)} title="Large Drawer" width="600px">
+  <p>This drawer has custom width.</p>
+</TxDrawer>
+```
+
+## API
+
+| Property     | Type                                     | Default   | Description                       |
+| ------------ | ---------------------------------------- | --------- | --------------------------------- |
+| open         | `boolean`                                | `false`   | Whether the drawer is visible     |
+| onClose      | `function()`                             | -         | Callback when drawer is closed    |
+| title        | `string \| ReactNode`                    | -         | Drawer title                      |
+| children     | `ReactNode`                              | -         | Drawer content                    |
+| footer       | `ReactNode`                              | -         | Drawer footer content             |
+| placement    | `'left' \| 'right' \| 'top' \| 'bottom'` | `'right'` | Position of the drawer            |
+| width        | `string`                                 | `'378px'` | Width (for left/right placement)  |
+| height       | `string`                                 | `'378px'` | Height (for top/bottom placement) |
+| closable     | `boolean`                                | `true`    | Whether to show close button      |
+| maskClosable | `boolean`                                | `true`    | Whether to close on mask click    |
+
+## Notes
+
+- Use Drawer for forms, settings, or detailed views
+- Consider the placement based on your UI layout
+- The drawer body automatically scrolls if content is too long

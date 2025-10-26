@@ -1,0 +1,130 @@
+---
+title: Slider
+featured: true
+component: true
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Slider
+
+A slider component for displaying and selecting values within a range.
+
+## When To Use
+
+- To input a value in a range
+- To adjust settings, such as volume or brightness
+
+## Examples
+
+### Basic Usage
+
+```jsx
+import { TxSlider } from "tx-design-ui";
+import { useState } from "react";
+
+function App() {
+  const [value, setValue] = useState(30);
+
+  return <TxSlider value={value} onChange={setValue} />;
+}
+```
+
+### Show Value
+
+Display the current value next to the slider.
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?viewMode=story&id=tx-design-ui-data-entry-txslider--basic"
+      width="100%"
+      height="150px"
+      style={{border: '1px solid #ddd', borderRadius: '8px', background: 'white'}}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+
+```jsx
+const [value, setValue] = useState(50);
+
+<TxSlider value={value} onChange={setValue} showValue />;
+```
+
+  </TabItem>
+</Tabs>
+
+### Disabled
+
+```jsx
+<TxSlider defaultValue={50} disabled />
+```
+
+### Custom Range and Step
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?viewMode=story&id=tx-design-ui-data-entry-txslider--disabled"
+      width="100%"
+      height="150px"
+      style={{border: '1px solid #ddd', borderRadius: '8px', background: 'white'}}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+
+```jsx
+const [value, setValue] = useState(0);
+
+<TxSlider min={0} max={10} step={0.5} value={value} onChange={setValue} showValue />;
+```
+
+  </TabItem>
+</Tabs>
+
+### With Marks
+
+Add marks to the slider to show specific values.
+
+```jsx
+const marks = {
+  0: "0°C",
+  26: "26°C",
+  37: "37°C",
+  100: "100°C",
+};
+
+<TxSlider marks={marks} defaultValue={37} />;
+```
+
+### Step Marks
+
+```jsx
+const marks = {
+  0: "0",
+  20: "20",
+  40: "40",
+  60: "60",
+  80: "80",
+  100: "100",
+};
+
+<TxSlider marks={marks} step={20} defaultValue={20} />;
+```
+
+## API
+
+| Property      | Description                 | Type            | Default |
+| ------------- | --------------------------- | --------------- | ------- |
+| min           | Minimum value               | number          | 0       |
+| max           | Maximum value               | number          | 100     |
+| step          | Step size for value changes | number          | 1       |
+| value         | Current value (controlled)  | number          | -       |
+| defaultValue  | Initial value               | number          | 0       |
+| disabled      | Disable the slider          | boolean         | false   |
+| showValue     | Show current value          | boolean         | false   |
+| marks         | Labels for specific values  | object          | -       |
+| onChange      | Callback when value changes | function(value) | -       |
+| onAfterChange | Callback when dragging ends | function(value) | -       |
+| className     | Additional CSS class        | string          | -       |

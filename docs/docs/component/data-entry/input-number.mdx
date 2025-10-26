@@ -1,0 +1,188 @@
+---
+sidebar_position: 7
+title: InputNumber
+featured: true
+component: true
+description: Enter a number within certain range with the mouse or keyboard.
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# InputNumber
+
+Enter a number within certain range with the mouse or keyboard.
+
+## When To Use
+
+When a numeric value needs to be provided.
+
+## Import
+
+```jsx
+import { TxInputNumber } from "tx-design-ui";
+```
+
+## Examples
+
+### Basic Usage
+
+Numeric input with increment and decrement controls.
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?viewMode=story&id=tx-design-ui-data-entry-txinputnumber--basic"
+      width="100%"
+      height="150px"
+      style={{border: '1px solid #ddd', borderRadius: '8px', background: 'white'}}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+
+```jsx
+import { TxInputNumber } from "tx-design-ui";
+import { useState } from "react";
+
+function App() {
+  const [value, setValue] = useState(0);
+
+  return <TxInputNumber value={value} onChange={val => setValue(val)} />;
+}
+```
+
+  </TabItem>
+</Tabs>
+
+### Sizes
+
+InputNumber comes in three sizes: `small`, `medium` (default), and `large`.
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?viewMode=story&id=tx-design-ui-data-entry-txinputnumber--size"
+      width="100%"
+      height="180px"
+      style={{border: '1px solid #ddd', borderRadius: '8px', background: 'white'}}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+
+```jsx
+<TxInputNumber value={10} size="small" />
+<TxInputNumber value={10} size="medium" />
+<TxInputNumber value={10} size="large" />
+```
+
+  </TabItem>
+</Tabs>
+
+### Min and Max
+
+Set minimum and maximum values.
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?viewMode=story&id=tx-design-ui-data-entry-txinputnumber--min-max"
+      width="100%"
+      height="150px"
+      style={{border: '1px solid #ddd', borderRadius: '8px', background: 'white'}}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+
+```jsx
+<TxInputNumber value={5} min={0} max={10} />
+```
+
+  </TabItem>
+</Tabs>
+
+### Step
+
+Set the step for incrementing/decrementing.
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?viewMode=story&id=tx-design-ui-data-entry-txinputnumber--step"
+      width="100%"
+      height="150px"
+      style={{border: '1px solid #ddd', borderRadius: '8px', background: 'white'}}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+
+```jsx
+<TxInputNumber value={0} step={1} />
+<TxInputNumber value={0} step={5} />
+<TxInputNumber value={0} step={10} />
+```
+
+  </TabItem>
+</Tabs>
+
+### Disabled
+
+Disabled input number.
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?viewMode=story&id=tx-design-ui-data-entry-txinputnumber--disabled"
+      width="100%"
+      height="150px"
+      style={{border: '1px solid #ddd', borderRadius: '8px', background: 'white'}}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+
+```jsx
+<TxInputNumber value={5} disabled />
+```
+
+  </TabItem>
+</Tabs>
+
+### Status
+
+Add status to InputNumber with `status`, which could be `success`, `warning`, or `error`.
+
+```jsx
+<TxInputNumber value={10} status="success" />
+<TxInputNumber value={10} status="warning" />
+<TxInputNumber value={10} status="error" />
+```
+
+### Full Width
+
+Make the input number take full width.
+
+```jsx
+<TxInputNumber value={50} fullWidth />
+```
+
+## API
+
+| Property    | Type                                | Default          | Description                                             |
+| ----------- | ----------------------------------- | ---------------- | ------------------------------------------------------- |
+| value       | `number \| string`                  | -                | Current value                                           |
+| onChange    | `function(value)`                   | -                | Callback when value is changed                          |
+| min         | `number`                            | -                | Minimum value                                           |
+| max         | `number`                            | -                | Maximum value                                           |
+| step        | `number`                            | `1`              | The number to which the value is increased or decreased |
+| placeholder | `string`                            | `'Enter number'` | Placeholder text                                        |
+| disabled    | `boolean`                           | `false`          | Whether disabled                                        |
+| size        | `'small' \| 'medium' \| 'large'`    | `'medium'`       | Size of input                                           |
+| status      | `'success' \| 'warning' \| 'error'` | -                | Set validation status                                   |
+| fullWidth   | `boolean`                           | `false`          | Take full width of container                            |
+
+## Notes
+
+- The up/down buttons are automatically disabled when reaching min/max values
+- You can also type the number directly into the input
+- Invalid input (non-numeric) will be ignored
+- The native browser number spinner is hidden in favor of custom controls
+- Empty value is allowed and can be handled by the onChange callback
