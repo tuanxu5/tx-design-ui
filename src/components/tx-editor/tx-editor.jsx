@@ -33,7 +33,6 @@ const EditorContent = styled.textarea`
   border: none;
   padding: 16px;
   font-size: 14px;
-  font-family: monospace;
   resize: vertical;
   min-height: 300px;
 

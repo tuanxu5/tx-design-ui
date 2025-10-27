@@ -8,7 +8,6 @@ const Input = styled.input`
   border: 1px solid ${colors.borderLight};
   border-radius: 6px;
   font-size: 14px;
-  font-family: inherit;
 
   &:focus {
     outline: none;

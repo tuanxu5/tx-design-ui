@@ -6,7 +6,6 @@ const CodeContainer = styled.code`
   background: ${props => (props.variant === "outlined" ? "transparent" : colors.bgFillLight)};
   border: ${props => (props.variant === "outlined" ? `1px solid ${colors.borderLight}` : "none")};
   border-radius: 4px;
-  font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
   font-size: ${props => props.size || "14px"};
   color: ${colors.textPrimary};
   display: ${props => (props.block ? "block" : "inline")};

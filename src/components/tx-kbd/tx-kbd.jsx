@@ -4,7 +4,6 @@ import colors from "../../theme/colors";
 const KbdStyled = styled.kbd`
   display: inline-block;
   padding: 2px 8px;
-  font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
   font-size: 12px;
   font-weight: 500;
   color: ${colors.textPrimary};

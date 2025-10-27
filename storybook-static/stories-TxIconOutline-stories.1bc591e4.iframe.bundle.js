@@ -1,0 +1,3289 @@
+"use strict";
+(self.webpackChunktx_design_ui = self.webpackChunktx_design_ui || []).push([
+  [8686],
+  {
+    "./node_modules/@babel/runtime/helpers/esm/arrayLikeToArray.js": (
+      __unused_webpack_module,
+      __webpack_exports__,
+      __webpack_require__
+    ) => {
+      function _arrayLikeToArray(r, a) {
+        (null == a || a > r.length) && (a = r.length);
+        for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e];
+        return n;
+      }
+      __webpack_require__.d(__webpack_exports__, { A: () => _arrayLikeToArray });
+    },
+    "./node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js": (
+      __unused_webpack_module,
+      __webpack_exports__,
+      __webpack_require__
+    ) => {
+      function _arrayWithHoles(r) {
+        if (Array.isArray(r)) return r;
+      }
+      __webpack_require__.d(__webpack_exports__, { A: () => _arrayWithHoles });
+    },
+    "./node_modules/@babel/runtime/helpers/esm/nonIterableRest.js": (
+      __unused_webpack_module,
+      __webpack_exports__,
+      __webpack_require__
+    ) => {
+      function _nonIterableRest() {
+        throw new TypeError(
+          "Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."
+        );
+      }
+      __webpack_require__.d(__webpack_exports__, { A: () => _nonIterableRest });
+    },
+    "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js": (
+      __unused_webpack_module,
+      __webpack_exports__,
+      __webpack_require__
+    ) => {
+      __webpack_require__.d(__webpack_exports__, { A: () => _slicedToArray });
+      var arrayWithHoles = __webpack_require__("./node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js");
+      var unsupportedIterableToArray = __webpack_require__(
+          "./node_modules/@babel/runtime/helpers/esm/unsupportedIterableToArray.js"
+        ),
+        nonIterableRest = __webpack_require__("./node_modules/@babel/runtime/helpers/esm/nonIterableRest.js");
+      function _slicedToArray(r, e) {
+        return (
+          (0, arrayWithHoles.A)(r) ||
+          (function _iterableToArrayLimit(r, l) {
+            var t = null == r ? null : ("undefined" != typeof Symbol && r[Symbol.iterator]) || r["@@iterator"];
+            if (null != t) {
+              var e,
+                n,
+                i,
+                u,
+                a = [],
+                f = !0,
+                o = !1;
+              try {
+                if (((i = (t = t.call(r)).next), 0 === l)) {
+                  if (Object(t) !== t) return;
+                  f = !1;
+                } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0);
+              } catch (r) {
+                (o = !0), (n = r);
+              } finally {
+                try {
+                  if (!f && null != t.return && ((u = t.return()), Object(u) !== u)) return;
+                } finally {
+                  if (o) throw n;
+                }
+              }
+              return a;
+            }
+          })(r, e) ||
+          (0, unsupportedIterableToArray.A)(r, e) ||
+          (0, nonIterableRest.A)()
+        );
+      }
+    },
+    "./node_modules/@babel/runtime/helpers/esm/unsupportedIterableToArray.js": (
+      __unused_webpack_module,
+      __webpack_exports__,
+      __webpack_require__
+    ) => {
+      __webpack_require__.d(__webpack_exports__, { A: () => _unsupportedIterableToArray });
+      var _arrayLikeToArray_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+        "./node_modules/@babel/runtime/helpers/esm/arrayLikeToArray.js"
+      );
+      function _unsupportedIterableToArray(r, a) {
+        if (r) {
+          if ("string" == typeof r) return (0, _arrayLikeToArray_js__WEBPACK_IMPORTED_MODULE_0__.A)(r, a);
+          var t = {}.toString.call(r).slice(8, -1);
+          return (
+            "Object" === t && r.constructor && (t = r.constructor.name),
+            "Map" === t || "Set" === t
+              ? Array.from(r)
+              : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t)
+              ? (0, _arrayLikeToArray_js__WEBPACK_IMPORTED_MODULE_0__.A)(r, a)
+              : void 0
+          );
+        }
+      }
+    },
+    "./src/stories/TxIconOutline.stories.js": (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+      __webpack_require__.r(__webpack_exports__),
+        __webpack_require__.d(__webpack_exports__, {
+          Filled: () => Filled,
+          Outline: () => Outline,
+          __namedExportsOrder: () => __namedExportsOrder,
+          default: () => __WEBPACK_DEFAULT_EXPORT__,
+        });
+      var _Users_tuanxu5_tx_design_ui_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_3__ =
+          __webpack_require__("./node_modules/@babel/runtime/helpers/esm/slicedToArray.js"),
+        react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./node_modules/react/index.js"),
+        _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./src/assets/icons/outline/index.js"),
+        react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("./node_modules/react/jsx-runtime.js");
+      const __WEBPACK_DEFAULT_EXPORT__ = {
+        title: "tx-design-ui/Foundation/TxIcon/TxIconOutline",
+        component: "TxIcon",
+        parameters: { layout: "fullscreen" },
+      };
+      var iconData = [
+        {
+          name: "Add",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconAdd,
+          description: "Add",
+          category: "Outline",
+        },
+        {
+          name: "AddressBook",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconAddressBook,
+          description: "AddressBook",
+          category: "Outline",
+        },
+        {
+          name: "AlarmClock",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconAlarmClock,
+          description: "AlarmClock",
+          category: "Outline",
+        },
+        {
+          name: "AlignCenter",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconAlignCenter,
+          description: "AlignCenter",
+          category: "Outline",
+        },
+        {
+          name: "AlignJustify",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconAlignJustify,
+          description: "AlignJustify",
+          category: "Outline",
+        },
+        {
+          name: "AlignLeft",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconAlignLeft,
+          description: "AlignLeft",
+          category: "Outline",
+        },
+        {
+          name: "AlignRight",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconAlignRight,
+          description: "AlignRight",
+          category: "Outline",
+        },
+        {
+          name: "Ambulance",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconAmbulance,
+          description: "Ambulance",
+          category: "Outline",
+        },
+        {
+          name: "AngleDoubleLeft",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconAngleDoubleLeft,
+          description: "AngleDoubleLeft",
+          category: "Outline",
+        },
+        {
+          name: "AngleDoubleRight",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconAngleDoubleRight,
+          description: "AngleDoubleRight",
+          category: "Outline",
+        },
+        {
+          name: "AngleDoubleSmallLeft",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconAngleDoubleSmallLeft,
+          description: "AngleDoubleSmallLeft",
+          category: "Outline",
+        },
+        {
+          name: "AngleDoubleSmallRight",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconAngleDoubleSmallRight,
+          description: "AngleDoubleSmallRight",
+          category: "Outline",
+        },
+        {
+          name: "AngleDown",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconAngleDown,
+          description: "AngleDown",
+          category: "Outline",
+        },
+        {
+          name: "AngleLeft",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconAngleLeft,
+          description: "AngleLeft",
+          category: "Outline",
+        },
+        {
+          name: "AngleRight",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconAngleRight,
+          description: "AngleRight",
+          category: "Outline",
+        },
+        {
+          name: "AngleSmallDown",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconAngleSmallDown,
+          description: "AngleSmallDown",
+          category: "Outline",
+        },
+        {
+          name: "AngleSmallLeft",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconAngleSmallLeft,
+          description: "AngleSmallLeft",
+          category: "Outline",
+        },
+        {
+          name: "AngleSmallRight",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconAngleSmallRight,
+          description: "AngleSmallRight",
+          category: "Outline",
+        },
+        {
+          name: "AngleSmallUp",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconAngleSmallUp,
+          description: "AngleSmallUp",
+          category: "Outline",
+        },
+        {
+          name: "AngleUp",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconAngleUp,
+          description: "AngleUp",
+          category: "Outline",
+        },
+        {
+          name: "Apple",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconApple,
+          description: "Apple",
+          category: "Outline",
+        },
+        {
+          name: "AppsAdd",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconAppsAdd,
+          description: "AppsAdd",
+          category: "Outline",
+        },
+        {
+          name: "AppsDelete",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconAppsDelete,
+          description: "AppsDelete",
+          category: "Outline",
+        },
+        {
+          name: "AppsSort",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconAppsSort,
+          description: "AppsSort",
+          category: "Outline",
+        },
+        {
+          name: "Apps",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconApps,
+          description: "Apps",
+          category: "Outline",
+        },
+        {
+          name: "Archive",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconArchive,
+          description: "Archive",
+          category: "Outline",
+        },
+        {
+          name: "ArrowDown",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconArrowDown,
+          description: "ArrowDown",
+          category: "Outline",
+        },
+        {
+          name: "ArrowFromBottom",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconArrowFromBottom,
+          description: "ArrowFromBottom",
+          category: "Outline",
+        },
+        {
+          name: "ArrowLeft",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconArrowLeft,
+          description: "ArrowLeft",
+          category: "Outline",
+        },
+        {
+          name: "ArrowRight",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconArrowRight,
+          description: "ArrowRight",
+          category: "Outline",
+        },
+        {
+          name: "ArrowSmallDown",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconArrowSmallDown,
+          description: "ArrowSmallDown",
+          category: "Outline",
+        },
+        {
+          name: "ArrowSmallLeft",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconArrowSmallLeft,
+          description: "ArrowSmallLeft",
+          category: "Outline",
+        },
+        {
+          name: "ArrowSmallRight",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconArrowSmallRight,
+          description: "ArrowSmallRight",
+          category: "Outline",
+        },
+        {
+          name: "ArrowSmallUp",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconArrowSmallUp,
+          description: "ArrowSmallUp",
+          category: "Outline",
+        },
+        {
+          name: "ArrowUp",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconArrowUp,
+          description: "ArrowUp",
+          category: "Outline",
+        },
+        {
+          name: "Asterik",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconAsterik,
+          description: "Asterik",
+          category: "Outline",
+        },
+        {
+          name: "At",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconAt,
+          description: "At",
+          category: "Outline",
+        },
+        {
+          name: "Backpack",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconBackpack,
+          description: "Backpack",
+          category: "Outline",
+        },
+        {
+          name: "Badge",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconBadge,
+          description: "Badge",
+          category: "Outline",
+        },
+        {
+          name: "Balloons",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconBalloons,
+          description: "Balloons",
+          category: "Outline",
+        },
+        {
+          name: "Ban",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconBan,
+          description: "Ban",
+          category: "Outline",
+        },
+        {
+          name: "BandAid",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconBandAid,
+          description: "BandAid",
+          category: "Outline",
+        },
+        {
+          name: "Bank",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconBank,
+          description: "Bank",
+          category: "Outline",
+        },
+        {
+          name: "BarberShop",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconBarberShop,
+          description: "BarberShop",
+          category: "Outline",
+        },
+        {
+          name: "Baseball",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconBaseball,
+          description: "Baseball",
+          category: "Outline",
+        },
+        {
+          name: "Basketball",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconBasketball,
+          description: "Basketball",
+          category: "Outline",
+        },
+        {
+          name: "Bed",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconBed,
+          description: "Bed",
+          category: "Outline",
+        },
+        {
+          name: "Beer",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconBeer,
+          description: "Beer",
+          category: "Outline",
+        },
+        {
+          name: "BellRing",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconBellRing,
+          description: "BellRing",
+          category: "Outline",
+        },
+        {
+          name: "BellSchool",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconBellSchool,
+          description: "BellSchool",
+          category: "Outline",
+        },
+        {
+          name: "Bell",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconBell,
+          description: "Bell",
+          category: "Outline",
+        },
+        {
+          name: "Bike",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconBike,
+          description: "Bike",
+          category: "Outline",
+        },
+        {
+          name: "Billiard",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconBilliard,
+          description: "Billiard",
+          category: "Outline",
+        },
+        {
+          name: "Bold",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconBold,
+          description: "Bold",
+          category: "Outline",
+        },
+        {
+          name: "BookAlt",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconBookAlt,
+          description: "BookAlt",
+          category: "Outline",
+        },
+        {
+          name: "Book",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconBook,
+          description: "Book",
+          category: "Outline",
+        },
+        {
+          name: "Bookmark",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconBookmark,
+          description: "Bookmark",
+          category: "Outline",
+        },
+        {
+          name: "Bowling",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconBowling,
+          description: "Bowling",
+          category: "Outline",
+        },
+        {
+          name: "BoxAlt",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconBoxAlt,
+          description: "BoxAlt",
+          category: "Outline",
+        },
+        {
+          name: "Box",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconBox,
+          description: "Box",
+          category: "Outline",
+        },
+        {
+          name: "BreadSlice",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconBreadSlice,
+          description: "BreadSlice",
+          category: "Outline",
+        },
+        {
+          name: "Briefcase",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconBriefcase,
+          description: "Briefcase",
+          category: "Outline",
+        },
+        {
+          name: "Broom",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconBroom,
+          description: "Broom",
+          category: "Outline",
+        },
+        {
+          name: "Browser",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconBrowser,
+          description: "Browser",
+          category: "Outline",
+        },
+        {
+          name: "Brush",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconBrush,
+          description: "Brush",
+          category: "Outline",
+        },
+        {
+          name: "Bug",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconBug,
+          description: "Bug",
+          category: "Outline",
+        },
+        {
+          name: "Building",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconBuilding,
+          description: "Building",
+          category: "Outline",
+        },
+        {
+          name: "Bulb",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconBulb,
+          description: "Bulb",
+          category: "Outline",
+        },
+        {
+          name: "Butterfly",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconButterfly,
+          description: "Butterfly",
+          category: "Outline",
+        },
+        {
+          name: "CakeBirthday",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCakeBirthday,
+          description: "CakeBirthday",
+          category: "Outline",
+        },
+        {
+          name: "CakeWedding",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCakeWedding,
+          description: "CakeWedding",
+          category: "Outline",
+        },
+        {
+          name: "Calculator",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCalculator,
+          description: "Calculator",
+          category: "Outline",
+        },
+        {
+          name: "Calendar",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCalendar,
+          description: "Calendar",
+          category: "Outline",
+        },
+        {
+          name: "CallHistory",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCallHistory,
+          description: "CallHistory",
+          category: "Outline",
+        },
+        {
+          name: "CallIncoming",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCallIncoming,
+          description: "CallIncoming",
+          category: "Outline",
+        },
+        {
+          name: "CallMissed",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCallMissed,
+          description: "CallMissed",
+          category: "Outline",
+        },
+        {
+          name: "CallOutgoing",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCallOutgoing,
+          description: "CallOutgoing",
+          category: "Outline",
+        },
+        {
+          name: "Camera",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCamera,
+          description: "Camera",
+          category: "Outline",
+        },
+        {
+          name: "Camping",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCamping,
+          description: "Camping",
+          category: "Outline",
+        },
+        {
+          name: "Car",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCar,
+          description: "Car",
+          category: "Outline",
+        },
+        {
+          name: "CaretDown",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCaretDown,
+          description: "CaretDown",
+          category: "Outline",
+        },
+        {
+          name: "CaretLeft",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCaretLeft,
+          description: "CaretLeft",
+          category: "Outline",
+        },
+        {
+          name: "CaretRight",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCaretRight,
+          description: "CaretRight",
+          category: "Outline",
+        },
+        {
+          name: "CaretUp",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCaretUp,
+          description: "CaretUp",
+          category: "Outline",
+        },
+        {
+          name: "Carrot",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCarrot,
+          description: "Carrot",
+          category: "Outline",
+        },
+        {
+          name: "ChartConnected",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconChartConnected,
+          description: "ChartConnected",
+          category: "Outline",
+        },
+        {
+          name: "ChartHistogram",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconChartHistogram,
+          description: "ChartHistogram",
+          category: "Outline",
+        },
+        {
+          name: "ChartNetwork",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconChartNetwork,
+          description: "ChartNetwork",
+          category: "Outline",
+        },
+        {
+          name: "ChartPieAlt",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconChartPieAlt,
+          description: "ChartPieAlt",
+          category: "Outline",
+        },
+        {
+          name: "ChartPie",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconChartPie,
+          description: "ChartPie",
+          category: "Outline",
+        },
+        {
+          name: "ChartPyramid",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconChartPyramid,
+          description: "ChartPyramid",
+          category: "Outline",
+        },
+        {
+          name: "ChartSetTheory",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconChartSetTheory,
+          description: "ChartSetTheory",
+          category: "Outline",
+        },
+        {
+          name: "ChartTree",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconChartTree,
+          description: "ChartTree",
+          category: "Outline",
+        },
+        {
+          name: "ChatArrowDown",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconChatArrowDown,
+          description: "ChatArrowDown",
+          category: "Outline",
+        },
+        {
+          name: "ChatArrowGrow",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconChatArrowGrow,
+          description: "ChatArrowGrow",
+          category: "Outline",
+        },
+        {
+          name: "Check",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCheck,
+          description: "Check",
+          category: "Outline",
+        },
+        {
+          name: "Checkbox",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCheckbox,
+          description: "Checkbox",
+          category: "Outline",
+        },
+        {
+          name: "Cheese",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCheese,
+          description: "Cheese",
+          category: "Outline",
+        },
+        {
+          name: "ChessPiece",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconChessPiece,
+          description: "ChessPiece",
+          category: "Outline",
+        },
+        {
+          name: "ChildHead",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconChildHead,
+          description: "ChildHead",
+          category: "Outline",
+        },
+        {
+          name: "CircleSmall",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCircleSmall,
+          description: "CircleSmall",
+          category: "Outline",
+        },
+        {
+          name: "Circle",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCircle,
+          description: "Circle",
+          category: "Outline",
+        },
+        {
+          name: "Clip",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconClip,
+          description: "Clip",
+          category: "Outline",
+        },
+        {
+          name: "Clock",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconClock,
+          description: "Clock",
+          category: "Outline",
+        },
+        {
+          name: "CloudCheck",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCloudCheck,
+          description: "CloudCheck",
+          category: "Outline",
+        },
+        {
+          name: "CloudDisabled",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCloudDisabled,
+          description: "CloudDisabled",
+          category: "Outline",
+        },
+        {
+          name: "CloudDownload",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCloudDownload,
+          description: "CloudDownload",
+          category: "Outline",
+        },
+        {
+          name: "CloudShare",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCloudShare,
+          description: "CloudShare",
+          category: "Outline",
+        },
+        {
+          name: "CloudUpload",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCloudUpload,
+          description: "CloudUpload",
+          category: "Outline",
+        },
+        {
+          name: "Cloud",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCloud,
+          description: "Cloud",
+          category: "Outline",
+        },
+        {
+          name: "Clouds",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconClouds,
+          description: "Clouds",
+          category: "Outline",
+        },
+        {
+          name: "Cocktail",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCocktail,
+          description: "Cocktail",
+          category: "Outline",
+        },
+        {
+          name: "Coffee",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCoffee,
+          description: "Coffee",
+          category: "Outline",
+        },
+        {
+          name: "CommentAlt",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCommentAlt,
+          description: "CommentAlt",
+          category: "Outline",
+        },
+        {
+          name: "CommentCheck",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCommentCheck,
+          description: "CommentCheck",
+          category: "Outline",
+        },
+        {
+          name: "CommentHeart",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCommentHeart,
+          description: "CommentHeart",
+          category: "Outline",
+        },
+        {
+          name: "CommentInfo",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCommentInfo,
+          description: "CommentInfo",
+          category: "Outline",
+        },
+        {
+          name: "CommentUser",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCommentUser,
+          description: "CommentUser",
+          category: "Outline",
+        },
+        {
+          name: "Comment",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconComment,
+          description: "Comment",
+          category: "Outline",
+        },
+        {
+          name: "Comments",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconComments,
+          description: "Comments",
+          category: "Outline",
+        },
+        {
+          name: "CompressAlt",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCompressAlt,
+          description: "CompressAlt",
+          category: "Outline",
+        },
+        {
+          name: "Compress",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCompress,
+          description: "Compress",
+          category: "Outline",
+        },
+        {
+          name: "Computer",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconComputer,
+          description: "Computer",
+          category: "Outline",
+        },
+        {
+          name: "Confetti",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconConfetti,
+          description: "Confetti",
+          category: "Outline",
+        },
+        {
+          name: "Cookie",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCookie,
+          description: "Cookie",
+          category: "Outline",
+        },
+        {
+          name: "CopyAlt",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCopyAlt,
+          description: "CopyAlt",
+          category: "Outline",
+        },
+        {
+          name: "Copy",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCopy,
+          description: "Copy",
+          category: "Outline",
+        },
+        {
+          name: "Copyright",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCopyright,
+          description: "Copyright",
+          category: "Outline",
+        },
+        {
+          name: "Cow",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCow,
+          description: "Cow",
+          category: "Outline",
+        },
+        {
+          name: "Cream",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCream,
+          description: "Cream",
+          category: "Outline",
+        },
+        {
+          name: "CreditCard",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCreditCard,
+          description: "CreditCard",
+          category: "Outline",
+        },
+        {
+          name: "Croissant",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCroissant,
+          description: "Croissant",
+          category: "Outline",
+        },
+        {
+          name: "CrossCircle",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCrossCircle,
+          description: "CrossCircle",
+          category: "Outline",
+        },
+        {
+          name: "CrossSmall",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCrossSmall,
+          description: "CrossSmall",
+          category: "Outline",
+        },
+        {
+          name: "Cross",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCross,
+          description: "Cross",
+          category: "Outline",
+        },
+        {
+          name: "Crown",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCrown,
+          description: "Crown",
+          category: "Outline",
+        },
+        {
+          name: "Cube",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCube,
+          description: "Cube",
+          category: "Outline",
+        },
+        {
+          name: "Cupcake",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCupcake,
+          description: "Cupcake",
+          category: "Outline",
+        },
+        {
+          name: "CursorFinger",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCursorFinger,
+          description: "CursorFinger",
+          category: "Outline",
+        },
+        {
+          name: "CursorPlus",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCursorPlus,
+          description: "CursorPlus",
+          category: "Outline",
+        },
+        {
+          name: "CursorTextAlt",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCursorTextAlt,
+          description: "CursorTextAlt",
+          category: "Outline",
+        },
+        {
+          name: "CursorText",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCursorText,
+          description: "CursorText",
+          category: "Outline",
+        },
+        {
+          name: "Cursor",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconCursor,
+          description: "Cursor",
+          category: "Outline",
+        },
+        {
+          name: "Dart",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconDart,
+          description: "Dart",
+          category: "Outline",
+        },
+        {
+          name: "Dashboard",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconDashboard,
+          description: "Dashboard",
+          category: "Outline",
+        },
+        {
+          name: "DataTransfer",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconDataTransfer,
+          description: "DataTransfer",
+          category: "Outline",
+        },
+        {
+          name: "Database",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconDatabase,
+          description: "Database",
+          category: "Outline",
+        },
+        {
+          name: "Delete",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconDelete,
+          description: "Delete",
+          category: "Outline",
+        },
+        {
+          name: "Diamond",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconDiamond,
+          description: "Diamond",
+          category: "Outline",
+        },
+        {
+          name: "Dice",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconDice,
+          description: "Dice",
+          category: "Outline",
+        },
+        {
+          name: "Diploma",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconDiploma,
+          description: "Diploma",
+          category: "Outline",
+        },
+        {
+          name: "DiscoBall",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconDiscoBall,
+          description: "DiscoBall",
+          category: "Outline",
+        },
+        {
+          name: "Disk",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconDisk,
+          description: "Disk",
+          category: "Outline",
+        },
+        {
+          name: "Doctor",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconDoctor,
+          description: "Doctor",
+          category: "Outline",
+        },
+        {
+          name: "DocumentSigned",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconDocumentSigned,
+          description: "DocumentSigned",
+          category: "Outline",
+        },
+        {
+          name: "Document",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconDocument,
+          description: "Document",
+          category: "Outline",
+        },
+        {
+          name: "Dollar",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconDollar,
+          description: "Dollar",
+          category: "Outline",
+        },
+        {
+          name: "Download",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconDownload,
+          description: "Download",
+          category: "Outline",
+        },
+        {
+          name: "DrinkAlt",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconDrinkAlt,
+          description: "DrinkAlt",
+          category: "Outline",
+        },
+        {
+          name: "Drumstick",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconDrumstick,
+          description: "Drumstick",
+          category: "Outline",
+        },
+        {
+          name: "Duplicate",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconDuplicate,
+          description: "Duplicate",
+          category: "Outline",
+        },
+        {
+          name: "ELearning",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconELearning,
+          description: "ELearning",
+          category: "Outline",
+        },
+        {
+          name: "Earnings",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconEarnings,
+          description: "Earnings",
+          category: "Outline",
+        },
+        {
+          name: "EditAlt",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconEditAlt,
+          description: "EditAlt",
+          category: "Outline",
+        },
+        {
+          name: "Edit",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconEdit,
+          description: "Edit",
+          category: "Outline",
+        },
+        {
+          name: "EnvelopeBan",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconEnvelopeBan,
+          description: "EnvelopeBan",
+          category: "Outline",
+        },
+        {
+          name: "EnvelopeDownload",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconEnvelopeDownload,
+          description: "EnvelopeDownload",
+          category: "Outline",
+        },
+        {
+          name: "EnvelopeMarker",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconEnvelopeMarker,
+          description: "EnvelopeMarker",
+          category: "Outline",
+        },
+        {
+          name: "EnvelopeOpen",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconEnvelopeOpen,
+          description: "EnvelopeOpen",
+          category: "Outline",
+        },
+        {
+          name: "EnvelopePlus",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconEnvelopePlus,
+          description: "EnvelopePlus",
+          category: "Outline",
+        },
+        {
+          name: "Envelope",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconEnvelope,
+          description: "Envelope",
+          category: "Outline",
+        },
+        {
+          name: "Euro",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconEuro,
+          description: "Euro",
+          category: "Outline",
+        },
+        {
+          name: "Exclamation",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconExclamation,
+          description: "Exclamation",
+          category: "Outline",
+        },
+        {
+          name: "Expand",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconExpand,
+          description: "Expand",
+          category: "Outline",
+        },
+        {
+          name: "EyeCrossed",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconEyeCrossed,
+          description: "EyeCrossed",
+          category: "Outline",
+        },
+        {
+          name: "EyeDropper",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconEyeDropper,
+          description: "EyeDropper",
+          category: "Outline",
+        },
+        {
+          name: "Eye",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconEye,
+          description: "Eye",
+          category: "Outline",
+        },
+        {
+          name: "Feather",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconFeather,
+          description: "Feather",
+          category: "Outline",
+        },
+        {
+          name: "FerrisWheel",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconFerrisWheel,
+          description: "FerrisWheel",
+          category: "Outline",
+        },
+        {
+          name: "FileAdd",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconFileAdd,
+          description: "FileAdd",
+          category: "Outline",
+        },
+        {
+          name: "FileAi",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconFileAi,
+          description: "FileAi",
+          category: "Outline",
+        },
+        {
+          name: "FileCheck",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconFileCheck,
+          description: "FileCheck",
+          category: "Outline",
+        },
+        {
+          name: "FileDelete",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconFileDelete,
+          description: "FileDelete",
+          category: "Outline",
+        },
+        {
+          name: "FileEps",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconFileEps,
+          description: "FileEps",
+          category: "Outline",
+        },
+        {
+          name: "FileGif",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconFileGif,
+          description: "FileGif",
+          category: "Outline",
+        },
+        {
+          name: "FileMusic",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconFileMusic,
+          description: "FileMusic",
+          category: "Outline",
+        },
+        {
+          name: "FilePsd",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconFilePsd,
+          description: "FilePsd",
+          category: "Outline",
+        },
+        {
+          name: "File",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconFile,
+          description: "File",
+          category: "Outline",
+        },
+        {
+          name: "Fill",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconFill,
+          description: "Fill",
+          category: "Outline",
+        },
+        {
+          name: "Film",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconFilm,
+          description: "Film",
+          category: "Outline",
+        },
+        {
+          name: "Filter",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconFilter,
+          description: "Filter",
+          category: "Outline",
+        },
+        {
+          name: "Fingerprint",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconFingerprint,
+          description: "Fingerprint",
+          category: "Outline",
+        },
+        {
+          name: "Fish",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconFish,
+          description: "Fish",
+          category: "Outline",
+        },
+        {
+          name: "Flag",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconFlag,
+          description: "Flag",
+          category: "Outline",
+        },
+        {
+          name: "Flame",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconFlame,
+          description: "Flame",
+          category: "Outline",
+        },
+        {
+          name: "FlipHorizontal",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconFlipHorizontal,
+          description: "FlipHorizontal",
+          category: "Outline",
+        },
+        {
+          name: "FlowerBouquet",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconFlowerBouquet,
+          description: "FlowerBouquet",
+          category: "Outline",
+        },
+        {
+          name: "FlowerTulip",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconFlowerTulip,
+          description: "FlowerTulip",
+          category: "Outline",
+        },
+        {
+          name: "Flower",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconFlower,
+          description: "Flower",
+          category: "Outline",
+        },
+        {
+          name: "FolderAdd",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconFolderAdd,
+          description: "FolderAdd",
+          category: "Outline",
+        },
+        {
+          name: "Folder",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconFolder,
+          description: "Folder",
+          category: "Outline",
+        },
+        {
+          name: "Following",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconFollowing,
+          description: "Following",
+          category: "Outline",
+        },
+        {
+          name: "Football",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconFootball,
+          description: "Football",
+          category: "Outline",
+        },
+        {
+          name: "Form",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconForm,
+          description: "Form",
+          category: "Outline",
+        },
+        {
+          name: "Forward",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconForward,
+          description: "Forward",
+          category: "Outline",
+        },
+        {
+          name: "Fox",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconFox,
+          description: "Fox",
+          category: "Outline",
+        },
+        {
+          name: "Frown",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconFrown,
+          description: "Frown",
+          category: "Outline",
+        },
+        {
+          name: "Ftp",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconFtp,
+          description: "Ftp",
+          category: "Outline",
+        },
+        {
+          name: "Gallery",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconGallery,
+          description: "Gallery",
+          category: "Outline",
+        },
+        {
+          name: "Gamepad",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconGamepad,
+          description: "Gamepad",
+          category: "Outline",
+        },
+        {
+          name: "GasPump",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconGasPump,
+          description: "GasPump",
+          category: "Outline",
+        },
+        {
+          name: "Gem",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconGem,
+          description: "Gem",
+          category: "Outline",
+        },
+        {
+          name: "Gift",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconGift,
+          description: "Gift",
+          category: "Outline",
+        },
+        {
+          name: "GlassCheers",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconGlassCheers,
+          description: "GlassCheers",
+          category: "Outline",
+        },
+        {
+          name: "Glasses",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconGlasses,
+          description: "Glasses",
+          category: "Outline",
+        },
+        {
+          name: "GlobeAlt",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconGlobeAlt,
+          description: "GlobeAlt",
+          category: "Outline",
+        },
+        {
+          name: "Globe",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconGlobe,
+          description: "Globe",
+          category: "Outline",
+        },
+        {
+          name: "Golf",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconGolf,
+          description: "Golf",
+          category: "Outline",
+        },
+        {
+          name: "GraduationCap",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconGraduationCap,
+          description: "GraduationCap",
+          category: "Outline",
+        },
+        {
+          name: "GraphicTablet",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconGraphicTablet,
+          description: "GraphicTablet",
+          category: "Outline",
+        },
+        {
+          name: "GridAlt",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconGridAlt,
+          description: "GridAlt",
+          category: "Outline",
+        },
+        {
+          name: "Grid",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconGrid,
+          description: "Grid",
+          category: "Outline",
+        },
+        {
+          name: "Guitar",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconGuitar,
+          description: "Guitar",
+          category: "Outline",
+        },
+        {
+          name: "Gym",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconGym,
+          description: "Gym",
+          category: "Outline",
+        },
+        {
+          name: "Hamburger",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconHamburger,
+          description: "Hamburger",
+          category: "Outline",
+        },
+        {
+          name: "HandHoldingHeart",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconHandHoldingHeart,
+          description: "HandHoldingHeart",
+          category: "Outline",
+        },
+        {
+          name: "Hastag",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconHastag,
+          description: "Hastag",
+          category: "Outline",
+        },
+        {
+          name: "HatBirthday",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconHatBirthday,
+          description: "HatBirthday",
+          category: "Outline",
+        },
+        {
+          name: "HeadSideThinking",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconHeadSideThinking,
+          description: "HeadSideThinking",
+          category: "Outline",
+        },
+        {
+          name: "Headphones",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconHeadphones,
+          description: "Headphones",
+          category: "Outline",
+        },
+        {
+          name: "Headset",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconHeadset,
+          description: "Headset",
+          category: "Outline",
+        },
+        {
+          name: "HeartArrow",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconHeartArrow,
+          description: "HeartArrow",
+          category: "Outline",
+        },
+        {
+          name: "Heart",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconHeart,
+          description: "Heart",
+          category: "Outline",
+        },
+        {
+          name: "HomeLocationAlt",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconHomeLocationAlt,
+          description: "HomeLocationAlt",
+          category: "Outline",
+        },
+        {
+          name: "HomeLocation",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconHomeLocation,
+          description: "HomeLocation",
+          category: "Outline",
+        },
+        {
+          name: "Home",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconHome,
+          description: "Home",
+          category: "Outline",
+        },
+        {
+          name: "HourglassEnd",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconHourglassEnd,
+          description: "HourglassEnd",
+          category: "Outline",
+        },
+        {
+          name: "Hourglass",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconHourglass,
+          description: "Hourglass",
+          category: "Outline",
+        },
+        {
+          name: "IceCream",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconIceCream,
+          description: "IceCream",
+          category: "Outline",
+        },
+        {
+          name: "IceSkate",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconIceSkate,
+          description: "IceSkate",
+          category: "Outline",
+        },
+        {
+          name: "IdBadge",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconIdBadge,
+          description: "IdBadge",
+          category: "Outline",
+        },
+        {
+          name: "Inbox",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconInbox,
+          description: "Inbox",
+          category: "Outline",
+        },
+        {
+          name: "Incognito",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconIncognito,
+          description: "Incognito",
+          category: "Outline",
+        },
+        {
+          name: "Indent",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconIndent,
+          description: "Indent",
+          category: "Outline",
+        },
+        {
+          name: "Infinity",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconInfinity,
+          description: "Infinity",
+          category: "Outline",
+        },
+        {
+          name: "Info",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconInfo,
+          description: "Info",
+          category: "Outline",
+        },
+        {
+          name: "Interactive",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconInteractive,
+          description: "Interactive",
+          category: "Outline",
+        },
+        {
+          name: "Interlining",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconInterlining,
+          description: "Interlining",
+          category: "Outline",
+        },
+        {
+          name: "Interrogation",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconInterrogation,
+          description: "Interrogation",
+          category: "Outline",
+        },
+        {
+          name: "Italic",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconItalic,
+          description: "Italic",
+          category: "Outline",
+        },
+        {
+          name: "Jpg",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconJpg,
+          description: "Jpg",
+          category: "Outline",
+        },
+        {
+          name: "Key",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconKey,
+          description: "Key",
+          category: "Outline",
+        },
+        {
+          name: "Keyboard",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconKeyboard,
+          description: "Keyboard",
+          category: "Outline",
+        },
+        {
+          name: "Kite",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconKite,
+          description: "Kite",
+          category: "Outline",
+        },
+        {
+          name: "Label",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconLabel,
+          description: "Label",
+          category: "Outline",
+        },
+        {
+          name: "Laptop",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconLaptop,
+          description: "Laptop",
+          category: "Outline",
+        },
+        {
+          name: "Lasso",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconLasso,
+          description: "Lasso",
+          category: "Outline",
+        },
+        {
+          name: "Laugh",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconLaugh,
+          description: "Laugh",
+          category: "Outline",
+        },
+        {
+          name: "Layers",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconLayers,
+          description: "Layers",
+          category: "Outline",
+        },
+        {
+          name: "LayoutFluid",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconLayoutFluid,
+          description: "LayoutFluid",
+          category: "Outline",
+        },
+        {
+          name: "Leaf",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconLeaf,
+          description: "Leaf",
+          category: "Outline",
+        },
+        {
+          name: "LetterCase",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconLetterCase,
+          description: "LetterCase",
+          category: "Outline",
+        },
+        {
+          name: "LifeRing",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconLifeRing,
+          description: "LifeRing",
+          category: "Outline",
+        },
+        {
+          name: "LineWidth",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconLineWidth,
+          description: "LineWidth",
+          category: "Outline",
+        },
+        {
+          name: "Link",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconLink,
+          description: "Link",
+          category: "Outline",
+        },
+        {
+          name: "Lipstick",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconLipstick,
+          description: "Lipstick",
+          category: "Outline",
+        },
+        {
+          name: "ListCheck",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconListCheck,
+          description: "ListCheck",
+          category: "Outline",
+        },
+        {
+          name: "List",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconList,
+          description: "List",
+          category: "Outline",
+        },
+        {
+          name: "LocationAlt",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconLocationAlt,
+          description: "LocationAlt",
+          category: "Outline",
+        },
+        {
+          name: "LockAlt",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconLockAlt,
+          description: "LockAlt",
+          category: "Outline",
+        },
+        {
+          name: "Lock",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconLock,
+          description: "Lock",
+          category: "Outline",
+        },
+        {
+          name: "LuggageRolling",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconLuggageRolling,
+          description: "LuggageRolling",
+          category: "Outline",
+        },
+        {
+          name: "MagicWand",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconMagicWand,
+          description: "MagicWand",
+          category: "Outline",
+        },
+        {
+          name: "MakeupBrush",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconMakeupBrush,
+          description: "MakeupBrush",
+          category: "Outline",
+        },
+        {
+          name: "ManHead",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconManHead,
+          description: "ManHead",
+          category: "Outline",
+        },
+        {
+          name: "MapMarkerCross",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconMapMarkerCross,
+          description: "MapMarkerCross",
+          category: "Outline",
+        },
+        {
+          name: "MapMarkerHome",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconMapMarkerHome,
+          description: "MapMarkerHome",
+          category: "Outline",
+        },
+        {
+          name: "MapMarkerMinus",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconMapMarkerMinus,
+          description: "MapMarkerMinus",
+          category: "Outline",
+        },
+        {
+          name: "MapMarkerPlus",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconMapMarkerPlus,
+          description: "MapMarkerPlus",
+          category: "Outline",
+        },
+        {
+          name: "MapMarker",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconMapMarker,
+          description: "MapMarker",
+          category: "Outline",
+        },
+        {
+          name: "Map",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconMap,
+          description: "Map",
+          category: "Outline",
+        },
+        {
+          name: "MarkerTime",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconMarkerTime,
+          description: "MarkerTime",
+          category: "Outline",
+        },
+        {
+          name: "Marker",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconMarker,
+          description: "Marker",
+          category: "Outline",
+        },
+        {
+          name: "MarsDouble",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconMarsDouble,
+          description: "MarsDouble",
+          category: "Outline",
+        },
+        {
+          name: "Mars",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconMars,
+          description: "Mars",
+          category: "Outline",
+        },
+        {
+          name: "MaskCarnival",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconMaskCarnival,
+          description: "MaskCarnival",
+          category: "Outline",
+        },
+        {
+          name: "Medicine",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconMedicine,
+          description: "Medicine",
+          category: "Outline",
+        },
+        {
+          name: "Megaphone",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconMegaphone,
+          description: "Megaphone",
+          category: "Outline",
+        },
+        {
+          name: "Meh",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconMeh,
+          description: "Meh",
+          category: "Outline",
+        },
+        {
+          name: "MenuBurger",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconMenuBurger,
+          description: "MenuBurger",
+          category: "Outline",
+        },
+        {
+          name: "MenuDotsVertical",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconMenuDotsVertical,
+          description: "MenuDotsVertical",
+          category: "Outline",
+        },
+        {
+          name: "MenuDots",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconMenuDots,
+          description: "MenuDots",
+          category: "Outline",
+        },
+        {
+          name: "MicrophoneAlt",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconMicrophoneAlt,
+          description: "MicrophoneAlt",
+          category: "Outline",
+        },
+        {
+          name: "Microphone",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconMicrophone,
+          description: "Microphone",
+          category: "Outline",
+        },
+        {
+          name: "MinusSmall",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconMinusSmall,
+          description: "MinusSmall",
+          category: "Outline",
+        },
+        {
+          name: "Minus",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconMinus,
+          description: "Minus",
+          category: "Outline",
+        },
+        {
+          name: "Mobile",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconMobile,
+          description: "Mobile",
+          category: "Outline",
+        },
+        {
+          name: "ModeLandscape",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconModeLandscape,
+          description: "ModeLandscape",
+          category: "Outline",
+        },
+        {
+          name: "ModePortrait",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconModePortrait,
+          description: "ModePortrait",
+          category: "Outline",
+        },
+        {
+          name: "Money",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconMoney,
+          description: "Money",
+          category: "Outline",
+        },
+        {
+          name: "Moon",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconMoon,
+          description: "Moon",
+          category: "Outline",
+        },
+        {
+          name: "Mountains",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconMountains,
+          description: "Mountains",
+          category: "Outline",
+        },
+        {
+          name: "Mouse",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconMouse,
+          description: "Mouse",
+          category: "Outline",
+        },
+        {
+          name: "MugAlt",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconMugAlt,
+          description: "MugAlt",
+          category: "Outline",
+        },
+        {
+          name: "MusicAlt",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconMusicAlt,
+          description: "MusicAlt",
+          category: "Outline",
+        },
+        {
+          name: "Music",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconMusic,
+          description: "Music",
+          category: "Outline",
+        },
+        {
+          name: "Navigation",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconNavigation,
+          description: "Navigation",
+          category: "Outline",
+        },
+        {
+          name: "NetworkCloud",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconNetworkCloud,
+          description: "NetworkCloud",
+          category: "Outline",
+        },
+        {
+          name: "Network",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconNetwork,
+          description: "Network",
+          category: "Outline",
+        },
+        {
+          name: "Notebook",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconNotebook,
+          description: "Notebook",
+          category: "Outline",
+        },
+        {
+          name: "Opacity",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconOpacity,
+          description: "Opacity",
+          category: "Outline",
+        },
+        {
+          name: "Package",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconPackage,
+          description: "Package",
+          category: "Outline",
+        },
+        {
+          name: "PaintBrush",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconPaintBrush,
+          description: "PaintBrush",
+          category: "Outline",
+        },
+        {
+          name: "Palette",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconPalette,
+          description: "Palette",
+          category: "Outline",
+        },
+        {
+          name: "PaperPlane",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconPaperPlane,
+          description: "PaperPlane",
+          category: "Outline",
+        },
+        {
+          name: "Password",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconPassword,
+          description: "Password",
+          category: "Outline",
+        },
+        {
+          name: "Pause",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconPause,
+          description: "Pause",
+          category: "Outline",
+        },
+        {
+          name: "Paw",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconPaw,
+          description: "Paw",
+          category: "Outline",
+        },
+        {
+          name: "Pencil",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconPencil,
+          description: "Pencil",
+          category: "Outline",
+        },
+        {
+          name: "Pharmacy",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconPharmacy,
+          description: "Pharmacy",
+          category: "Outline",
+        },
+        {
+          name: "PhoneCall",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconPhoneCall,
+          description: "PhoneCall",
+          category: "Outline",
+        },
+        {
+          name: "PhoneCross",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconPhoneCross,
+          description: "PhoneCross",
+          category: "Outline",
+        },
+        {
+          name: "PhonePause",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconPhonePause,
+          description: "PhonePause",
+          category: "Outline",
+        },
+        {
+          name: "PhoneSlash",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconPhoneSlash,
+          description: "PhoneSlash",
+          category: "Outline",
+        },
+        {
+          name: "Physics",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconPhysics,
+          description: "Physics",
+          category: "Outline",
+        },
+        {
+          name: "Picture",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconPicture,
+          description: "Picture",
+          category: "Outline",
+        },
+        {
+          name: "PingPong",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconPingPong,
+          description: "PingPong",
+          category: "Outline",
+        },
+        {
+          name: "PizzaSlice",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconPizzaSlice,
+          description: "PizzaSlice",
+          category: "Outline",
+        },
+        {
+          name: "Plane",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconPlane,
+          description: "Plane",
+          category: "Outline",
+        },
+        {
+          name: "PlayAlt",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconPlayAlt,
+          description: "PlayAlt",
+          category: "Outline",
+        },
+        {
+          name: "Play",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconPlay,
+          description: "Play",
+          category: "Outline",
+        },
+        {
+          name: "PlayingCards",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconPlayingCards,
+          description: "PlayingCards",
+          category: "Outline",
+        },
+        {
+          name: "PlusSmall",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconPlusSmall,
+          description: "PlusSmall",
+          category: "Outline",
+        },
+        {
+          name: "Plus",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconPlus,
+          description: "Plus",
+          category: "Outline",
+        },
+        {
+          name: "PokerChip",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconPokerChip,
+          description: "PokerChip",
+          category: "Outline",
+        },
+        {
+          name: "Portrait",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconPortrait,
+          description: "Portrait",
+          category: "Outline",
+        },
+        {
+          name: "Pound",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconPound,
+          description: "Pound",
+          category: "Outline",
+        },
+        {
+          name: "Power",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconPower,
+          description: "Power",
+          category: "Outline",
+        },
+        {
+          name: "Presentation",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconPresentation,
+          description: "Presentation",
+          category: "Outline",
+        },
+        {
+          name: "Print",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconPrint,
+          description: "Print",
+          category: "Outline",
+        },
+        {
+          name: "Protractor",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconProtractor,
+          description: "Protractor",
+          category: "Outline",
+        },
+        {
+          name: "Pulse",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconPulse,
+          description: "Pulse",
+          category: "Outline",
+        },
+        {
+          name: "Pyramid",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconPyramid,
+          description: "Pyramid",
+          category: "Outline",
+        },
+        {
+          name: "QuoteRight",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconQuoteRight,
+          description: "QuoteRight",
+          category: "Outline",
+        },
+        {
+          name: "Rainbow",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconRainbow,
+          description: "Rainbow",
+          category: "Outline",
+        },
+        {
+          name: "Raindrops",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconRaindrops,
+          description: "Raindrops",
+          category: "Outline",
+        },
+        {
+          name: "Rec",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconRec,
+          description: "Rec",
+          category: "Outline",
+        },
+        {
+          name: "Receipt",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconReceipt,
+          description: "Receipt",
+          category: "Outline",
+        },
+        {
+          name: "RecordVinyl",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconRecordVinyl,
+          description: "RecordVinyl",
+          category: "Outline",
+        },
+        {
+          name: "RectabgleVertical",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconRectabgleVertical,
+          description: "RectabgleVertical",
+          category: "Outline",
+        },
+        {
+          name: "RectangleHorizontal",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconRectangleHorizontal,
+          description: "RectangleHorizontal",
+          category: "Outline",
+        },
+        {
+          name: "RectanglePanoramic",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconRectanglePanoramic,
+          description: "RectanglePanoramic",
+          category: "Outline",
+        },
+        {
+          name: "Recycle",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconRecycle,
+          description: "Recycle",
+          category: "Outline",
+        },
+        {
+          name: "RedoAlt",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconRedoAlt,
+          description: "RedoAlt",
+          category: "Outline",
+        },
+        {
+          name: "Redo",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconRedo,
+          description: "Redo",
+          category: "Outline",
+        },
+        {
+          name: "Reflect",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconReflect,
+          description: "Reflect",
+          category: "Outline",
+        },
+        {
+          name: "Refresh",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconRefresh,
+          description: "Refresh",
+          category: "Outline",
+        },
+        {
+          name: "Resize",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconResize,
+          description: "Resize",
+          category: "Outline",
+        },
+        {
+          name: "Resources",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconResources,
+          description: "Resources",
+          category: "Outline",
+        },
+        {
+          name: "Rewind",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconRewind,
+          description: "Rewind",
+          category: "Outline",
+        },
+        {
+          name: "Rhombus",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconRhombus,
+          description: "Rhombus",
+          category: "Outline",
+        },
+        {
+          name: "RingsWedding",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconRingsWedding,
+          description: "RingsWedding",
+          category: "Outline",
+        },
+        {
+          name: "Road",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconRoad,
+          description: "Road",
+          category: "Outline",
+        },
+        {
+          name: "Rocket",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconRocket,
+          description: "Rocket",
+          category: "Outline",
+        },
+        {
+          name: "RoomService",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconRoomService,
+          description: "RoomService",
+          category: "Outline",
+        },
+        {
+          name: "RotateRight",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconRotateRight,
+          description: "RotateRight",
+          category: "Outline",
+        },
+        {
+          name: "Rugby",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconRugby,
+          description: "Rugby",
+          category: "Outline",
+        },
+        {
+          name: "Sad",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconSad,
+          description: "Sad",
+          category: "Outline",
+        },
+        {
+          name: "Salad",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconSalad,
+          description: "Salad",
+          category: "Outline",
+        },
+        {
+          name: "Scale",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconScale,
+          description: "Scale",
+          category: "Outline",
+        },
+        {
+          name: "SchoolBus",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconSchoolBus,
+          description: "SchoolBus",
+          category: "Outline",
+        },
+        {
+          name: "School",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconSchool,
+          description: "School",
+          category: "Outline",
+        },
+        {
+          name: "Scissors",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconScissors,
+          description: "Scissors",
+          category: "Outline",
+        },
+        {
+          name: "Screen",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconScreen,
+          description: "Screen",
+          category: "Outline",
+        },
+        {
+          name: "SearchAlt",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconSearchAlt,
+          description: "SearchAlt",
+          category: "Outline",
+        },
+        {
+          name: "SearchHeart",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconSearchHeart,
+          description: "SearchHeart",
+          category: "Outline",
+        },
+        {
+          name: "Search",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconSearch,
+          description: "Search",
+          category: "Outline",
+        },
+        {
+          name: "SettingsSliders",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconSettingsSliders,
+          description: "SettingsSliders",
+          category: "Outline",
+        },
+        {
+          name: "Settings",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconSettings,
+          description: "Settings",
+          category: "Outline",
+        },
+        {
+          name: "Share",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconShare,
+          description: "Share",
+          category: "Outline",
+        },
+        {
+          name: "ShieldCheck",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconShieldCheck,
+          description: "ShieldCheck",
+          category: "Outline",
+        },
+        {
+          name: "ShieldExclamation",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconShieldExclamation,
+          description: "ShieldExclamation",
+          category: "Outline",
+        },
+        {
+          name: "ShieldInterrogation",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconShieldInterrogation,
+          description: "ShieldInterrogation",
+          category: "Outline",
+        },
+        {
+          name: "ShieldPlus",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconShieldPlus,
+          description: "ShieldPlus",
+          category: "Outline",
+        },
+        {
+          name: "Shield",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconShield,
+          description: "Shield",
+          category: "Outline",
+        },
+        {
+          name: "ShipSide",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconShipSide,
+          description: "ShipSide",
+          category: "Outline",
+        },
+        {
+          name: "Ship",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconShip,
+          description: "Ship",
+          category: "Outline",
+        },
+        {
+          name: "Shop",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconShop,
+          description: "Shop",
+          category: "Outline",
+        },
+        {
+          name: "ShoppingBagAdd",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconShoppingBagAdd,
+          description: "ShoppingBagAdd",
+          category: "Outline",
+        },
+        {
+          name: "ShoppingBag",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconShoppingBag,
+          description: "ShoppingBag",
+          category: "Outline",
+        },
+        {
+          name: "ShoppingCartAdd",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconShoppingCartAdd,
+          description: "ShoppingCartAdd",
+          category: "Outline",
+        },
+        {
+          name: "ShoppingCartCheck",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconShoppingCartCheck,
+          description: "ShoppingCartCheck",
+          category: "Outline",
+        },
+        {
+          name: "ShoppingCart",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconShoppingCart,
+          description: "ShoppingCart",
+          category: "Outline",
+        },
+        {
+          name: "Shuffle",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconShuffle,
+          description: "Shuffle",
+          category: "Outline",
+        },
+        {
+          name: "SignInAlt",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconSignInAlt,
+          description: "SignInAlt",
+          category: "Outline",
+        },
+        {
+          name: "SignIn",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconSignIn,
+          description: "SignIn",
+          category: "Outline",
+        },
+        {
+          name: "SignOutAlt",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconSignOutAlt,
+          description: "SignOutAlt",
+          category: "Outline",
+        },
+        {
+          name: "SignOut",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconSignOut,
+          description: "SignOut",
+          category: "Outline",
+        },
+        {
+          name: "SignalAlt1",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconSignalAlt1,
+          description: "SignalAlt1",
+          category: "Outline",
+        },
+        {
+          name: "SignalAlt2",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconSignalAlt2,
+          description: "SignalAlt2",
+          category: "Outline",
+        },
+        {
+          name: "SignalAlt",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconSignalAlt,
+          description: "SignalAlt",
+          category: "Outline",
+        },
+        {
+          name: "Skateboard",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconSkateboard,
+          description: "Skateboard",
+          category: "Outline",
+        },
+        {
+          name: "Smartphone",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconSmartphone,
+          description: "Smartphone",
+          category: "Outline",
+        },
+        {
+          name: "SmileWink",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconSmileWink,
+          description: "SmileWink",
+          category: "Outline",
+        },
+        {
+          name: "Smile",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconSmile,
+          description: "Smile",
+          category: "Outline",
+        },
+        {
+          name: "Snowflake",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconSnowflake,
+          description: "Snowflake",
+          category: "Outline",
+        },
+        {
+          name: "Soap",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconSoap,
+          description: "Soap",
+          category: "Outline",
+        },
+        {
+          name: "Soup",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconSoup,
+          description: "Soup",
+          category: "Outline",
+        },
+        {
+          name: "Spa",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconSpa,
+          description: "Spa",
+          category: "Outline",
+        },
+        {
+          name: "Speaker",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconSpeaker,
+          description: "Speaker",
+          category: "Outline",
+        },
+        {
+          name: "Sphere",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconSphere,
+          description: "Sphere",
+          category: "Outline",
+        },
+        {
+          name: "SpinnerAlt",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconSpinnerAlt,
+          description: "SpinnerAlt",
+          category: "Outline",
+        },
+        {
+          name: "Spinner",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconSpinner,
+          description: "Spinner",
+          category: "Outline",
+        },
+        {
+          name: "SquareRoot",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconSquareRoot,
+          description: "SquareRoot",
+          category: "Outline",
+        },
+        {
+          name: "Square",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconSquare,
+          description: "Square",
+          category: "Outline",
+        },
+        {
+          name: "StarOctogram",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconStarOctogram,
+          description: "StarOctogram",
+          category: "Outline",
+        },
+        {
+          name: "Star",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconStar,
+          description: "Star",
+          category: "Outline",
+        },
+        {
+          name: "Stats",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconStats,
+          description: "Stats",
+          category: "Outline",
+        },
+        {
+          name: "Stethoscope",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconStethoscope,
+          description: "Stethoscope",
+          category: "Outline",
+        },
+        {
+          name: "Sticker",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconSticker,
+          description: "Sticker",
+          category: "Outline",
+        },
+        {
+          name: "Stop",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconStop,
+          description: "Stop",
+          category: "Outline",
+        },
+        {
+          name: "Stopwatch",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconStopwatch,
+          description: "Stopwatch",
+          category: "Outline",
+        },
+        {
+          name: "Subtitles",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconSubtitles,
+          description: "Subtitles",
+          category: "Outline",
+        },
+        {
+          name: "Sun",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconSun,
+          description: "Sun",
+          category: "Outline",
+        },
+        {
+          name: "Sunrise",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconSunrise,
+          description: "Sunrise",
+          category: "Outline",
+        },
+        {
+          name: "Surfing",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconSurfing,
+          description: "Surfing",
+          category: "Outline",
+        },
+        {
+          name: "Sword",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconSword,
+          description: "Sword",
+          category: "Outline",
+        },
+        {
+          name: "Syringe",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconSyringe,
+          description: "Syringe",
+          category: "Outline",
+        },
+        {
+          name: "Tablet",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconTablet,
+          description: "Tablet",
+          category: "Outline",
+        },
+        {
+          name: "Target",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconTarget,
+          description: "Target",
+          category: "Outline",
+        },
+        {
+          name: "Taxi",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconTaxi,
+          description: "Taxi",
+          category: "Outline",
+        },
+        {
+          name: "Tennis",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconTennis,
+          description: "Tennis",
+          category: "Outline",
+        },
+        {
+          name: "Terrace",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconTerrace,
+          description: "Terrace",
+          category: "Outline",
+        },
+        {
+          name: "TestTube",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconTestTube,
+          description: "TestTube",
+          category: "Outline",
+        },
+        {
+          name: "Test",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconTest,
+          description: "Test",
+          category: "Outline",
+        },
+        {
+          name: "TextCheck",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconTextCheck,
+          description: "TextCheck",
+          category: "Outline",
+        },
+        {
+          name: "Text",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconText,
+          description: "Text",
+          category: "Outline",
+        },
+        {
+          name: "ThermometerHalf",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconThermometerHalf,
+          description: "ThermometerHalf",
+          category: "Outline",
+        },
+        {
+          name: "ThumbsDown",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconThumbsDown,
+          description: "ThumbsDown",
+          category: "Outline",
+        },
+        {
+          name: "ThumbsUp",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconThumbsUp,
+          description: "ThumbsUp",
+          category: "Outline",
+        },
+        {
+          name: "Thumbtack",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconThumbtack,
+          description: "Thumbtack",
+          category: "Outline",
+        },
+        {
+          name: "Ticket",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconTicket,
+          description: "Ticket",
+          category: "Outline",
+        },
+        {
+          name: "TimeAdd",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconTimeAdd,
+          description: "TimeAdd",
+          category: "Outline",
+        },
+        {
+          name: "TimeCheck",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconTimeCheck,
+          description: "TimeCheck",
+          category: "Outline",
+        },
+        {
+          name: "TimeDelete",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconTimeDelete,
+          description: "TimeDelete",
+          category: "Outline",
+        },
+        {
+          name: "TimeFast",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconTimeFast,
+          description: "TimeFast",
+          category: "Outline",
+        },
+        {
+          name: "TimeForwardSixty",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconTimeForwardSixty,
+          description: "TimeForwardSixty",
+          category: "Outline",
+        },
+        {
+          name: "TimeForwardTen",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconTimeForwardTen,
+          description: "TimeForwardTen",
+          category: "Outline",
+        },
+        {
+          name: "TimeForward",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconTimeForward,
+          description: "TimeForward",
+          category: "Outline",
+        },
+        {
+          name: "TimeHalfPast",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconTimeHalfPast,
+          description: "TimeHalfPast",
+          category: "Outline",
+        },
+        {
+          name: "TimeOclock",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconTimeOclock,
+          description: "TimeOclock",
+          category: "Outline",
+        },
+        {
+          name: "TimePast",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconTimePast,
+          description: "TimePast",
+          category: "Outline",
+        },
+        {
+          name: "TimeQuarterPast",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconTimeQuarterPast,
+          description: "TimeQuarterPast",
+          category: "Outline",
+        },
+        {
+          name: "TimeQuarterTo",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconTimeQuarterTo,
+          description: "TimeQuarterTo",
+          category: "Outline",
+        },
+        {
+          name: "TimeTwentyFour",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconTimeTwentyFour,
+          description: "TimeTwentyFour",
+          category: "Outline",
+        },
+        {
+          name: "ToolCrop",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconToolCrop,
+          description: "ToolCrop",
+          category: "Outline",
+        },
+        {
+          name: "ToolMarquee",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconToolMarquee,
+          description: "ToolMarquee",
+          category: "Outline",
+        },
+        {
+          name: "Tooth",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconTooth,
+          description: "Tooth",
+          category: "Outline",
+        },
+        {
+          name: "Tornado",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconTornado,
+          description: "Tornado",
+          category: "Outline",
+        },
+        {
+          name: "TrainSide",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconTrainSide,
+          description: "TrainSide",
+          category: "Outline",
+        },
+        {
+          name: "Train",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconTrain,
+          description: "Train",
+          category: "Outline",
+        },
+        {
+          name: "Transform",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconTransform,
+          description: "Transform",
+          category: "Outline",
+        },
+        {
+          name: "Trash",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconTrash,
+          description: "Trash",
+          category: "Outline",
+        },
+        {
+          name: "Treatment",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconTreatment,
+          description: "Treatment",
+          category: "Outline",
+        },
+        {
+          name: "TreeChristmas",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconTreeChristmas,
+          description: "TreeChristmas",
+          category: "Outline",
+        },
+        {
+          name: "Tree",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconTree,
+          description: "Tree",
+          category: "Outline",
+        },
+        {
+          name: "Triangle",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconTriangle,
+          description: "Triangle",
+          category: "Outline",
+        },
+        {
+          name: "Trophy",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconTrophy,
+          description: "Trophy",
+          category: "Outline",
+        },
+        {
+          name: "TruckSide",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconTruckSide,
+          description: "TruckSide",
+          category: "Outline",
+        },
+        {
+          name: "Umbrella",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconUmbrella,
+          description: "Umbrella",
+          category: "Outline",
+        },
+        {
+          name: "Underline",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconUnderline,
+          description: "Underline",
+          category: "Outline",
+        },
+        {
+          name: "UndoAlt",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconUndoAlt,
+          description: "UndoAlt",
+          category: "Outline",
+        },
+        {
+          name: "Undo",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconUndo,
+          description: "Undo",
+          category: "Outline",
+        },
+        {
+          name: "Unlock",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconUnlock,
+          description: "Unlock",
+          category: "Outline",
+        },
+        {
+          name: "Upload",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconUpload,
+          description: "Upload",
+          category: "Outline",
+        },
+        {
+          name: "UsbPendrive",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconUsbPendrive,
+          description: "UsbPendrive",
+          category: "Outline",
+        },
+        {
+          name: "UserAdd",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconUserAdd,
+          description: "UserAdd",
+          category: "Outline",
+        },
+        {
+          name: "UserDelete",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconUserDelete,
+          description: "UserDelete",
+          category: "Outline",
+        },
+        {
+          name: "UserRemove",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconUserRemove,
+          description: "UserRemove",
+          category: "Outline",
+        },
+        {
+          name: "UserTime",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconUserTime,
+          description: "UserTime",
+          category: "Outline",
+        },
+        {
+          name: "User",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconUser,
+          description: "User",
+          category: "Outline",
+        },
+        {
+          name: "Utensils",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconUtensils,
+          description: "Utensils",
+          category: "Outline",
+        },
+        {
+          name: "VectorAlt",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconVectorAlt,
+          description: "VectorAlt",
+          category: "Outline",
+        },
+        {
+          name: "Vector",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconVector,
+          description: "Vector",
+          category: "Outline",
+        },
+        {
+          name: "VenusDouble",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconVenusDouble,
+          description: "VenusDouble",
+          category: "Outline",
+        },
+        {
+          name: "VenusMars",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconVenusMars,
+          description: "VenusMars",
+          category: "Outline",
+        },
+        {
+          name: "Venus",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconVenus,
+          description: "Venus",
+          category: "Outline",
+        },
+        {
+          name: "VideoCamera",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconVideoCamera,
+          description: "VideoCamera",
+          category: "Outline",
+        },
+        {
+          name: "Volleyball",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconVolleyball,
+          description: "Volleyball",
+          category: "Outline",
+        },
+        {
+          name: "Volume",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconVolume,
+          description: "Volume",
+          category: "Outline",
+        },
+        {
+          name: "Wheelchair",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconWheelchair,
+          description: "Wheelchair",
+          category: "Outline",
+        },
+        {
+          name: "WifiAlt",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconWifiAlt,
+          description: "WifiAlt",
+          category: "Outline",
+        },
+        {
+          name: "Wind",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconWind,
+          description: "Wind",
+          category: "Outline",
+        },
+        {
+          name: "WomanHead",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconWomanHead,
+          description: "WomanHead",
+          category: "Outline",
+        },
+        {
+          name: "World",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconWorld,
+          description: "World",
+          category: "Outline",
+        },
+        {
+          name: "Yen",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconYen,
+          description: "Yen",
+          category: "Outline",
+        },
+        {
+          name: "ZoomIn",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconZoomIn,
+          description: "ZoomIn",
+          category: "Outline",
+        },
+        {
+          name: "ZoomOut",
+          file: _assets_icons_outline__WEBPACK_IMPORTED_MODULE_1__.e.IconZoomOut,
+          description: "ZoomOut",
+          category: "Outline",
+        },
+      ];
+      function IconListTemplate(_ref) {
+        _ref.variant;
+        var _useState = (0, react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
+          _useState2 = (0,
+          _Users_tuanxu5_tx_design_ui_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_3__.A)(
+            _useState,
+            2
+          ),
+          searchQuery = _useState2[0],
+          setSearchQuery = _useState2[1],
+          filteredIcons = iconData.filter(function (icon) {
+            return (
+              icon.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+              icon.description.toLowerCase().includes(searchQuery.toLowerCase())
+            );
+          });
+        return (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          style: { margin: "0 auto" },
+          children: [
+            (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              style: { marginBottom: "24px" },
+              children: (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                type: "text",
+                placeholder: "Search ".concat(iconData.length, " icons by name..."),
+                value: searchQuery,
+                onChange: function onChange(e) {
+                  return setSearchQuery(e.target.value);
+                },
+                style: {
+                  width: "100%",
+                  padding: "14px 18px",
+                  border: "1px solid #e0e0e0",
+                  borderRadius: "8px",
+                  fontSize: "15px",
+                  outline: "none",
+                  transition: "border-color 0.2s",
+                },
+                onFocus: function onFocus(e) {
+                  e.target.style.borderColor = "#00bcff";
+                },
+                onBlur: function onBlur(e) {
+                  e.target.style.borderColor = "#e0e0e0";
+                },
+              }),
+            }),
+            (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+              style: { marginBottom: "16px", fontSize: "14px", color: "#666" },
+              children: ["Showing ", filteredIcons.length, " of ", iconData.length, " icons"],
+            }),
+            filteredIcons.length > 0
+              ? (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+                  style: { display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(110px, 1fr))", gap: "8px" },
+                  children: filteredIcons.map(function (icon) {
+                    return (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(
+                      "div",
+                      {
+                        style: {
+                          display: "flex",
+                          flexDirection: "column",
+                          alignItems: "center",
+                          gap: "8px",
+                          padding: "12px",
+                          background: "#ffffff",
+                          border: "1px solid #e0e0e0",
+                          borderRadius: "12px",
+                          transition: "all 0.2s",
+                          cursor: "pointer",
+                        },
+                        onMouseEnter: function onMouseEnter(e) {
+                          (e.currentTarget.style.transform = "translateY(-4px)"),
+                            (e.currentTarget.style.boxShadow = "0 8px 16px rgba(0, 0, 0, 0.1)"),
+                            (e.currentTarget.style.borderColor = "#00bcff");
+                        },
+                        onMouseLeave: function onMouseLeave(e) {
+                          (e.currentTarget.style.transform = "translateY(0)"),
+                            (e.currentTarget.style.boxShadow = "none"),
+                            (e.currentTarget.style.borderColor = "#e0e0e0");
+                        },
+                        children: [
+                          (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+                            style: {
+                              display: "flex",
+                              alignItems: "center",
+                              justifyContent: "center",
+                              width: "40px",
+                              height: "40px",
+                              background: "#f5f5f5",
+                              borderRadius: "12px",
+                              marginBottom: "4px",
+                            },
+                            children: (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+                              src: icon.file,
+                              alt: icon.name,
+                              style: { width: "16px", height: "16px", objectFit: "contain" },
+                            }),
+                          }),
+                          (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+                            style: { textAlign: "center", width: "100%" },
+                            children: (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                              style: {
+                                display: "block",
+                                marginBottom: "4px",
+                                fontSize: "11px",
+                                color: "#1a1a1a",
+                                lineHeight: "1.2",
+                                fontWeight: "500",
+                              },
+                              children: icon.name,
+                            }),
+                          }),
+                        ],
+                      },
+                      icon.name
+                    );
+                  }),
+                })
+              : (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                  style: { textAlign: "center", padding: "60px", color: "#888" },
+                  children: [
+                    (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("p", {
+                      style: { fontSize: "16px" },
+                      children: ['No icons found matching "', searchQuery, '"'],
+                    }),
+                    (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+                      style: { fontSize: "14px", marginTop: "8px" },
+                      children: "Try a different search term",
+                    }),
+                  ],
+                }),
+          ],
+        });
+      }
+      var Outline = {
+          render: function render() {
+            return (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(IconListTemplate, { variant: "outline" });
+          },
+        },
+        Filled = {
+          render: function render() {
+            return (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              style: { padding: "60px", textAlign: "center", color: "#888", fontFamily: "sans-serif" },
+              children: (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+                style: { fontSize: "16px" },
+                children: "Filled icons coming soon...",
+              }),
+            });
+          },
+        };
+      const __namedExportsOrder = ["Outline", "Filled"];
+      (Outline.parameters = {
+        ...Outline.parameters,
+        docs: {
+          ...Outline.parameters?.docs,
+          source: {
+            originalSource: '{\n  render: () => <IconListTemplate variant="outline" />\n}',
+            ...Outline.parameters?.docs?.source,
+          },
+        },
+      }),
+        (Filled.parameters = {
+          ...Filled.parameters,
+          docs: {
+            ...Filled.parameters?.docs,
+            source: {
+              originalSource:
+                '{\n  render: () => <div style={{\n    padding: "60px",\n    textAlign: "center",\n    color: "#888",\n    fontFamily: "sans-serif"\n  }}>\n      <p style={{\n      fontSize: "16px"\n    }}>Filled icons coming soon...</p>\n    </div>\n}',
+              ...Filled.parameters?.docs?.source,
+            },
+          },
+        });
+    },
+  },
+]);

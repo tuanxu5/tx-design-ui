@@ -1,31 +1,6 @@
 {
   "v": 5,
   "entries": {
-    "tx-design-ui-foundation-icons--docs": {
-      "id": "tx-design-ui-foundation-icons--docs",
-      "title": "tx-design-ui/Foundation/Icons",
-      "name": "Docs",
-      "importPath": "./src/stories/IconLibrary.stories.js",
-      "type": "docs",
-      "tags": ["dev", "test", "autodocs"],
-      "storiesImports": []
-    },
-    "tx-design-ui-foundation-icons--all-icons": {
-      "type": "story",
-      "id": "tx-design-ui-foundation-icons--all-icons",
-      "name": "All Icons",
-      "title": "tx-design-ui/Foundation/Icons",
-      "importPath": "./src/stories/IconLibrary.stories.js",
-      "tags": ["dev", "test", "autodocs"]
-    },
-    "tx-design-ui-foundation-icons--usage": {
-      "type": "story",
-      "id": "tx-design-ui-foundation-icons--usage",
-      "name": "Usage",
-      "title": "tx-design-ui/Foundation/Icons",
-      "importPath": "./src/stories/IconLibrary.stories.js",
-      "tags": ["dev", "test", "autodocs"]
-    },
     "tx-design-ui-navigation-txanchor--docs": {
       "id": "tx-design-ui-navigation-txanchor--docs",
       "title": "tx-design-ui/Navigation/TxAnchor",
@@ -332,6 +307,60 @@
       "componentPath": "./src/components",
       "tags": ["dev", "test", "autodocs"]
     },
+    "tx-design-ui-navigation-txcalendar--docs": {
+      "id": "tx-design-ui-navigation-txcalendar--docs",
+      "title": "tx-design-ui/Navigation/TxCalendar",
+      "name": "Docs",
+      "importPath": "./src/stories/TxCalendar.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-navigation-txcalendar--default": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txcalendar--default",
+      "name": "Default",
+      "title": "tx-design-ui/Navigation/TxCalendar",
+      "importPath": "./src/stories/TxCalendar.stories.js",
+      "componentPath": "./src/components/tx-calendar/tx-calendar.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txcard--docs": {
+      "id": "tx-design-ui-data-display-txcard--docs",
+      "title": "tx-design-ui/Data Display/TxCard",
+      "name": "Docs",
+      "importPath": "./src/stories/TxCard.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-data-display-txcard--basic": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txcard--basic",
+      "name": "Basic",
+      "title": "tx-design-ui/Data Display/TxCard",
+      "importPath": "./src/stories/TxCard.stories.js",
+      "componentPath": "./src/components/tx-card/tx-card.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txcard--with-footer": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txcard--with-footer",
+      "name": "With Footer",
+      "title": "tx-design-ui/Data Display/TxCard",
+      "importPath": "./src/stories/TxCard.stories.js",
+      "componentPath": "./src/components/tx-card/tx-card.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txcard--hoverable": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txcard--hoverable",
+      "name": "Hoverable",
+      "title": "tx-design-ui/Data Display/TxCard",
+      "importPath": "./src/stories/TxCard.stories.js",
+      "componentPath": "./src/components/tx-card/tx-card.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
     "tx-design-ui-data-display-txcarousel--docs": {
       "id": "tx-design-ui-data-display-txcarousel--docs",
       "title": "tx-design-ui/Data Display/TxCarousel",
@@ -422,6 +451,24 @@
       "componentPath": "./src/components/tx-carousel/tx-carousel.jsx",
       "tags": ["dev", "test", "autodocs"]
     },
+    "tx-design-ui-data-display-txchart--docs": {
+      "id": "tx-design-ui-data-display-txchart--docs",
+      "title": "tx-design-ui/Data Display/TxChart",
+      "name": "Docs",
+      "importPath": "./src/stories/TxChart.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-data-display-txchart--placeholder": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txchart--placeholder",
+      "name": "Placeholder",
+      "title": "tx-design-ui/Data Display/TxChart",
+      "importPath": "./src/stories/TxChart.stories.js",
+      "componentPath": "./src/components/tx-chart/tx-chart.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
     "tx-design-ui-data-entry-txcheckbox--docs": {
       "id": "tx-design-ui-data-entry-txcheckbox--docs",
       "title": "tx-design-ui/Data Entry/TxCheckbox",
@@ -494,148 +541,346 @@
       "componentPath": "./src/components",
       "tags": ["dev", "test", "autodocs"]
     },
-    "tx-design-ui-txcolorpicker--docs": {
-      "id": "tx-design-ui-txcolorpicker--docs",
-      "title": "tx-design-ui/TxColorPicker",
+    "tx-design-ui-data-display-txcode--docs": {
+      "id": "tx-design-ui-data-display-txcode--docs",
+      "title": "tx-design-ui/Data Display/TxCode",
+      "name": "Docs",
+      "importPath": "./src/stories/TxCode.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-data-display-txcode--inline": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txcode--inline",
+      "name": "Inline",
+      "title": "tx-design-ui/Data Display/TxCode",
+      "importPath": "./src/stories/TxCode.stories.js",
+      "componentPath": "./src/components/tx-code/tx-code.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txcode--block": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txcode--block",
+      "name": "Block",
+      "title": "tx-design-ui/Data Display/TxCode",
+      "importPath": "./src/stories/TxCode.stories.js",
+      "componentPath": "./src/components/tx-code/tx-code.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txcode--outlined": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txcode--outlined",
+      "name": "Outlined",
+      "title": "tx-design-ui/Data Display/TxCode",
+      "importPath": "./src/stories/TxCode.stories.js",
+      "componentPath": "./src/components/tx-code/tx-code.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txcolorpicker--docs": {
+      "id": "tx-design-ui-data-entry-txcolorpicker--docs",
+      "title": "tx-design-ui/Data Entry/TxColorPicker",
       "name": "Docs",
       "importPath": "./src/stories/TxColorPicker.stories.js",
       "type": "docs",
       "tags": ["dev", "test", "autodocs"],
       "storiesImports": []
     },
-    "tx-design-ui-txcolorpicker--preview-color-picker": {
+    "tx-design-ui-data-entry-txcolorpicker--preview-color-picker": {
       "type": "story",
-      "id": "tx-design-ui-txcolorpicker--preview-color-picker",
+      "id": "tx-design-ui-data-entry-txcolorpicker--preview-color-picker",
       "name": "Preview Color Picker",
-      "title": "tx-design-ui/TxColorPicker",
+      "title": "tx-design-ui/Data Entry/TxColorPicker",
       "importPath": "./src/stories/TxColorPicker.stories.js",
       "componentPath": "./src/components",
       "tags": ["dev", "test", "autodocs"]
     },
-    "tx-design-ui-txcolorpicker--size": {
+    "tx-design-ui-data-entry-txcolorpicker--size": {
       "type": "story",
-      "id": "tx-design-ui-txcolorpicker--size",
+      "id": "tx-design-ui-data-entry-txcolorpicker--size",
       "name": "Size",
-      "title": "tx-design-ui/TxColorPicker",
+      "title": "tx-design-ui/Data Entry/TxColorPicker",
       "importPath": "./src/stories/TxColorPicker.stories.js",
       "componentPath": "./src/components",
       "tags": ["dev", "test", "autodocs"]
     },
-    "tx-design-ui-txcolorpicker--with-label": {
+    "tx-design-ui-data-entry-txcolorpicker--with-label": {
       "type": "story",
-      "id": "tx-design-ui-txcolorpicker--with-label",
+      "id": "tx-design-ui-data-entry-txcolorpicker--with-label",
       "name": "With Label",
-      "title": "tx-design-ui/TxColorPicker",
+      "title": "tx-design-ui/Data Entry/TxColorPicker",
       "importPath": "./src/stories/TxColorPicker.stories.js",
       "componentPath": "./src/components",
       "tags": ["dev", "test", "autodocs"]
     },
-    "tx-design-ui-txcolorpicker--without-input": {
+    "tx-design-ui-data-entry-txcolorpicker--without-input": {
       "type": "story",
-      "id": "tx-design-ui-txcolorpicker--without-input",
+      "id": "tx-design-ui-data-entry-txcolorpicker--without-input",
       "name": "Without Input",
-      "title": "tx-design-ui/TxColorPicker",
+      "title": "tx-design-ui/Data Entry/TxColorPicker",
       "importPath": "./src/stories/TxColorPicker.stories.js",
       "componentPath": "./src/components",
       "tags": ["dev", "test", "autodocs"]
     },
-    "tx-design-ui-txcolorpicker--with-presets": {
+    "tx-design-ui-data-entry-txcolorpicker--with-presets": {
       "type": "story",
-      "id": "tx-design-ui-txcolorpicker--with-presets",
+      "id": "tx-design-ui-data-entry-txcolorpicker--with-presets",
       "name": "With Presets",
-      "title": "tx-design-ui/TxColorPicker",
+      "title": "tx-design-ui/Data Entry/TxColorPicker",
       "importPath": "./src/stories/TxColorPicker.stories.js",
       "componentPath": "./src/components",
       "tags": ["dev", "test", "autodocs"]
     },
-    "tx-design-ui-txcolorpicker--disabled": {
+    "tx-design-ui-data-entry-txcolorpicker--disabled": {
       "type": "story",
-      "id": "tx-design-ui-txcolorpicker--disabled",
+      "id": "tx-design-ui-data-entry-txcolorpicker--disabled",
       "name": "Disabled",
-      "title": "tx-design-ui/TxColorPicker",
+      "title": "tx-design-ui/Data Entry/TxColorPicker",
       "importPath": "./src/stories/TxColorPicker.stories.js",
       "componentPath": "./src/components",
       "tags": ["dev", "test", "autodocs"]
     },
-    "tx-design-ui-txcolorpicker--custom-presets": {
+    "tx-design-ui-data-entry-txcolorpicker--custom-presets": {
       "type": "story",
-      "id": "tx-design-ui-txcolorpicker--custom-presets",
+      "id": "tx-design-ui-data-entry-txcolorpicker--custom-presets",
       "name": "Custom Presets",
-      "title": "tx-design-ui/TxColorPicker",
+      "title": "tx-design-ui/Data Entry/TxColorPicker",
       "importPath": "./src/stories/TxColorPicker.stories.js",
       "componentPath": "./src/components",
       "tags": ["dev", "test", "autodocs"]
     },
-    "tx-design-ui-txdatepicker--docs": {
-      "id": "tx-design-ui-txdatepicker--docs",
-      "title": "tx-design-ui/TxDatePicker",
+    "tx-design-ui-data-display-txcopy--docs": {
+      "id": "tx-design-ui-data-display-txcopy--docs",
+      "title": "tx-design-ui/Data Display/TxCopy",
+      "name": "Docs",
+      "importPath": "./src/stories/TxCopy.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-data-display-txcopy--basic": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txcopy--basic",
+      "name": "Basic",
+      "title": "tx-design-ui/Data Display/TxCopy",
+      "importPath": "./src/stories/TxCopy.stories.js",
+      "componentPath": "./src/components/tx-copy/tx-copy.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txcopy--compact": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txcopy--compact",
+      "name": "Compact",
+      "title": "tx-design-ui/Data Display/TxCopy",
+      "importPath": "./src/stories/TxCopy.stories.js",
+      "componentPath": "./src/components/tx-copy/tx-copy.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txcopy--with-long-text": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txcopy--with-long-text",
+      "name": "With Long Text",
+      "title": "tx-design-ui/Data Display/TxCopy",
+      "importPath": "./src/stories/TxCopy.stories.js",
+      "componentPath": "./src/components/tx-copy/tx-copy.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txcountdown--docs": {
+      "id": "tx-design-ui-data-display-txcountdown--docs",
+      "title": "tx-design-ui/Data Display/TxCountdown",
+      "name": "Docs",
+      "importPath": "./src/stories/TxCountdown.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-data-display-txcountdown--next-week": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txcountdown--next-week",
+      "name": "Next Week",
+      "title": "tx-design-ui/Data Display/TxCountdown",
+      "importPath": "./src/stories/TxCountdown.stories.js",
+      "componentPath": "./src/components/tx-countdown/tx-countdown.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txcountdown--custom-size": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txcountdown--custom-size",
+      "name": "Custom Size",
+      "title": "tx-design-ui/Data Display/TxCountdown",
+      "importPath": "./src/stories/TxCountdown.stories.js",
+      "componentPath": "./src/components/tx-countdown/tx-countdown.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txcountdown--short-time": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txcountdown--short-time",
+      "name": "Short Time",
+      "title": "tx-design-ui/Data Display/TxCountdown",
+      "importPath": "./src/stories/TxCountdown.stories.js",
+      "componentPath": "./src/components/tx-countdown/tx-countdown.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txdatepicker--docs": {
+      "id": "tx-design-ui-data-entry-txdatepicker--docs",
+      "title": "tx-design-ui/Data Entry/TxDatePicker",
       "name": "Docs",
       "importPath": "./src/stories/TxDatePicker.stories.js",
       "type": "docs",
       "tags": ["dev", "test", "autodocs"],
       "storiesImports": []
     },
-    "tx-design-ui-txdatepicker--preview-date-picker": {
+    "tx-design-ui-data-entry-txdatepicker--preview-date-picker": {
       "type": "story",
-      "id": "tx-design-ui-txdatepicker--preview-date-picker",
+      "id": "tx-design-ui-data-entry-txdatepicker--preview-date-picker",
       "name": "Preview Date Picker",
-      "title": "tx-design-ui/TxDatePicker",
+      "title": "tx-design-ui/Data Entry/TxDatePicker",
       "importPath": "./src/stories/TxDatePicker.stories.js",
       "componentPath": "./src/components",
       "tags": ["dev", "test", "autodocs"]
     },
-    "tx-design-ui-txdatepicker--size": {
+    "tx-design-ui-data-entry-txdatepicker--size": {
       "type": "story",
-      "id": "tx-design-ui-txdatepicker--size",
+      "id": "tx-design-ui-data-entry-txdatepicker--size",
       "name": "Size",
-      "title": "tx-design-ui/TxDatePicker",
+      "title": "tx-design-ui/Data Entry/TxDatePicker",
       "importPath": "./src/stories/TxDatePicker.stories.js",
       "componentPath": "./src/components",
       "tags": ["dev", "test", "autodocs"]
     },
-    "tx-design-ui-txdatepicker--type": {
+    "tx-design-ui-data-entry-txdatepicker--type": {
       "type": "story",
-      "id": "tx-design-ui-txdatepicker--type",
+      "id": "tx-design-ui-data-entry-txdatepicker--type",
       "name": "Type",
-      "title": "tx-design-ui/TxDatePicker",
+      "title": "tx-design-ui/Data Entry/TxDatePicker",
       "importPath": "./src/stories/TxDatePicker.stories.js",
       "componentPath": "./src/components",
       "tags": ["dev", "test", "autodocs"]
     },
-    "tx-design-ui-txdatepicker--min-max": {
+    "tx-design-ui-data-entry-txdatepicker--min-max": {
       "type": "story",
-      "id": "tx-design-ui-txdatepicker--min-max",
+      "id": "tx-design-ui-data-entry-txdatepicker--min-max",
       "name": "Min Max",
-      "title": "tx-design-ui/TxDatePicker",
+      "title": "tx-design-ui/Data Entry/TxDatePicker",
       "importPath": "./src/stories/TxDatePicker.stories.js",
       "componentPath": "./src/components",
       "tags": ["dev", "test", "autodocs"]
     },
-    "tx-design-ui-txdatepicker--disabled": {
+    "tx-design-ui-data-entry-txdatepicker--disabled": {
       "type": "story",
-      "id": "tx-design-ui-txdatepicker--disabled",
+      "id": "tx-design-ui-data-entry-txdatepicker--disabled",
       "name": "Disabled",
-      "title": "tx-design-ui/TxDatePicker",
+      "title": "tx-design-ui/Data Entry/TxDatePicker",
       "importPath": "./src/stories/TxDatePicker.stories.js",
       "componentPath": "./src/components",
       "tags": ["dev", "test", "autodocs"]
     },
-    "tx-design-ui-txdatepicker--status": {
+    "tx-design-ui-data-entry-txdatepicker--status": {
       "type": "story",
-      "id": "tx-design-ui-txdatepicker--status",
+      "id": "tx-design-ui-data-entry-txdatepicker--status",
       "name": "Status",
-      "title": "tx-design-ui/TxDatePicker",
+      "title": "tx-design-ui/Data Entry/TxDatePicker",
       "importPath": "./src/stories/TxDatePicker.stories.js",
       "componentPath": "./src/components",
       "tags": ["dev", "test", "autodocs"]
     },
-    "tx-design-ui-txdatepicker--full-width": {
+    "tx-design-ui-data-entry-txdatepicker--full-width": {
       "type": "story",
-      "id": "tx-design-ui-txdatepicker--full-width",
+      "id": "tx-design-ui-data-entry-txdatepicker--full-width",
       "name": "Full Width",
-      "title": "tx-design-ui/TxDatePicker",
+      "title": "tx-design-ui/Data Entry/TxDatePicker",
       "importPath": "./src/stories/TxDatePicker.stories.js",
       "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txdaterangepicker--docs": {
+      "id": "tx-design-ui-data-entry-txdaterangepicker--docs",
+      "title": "tx-design-ui/Data Entry/TxDateRangePicker",
+      "name": "Docs",
+      "importPath": "./src/stories/TxDateRangePicker.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-data-entry-txdaterangepicker--basic": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txdaterangepicker--basic",
+      "name": "Basic",
+      "title": "tx-design-ui/Data Entry/TxDateRangePicker",
+      "importPath": "./src/stories/TxDateRangePicker.stories.js",
+      "componentPath": "./src/components/tx-date-range-picker/tx-date-range-picker.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txdaterangepicker--with-callback": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txdaterangepicker--with-callback",
+      "name": "With Callback",
+      "title": "tx-design-ui/Data Entry/TxDateRangePicker",
+      "importPath": "./src/stories/TxDateRangePicker.stories.js",
+      "componentPath": "./src/components/tx-date-range-picker/tx-date-range-picker.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txdivider--docs": {
+      "id": "tx-design-ui-data-display-txdivider--docs",
+      "title": "tx-design-ui/Data Display/TxDivider",
+      "name": "Docs",
+      "importPath": "./src/stories/TxDivider.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-data-display-txdivider--horizontal": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txdivider--horizontal",
+      "name": "Horizontal",
+      "title": "tx-design-ui/Data Display/TxDivider",
+      "importPath": "./src/stories/TxDivider.stories.js",
+      "componentPath": "./src/components/tx-divider/tx-divider.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txdivider--vertical": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txdivider--vertical",
+      "name": "Vertical",
+      "title": "tx-design-ui/Data Display/TxDivider",
+      "importPath": "./src/stories/TxDivider.stories.js",
+      "componentPath": "./src/components/tx-divider/tx-divider.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txdivider--custom-thickness": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txdivider--custom-thickness",
+      "name": "Custom Thickness",
+      "title": "tx-design-ui/Data Display/TxDivider",
+      "importPath": "./src/stories/TxDivider.stories.js",
+      "componentPath": "./src/components/tx-divider/tx-divider.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-foundation-txdnd--docs": {
+      "id": "tx-design-ui-foundation-txdnd--docs",
+      "title": "tx-design-ui/Foundation/TxDnd",
+      "name": "Docs",
+      "importPath": "./src/stories/TxDnd.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-foundation-txdnd--interactive": {
+      "type": "story",
+      "id": "tx-design-ui-foundation-txdnd--interactive",
+      "name": "Interactive",
+      "title": "tx-design-ui/Foundation/TxDnd",
+      "importPath": "./src/stories/TxDnd.stories.js",
+      "componentPath": "./src/components/tx-dnd/tx-dnd.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-foundation-txdnd--compact": {
+      "type": "story",
+      "id": "tx-design-ui-foundation-txdnd--compact",
+      "name": "Compact",
+      "title": "tx-design-ui/Foundation/TxDnd",
+      "importPath": "./src/stories/TxDnd.stories.js",
+      "componentPath": "./src/components/tx-dnd/tx-dnd.jsx",
       "tags": ["dev", "test", "autodocs"]
     },
     "tx-design-ui-feedback-txdrawer--docs": {
@@ -755,6 +1000,96 @@
       "componentPath": "./src/components/tx-dropdown/tx-dropdown.jsx",
       "tags": ["dev", "test", "autodocs"]
     },
+    "tx-design-ui-foundation-txeditor--docs": {
+      "id": "tx-design-ui-foundation-txeditor--docs",
+      "title": "tx-design-ui/Foundation/TxEditor",
+      "name": "Docs",
+      "importPath": "./src/stories/TxEditor.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-foundation-txeditor--interactive": {
+      "type": "story",
+      "id": "tx-design-ui-foundation-txeditor--interactive",
+      "name": "Interactive",
+      "title": "tx-design-ui/Foundation/TxEditor",
+      "importPath": "./src/stories/TxEditor.stories.js",
+      "componentPath": "./src/components/tx-editor/tx-editor.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txempty--docs": {
+      "id": "tx-design-ui-data-display-txempty--docs",
+      "title": "tx-design-ui/Data Display/TxEmpty",
+      "name": "Docs",
+      "importPath": "./src/stories/TxEmpty.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-data-display-txempty--basic": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txempty--basic",
+      "name": "Basic",
+      "title": "tx-design-ui/Data Display/TxEmpty",
+      "importPath": "./src/stories/TxEmpty.stories.js",
+      "componentPath": "./src/components/tx-empty/tx-empty.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txempty--with-description": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txempty--with-description",
+      "name": "With Description",
+      "title": "tx-design-ui/Data Display/TxEmpty",
+      "importPath": "./src/stories/TxEmpty.stories.js",
+      "componentPath": "./src/components/tx-empty/tx-empty.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txempty--custom-empty": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txempty--custom-empty",
+      "name": "Custom Empty",
+      "title": "tx-design-ui/Data Display/TxEmpty",
+      "importPath": "./src/stories/TxEmpty.stories.js",
+      "componentPath": "./src/components/tx-empty/tx-empty.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-foundation-txflex--docs": {
+      "id": "tx-design-ui-foundation-txflex--docs",
+      "title": "tx-design-ui/Foundation/TxFlex",
+      "name": "Docs",
+      "importPath": "./src/stories/TxFlex.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-foundation-txflex--basic": {
+      "type": "story",
+      "id": "tx-design-ui-foundation-txflex--basic",
+      "name": "Basic",
+      "title": "tx-design-ui/Foundation/TxFlex",
+      "importPath": "./src/stories/TxFlex.stories.js",
+      "componentPath": "./src/components/tx-flex/tx-flex.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-foundation-txflex--vertical": {
+      "type": "story",
+      "id": "tx-design-ui-foundation-txflex--vertical",
+      "name": "Vertical",
+      "title": "tx-design-ui/Foundation/TxFlex",
+      "importPath": "./src/stories/TxFlex.stories.js",
+      "componentPath": "./src/components/tx-flex/tx-flex.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-foundation-txflex--centered": {
+      "type": "story",
+      "id": "tx-design-ui-foundation-txflex--centered",
+      "name": "Centered",
+      "title": "tx-design-ui/Foundation/TxFlex",
+      "importPath": "./src/stories/TxFlex.stories.js",
+      "componentPath": "./src/components/tx-flex/tx-flex.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
     "tx-design-ui-data-entry-txform--docs": {
       "id": "tx-design-ui-data-entry-txform--docs",
       "title": "tx-design-ui/Data Entry/TxForm",
@@ -798,6 +1133,85 @@
       "title": "tx-design-ui/Data Entry/TxForm",
       "importPath": "./src/stories/TxForm.stories.js",
       "componentPath": "./src/components/tx-form/tx-form.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-foundation-txgrid--docs": {
+      "id": "tx-design-ui-foundation-txgrid--docs",
+      "title": "tx-design-ui/Foundation/TxGrid",
+      "name": "Docs",
+      "importPath": "./src/stories/TxGrid.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-foundation-txgrid--basic": {
+      "type": "story",
+      "id": "tx-design-ui-foundation-txgrid--basic",
+      "name": "Basic",
+      "title": "tx-design-ui/Foundation/TxGrid",
+      "importPath": "./src/stories/TxGrid.stories.js",
+      "componentPath": "./src/components/tx-grid/tx-grid.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-foundation-txgrid--responsive": {
+      "type": "story",
+      "id": "tx-design-ui-foundation-txgrid--responsive",
+      "name": "Responsive",
+      "title": "tx-design-ui/Foundation/TxGrid",
+      "importPath": "./src/stories/TxGrid.stories.js",
+      "componentPath": "./src/components/tx-grid/tx-grid.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-foundation-txicon-txiconoutline--outline": {
+      "type": "story",
+      "id": "tx-design-ui-foundation-txicon-txiconoutline--outline",
+      "name": "Outline",
+      "title": "tx-design-ui/Foundation/TxIcon/TxIconOutline",
+      "importPath": "./src/stories/TxIconOutline.stories.js",
+      "tags": ["dev", "test"]
+    },
+    "tx-design-ui-foundation-txicon-txiconoutline--filled": {
+      "type": "story",
+      "id": "tx-design-ui-foundation-txicon-txiconoutline--filled",
+      "name": "Filled",
+      "title": "tx-design-ui/Foundation/TxIcon/TxIconOutline",
+      "importPath": "./src/stories/TxIconOutline.stories.js",
+      "tags": ["dev", "test"]
+    },
+    "tx-design-ui-data-display-tximage--docs": {
+      "id": "tx-design-ui-data-display-tximage--docs",
+      "title": "tx-design-ui/Data Display/TxImage",
+      "name": "Docs",
+      "importPath": "./src/stories/TxImage.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-data-display-tximage--basic": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-tximage--basic",
+      "name": "Basic",
+      "title": "tx-design-ui/Data Display/TxImage",
+      "importPath": "./src/stories/TxImage.stories.js",
+      "componentPath": "./src/components/tx-image/tx-image.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-tximage--with-zoom": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-tximage--with-zoom",
+      "name": "With Zoom",
+      "title": "tx-design-ui/Data Display/TxImage",
+      "importPath": "./src/stories/TxImage.stories.js",
+      "componentPath": "./src/components/tx-image/tx-image.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-tximage--rounded": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-tximage--rounded",
+      "name": "Rounded",
+      "title": "tx-design-ui/Data Display/TxImage",
+      "importPath": "./src/stories/TxImage.stories.js",
+      "componentPath": "./src/components/tx-image/tx-image.jsx",
       "tags": ["dev", "test", "autodocs"]
     },
     "tx-design-ui-data-entry-txinput--docs": {
@@ -971,6 +1385,114 @@
       "componentPath": "./src/components",
       "tags": ["dev", "test", "autodocs"]
     },
+    "tx-design-ui-data-entry-txinputotp--docs": {
+      "id": "tx-design-ui-data-entry-txinputotp--docs",
+      "title": "tx-design-ui/Data Entry/TxInputOtp",
+      "name": "Docs",
+      "importPath": "./src/stories/TxInputOtp.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-data-entry-txinputotp--default": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txinputotp--default",
+      "name": "Default",
+      "title": "tx-design-ui/Data Entry/TxInputOtp",
+      "importPath": "./src/stories/TxInputOtp.stories.js",
+      "componentPath": "./src/components/tx-input-otp/tx-input-otp.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txinputotp--disabled": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txinputotp--disabled",
+      "name": "Disabled",
+      "title": "tx-design-ui/Data Entry/TxInputOtp",
+      "importPath": "./src/stories/TxInputOtp.stories.js",
+      "componentPath": "./src/components/tx-input-otp/tx-input-otp.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-foundation-txkbd--docs": {
+      "id": "tx-design-ui-foundation-txkbd--docs",
+      "title": "tx-design-ui/Foundation/TxKbd",
+      "name": "Docs",
+      "importPath": "./src/stories/TxKbd.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-foundation-txkbd--single": {
+      "type": "story",
+      "id": "tx-design-ui-foundation-txkbd--single",
+      "name": "Single",
+      "title": "tx-design-ui/Foundation/TxKbd",
+      "importPath": "./src/stories/TxKbd.stories.js",
+      "componentPath": "./src/components/tx-kbd/tx-kbd.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-foundation-txkbd--multiple": {
+      "type": "story",
+      "id": "tx-design-ui-foundation-txkbd--multiple",
+      "name": "Multiple",
+      "title": "tx-design-ui/Foundation/TxKbd",
+      "importPath": "./src/stories/TxKbd.stories.js",
+      "componentPath": "./src/components/tx-kbd/tx-kbd.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txlightbox--docs": {
+      "id": "tx-design-ui-data-display-txlightbox--docs",
+      "title": "tx-design-ui/Data Display/TxLightbox",
+      "name": "Docs",
+      "importPath": "./src/stories/TxLightbox.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-data-display-txlightbox--interactive": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txlightbox--interactive",
+      "name": "Interactive",
+      "title": "tx-design-ui/Data Display/TxLightbox",
+      "importPath": "./src/stories/TxLightbox.stories.js",
+      "componentPath": "./src/components/tx-lightbox/tx-lightbox.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-foundation-txlink--docs": {
+      "id": "tx-design-ui-foundation-txlink--docs",
+      "title": "tx-design-ui/Foundation/TxLink",
+      "name": "Docs",
+      "importPath": "./src/stories/TxLink.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-foundation-txlink--default": {
+      "type": "story",
+      "id": "tx-design-ui-foundation-txlink--default",
+      "name": "Default",
+      "title": "tx-design-ui/Foundation/TxLink",
+      "importPath": "./src/stories/TxLink.stories.js",
+      "componentPath": "./src/components/tx-link/tx-link.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-foundation-txlink--underlined": {
+      "type": "story",
+      "id": "tx-design-ui-foundation-txlink--underlined",
+      "name": "Underlined",
+      "title": "tx-design-ui/Foundation/TxLink",
+      "importPath": "./src/stories/TxLink.stories.js",
+      "componentPath": "./src/components/tx-link/tx-link.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-foundation-txlink--visited": {
+      "type": "story",
+      "id": "tx-design-ui-foundation-txlink--visited",
+      "name": "Visited",
+      "title": "tx-design-ui/Foundation/TxLink",
+      "importPath": "./src/stories/TxLink.stories.js",
+      "componentPath": "./src/components/tx-link/tx-link.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
     "tx-design-ui-feedback-txloading--docs": {
       "id": "tx-design-ui-feedback-txloading--docs",
       "title": "tx-design-ui/Feedback/TxLoading",
@@ -1023,6 +1545,42 @@
       "title": "tx-design-ui/Feedback/TxLoading",
       "importPath": "./src/stories/TxLoading.stories.js",
       "componentPath": "./src/components/tx-loading/tx-loading.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txmap--docs": {
+      "id": "tx-design-ui-navigation-txmap--docs",
+      "title": "tx-design-ui/Navigation/TxMap",
+      "name": "Docs",
+      "importPath": "./src/stories/TxMap.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-navigation-txmap--basic": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txmap--basic",
+      "name": "Basic",
+      "title": "tx-design-ui/Navigation/TxMap",
+      "importPath": "./src/stories/TxMap.stories.js",
+      "componentPath": "./src/components/tx-map/tx-map.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txmap--custom-location": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txmap--custom-location",
+      "name": "Custom Location",
+      "title": "tx-design-ui/Navigation/TxMap",
+      "importPath": "./src/stories/TxMap.stories.js",
+      "componentPath": "./src/components/tx-map/tx-map.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txmap--compact": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txmap--compact",
+      "name": "Compact",
+      "title": "tx-design-ui/Navigation/TxMap",
+      "importPath": "./src/stories/TxMap.stories.js",
+      "componentPath": "./src/components/tx-map/tx-map.jsx",
       "tags": ["dev", "test", "autodocs"]
     },
     "tx-design-ui-navigation-txmenu--docs": {
@@ -1451,6 +2009,42 @@
       "componentPath": "./src/components/tx-progress/tx-progress.jsx",
       "tags": ["dev", "test", "autodocs"]
     },
+    "tx-design-ui-data-display-txqrcode--docs": {
+      "id": "tx-design-ui-data-display-txqrcode--docs",
+      "title": "tx-design-ui/Data Display/TxQrcode",
+      "name": "Docs",
+      "importPath": "./src/stories/TxQrcode.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-data-display-txqrcode--basic": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txqrcode--basic",
+      "name": "Basic",
+      "title": "tx-design-ui/Data Display/TxQrcode",
+      "importPath": "./src/stories/TxQrcode.stories.js",
+      "componentPath": "./src/components/tx-qrcode/tx-qrcode.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txqrcode--small": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txqrcode--small",
+      "name": "Small",
+      "title": "tx-design-ui/Data Display/TxQrcode",
+      "importPath": "./src/stories/TxQrcode.stories.js",
+      "componentPath": "./src/components/tx-qrcode/tx-qrcode.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txqrcode--large": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txqrcode--large",
+      "name": "Large",
+      "title": "tx-design-ui/Data Display/TxQrcode",
+      "importPath": "./src/stories/TxQrcode.stories.js",
+      "componentPath": "./src/components/tx-qrcode/tx-qrcode.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
     "tx-design-ui-data-entry-txradio--docs": {
       "id": "tx-design-ui-data-entry-txradio--docs",
       "title": "tx-design-ui/Data Entry/TxRadio",
@@ -1523,6 +2117,114 @@
       "componentPath": "./src/components",
       "tags": ["dev", "test", "autodocs"]
     },
+    "tx-design-ui-data-entry-txrate--docs": {
+      "id": "tx-design-ui-data-entry-txrate--docs",
+      "title": "tx-design-ui/Data Entry/TxRate",
+      "name": "Docs",
+      "importPath": "./src/stories/TxRate.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-data-entry-txrate--basic": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txrate--basic",
+      "name": "Basic",
+      "title": "tx-design-ui/Data Entry/TxRate",
+      "importPath": "./src/stories/TxRate.stories.js",
+      "componentPath": "./src/components/tx-rate/tx-rate.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txrate--large": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txrate--large",
+      "name": "Large",
+      "title": "tx-design-ui/Data Entry/TxRate",
+      "importPath": "./src/stories/TxRate.stories.js",
+      "componentPath": "./src/components/tx-rate/tx-rate.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txrate--half-star": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txrate--half-star",
+      "name": "Half Star",
+      "title": "tx-design-ui/Data Entry/TxRate",
+      "importPath": "./src/stories/TxRate.stories.js",
+      "componentPath": "./src/components/tx-rate/tx-rate.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txscrollprogress--docs": {
+      "id": "tx-design-ui-feedback-txscrollprogress--docs",
+      "title": "tx-design-ui/Feedback/TxScrollProgress",
+      "name": "Docs",
+      "importPath": "./src/stories/TxScrollProgress.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-feedback-txscrollprogress--fixed": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txscrollprogress--fixed",
+      "name": "Fixed",
+      "title": "tx-design-ui/Feedback/TxScrollProgress",
+      "importPath": "./src/stories/TxScrollProgress.stories.js",
+      "componentPath": "./src/components/tx-scroll-progress/tx-scroll-progress.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txscrollprogress--sticky": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txscrollprogress--sticky",
+      "name": "Sticky",
+      "title": "tx-design-ui/Feedback/TxScrollProgress",
+      "importPath": "./src/stories/TxScrollProgress.stories.js",
+      "componentPath": "./src/components/tx-scroll-progress/tx-scroll-progress.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txscrollshadow--docs": {
+      "id": "tx-design-ui-feedback-txscrollshadow--docs",
+      "title": "tx-design-ui/Feedback/TxScrollShadow",
+      "name": "Docs",
+      "importPath": "./src/stories/TxScrollShadow.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-feedback-txscrollshadow--default": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txscrollshadow--default",
+      "name": "Default",
+      "title": "tx-design-ui/Feedback/TxScrollShadow",
+      "importPath": "./src/stories/TxScrollShadow.stories.js",
+      "componentPath": "./src/components/tx-scroll-shadow/tx-scroll-shadow.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txsegmented--docs": {
+      "id": "tx-design-ui-navigation-txsegmented--docs",
+      "title": "tx-design-ui/Navigation/TxSegmented",
+      "name": "Docs",
+      "importPath": "./src/stories/TxSegmented.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-navigation-txsegmented--basic": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txsegmented--basic",
+      "name": "Basic",
+      "title": "tx-design-ui/Navigation/TxSegmented",
+      "importPath": "./src/stories/TxSegmented.stories.js",
+      "componentPath": "./src/components/tx-segmented/tx-segmented.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txsegmented--more-options": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txsegmented--more-options",
+      "name": "More Options",
+      "title": "tx-design-ui/Navigation/TxSegmented",
+      "importPath": "./src/stories/TxSegmented.stories.js",
+      "componentPath": "./src/components/tx-segmented/tx-segmented.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
     "tx-design-ui-data-entry-txselect--docs": {
       "id": "tx-design-ui-data-entry-txselect--docs",
       "title": "tx-design-ui/Data Entry/TxSelect",
@@ -1586,6 +2288,42 @@
       "componentPath": "./src/components",
       "tags": ["dev", "test", "autodocs"]
     },
+    "tx-design-ui-data-display-txskeleton--docs": {
+      "id": "tx-design-ui-data-display-txskeleton--docs",
+      "title": "tx-design-ui/Data Display/TxSkeleton",
+      "name": "Docs",
+      "importPath": "./src/stories/TxSkeleton.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-data-display-txskeleton--basic": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txskeleton--basic",
+      "name": "Basic",
+      "title": "tx-design-ui/Data Display/TxSkeleton",
+      "importPath": "./src/stories/TxSkeleton.stories.js",
+      "componentPath": "./src/components/tx-skeleton/tx-skeleton.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txskeleton--multiple": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txskeleton--multiple",
+      "name": "Multiple",
+      "title": "tx-design-ui/Data Display/TxSkeleton",
+      "importPath": "./src/stories/TxSkeleton.stories.js",
+      "componentPath": "./src/components/tx-skeleton/tx-skeleton.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txskeleton--circle": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txskeleton--circle",
+      "name": "Circle",
+      "title": "tx-design-ui/Data Display/TxSkeleton",
+      "importPath": "./src/stories/TxSkeleton.stories.js",
+      "componentPath": "./src/components/tx-skeleton/tx-skeleton.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
     "tx-design-ui-data-entry-txslider--docs": {
       "id": "tx-design-ui-data-entry-txslider--docs",
       "title": "tx-design-ui/Data Entry/TxSlider",
@@ -1647,6 +2385,96 @@
       "title": "tx-design-ui/Data Entry/TxSlider",
       "importPath": "./src/stories/TxSlider.stories.js",
       "componentPath": "./src/components/tx-slider/tx-slider.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txsnippet--docs": {
+      "id": "tx-design-ui-data-display-txsnippet--docs",
+      "title": "tx-design-ui/Data Display/TxSnippet",
+      "name": "Docs",
+      "importPath": "./src/stories/TxSnippet.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-data-display-txsnippet--default": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txsnippet--default",
+      "name": "Default",
+      "title": "tx-design-ui/Data Display/TxSnippet",
+      "importPath": "./src/stories/TxSnippet.stories.js",
+      "componentPath": "./src/components/tx-snippet/tx-snippet.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txsnippet--without-label": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txsnippet--without-label",
+      "name": "Without Label",
+      "title": "tx-design-ui/Data Display/TxSnippet",
+      "importPath": "./src/stories/TxSnippet.stories.js",
+      "componentPath": "./src/components/tx-snippet/tx-snippet.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-foundation-txspace--docs": {
+      "id": "tx-design-ui-foundation-txspace--docs",
+      "title": "tx-design-ui/Foundation/TxSpace",
+      "name": "Docs",
+      "importPath": "./src/stories/TxSpace.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-foundation-txspace--horizontal": {
+      "type": "story",
+      "id": "tx-design-ui-foundation-txspace--horizontal",
+      "name": "Horizontal",
+      "title": "tx-design-ui/Foundation/TxSpace",
+      "importPath": "./src/stories/TxSpace.stories.js",
+      "componentPath": "./src/components/tx-space/tx-space.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-foundation-txspace--vertical": {
+      "type": "story",
+      "id": "tx-design-ui-foundation-txspace--vertical",
+      "name": "Vertical",
+      "title": "tx-design-ui/Foundation/TxSpace",
+      "importPath": "./src/stories/TxSpace.stories.js",
+      "componentPath": "./src/components/tx-space/tx-space.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-foundation-txspace--large-gap": {
+      "type": "story",
+      "id": "tx-design-ui-foundation-txspace--large-gap",
+      "name": "Large Gap",
+      "title": "tx-design-ui/Foundation/TxSpace",
+      "importPath": "./src/stories/TxSpace.stories.js",
+      "componentPath": "./src/components/tx-space/tx-space.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-foundation-txsplitter--docs": {
+      "id": "tx-design-ui-foundation-txsplitter--docs",
+      "title": "tx-design-ui/Foundation/TxSplitter",
+      "name": "Docs",
+      "importPath": "./src/stories/TxSplitter.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-foundation-txsplitter--basic": {
+      "type": "story",
+      "id": "tx-design-ui-foundation-txsplitter--basic",
+      "name": "Basic",
+      "title": "tx-design-ui/Foundation/TxSplitter",
+      "importPath": "./src/stories/TxSplitter.stories.js",
+      "componentPath": "./src/components/tx-splitter/tx-splitter.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-foundation-txsplitter--three-panels": {
+      "type": "story",
+      "id": "tx-design-ui-foundation-txsplitter--three-panels",
+      "name": "Three Panels",
+      "title": "tx-design-ui/Foundation/TxSplitter",
+      "importPath": "./src/stories/TxSplitter.stories.js",
+      "componentPath": "./src/components/tx-splitter/tx-splitter.jsx",
       "tags": ["dev", "test", "autodocs"]
     },
     "tx-design-ui-navigation-txsteps--docs": {
@@ -1937,6 +2765,114 @@
       "componentPath": "./src/components/tx-tag/tx-tag.jsx",
       "tags": ["dev", "test", "autodocs"]
     },
+    "tx-design-ui-foundation-txtextgradient--docs": {
+      "id": "tx-design-ui-foundation-txtextgradient--docs",
+      "title": "tx-design-ui/Foundation/TxTextGradient",
+      "name": "Docs",
+      "importPath": "./src/stories/TxTextGradient.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-foundation-txtextgradient--default": {
+      "type": "story",
+      "id": "tx-design-ui-foundation-txtextgradient--default",
+      "name": "Default",
+      "title": "tx-design-ui/Foundation/TxTextGradient",
+      "importPath": "./src/stories/TxTextGradient.stories.js",
+      "componentPath": "./src/components/tx-text-gradient/tx-text-gradient.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-foundation-txtextgradient--custom-gradient": {
+      "type": "story",
+      "id": "tx-design-ui-foundation-txtextgradient--custom-gradient",
+      "name": "Custom Gradient",
+      "title": "tx-design-ui/Foundation/TxTextGradient",
+      "importPath": "./src/stories/TxTextGradient.stories.js",
+      "componentPath": "./src/components/tx-text-gradient/tx-text-gradient.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-foundation-txtextgradient--blue-green": {
+      "type": "story",
+      "id": "tx-design-ui-foundation-txtextgradient--blue-green",
+      "name": "Blue Green",
+      "title": "tx-design-ui/Foundation/TxTextGradient",
+      "importPath": "./src/stories/TxTextGradient.stories.js",
+      "componentPath": "./src/components/tx-text-gradient/tx-text-gradient.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-foundation-txtextgradient--large-size": {
+      "type": "story",
+      "id": "tx-design-ui-foundation-txtextgradient--large-size",
+      "name": "Large Size",
+      "title": "tx-design-ui/Foundation/TxTextGradient",
+      "importPath": "./src/stories/TxTextGradient.stories.js",
+      "componentPath": "./src/components/tx-text-gradient/tx-text-gradient.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txtextarea--docs": {
+      "id": "tx-design-ui-data-entry-txtextarea--docs",
+      "title": "tx-design-ui/Data Entry/TxTextarea",
+      "name": "Docs",
+      "importPath": "./src/stories/TxTextarea.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-data-entry-txtextarea--default": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txtextarea--default",
+      "name": "Default",
+      "title": "tx-design-ui/Data Entry/TxTextarea",
+      "importPath": "./src/stories/TxTextarea.stories.js",
+      "componentPath": "./src/components/tx-textarea/tx-textarea.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txtextarea--resize": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txtextarea--resize",
+      "name": "Resize",
+      "title": "tx-design-ui/Data Entry/TxTextarea",
+      "importPath": "./src/stories/TxTextarea.stories.js",
+      "componentPath": "./src/components/tx-textarea/tx-textarea.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txtextarea--disabled": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txtextarea--disabled",
+      "name": "Disabled",
+      "title": "tx-design-ui/Data Entry/TxTextarea",
+      "importPath": "./src/stories/TxTextarea.stories.js",
+      "componentPath": "./src/components/tx-textarea/tx-textarea.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txtimeinput--docs": {
+      "id": "tx-design-ui-data-entry-txtimeinput--docs",
+      "title": "tx-design-ui/Data Entry/TxTimeInput",
+      "name": "Docs",
+      "importPath": "./src/stories/TxTimeInput.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-data-entry-txtimeinput--default": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txtimeinput--default",
+      "name": "Default",
+      "title": "tx-design-ui/Data Entry/TxTimeInput",
+      "importPath": "./src/stories/TxTimeInput.stories.js",
+      "componentPath": "./src/components/tx-time-input/tx-time-input.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txtimeinput--disabled": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txtimeinput--disabled",
+      "name": "Disabled",
+      "title": "tx-design-ui/Data Entry/TxTimeInput",
+      "importPath": "./src/stories/TxTimeInput.stories.js",
+      "componentPath": "./src/components/tx-time-input/tx-time-input.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
     "tx-design-ui-data-display-txtimeline--docs": {
       "id": "tx-design-ui-data-display-txtimeline--docs",
       "title": "tx-design-ui/Data Display/TxTimeline",
@@ -2009,6 +2945,42 @@
       "componentPath": "./src/components/tx-timeline/tx-timeline.jsx",
       "tags": ["dev", "test", "autodocs"]
     },
+    "tx-design-ui-navigation-txtoggle--docs": {
+      "id": "tx-design-ui-navigation-txtoggle--docs",
+      "title": "tx-design-ui/Navigation/TxToggle",
+      "name": "Docs",
+      "importPath": "./src/stories/TxToggle.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-navigation-txtoggle--default": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txtoggle--default",
+      "name": "Default",
+      "title": "tx-design-ui/Navigation/TxToggle",
+      "importPath": "./src/stories/TxToggle.stories.js",
+      "componentPath": "./src/components/tx-toggle/tx-toggle.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txtoggle--sizes": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txtoggle--sizes",
+      "name": "Sizes",
+      "title": "tx-design-ui/Navigation/TxToggle",
+      "importPath": "./src/stories/TxToggle.stories.js",
+      "componentPath": "./src/components/tx-toggle/tx-toggle.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txtoggle--disabled": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txtoggle--disabled",
+      "name": "Disabled",
+      "title": "tx-design-ui/Navigation/TxToggle",
+      "importPath": "./src/stories/TxToggle.stories.js",
+      "componentPath": "./src/components/tx-toggle/tx-toggle.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
     "tx-design-ui-feedback-txtooltip--docs": {
       "id": "tx-design-ui-feedback-txtooltip--docs",
       "title": "tx-design-ui/Feedback/TxTooltip",
@@ -2061,6 +3033,114 @@
       "title": "tx-design-ui/Feedback/TxTooltip",
       "importPath": "./src/stories/TxTooltip.stories.js",
       "componentPath": "./src/components/tx-tooltip/tx-tooltip.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-navigation-txtour--docs": {
+      "id": "tx-design-ui-navigation-txtour--docs",
+      "title": "tx-design-ui/Navigation/TxTour",
+      "name": "Docs",
+      "importPath": "./src/stories/TxTour.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-navigation-txtour--interactive": {
+      "type": "story",
+      "id": "tx-design-ui-navigation-txtour--interactive",
+      "name": "Interactive",
+      "title": "tx-design-ui/Navigation/TxTour",
+      "importPath": "./src/stories/TxTour.stories.js",
+      "componentPath": "./src/components/tx-tour/tx-tour.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txtransfer--docs": {
+      "id": "tx-design-ui-data-entry-txtransfer--docs",
+      "title": "tx-design-ui/Data Entry/TxTransfer",
+      "name": "Docs",
+      "importPath": "./src/stories/TxTransfer.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-data-entry-txtransfer--basic": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txtransfer--basic",
+      "name": "Basic",
+      "title": "tx-design-ui/Data Entry/TxTransfer",
+      "importPath": "./src/stories/TxTransfer.stories.js",
+      "componentPath": "./src/components/tx-transfer/tx-transfer.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-entry-txtransfer--custom-titles": {
+      "type": "story",
+      "id": "tx-design-ui-data-entry-txtransfer--custom-titles",
+      "name": "Custom Titles",
+      "title": "tx-design-ui/Data Entry/TxTransfer",
+      "importPath": "./src/stories/TxTransfer.stories.js",
+      "componentPath": "./src/components/tx-transfer/tx-transfer.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txtypography--docs": {
+      "id": "tx-design-ui-data-display-txtypography--docs",
+      "title": "tx-design-ui/Data Display/TxTypography",
+      "name": "Docs",
+      "importPath": "./src/stories/TxTypography.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-data-display-txtypography--h-1": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txtypography--h-1",
+      "name": "H 1",
+      "title": "tx-design-ui/Data Display/TxTypography",
+      "importPath": "./src/stories/TxTypography.stories.js",
+      "componentPath": "./src/components/tx-typography/tx-typography.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txtypography--h-2": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txtypography--h-2",
+      "name": "H 2",
+      "title": "tx-design-ui/Data Display/TxTypography",
+      "importPath": "./src/stories/TxTypography.stories.js",
+      "componentPath": "./src/components/tx-typography/tx-typography.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txtypography--h-3": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txtypography--h-3",
+      "name": "H 3",
+      "title": "tx-design-ui/Data Display/TxTypography",
+      "importPath": "./src/stories/TxTypography.stories.js",
+      "componentPath": "./src/components/tx-typography/tx-typography.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txtypography--body": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txtypography--body",
+      "name": "Body",
+      "title": "tx-design-ui/Data Display/TxTypography",
+      "importPath": "./src/stories/TxTypography.stories.js",
+      "componentPath": "./src/components/tx-typography/tx-typography.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txtypography--caption": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txtypography--caption",
+      "name": "Caption",
+      "title": "tx-design-ui/Data Display/TxTypography",
+      "importPath": "./src/stories/TxTypography.stories.js",
+      "componentPath": "./src/components/tx-typography/tx-typography.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txtypography--with-ellipsis": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txtypography--with-ellipsis",
+      "name": "With Ellipsis",
+      "title": "tx-design-ui/Data Display/TxTypography",
+      "importPath": "./src/stories/TxTypography.stories.js",
+      "componentPath": "./src/components/tx-typography/tx-typography.jsx",
       "tags": ["dev", "test", "autodocs"]
     },
     "tx-design-ui-data-entry-txupload--docs": {
@@ -2142,6 +3222,60 @@
       "title": "tx-design-ui/Data Entry/TxUpload",
       "importPath": "./src/stories/TxUpload.stories.js",
       "componentPath": "./src/components/tx-upload/tx-upload.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txvideoplayer--docs": {
+      "id": "tx-design-ui-feedback-txvideoplayer--docs",
+      "title": "tx-design-ui/Feedback/TxVideoPlayer",
+      "name": "Docs",
+      "importPath": "./src/stories/TxVideoPlayer.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-feedback-txvideoplayer--default": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txvideoplayer--default",
+      "name": "Default",
+      "title": "tx-design-ui/Feedback/TxVideoPlayer",
+      "importPath": "./src/stories/TxVideoPlayer.stories.js",
+      "componentPath": "./src/components/tx-video-player/tx-video-player.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txvideoplayer--with-poster": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txvideoplayer--with-poster",
+      "name": "With Poster",
+      "title": "tx-design-ui/Feedback/TxVideoPlayer",
+      "importPath": "./src/stories/TxVideoPlayer.stories.js",
+      "componentPath": "./src/components/tx-video-player/tx-video-player.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txwatermark--docs": {
+      "id": "tx-design-ui-data-display-txwatermark--docs",
+      "title": "tx-design-ui/Data Display/TxWatermark",
+      "name": "Docs",
+      "importPath": "./src/stories/TxWatermark.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-data-display-txwatermark--basic": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txwatermark--basic",
+      "name": "Basic",
+      "title": "tx-design-ui/Data Display/TxWatermark",
+      "importPath": "./src/stories/TxWatermark.stories.js",
+      "componentPath": "./src/components/tx-watermark/tx-watermark.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-data-display-txwatermark--custom": {
+      "type": "story",
+      "id": "tx-design-ui-data-display-txwatermark--custom",
+      "name": "Custom",
+      "title": "tx-design-ui/Data Display/TxWatermark",
+      "importPath": "./src/stories/TxWatermark.stories.js",
+      "componentPath": "./src/components/tx-watermark/tx-watermark.jsx",
       "tags": ["dev", "test", "autodocs"]
     }
   }

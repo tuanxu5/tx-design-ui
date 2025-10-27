@@ -3125,12 +3125,3 @@ function IconListTemplate({ variant = "outline" }) {
 export const Outline = {
   render: () => <IconListTemplate variant="outline" />,
 };
-
-// Story for Filled icons (placeholder)
-export const Filled = {
-  render: () => (
-    <div style={{ padding: "60px", textAlign: "center", color: "#888", fontFamily: "sans-serif" }}>
-      <p style={{ fontSize: "16px" }}>Filled icons coming soon...</p>
-    </div>
-  ),
-};

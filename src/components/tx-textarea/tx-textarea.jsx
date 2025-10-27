@@ -7,7 +7,6 @@ const TextareaStyled = styled.textarea`
   border: 1px solid ${colors.borderLight};
   border-radius: 6px;
   font-size: 14px;
-  font-family: inherit;
   resize: ${props => props.resize || "vertical"};
   min-height: ${props => props.minHeight || "80px"};
 

@@ -40,7 +40,6 @@ const CopyButton = styled.button`
 const CodeBlock = styled.pre`
   margin: 0;
   padding: 12px 16px;
-  font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
   font-size: 14px;
   overflow-x: auto;
 `;

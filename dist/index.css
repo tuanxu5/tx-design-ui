@@ -1,9 +1,30 @@
 /* add css module styles here (optional) */
 
-._styles-module__test__3ybTi {
+._3ybTi {
   margin: 2em;
   padding: 0.5em;
   border: 2px solid #000;
   font-size: 2em;
   text-align: center;
+}
+
+._1QsJj {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+._2PBIX {
+  display: flex;
+  align-items: center !important;
+  justify-content: space-between;
+  width: 100%;
+}
+
+._2Ffw3 {
+  display: flex;
+  align-items: center !important;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
 }

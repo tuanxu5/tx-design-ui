@@ -71,7 +71,6 @@ export const StyledColorValue = styled.input`
   background-color: ${props => (props.disabled ? colors.bgFillLight : colors.bgWhite)};
   outline: none;
   width: 100px;
-  font-family: monospace;
   text-transform: uppercase;
   transition: all 0.2s ease;
 
