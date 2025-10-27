@@ -1,0 +1,55 @@
+---
+title: Lightbox
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Lightbox
+
+Fullscreen image viewer with overlay.
+
+## When To Use
+
+- Display images in fullscreen
+- View detailed image galleries
+- Show high-resolution images
+
+## Basic Usage
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?args=&id=tx-design-ui-other-txlightbox--interactive&viewMode=story"
+      width="100%"
+      height="400px"
+      style={{ border: "1px solid #ddd", borderRadius: "8px", background: "white" }}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+    ```jsx
+    import { TxLightbox } from "tx-design-ui";
+    import { useState } from "react";
+
+    function MyComponent() {
+      const [open, setOpen] = useState(false);
+
+      return (
+        <>
+          <button onClick={() => setOpen(true)}>View Image</button>
+          <TxLightbox open={open} src="image.jpg" onClose={() => setOpen(false)} />
+        </>
+      );
+    }
+    ```
+
+  </TabItem>
+</Tabs>
+
+## API
+
+| Property | Type       | Default | Description        |
+| -------- | ---------- | ------- | ------------------ |
+| open     | `boolean`  | `false` | Show/hide lightbox |
+| src      | `string`   | -       | Image source       |
+| onClose  | `function` | -       | Close handler      |

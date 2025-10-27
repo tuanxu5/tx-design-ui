@@ -1,0 +1,64 @@
+---
+title: Text Gradient
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Text Gradient
+
+Text with gradient color effect.
+
+## When To Use
+
+- Create visual interest
+- Highlight important text
+- Add modern styling
+
+## Basic Usage
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?args=&id=tx-design-ui-other-txtextgradient--default&viewMode=story"
+      width="100%"
+      height="300px"
+      style={{ border: "1px solid #ddd", borderRadius: "8px", background: "white" }}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+    ```jsx
+    import { TxTextGradient } from "tx-design-ui";
+
+    <TxTextGradient>Gradient Text</TxTextGradient>
+    ```
+
+  </TabItem>
+</Tabs>
+
+## Custom Gradient
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?args=&id=tx-design-ui-other-txtextgradient--blue-green&viewMode=story"
+      width="100%"
+      height="300px"
+      style={{ border: "1px solid #ddd", borderRadius: "8px", background: "white" }}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+    ```jsx
+    <TxTextGradient gradient="linear-gradient(135deg, #00bcff 0%, #00d9ff 100%)">Blue to Green</TxTextGradient>
+    ```
+  </TabItem>
+</Tabs>
+
+## API
+
+| Property | Type     | Default | Description  |
+| -------- | -------- | ------- | ------------ |
+| gradient | `string` | -       | CSS gradient |
+| weight   | `string` | `600`   | Font weight  |
+| size     | `string` | -       | Font size    |
+| children | `node`   | -       | Text content |

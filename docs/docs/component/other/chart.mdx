@@ -1,0 +1,45 @@
+---
+title: Chart
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Chart
+
+Data visualization component (integrate with Chart.js or similar).
+
+## When To Use
+
+- Display data trends
+- Show statistics and metrics
+- Visualize complex data sets
+
+## Basic Usage
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?args=&id=tx-design-ui-other-txchart--placeholder&viewMode=story"
+      width="100%"
+      height="400px"
+      style={{ border: "1px solid #ddd", borderRadius: "8px", background: "white" }}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+    ```jsx
+    import { TxChart } from "tx-design-ui";
+
+    <TxChart type="bar" data={{ labels: ["A", "B", "C"], values: [10, 20, 30] }} />
+    ```
+
+  </TabItem>
+</Tabs>
+
+## API
+
+| Property | Type     | Default | Description   |
+| -------- | -------- | ------- | ------------- |
+| type     | `string` | `bar`   | Chart type    |
+| data     | `object` | -       | Chart data    |
+| options  | `object` | -       | Chart options |

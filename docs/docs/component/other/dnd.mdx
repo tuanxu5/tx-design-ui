@@ -1,0 +1,75 @@
+---
+title: Drag & Drop
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Drag & Drop
+
+File upload with drag and drop functionality.
+
+## When To Use
+
+- Upload multiple files
+- Drag and drop interface
+- File browsing
+
+## Basic Usage
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?args=&id=tx-design-ui-other-txdnd--interactive&viewMode=story"
+      width="100%"
+      height="400px"
+      style={{ border: "1px solid #ddd", borderRadius: "8px", background: "white" }}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+    ```jsx
+    import { TxDnd } from "tx-design-ui";
+
+    function MyComponent() {
+      const handleDrop = (files) => {
+        console.log("Dropped files:", files);
+      };
+
+      return (
+        <TxDnd onDrop={handleDrop}>
+          Drop files here or click to browse
+        </TxDnd>
+      );
+    }
+    ```
+
+  </TabItem>
+</Tabs>
+
+## Compact Version
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?args=&id=tx-design-ui-other-txdnd--compact&viewMode=story"
+      width="100%"
+      height="300px"
+      style={{ border: "1px solid #ddd", borderRadius: "8px", background: "white" }}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+    ```jsx
+    <TxDnd compact onDrop={handleDrop}>
+      Upload files
+    </TxDnd>
+    ```
+  </TabItem>
+</Tabs>
+
+## API
+
+| Property | Type       | Default | Description           |
+| -------- | ---------- | ------- | --------------------- |
+| onDrop   | `function` | -       | Handle dropped files  |
+| compact  | `boolean`  | `false` | Compact mode          |
+| children | `node`     | -       | Custom drop zone text |

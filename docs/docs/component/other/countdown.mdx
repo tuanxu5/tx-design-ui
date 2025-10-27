@@ -1,0 +1,48 @@
+---
+title: Countdown
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Countdown
+
+Countdown timer component.
+
+## When To Use
+
+- Show time remaining
+- Display deadlines
+- Create urgency
+
+## Basic Usage
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?args=&id=tx-design-ui-other-txcountdown--next-week&viewMode=story"
+      width="100%"
+      height="300px"
+      style={{ border: "1px solid #ddd", borderRadius: "8px", background: "white" }}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+    ```jsx
+    import { TxCountdown } from "tx-design-ui";
+
+    // Countdown to 7 days from now
+    const futureDate = new Date();
+    futureDate.setDate(futureDate.getDate() + 7);
+
+    <TxCountdown targetDate={futureDate.toISOString()} />
+    ```
+
+  </TabItem>
+</Tabs>
+
+## API
+
+| Property   | Type     | Default | Description              |
+| ---------- | -------- | ------- | ------------------------ |
+| targetDate | `string` | -       | Target date (ISO string) |
+| size       | `string` | `32px`  | Font size                |
