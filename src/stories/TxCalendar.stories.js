@@ -2,7 +2,7 @@ import { useState } from "react";
 import TxCalendar from "../components/tx-calendar/tx-calendar";
 
 const TxCalendarStory = {
-  title: "tx-design-ui/Other/TxCalendar",
+  title: "tx-design-ui/Navigation/TxCalendar",
   component: TxCalendar,
   parameters: {
     layout: "centered",

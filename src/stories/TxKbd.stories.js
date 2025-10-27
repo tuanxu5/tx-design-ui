@@ -1,7 +1,7 @@
 import TxKbd from "../components/tx-kbd/tx-kbd";
 
 const TxKbdStory = {
-  title: "tx-design-ui/Other/TxKbd",
+  title: "tx-design-ui/Foundation/TxKbd",
   component: TxKbd,
   parameters: {
     layout: "centered",

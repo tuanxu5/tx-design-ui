@@ -1,7 +1,7 @@
 import TxFlex from "../components/tx-flex/tx-flex";
 
 const TxFlexStory = {
-  title: "tx-design-ui/Other/TxFlex",
+  title: "tx-design-ui/Foundation/TxFlex",
   component: TxFlex,
   parameters: {
     layout: "centered",

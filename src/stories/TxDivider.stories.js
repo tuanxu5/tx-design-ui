@@ -1,7 +1,7 @@
 import TxDivider from "../components/tx-divider/tx-divider";
 
 const TxDividerStory = {
-  title: "tx-design-ui/Other/TxDivider",
+  title: "tx-design-ui/Data Display/TxDivider",
   component: TxDivider,
   parameters: {
     layout: "centered",

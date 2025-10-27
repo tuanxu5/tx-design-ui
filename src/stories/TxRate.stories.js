@@ -1,7 +1,7 @@
 import TxRate from "../components/tx-rate/tx-rate";
 
 const TxRateStory = {
-  title: "tx-design-ui/Other/TxRate",
+  title: "tx-design-ui/Data Entry/TxRate",
   component: TxRate,
   parameters: {
     layout: "centered",

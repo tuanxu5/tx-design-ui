@@ -1,9 +1,0 @@
-{
-  "label": "OTHER",
-  "position": 6,
-  "collapsible": false,
-  "collapsed": false,
-  "customProps": {
-    "icon": "/img/components/ic-icons.svg"
-  }
-}

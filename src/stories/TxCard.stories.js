@@ -1,7 +1,7 @@
 import { TxCard } from "../components/tx-card/tx-card";
 
 const TxCardStory = {
-  title: "tx-design-ui/Other/TxCard",
+  title: "tx-design-ui/Data Display/TxCard",
   component: TxCard,
   parameters: {
     layout: "centered",

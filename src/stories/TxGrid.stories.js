@@ -1,7 +1,7 @@
 import { TxGrid, TxGridItem } from "../components/tx-grid/tx-grid";
 
 const TxGridStory = {
-  title: "tx-design-ui/Other/TxGrid",
+  title: "tx-design-ui/Foundation/TxGrid",
   component: TxGrid,
   parameters: {
     layout: "centered",

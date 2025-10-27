@@ -1,7 +1,7 @@
 import TxSkeleton from "../components/tx-skeleton/tx-skeleton";
 
 const TxSkeletonStory = {
-  title: "tx-design-ui/Other/TxSkeleton",
+  title: "tx-design-ui/Data Display/TxSkeleton",
   component: TxSkeleton,
   parameters: {
     layout: "centered",

@@ -2,7 +2,7 @@ import { useState } from "react";
 import TxDnd from "../components/tx-dnd/tx-dnd";
 
 const TxDndStory = {
-  title: "tx-design-ui/Other/TxDnd",
+  title: "tx-design-ui/Foundation/TxDnd",
   component: TxDnd,
   parameters: {
     layout: "centered",

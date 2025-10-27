@@ -1,7 +1,7 @@
 import TxDateRangePicker from "../components/tx-date-range-picker/tx-date-range-picker";
 
 const TxDateRangePickerStory = {
-  title: "tx-design-ui/Other/TxDateRangePicker",
+  title: "tx-design-ui/Data Entry/TxDateRangePicker",
   component: TxDateRangePicker,
   parameters: {
     layout: "centered",

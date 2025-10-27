@@ -1,7 +1,7 @@
 import TxScrollProgress from "../components/tx-scroll-progress/tx-scroll-progress";
 
 const TxScrollProgressStory = {
-  title: "tx-design-ui/Other/TxScrollProgress",
+  title: "tx-design-ui/Feedback/TxScrollProgress",
   component: TxScrollProgress,
   parameters: {
     layout: "fullscreen",

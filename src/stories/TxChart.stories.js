@@ -1,7 +1,7 @@
 import TxChart from "../components/tx-chart/tx-chart";
 
 const TxChartStory = {
-  title: "tx-design-ui/Other/TxChart",
+  title: "tx-design-ui/Data Display/TxChart",
   component: TxChart,
   parameters: {
     layout: "centered",

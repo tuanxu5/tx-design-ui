@@ -1,7 +1,7 @@
 import TxTextGradient from "../components/tx-text-gradient/tx-text-gradient";
 
 const TxTextGradientStory = {
-  title: "tx-design-ui/Other/TxTextGradient",
+  title: "tx-design-ui/Foundation/TxTextGradient",
   component: TxTextGradient,
   parameters: {
     layout: "centered",

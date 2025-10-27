@@ -2,7 +2,7 @@ import { useState } from "react";
 import TxTimeInput from "../components/tx-time-input/tx-time-input";
 
 const TxTimeInputStory = {
-  title: "tx-design-ui/Other/TxTimeInput",
+  title: "tx-design-ui/Data Entry/TxTimeInput",
   component: TxTimeInput,
   parameters: {
     layout: "centered",

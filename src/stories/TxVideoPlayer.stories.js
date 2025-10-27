@@ -1,7 +1,7 @@
 import TxVideoPlayer from "../components/tx-video-player/tx-video-player";
 
 const TxVideoPlayerStory = {
-  title: "tx-design-ui/Other/TxVideoPlayer",
+  title: "tx-design-ui/Feedback/TxVideoPlayer",
   component: TxVideoPlayer,
   parameters: {
     layout: "centered",

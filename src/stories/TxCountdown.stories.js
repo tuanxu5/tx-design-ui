@@ -1,7 +1,7 @@
 import TxCountdown from "../components/tx-countdown/tx-countdown";
 
 const TxCountdownStory = {
-  title: "tx-design-ui/Other/TxCountdown",
+  title: "tx-design-ui/Data Display/TxCountdown",
   component: TxCountdown,
   parameters: {
     layout: "centered",

@@ -1,7 +1,7 @@
 import TxSegmented from "../components/tx-segmented/tx-segmented";
 
 const TxSegmentedStory = {
-  title: "tx-design-ui/Other/TxSegmented",
+  title: "tx-design-ui/Navigation/TxSegmented",
   component: TxSegmented,
   parameters: {
     layout: "centered",

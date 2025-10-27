@@ -1,7 +1,7 @@
 import TxSnippet from "../components/tx-snippet/tx-snippet";
 
 const TxSnippetStory = {
-  title: "tx-design-ui/Other/TxSnippet",
+  title: "tx-design-ui/Data Display/TxSnippet",
   component: TxSnippet,
   parameters: {
     layout: "centered",

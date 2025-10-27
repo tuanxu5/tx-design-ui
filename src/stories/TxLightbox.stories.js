@@ -2,7 +2,7 @@ import { useState } from "react";
 import TxLightbox from "../components/tx-lightbox/tx-lightbox";
 
 const TxLightboxStory = {
-  title: "tx-design-ui/Other/TxLightbox",
+  title: "tx-design-ui/Data Display/TxLightbox",
   component: TxLightbox,
   parameters: {
     layout: "centered",

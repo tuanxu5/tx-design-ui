@@ -1,7 +1,7 @@
 import TxScrollShadow from "../components/tx-scroll-shadow/tx-scroll-shadow";
 
 const TxScrollShadowStory = {
-  title: "tx-design-ui/Other/TxScrollShadow",
+  title: "tx-design-ui/Feedback/TxScrollShadow",
   component: TxScrollShadow,
   parameters: {
     layout: "centered",

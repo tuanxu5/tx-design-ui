@@ -1,7 +1,7 @@
 import TxTypography from "../components/tx-typography/tx-typography";
 
 const TxTypographyStory = {
-  title: "tx-design-ui/Other/TxTypography",
+  title: "tx-design-ui/Data Display/TxTypography",
   component: TxTypography,
   parameters: {
     layout: "centered",

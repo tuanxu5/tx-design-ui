@@ -1,7 +1,7 @@
 import TxMap from "../components/tx-map/tx-map";
 
 const TxMapStory = {
-  title: "tx-design-ui/Other/TxMap",
+  title: "tx-design-ui/Navigation/TxMap",
   component: TxMap,
   parameters: {
     layout: "centered",

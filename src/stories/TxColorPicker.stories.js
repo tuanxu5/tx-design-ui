@@ -2,7 +2,7 @@ import { useState } from "react";
 import { TxColorPicker } from "../components";
 
 const TxColorPickerStory = {
-  title: "tx-design-ui/TxColorPicker",
+  title: "tx-design-ui/Data Entry/TxColorPicker",
   component: TxColorPicker,
   parameters: {
     layout: "centered",

@@ -1,7 +1,7 @@
 import TxWatermark from "../components/tx-watermark/tx-watermark";
 
 const TxWatermarkStory = {
-  title: "tx-design-ui/Other/TxWatermark",
+  title: "tx-design-ui/Data Display/TxWatermark",
   component: TxWatermark,
   parameters: {
     layout: "centered",

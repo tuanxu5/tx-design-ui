@@ -1,7 +1,7 @@
 import TxQrcode from "../components/tx-qrcode/tx-qrcode";
 
 const TxQrcodeStory = {
-  title: "tx-design-ui/Other/TxQrcode",
+  title: "tx-design-ui/Data Display/TxQrcode",
   component: TxQrcode,
   parameters: {
     layout: "centered",

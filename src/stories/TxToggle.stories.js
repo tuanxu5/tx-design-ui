@@ -2,7 +2,7 @@ import { useState } from "react";
 import TxToggle from "../components/tx-toggle/tx-toggle";
 
 const TxToggleStory = {
-  title: "tx-design-ui/Other/TxToggle",
+  title: "tx-design-ui/Navigation/TxToggle",
   component: TxToggle,
   parameters: {
     layout: "centered",

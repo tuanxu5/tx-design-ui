@@ -1,7 +1,7 @@
 import TxLink from "../components/tx-link/tx-link";
 
 const TxLinkStory = {
-  title: "tx-design-ui/Other/TxLink",
+  title: "tx-design-ui/Foundation/TxLink",
   component: TxLink,
   parameters: {
     layout: "centered",

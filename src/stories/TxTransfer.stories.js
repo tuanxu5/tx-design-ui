@@ -1,7 +1,7 @@
 import TxTransfer from "../components/tx-transfer/tx-transfer";
 
 const TxTransferStory = {
-  title: "tx-design-ui/Other/TxTransfer",
+  title: "tx-design-ui/Data Entry/TxTransfer",
   component: TxTransfer,
   parameters: {
     layout: "centered",

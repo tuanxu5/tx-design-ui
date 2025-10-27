@@ -1,7 +1,7 @@
 import TxSplitter from "../components/tx-splitter/tx-splitter";
 
 const TxSplitterStory = {
-  title: "tx-design-ui/Other/TxSplitter",
+  title: "tx-design-ui/Foundation/TxSplitter",
   component: TxSplitter,
   parameters: {
     layout: "centered",

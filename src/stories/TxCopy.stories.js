@@ -1,7 +1,7 @@
 import TxCopy from "../components/tx-copy/tx-copy";
 
 const TxCopyStory = {
-  title: "tx-design-ui/Other/TxCopy",
+  title: "tx-design-ui/Data Display/TxCopy",
   component: TxCopy,
   parameters: {
     layout: "centered",

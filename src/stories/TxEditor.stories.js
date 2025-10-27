@@ -2,7 +2,7 @@ import { useState } from "react";
 import TxEditor from "../components/tx-editor/tx-editor";
 
 const TxEditorStory = {
-  title: "tx-design-ui/Other/TxEditor",
+  title: "tx-design-ui/Foundation/TxEditor",
   component: TxEditor,
   parameters: {
     layout: "centered",

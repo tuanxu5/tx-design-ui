@@ -1,7 +1,7 @@
 import TxCode from "../components/tx-code/tx-code";
 
 const TxCodeStory = {
-  title: "tx-design-ui/Other/TxCode",
+  title: "tx-design-ui/Data Display/TxCode",
   component: TxCode,
   parameters: {
     layout: "centered",

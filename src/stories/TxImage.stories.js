@@ -1,7 +1,7 @@
 import TxImage from "../components/tx-image/tx-image";
 
 const TxImageStory = {
-  title: "tx-design-ui/Other/TxImage",
+  title: "tx-design-ui/Data Display/TxImage",
   component: TxImage,
   parameters: {
     layout: "centered",

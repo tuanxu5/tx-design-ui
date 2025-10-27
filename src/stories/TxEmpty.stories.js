@@ -1,7 +1,7 @@
 import TxEmpty from "../components/tx-empty/tx-empty";
 
 const TxEmptyStory = {
-  title: "tx-design-ui/Other/TxEmpty",
+  title: "tx-design-ui/Data Display/TxEmpty",
   component: TxEmpty,
   parameters: {
     layout: "centered",

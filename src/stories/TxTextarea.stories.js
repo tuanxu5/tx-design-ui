@@ -2,7 +2,7 @@ import { useState } from "react";
 import TxTextarea from "../components/tx-textarea/tx-textarea";
 
 const TxTextareaStory = {
-  title: "tx-design-ui/Other/TxTextarea",
+  title: "tx-design-ui/Data Entry/TxTextarea",
   component: TxTextarea,
   parameters: {
     layout: "centered",

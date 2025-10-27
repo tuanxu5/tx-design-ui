@@ -2,7 +2,7 @@ import { useState } from "react";
 import TxTour from "../components/tx-tour/tx-tour";
 
 const TxTourStory = {
-  title: "tx-design-ui/Other/TxTour",
+  title: "tx-design-ui/Navigation/TxTour",
   component: TxTour,
   parameters: {
     layout: "centered",

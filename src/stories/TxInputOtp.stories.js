@@ -2,7 +2,7 @@ import { useState } from "react";
 import TxInputOtp from "../components/tx-input-otp/tx-input-otp";
 
 const TxInputOtpStory = {
-  title: "tx-design-ui/Other/TxInputOtp",
+  title: "tx-design-ui/Data Entry/TxInputOtp",
   component: TxInputOtp,
   parameters: {
     layout: "centered",

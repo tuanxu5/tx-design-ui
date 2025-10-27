@@ -1,7 +1,7 @@
 import TxSpace from "../components/tx-space/tx-space";
 
 const TxSpaceStory = {
-  title: "tx-design-ui/Other/TxSpace",
+  title: "tx-design-ui/Foundation/TxSpace",
   component: TxSpace,
   parameters: {
     layout: "centered",
