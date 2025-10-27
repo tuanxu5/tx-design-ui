@@ -5,32 +5,32 @@ const ContentHomepage = () => {
   const featuredComponents = [
     {
       name: "Button",
-      icon: "https://pub-c5e31b5cdafb419fb247a8ac2e78df7a.r2.dev/public/assets/icons/components/ic-buttons.svg",
+      icon: "/img/components/ic-buttons.svg",
       link: "/docs/component/data-entry/button",
     },
     {
       name: "Input",
-      icon: "https://pub-c5e31b5cdafb419fb247a8ac2e78df7a.r2.dev/public/assets/icons/components/ic-text-field.svg",
+      icon: "/img/components/ic-text-field.svg",
       link: "/docs/component/data-entry/input",
     },
     {
       name: "Select",
-      icon: "https://pub-c5e31b5cdafb419fb247a8ac2e78df7a.r2.dev/public/assets/icons/components/ic-autocomplete.svg",
+      icon: "/img/components/ic-autocomplete.svg",
       link: "/docs/component/data-entry/select",
     },
     {
       name: "Modal",
-      icon: "https://pub-c5e31b5cdafb419fb247a8ac2e78df7a.r2.dev/public/assets/icons/components/ic-dialog.svg",
+      icon: "/img/components/ic-dialog.svg",
       link: "/docs/component/feedback/modal",
     },
     {
       name: "Table",
-      icon: "https://pub-c5e31b5cdafb419fb247a8ac2e78df7a.r2.dev/public/assets/icons/components/ic-table.svg",
+      icon: "/img/components/ic-table.svg",
       link: "/docs/component/data-display/table",
     },
     {
       name: "Tabs",
-      icon: "https://pub-c5e31b5cdafb419fb247a8ac2e78df7a.r2.dev/public/assets/icons/components/ic-tabs.svg",
+      icon: "/img/components/ic-tabs.svg",
       link: "/docs/component/navigation/tabs",
     },
   ];

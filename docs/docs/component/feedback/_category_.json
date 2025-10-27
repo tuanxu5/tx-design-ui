@@ -4,6 +4,6 @@
   "collapsible": false,
   "collapsed": false,
   "customProps": {
-    "icon": "https://pub-c5e31b5cdafb419fb247a8ac2e78df7a.r2.dev/public/assets/icons/components/ic-alert.svg"
+    "icon": "/img/components/ic-alert.svg"
   }
 }
