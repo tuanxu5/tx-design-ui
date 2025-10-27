@@ -98,7 +98,7 @@
 
 /* Links inside level 2 categories (actual component links) should remain normal */
 .menu__list .menu__list > li > .menu__list .menu__link {
-  color: var(--ifm-font-color-base) !important;
+  color: var(--ifm-font-color-base);
   font-size: 14px !important;
   text-transform: none !important;
   letter-spacing: normal !important;
