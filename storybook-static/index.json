@@ -1,6 +1,123 @@
 {
   "v": 5,
   "entries": {
+    "tx-design-ui-other-txaffix--docs": {
+      "id": "tx-design-ui-other-txaffix--docs",
+      "title": "tx-design-ui/Other/TxAffix",
+      "name": "Docs",
+      "importPath": "./src/stories/TxAffix.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-other-txaffix--basic": {
+      "type": "story",
+      "id": "tx-design-ui-other-txaffix--basic",
+      "name": "Basic",
+      "title": "tx-design-ui/Other/TxAffix",
+      "importPath": "./src/stories/TxAffix.stories.js",
+      "componentPath": "./src/components/tx-affix/tx-affix.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-other-txaffix--with-buttons": {
+      "type": "story",
+      "id": "tx-design-ui-other-txaffix--with-buttons",
+      "name": "With Buttons",
+      "title": "tx-design-ui/Other/TxAffix",
+      "importPath": "./src/stories/TxAffix.stories.js",
+      "componentPath": "./src/components/tx-affix/tx-affix.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-other-txaffix--custom-offset": {
+      "type": "story",
+      "id": "tx-design-ui-other-txaffix--custom-offset",
+      "name": "Custom Offset",
+      "title": "tx-design-ui/Other/TxAffix",
+      "importPath": "./src/stories/TxAffix.stories.js",
+      "componentPath": "./src/components/tx-affix/tx-affix.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txalert--docs": {
+      "id": "tx-design-ui-feedback-txalert--docs",
+      "title": "tx-design-ui/Feedback/TxAlert",
+      "name": "Docs",
+      "importPath": "./src/stories/TxAlert.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-feedback-txalert--success": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txalert--success",
+      "name": "Success",
+      "title": "tx-design-ui/Feedback/TxAlert",
+      "importPath": "./src/stories/TxAlert.stories.js",
+      "componentPath": "./src/components/tx-alert/tx-alert.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txalert--info": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txalert--info",
+      "name": "Info",
+      "title": "tx-design-ui/Feedback/TxAlert",
+      "importPath": "./src/stories/TxAlert.stories.js",
+      "componentPath": "./src/components/tx-alert/tx-alert.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txalert--warning": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txalert--warning",
+      "name": "Warning",
+      "title": "tx-design-ui/Feedback/TxAlert",
+      "importPath": "./src/stories/TxAlert.stories.js",
+      "componentPath": "./src/components/tx-alert/tx-alert.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txalert--error": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txalert--error",
+      "name": "Error",
+      "title": "tx-design-ui/Feedback/TxAlert",
+      "importPath": "./src/stories/TxAlert.stories.js",
+      "componentPath": "./src/components/tx-alert/tx-alert.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txalert--closable": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txalert--closable",
+      "name": "Closable",
+      "title": "tx-design-ui/Feedback/TxAlert",
+      "importPath": "./src/stories/TxAlert.stories.js",
+      "componentPath": "./src/components/tx-alert/tx-alert.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txalert--without-description": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txalert--without-description",
+      "name": "Without Description",
+      "title": "tx-design-ui/Feedback/TxAlert",
+      "importPath": "./src/stories/TxAlert.stories.js",
+      "componentPath": "./src/components/tx-alert/tx-alert.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txalert--without-title": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txalert--without-title",
+      "name": "Without Title",
+      "title": "tx-design-ui/Feedback/TxAlert",
+      "importPath": "./src/stories/TxAlert.stories.js",
+      "componentPath": "./src/components/tx-alert/tx-alert.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txalert--with-children": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txalert--with-children",
+      "name": "With Children",
+      "title": "tx-design-ui/Feedback/TxAlert",
+      "importPath": "./src/stories/TxAlert.stories.js",
+      "componentPath": "./src/components/tx-alert/tx-alert.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
     "tx-design-ui-navigation-txanchor--docs": {
       "id": "tx-design-ui-navigation-txanchor--docs",
       "title": "tx-design-ui/Navigation/TxAnchor",
@@ -98,6 +215,42 @@
       "title": "tx-design-ui/Data Display/TxAvatar",
       "importPath": "./src/stories/TxAvatar.stories.js",
       "componentPath": "./src/components",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-other-txbacktop--docs": {
+      "id": "tx-design-ui-other-txbacktop--docs",
+      "title": "tx-design-ui/Other/TxBackTop",
+      "name": "Docs",
+      "importPath": "./src/stories/TxBackTop.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-other-txbacktop--basic": {
+      "type": "story",
+      "id": "tx-design-ui-other-txbacktop--basic",
+      "name": "Basic",
+      "title": "tx-design-ui/Other/TxBackTop",
+      "importPath": "./src/stories/TxBackTop.stories.js",
+      "componentPath": "./src/components/tx-back-top/tx-back-top.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-other-txbacktop--custom-position": {
+      "type": "story",
+      "id": "tx-design-ui-other-txbacktop--custom-position",
+      "name": "Custom Position",
+      "title": "tx-design-ui/Other/TxBackTop",
+      "importPath": "./src/stories/TxBackTop.stories.js",
+      "componentPath": "./src/components/tx-back-top/tx-back-top.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-other-txbacktop--custom-visibility-height": {
+      "type": "story",
+      "id": "tx-design-ui-other-txbacktop--custom-visibility-height",
+      "name": "Custom Visibility Height",
+      "title": "tx-design-ui/Other/TxBackTop",
+      "importPath": "./src/stories/TxBackTop.stories.js",
+      "componentPath": "./src/components/tx-back-top/tx-back-top.jsx",
       "tags": ["dev", "test", "autodocs"]
     },
     "tx-design-ui-data-display-txbadge--docs": {
@@ -1162,18 +1315,18 @@
       "componentPath": "./src/components/tx-grid/tx-grid.jsx",
       "tags": ["dev", "test", "autodocs"]
     },
+    "tx-design-ui-foundation-txicon-txiconfilled--filled": {
+      "type": "story",
+      "id": "tx-design-ui-foundation-txicon-txiconfilled--filled",
+      "name": "Filled",
+      "title": "tx-design-ui/Foundation/TxIcon/TxIconFilled",
+      "importPath": "./src/stories/TxIconFilled.stories.js",
+      "tags": ["dev", "test"]
+    },
     "tx-design-ui-foundation-txicon-txiconoutline--outline": {
       "type": "story",
       "id": "tx-design-ui-foundation-txicon-txiconoutline--outline",
       "name": "Outline",
-      "title": "tx-design-ui/Foundation/TxIcon/TxIconOutline",
-      "importPath": "./src/stories/TxIconOutline.stories.js",
-      "tags": ["dev", "test"]
-    },
-    "tx-design-ui-foundation-txicon-txiconoutline--filled": {
-      "type": "story",
-      "id": "tx-design-ui-foundation-txicon-txiconoutline--filled",
-      "name": "Filled",
       "title": "tx-design-ui/Foundation/TxIcon/TxIconOutline",
       "importPath": "./src/stories/TxIconOutline.stories.js",
       "tags": ["dev", "test"]
@@ -1437,6 +1590,42 @@
       "title": "tx-design-ui/Foundation/TxKbd",
       "importPath": "./src/stories/TxKbd.stories.js",
       "componentPath": "./src/components/tx-kbd/tx-kbd.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-foundation-txlayout--docs": {
+      "id": "tx-design-ui-foundation-txlayout--docs",
+      "title": "tx-design-ui/Foundation/TxLayout",
+      "name": "Docs",
+      "importPath": "./src/stories/TxLayout.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-foundation-txlayout--basic": {
+      "type": "story",
+      "id": "tx-design-ui-foundation-txlayout--basic",
+      "name": "Basic",
+      "title": "tx-design-ui/Foundation/TxLayout",
+      "importPath": "./src/stories/TxLayout.stories.js",
+      "componentPath": "./src/components/tx-layout/tx-layout.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-foundation-txlayout--with-sider": {
+      "type": "story",
+      "id": "tx-design-ui-foundation-txlayout--with-sider",
+      "name": "With Sider",
+      "title": "tx-design-ui/Foundation/TxLayout",
+      "importPath": "./src/stories/TxLayout.stories.js",
+      "componentPath": "./src/components/tx-layout/tx-layout.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-foundation-txlayout--full-layout": {
+      "type": "story",
+      "id": "tx-design-ui-foundation-txlayout--full-layout",
+      "name": "Full Layout",
+      "title": "tx-design-ui/Foundation/TxLayout",
+      "importPath": "./src/stories/TxLayout.stories.js",
+      "componentPath": "./src/components/tx-layout/tx-layout.jsx",
       "tags": ["dev", "test", "autodocs"]
     },
     "tx-design-ui-data-display-txlightbox--docs": {
@@ -2151,6 +2340,60 @@
       "title": "tx-design-ui/Data Entry/TxRate",
       "importPath": "./src/stories/TxRate.stories.js",
       "componentPath": "./src/components/tx-rate/tx-rate.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txresult--docs": {
+      "id": "tx-design-ui-feedback-txresult--docs",
+      "title": "tx-design-ui/Feedback/TxResult",
+      "name": "Docs",
+      "importPath": "./src/stories/TxResult.stories.js",
+      "type": "docs",
+      "tags": ["dev", "test", "autodocs"],
+      "storiesImports": []
+    },
+    "tx-design-ui-feedback-txresult--success": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txresult--success",
+      "name": "Success",
+      "title": "tx-design-ui/Feedback/TxResult",
+      "importPath": "./src/stories/TxResult.stories.js",
+      "componentPath": "./src/components/tx-result/tx-result.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txresult--error": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txresult--error",
+      "name": "Error",
+      "title": "tx-design-ui/Feedback/TxResult",
+      "importPath": "./src/stories/TxResult.stories.js",
+      "componentPath": "./src/components/tx-result/tx-result.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txresult--warning": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txresult--warning",
+      "name": "Warning",
+      "title": "tx-design-ui/Feedback/TxResult",
+      "importPath": "./src/stories/TxResult.stories.js",
+      "componentPath": "./src/components/tx-result/tx-result.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txresult--info": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txresult--info",
+      "name": "Info",
+      "title": "tx-design-ui/Feedback/TxResult",
+      "importPath": "./src/stories/TxResult.stories.js",
+      "componentPath": "./src/components/tx-result/tx-result.jsx",
+      "tags": ["dev", "test", "autodocs"]
+    },
+    "tx-design-ui-feedback-txresult--custom-icon": {
+      "type": "story",
+      "id": "tx-design-ui-feedback-txresult--custom-icon",
+      "name": "Custom Icon",
+      "title": "tx-design-ui/Feedback/TxResult",
+      "importPath": "./src/stories/TxResult.stories.js",
+      "componentPath": "./src/components/tx-result/tx-result.jsx",
       "tags": ["dev", "test", "autodocs"]
     },
     "tx-design-ui-feedback-txscrollprogress--docs": {

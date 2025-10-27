@@ -1,0 +1,118 @@
+---
+title: Result
+featured: true
+component: true
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Result
+
+Used to feed back the result of a series of operation tasks.
+
+## When To Use
+
+- Used to display the result of operations such as submission, checkout, and payment
+- Display important tips when there are exceptions and failures
+- Use illustrations to enhance the visual effect
+
+## Basic Usage
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?viewMode=story&id=tx-design-ui-feedback-txresult--success"
+      width="100%"
+      height="400px"
+      style={{border: '1px solid #ddd', borderRadius: '8px', background: 'white'}}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+    ```jsx
+    import { TxResult } from "tx-design-ui";
+
+    <TxResult
+      status="success"
+      title="Successfully Purchased!"
+      subTitle="Order number: 2017182818828182881"
+      extra={[
+        <TxButton type="primary">Go Console</TxButton>,
+        <TxButton>Print</TxButton>
+      ]}
+    />
+    ```
+
+  </TabItem>
+</Tabs>
+
+## API
+
+| Property | Type                                          | Default  | Description       |
+| -------- | --------------------------------------------- | -------- | ----------------- |
+| status   | `'success' \| 'error' \| 'warning' \| 'info'` | `'info'` | Result status     |
+| icon     | `ReactNode`                                   | -        | Custom icon       |
+| title    | `ReactNode`                                   | -        | Title             |
+| subTitle | `ReactNode`                                   | -        | Subtitle          |
+| extra    | `ReactNode`                                   | -        | Extra action area |
+| children | `ReactNode`                                   | -        | Custom content    |
+
+## Examples
+
+### Different Status
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?viewMode=story&id=tx-design-ui-feedback-txresult--error"
+      width="100%"
+      height="600px"
+      style={{border: '1px solid #ddd', borderRadius: '8px', background: 'white'}}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+    ```jsx
+    <TxResult
+      status="success"
+      title="Success"
+      subTitle="Your operation has been completed successfully."
+    />
+
+    <TxResult
+      status="error"
+      title="Error"
+      subTitle="Something went wrong. Please try again."
+    />
+
+    <TxResult
+      status="warning"
+      title="Warning"
+      subTitle="Please check your information."
+    />
+    ```
+
+  </TabItem>
+</Tabs>
+
+### Custom Icon
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?viewMode=story&id=tx-design-ui-feedback-txresult--custom-icon"
+      width="100%"
+      height="300px"
+      style={{ border: "1px solid #ddd", borderRadius: "8px", background: "white" }}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+    ```jsx
+    <TxResult
+      status="success"
+      icon="🎉"
+      title="Congratulations!"
+      subTitle="You have successfully completed the task."
+    />
+    ```
+  </TabItem>
+</Tabs>

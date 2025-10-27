@@ -1,0 +1,98 @@
+---
+title: Affix
+featured: true
+component: true
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Affix
+
+Stick component to a specific position on the page.
+
+## When To Use
+
+- Use for navigation bars that need to stick to the top
+- For table headers that should remain visible while scrolling
+- When you need to keep important information visible
+- For "Back to top" buttons or similar utilities
+
+## Basic Usage
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?viewMode=story&id=tx-design-ui-other-txaffix--basic"
+      width="100%"
+      height="600px"
+      style={{border: '1px solid #ddd', borderRadius: '8px', background: 'white'}}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+    ```jsx
+    import { TxAffix } from "tx-design-ui";
+
+    <TxAffix offsetTop={24}>
+      <div style={{ padding: "16px", background: "white", borderRadius: "8px" }}>
+        Fixed Header
+      </div>
+    </TxAffix>
+    ```
+
+  </TabItem>
+</Tabs>
+
+## API
+
+| Property     | Type              | Default | Description                                    |
+| ------------ | ----------------- | ------- | ---------------------------------------------- |
+| offsetTop    | `number`          | `0`     | Distance from top to trigger fixed position    |
+| offsetBottom | `number`          | -       | Distance from bottom to trigger fixed position |
+| onChange     | `(fixed) => void` | -       | Callback when fixed status changes             |
+
+## Examples
+
+### Navigation Bar
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?viewMode=story&id=tx-design-ui-other-txaffix--with-buttons"
+      width="100%"
+      height="600px"
+      style={{ border: "1px solid #ddd", borderRadius: "8px", background: "white" }}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+    ```jsx
+    <TxAffix offsetTop={0}>
+      <div style={{ padding: "12px", display: "flex", gap: "12px" }}>
+        <TxButton>Home</TxButton>
+        <TxButton>About</TxButton>
+        <TxButton>Services</TxButton>
+      </div>
+    </TxAffix>
+    ```
+  </TabItem>
+</Tabs>
+
+### Custom Offset
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?viewMode=story&id=tx-design-ui-other-txaffix--custom-offset"
+      width="100%"
+      height="600px"
+      style={{ border: "1px solid #ddd", borderRadius: "8px", background: "white" }}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+    ```jsx
+    <TxAffix offsetTop={100}>
+      <div>Affix with 100px offset from top</div>
+    </TxAffix>
+    ```
+  </TabItem>
+</Tabs>
