@@ -1,0 +1,46 @@
+---
+title: Video Player
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Video Player
+
+Custom video player component.
+
+## When To Use
+
+- Video playback
+- Media galleries
+- Tutorial content
+
+## Basic Usage
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?args=&id=tx-design-ui-other-txvideoplayer--default&viewMode=story"
+      width="100%"
+      height="600px"
+      style={{ border: "1px solid #ddd", borderRadius: "8px", background: "white" }}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+    ```jsx
+    import { TxVideoPlayer } from "tx-design-ui";
+
+    <TxVideoPlayer src="video.mp4" controls={true} />
+    ```
+
+  </TabItem>
+</Tabs>
+
+## API
+
+| Property | Type      | Default | Description     |
+| -------- | --------- | ------- | --------------- |
+| src      | `string`  | -       | Video URL       |
+| poster   | `string`  | -       | Thumbnail image |
+| controls | `boolean` | `true`  | Show controls   |
+| autoplay | `boolean` | `false` | Autoplay video  |

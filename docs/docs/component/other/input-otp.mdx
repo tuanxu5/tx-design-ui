@@ -1,0 +1,45 @@
+---
+title: Input OTP
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Input OTP
+
+One-time password input component.
+
+## When To Use
+
+- Two-factor authentication
+- Verification codes
+- PIN entry
+
+## Basic Usage
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?args=&id=tx-design-ui-other-txinputotp--default&viewMode=story"
+      width="100%"
+      height="150px"
+      style={{ border: "1px solid #ddd", borderRadius: "8px", background: "white" }}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+    ```jsx
+    import { TxInputOtp } from "tx-design-ui";
+
+    <TxInputOtp length={6} onChange={(otp) => console.log(otp)} />
+    ```
+
+  </TabItem>
+</Tabs>
+
+## API
+
+| Property | Type       | Default | Description          |
+| -------- | ---------- | ------- | -------------------- |
+| length   | `number`   | `6`     | Number of OTP digits |
+| onChange | `function` | -       | Change callback      |
+| disabled | `boolean`  | `false` | Disable input        |

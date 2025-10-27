@@ -1,0 +1,47 @@
+---
+title: Code
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Code
+
+Inline or block code component.
+
+## When To Use
+
+- Display code snippets
+- Show commands
+- Highlight technical content
+
+## Basic Usage
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?args=&id=tx-design-ui-other-txcode--inline&viewMode=story"
+      width="100%"
+      height="150px"
+      style={{ border: "1px solid #ddd", borderRadius: "8px", background: "white" }}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+    ```jsx
+    import { TxCode } from "tx-design-ui";
+
+    <TxCode>console.log()</TxCode>
+    <TxCode block={true}>{codeString}</TxCode>
+    ```
+
+  </TabItem>
+</Tabs>
+
+## API
+
+| Property | Type      | Default   | Description     |
+| -------- | --------- | --------- | --------------- |
+| children | `string`  | -         | Code content    |
+| block    | `boolean` | `false`   | Block vs inline |
+| variant  | `string`  | `default` | Style variant   |
+| size     | `string`  | `14px`    | Font size       |

@@ -1,0 +1,46 @@
+---
+title: Toggle
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Toggle
+
+Simple toggle switch component.
+
+## When To Use
+
+- On/Off settings
+- Binary choices
+- Feature flags
+
+## Basic Usage
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?args=&id=tx-design-ui-other-txtoggle--default&viewMode=story"
+      width="100%"
+      height="150px"
+      style={{ border: "1px solid #ddd", borderRadius: "8px", background: "white" }}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+    ```jsx
+    import { TxToggle } from "tx-design-ui";
+
+    <TxToggle onChange={(value) => console.log(value)} />
+    ```
+
+  </TabItem>
+</Tabs>
+
+## API
+
+| Property | Type       | Default  | Description     |
+| -------- | ---------- | -------- | --------------- |
+| checked  | `boolean`  | `false`  | Initial state   |
+| onChange | `function` | -        | Change callback |
+| size     | `string`   | `medium` | Size variant    |
+| disabled | `boolean`  | `false`  | Disable toggle  |

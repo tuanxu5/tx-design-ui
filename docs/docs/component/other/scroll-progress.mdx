@@ -1,0 +1,45 @@
+---
+title: Scroll Progress
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Scroll Progress
+
+Shows scroll progress indicator for long content.
+
+## When To Use
+
+- Long pages with extensive content
+- Progress tracking
+- Visual feedback on scroll position
+
+## Basic Usage
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?args=&id=tx-design-ui-other-txscrollprogress--fixed&viewMode=story"
+      width="100%"
+      height="400px"
+      style={{ border: "1px solid #ddd", borderRadius: "8px", background: "white" }}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+    ```jsx
+    import { TxScrollProgress } from "tx-design-ui";
+
+    <TxScrollProgress fixed={true} />
+    ```
+
+  </TabItem>
+</Tabs>
+
+## API
+
+| Property | Type      | Default | Description              |
+| -------- | --------- | ------- | ------------------------ |
+| fixed    | `boolean` | `true`  | Fixed or sticky position |
+| top      | `string`  | `0`     | Top offset               |
+| height   | `string`  | `4px`   | Progress bar height      |

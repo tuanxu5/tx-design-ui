@@ -1,0 +1,48 @@
+---
+title: Textarea
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Textarea
+
+Multi-line text input component.
+
+## When To Use
+
+- Long text input
+- Comments or descriptions
+- Multi-line content
+
+## Basic Usage
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?args=&id=tx-design-ui-other-txtextarea--default&viewMode=story"
+      width="100%"
+      height="200px"
+      style={{ border: "1px solid #ddd", borderRadius: "8px", background: "white" }}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+    ```jsx
+    import { TxTextarea } from "tx-design-ui";
+
+    <TxTextarea placeholder="Enter text..." onChange={(e) => console.log(e.target.value)} />
+    ```
+
+  </TabItem>
+</Tabs>
+
+## API
+
+| Property    | Type       | Default    | Description      |
+| ----------- | ---------- | ---------- | ---------------- |
+| value       | `string`   | -          | Textarea value   |
+| onChange    | `function` | -          | Change callback  |
+| placeholder | `string`   | -          | Placeholder text |
+| disabled    | `boolean`  | `false`    | Disable textarea |
+| resize      | `string`   | `vertical` | Resize behavior  |
+| minHeight   | `string`   | `80px`     | Minimum height   |

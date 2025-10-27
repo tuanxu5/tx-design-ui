@@ -1,0 +1,43 @@
+---
+title: Keyboard
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Keyboard
+
+Keyboard key display component.
+
+## When To Use
+
+- Show keyboard shortcuts
+- Display key combinations
+- Technical documentation
+
+## Basic Usage
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?args=&id=tx-design-ui-other-txkbd--single&viewMode=story"
+      width="100%"
+      height="200px"
+      style={{ border: "1px solid #ddd", borderRadius: "8px", background: "white" }}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+    ```jsx
+    import { TxKbd } from "tx-design-ui";
+
+    <TxKbd>Ctrl</TxKbd> + <TxKbd>K</TxKbd>
+    ```
+
+  </TabItem>
+</Tabs>
+
+## API
+
+| Property | Type     | Default | Description    |
+| -------- | -------- | ------- | -------------- |
+| children | `string` | -       | Key to display |

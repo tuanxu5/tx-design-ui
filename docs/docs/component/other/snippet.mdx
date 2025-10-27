@@ -1,0 +1,45 @@
+---
+title: Snippet
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Snippet
+
+Code snippet with copy functionality.
+
+## When To Use
+
+- Display code examples
+- Shareable code blocks
+- Documentation
+
+## Basic Usage
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?args=&id=tx-design-ui-other-txsnippet--default&viewMode=story"
+      width="100%"
+      height="250px"
+      style={{ border: "1px solid #ddd", borderRadius: "8px", background: "white" }}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+    ```jsx
+    import { TxSnippet } from "tx-design-ui";
+
+    <TxSnippet language="javascript" code={codeString} />
+    ```
+
+  </TabItem>
+</Tabs>
+
+## API
+
+| Property | Type     | Default | Description          |
+| -------- | -------- | ------- | -------------------- |
+| code     | `string` | -       | Code snippet         |
+| language | `string` | -       | Programming language |
+| label    | `string` | -       | Language label       |

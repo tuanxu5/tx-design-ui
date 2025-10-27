@@ -1,0 +1,45 @@
+---
+title: Time Input
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Time Input
+
+Time selection input component.
+
+## When To Use
+
+- Time selection
+- Scheduling interfaces
+- Duration inputs
+
+## Basic Usage
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?args=&id=tx-design-ui-other-txtimeinput--default&viewMode=story"
+      width="100%"
+      height="150px"
+      style={{ border: "1px solid #ddd", borderRadius: "8px", background: "white" }}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+    ```jsx
+    import { TxTimeInput } from "tx-design-ui";
+
+    <TxTimeInput onChange={(time) => console.log(time)} />
+    ```
+
+  </TabItem>
+</Tabs>
+
+## API
+
+| Property | Type       | Default | Description     |
+| -------- | ---------- | ------- | --------------- |
+| value    | `string`   | -       | Time value      |
+| onChange | `function` | -       | Change callback |
+| disabled | `boolean`  | `false` | Disable input   |

@@ -1,0 +1,44 @@
+---
+title: Calendar
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Calendar
+
+Calendar component for date selection.
+
+## When To Use
+
+- Date selection
+- Event scheduling
+- Date range picking
+
+## Basic Usage
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?args=&id=tx-design-ui-other-txcalendar--default&viewMode=story"
+      width="100%"
+      height="400px"
+      style={{ border: "1px solid #ddd", borderRadius: "8px", background: "white" }}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+    ```jsx
+    import { TxCalendar } from "tx-design-ui";
+
+    <TxCalendar value={date} onChange={(date) => console.log(date)} />
+    ```
+
+  </TabItem>
+</Tabs>
+
+## API
+
+| Property | Type       | Default | Description     |
+| -------- | ---------- | ------- | --------------- |
+| value    | `Date`     | -       | Selected date   |
+| onChange | `function` | -       | Change callback |
