@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { SvgIcon } from "../../assets/icons";
+import { TxIconOutline } from "../../assets/icons/outline";
 import { StyledCheckboxBox, StyledCheckboxInput, StyledCheckboxLabel, StyledCheckboxWrapper } from "./styled";
 
 const TxCheckbox = ({
@@ -52,7 +52,7 @@ const TxCheckbox = ({
         danger={danger}
         className={indeterminate && !checked ? "tx-ui-tx-checkbox-box--indeterminate" : ""}
       >
-        {checked && <SvgIcon.IconCheck />}
+        {checked && <TxIconOutline.IconCheck />}
       </StyledCheckboxBox>
       {label && (
         <StyledCheckboxLabel size={size} color={color}>

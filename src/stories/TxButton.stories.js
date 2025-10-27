@@ -1,5 +1,5 @@
 import { fn } from "@storybook/addon-actions";
-import { SvgIcon } from "../assets/icons";
+import { TxIconOutline } from "../assets/icons/outline";
 import { TxButton } from "../components";
 
 const TxButtonStory = {
@@ -114,9 +114,9 @@ export const Size = {
 export const Icon = {
   render: args => (
     <div className="flex-center">
-      <TxButton label="Icon" prefix={<SvgIcon.IconCursor04 />} />
-      <TxButton label={<SvgIcon.IconCursor04 />} />
-      <TxButton label="Icon" suffix={<SvgIcon.IconCursor04 />} />
+      <TxButton label="Icon" prefix={<TxIconOutline.IconAdd />} />
+      <TxButton label={<TxIconOutline.IconAdd />} />
+      <TxButton label="Icon" suffix={<TxIconOutline.IconAdd />} />
     </div>
   ),
   args: {
@@ -128,7 +128,7 @@ export const Shape = {
   render: args => (
     <div className="flex-center">
       <TxButton label="Default" />
-      <TxButton label={<SvgIcon.IconCursor04 />} shape="circle" />
+      <TxButton label={<TxIconOutline.IconAdd />} shape="circle" />
       <TxButton label="Circle" shape="circle" />
     </div>
   ),

@@ -1,5 +1,5 @@
 import { fn } from "@storybook/addon-actions";
-import { SvgIcon } from "../assets/icons";
+import { TxIconOutline } from "../assets/icons/outline";
 import TxInput from "../components/tx-input/tx-input";
 
 const TxInputStory = {
@@ -113,12 +113,12 @@ export const DisabledState = {
 export const PrefixSuffix = {
   render: args => (
     <div style={{ width: "300px", display: "flex", flexDirection: "column", gap: "20px" }}>
-      <TxInput {...args} prefix={<SvgIcon.IconCursor04 />} placeholder="With prefix" />
-      <TxInput {...args} suffix={<SvgIcon.IconKeySquare01 />} placeholder="With suffix" />
+      <TxInput {...args} prefix={<TxIconOutline.IconAdd />} placeholder="With prefix" />
+      <TxInput {...args} suffix={<TxIconOutline.IconAdd />} placeholder="With suffix" />
       <TxInput
         {...args}
-        prefix={<SvgIcon.IconCursor04 />}
-        suffix={<SvgIcon.IconKeySquare01 />}
+        prefix={<TxIconOutline.IconAdd />}
+        suffix={<TxIconOutline.IconAdd />}
         placeholder="With prefix and suffix"
       />
     </div>
@@ -141,14 +141,14 @@ export const CombinedFeatures = {
     <div style={{ width: "300px", display: "flex", flexDirection: "column", gap: "20px" }}>
       <TxInput
         {...args}
-        prefix={<SvgIcon.IconUserSquare01 />}
+        prefix={<TxIconOutline.IconAdd />}
         status="success"
         size="large"
         placeholder="Success with prefix"
       />
       <TxInput
         {...args}
-        suffix={<SvgIcon.IconCursor04 />}
+        suffix={<TxIconOutline.IconAdd />}
         status="warning"
         fill
         placeholder="Warning fill with suffix"
@@ -156,8 +156,8 @@ export const CombinedFeatures = {
       <TxInput {...args} password status="error" size="small" placeholder="Error password small" />
       <TxInput
         {...args}
-        prefix={<SvgIcon.IconUserSquare01 />}
-        suffix={<SvgIcon.IconKeySquare01 />}
+        prefix={<TxIconOutline.IconAdd />}
+        suffix={<TxIconOutline.IconAdd />}
         status="info"
         placeholder="URL with domain parts"
       />

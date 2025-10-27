@@ -97,11 +97,11 @@ You can use `prefix` and `suffix` props to add icons or other elements to the in
 ```jsx
 import { SvgIcon } from "tx-design-ui";
 
-<TxInput prefix={<SvgIcon.IconUserSquare01 />} placeholder="Username" />
-<TxInput suffix={<SvgIcon.IconKeySquare01 />} placeholder="With suffix" />
+<TxInput prefix={<TxIconOutline.IconAdd />} placeholder="Username" />
+<TxInput suffix={<TxIconOutline.IconAdd />} placeholder="With suffix" />
 <TxInput
-  prefix={<SvgIcon.IconUserSquare01 />}
-  suffix={<SvgIcon.IconKeySquare01 />}
+  prefix={<TxIconOutline.IconAdd />}
+  suffix={<TxIconOutline.IconAdd />}
   placeholder="With both"
 />
 ```
@@ -249,7 +249,7 @@ Combine multiple features for advanced usage.
 import { SvgIcon } from "tx-design-ui";
 
 <TxInput
-  prefix={<SvgIcon.IconUserSquare01 />}
+  prefix={<TxIconOutline.IconAdd />}
   status="success"
   size="large"
   allowClear
@@ -258,7 +258,7 @@ import { SvgIcon } from "tx-design-ui";
 
 <TxInput
   password
-  prefix={<SvgIcon.IconKeySquare01 />}
+  prefix={<TxIconOutline.IconAdd />}
   status="error"
   allowClear
   placeholder="Password with features"

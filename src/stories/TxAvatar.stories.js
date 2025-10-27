@@ -1,5 +1,5 @@
 import { fn } from "@storybook/addon-actions";
-import { SvgIcon } from "../assets/icons";
+import { TxIconOutline } from "../assets/icons/outline";
 import { TxAvatar } from "../components";
 import { urlImageAvatar } from "../utils/string";
 
@@ -60,8 +60,8 @@ export const Shape = {
 export const Icon = {
   render: args => (
     <div className="flex-center">
-      <TxAvatar icon={<SvgIcon.IconCursor04 />} />
-      <TxAvatar icon={<SvgIcon.IconCursor04 />} shape="square" />
+      <TxAvatar icon={<TxIconOutline.IconAdd />} />
+      <TxAvatar icon={<TxIconOutline.IconAdd />} shape="square" />
     </div>
   ),
   args: {

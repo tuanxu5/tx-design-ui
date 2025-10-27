@@ -168,9 +168,9 @@ Button components can contain an Icon. This is done by setting the `prefix` or `
 ```jsx
 import { SvgIcon } from "tx-design-ui";
 
-<TxButton prefix={<SvgIcon.IconCursor04 />} label="Icon Prefix" />
-<TxButton label={<SvgIcon.IconCursor04 />} />
-<TxButton suffix={<SvgIcon.IconCursor04 />} label="Icon Suffix" />
+<TxButton prefix={<TxIconOutline.IconAdd />} label="Icon Prefix" />
+<TxButton label={<TxIconOutline.IconAdd />} />
+<TxButton suffix={<TxIconOutline.IconAdd />} label="Icon Suffix" />
 ```
 
   </TabItem>
@@ -193,7 +193,7 @@ Button components can have different shapes. Set the `shape` property to `circle
 
 ```jsx
 <TxButton label="Default" />
-<TxButton shape="circle" label={<SvgIcon.IconCursor04 />} />
+<TxButton shape="circle" label={<TxIconOutline.IconAdd />} />
 <TxButton shape="circle" label="A" />
 ```
 

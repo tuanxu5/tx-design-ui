@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
-import React, { useEffect, useRef, useState } from "react";
-import { SvgIcon } from "../../assets/icons";
+import { useEffect, useRef, useState } from "react";
+import { TxIconOutline } from "../../assets/icons/outline";
 import { ClearButton, PasswordToggle, PrefixWrapper, StyledInputWrapper, StyledTxInput, SuffixWrapper } from "./styled";
 
 const TxInput = ({
@@ -137,12 +137,12 @@ const TxInput = ({
         <SuffixWrapper ref={suffixRef} color={iconColor}>
           {showClear && !disabled && (
             <ClearButton onClick={handleClearInput} color={status ? iconColor : "#8c9bab"}>
-              <SvgIcon.IconXClose />
+              <TxIconOutline.IconCrossSmall />
             </ClearButton>
           )}
           {password && passwordToggle && (
             <PasswordToggle onClick={togglePasswordVisibility} color={iconColor}>
-              {passwordVisible ? <SvgIcon.IconEye01 /> : <SvgIcon.IconEyeSlash01 />}
+              {passwordVisible ? <TxIconOutline.IconEye /> : <TxIconOutline.IconEye />}
             </PasswordToggle>
           )}
           {suffix && suffix}

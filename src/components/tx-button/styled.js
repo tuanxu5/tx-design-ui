@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import { SvgIcon } from "../../assets/icons";
+import { TxIconOutline } from "../../assets/icons/outline";
 import "../../styles/shorten.scss";
 
 const StyledTxButton = styled.button`
@@ -233,6 +233,6 @@ const rotate = keyframes`
   }
 `;
 
-export const LoadingRotatingIcon = styled(SvgIcon.IconLoader01)`
+export const LoadingRotatingIcon = styled(<TxIconOutline.IconAdd />)`
   animation: ${rotate} 1s linear infinite;
 `;

@@ -7,9 +7,28 @@ component: true
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
 
-# Icons
+## List of Icons
 
-TX Design UI includes a collection of SVG icons that you can use in your application.
+Browse and search through all available icons in TX Design UI.
+
+<Tabs>
+  <TabItem value="outline" label="Outline" default>
+    <iframe
+      src="http://localhost:6006/iframe.html?globals=&args=&id=tx-design-ui-foundation-txicon-txiconoutline--outline&viewMode=story"
+      width="100%"
+      height="800px"
+      style={{ background: "white" }}
+    />
+  </TabItem>
+  <TabItem value="filled" label="Filled">
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?args=&id=tx-design-ui-foundation-txicon-icon-list--filled"
+      width="100%"
+      height="400px"
+      style={{ border: "1px solid #ddd", borderRadius: "8px", background: "white" }}
+    />
+  </TabItem>
+</Tabs>
 
 ## When To Use
 
@@ -20,13 +39,14 @@ TX Design UI includes a collection of SVG icons that you can use in your applica
 ## Basic Usage
 
 ```jsx
-import { SvgIcon } from "tx-design-ui/assets/icons";
+import TxIcon from "tx-design-ui/components/tx-icon/tx-icon";
 
 function MyComponent() {
   return (
     <div>
-      <SvgIcon.IconCheck />
-      <SvgIcon.IconXClose />
+      <TxIcon.IconCheck style={{ width: "24px", height: "24px", color: "#00bcff" }} />
+      <TxIcon.IconXClose style={{ width: "20px", height: "20px", color: "#ef4444" }} />
+      <TxIcon.IconLoader01 style={{ width: "32px", height: "32px", color: "#00bcff" }} />
     </div>
   );
 }
@@ -70,65 +90,49 @@ function MyComponent() {
 Icons inherit color from their parent element and can be styled with CSS.
 
 ```jsx
-// Using inline styles
-<IconCheck style={{ color: "#52c41a", width: "24px", height: "24px" }} />
-
-// Using CSS classes
-<IconCheck className="success-icon" />
-
-// Using styled-components
-const StyledIcon = styled(IconCheck)`
-  color: ${colors.success};
-  width: 20px;
-  height: 20px;
-`;
+<TxIcon.IconCheck style={{ color: "#10b981" }} />  {/* Success */}
+<TxIcon.IconCheck style={{ color: "#ef4444" }} />  {/* Error */}
+<TxIcon.IconCheck style={{ color: "#f59e0b" }} />  {/* Warning */}
+<TxIcon.IconCheck style={{ color: "#6366f1" }} />  {/* Primary */}
 ```
 
-## With Buttons
+## Usage Examples
+
+### In Buttons
 
 Icons work great with buttons.
 
 ```jsx
-import { TxButton } from "tx-design-ui";
-import { IconCheck, IconXClose } from "tx-design-ui/assets/icons";
+<button style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+  <TxIcon.IconCheck style={{ width: "16px", height: "16px" }} />
+  Save
+</button>
 
-<TxButton icon={<IconCheck />}>Confirm</TxButton>
-<TxButton icon={<IconXClose />} type="danger">Cancel</TxButton>
+<button style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+  <TxIcon.IconXClose style={{ width: "16px", height: "16px" }} />
+  Cancel
+</button>
 ```
 
-## Sizing
+### In Input Fields
 
-Control icon size using width and height.
-
-```jsx
-// Small icon
-<IconCheck style={{ width: "16px", height: "16px" }} />
-
-// Medium icon (default)
-<IconCheck style={{ width: "20px", height: "20px" }} />
-
-// Large icon
-<IconCheck style={{ width: "24px", height: "24px" }} />
-```
-
-## Colors
-
-Icons inherit text color from parent.
+Use icons to enhance input fields.
 
 ```jsx
-// Primary color
-<div style={{ color: "#03030f" }}>
-  <IconCheck />
-</div>
-
-// Success color
-<div style={{ color: "#52c41a" }}>
-  <IconCheck />
-</div>
-
-// Danger color
-<div style={{ color: "#e45649" }}>
-  <IconXClose />
+<div style={{ position: "relative", display: "inline-block" }}>
+  <input type="text" placeholder="Enter password" />
+  <TxIcon.IconEye01
+    style={{
+      position: "absolute",
+      right: "12px",
+      top: "50%",
+      transform: "translateY(-50%)",
+      width: "20px",
+      height: "20px",
+      color: "#666",
+      cursor: "pointer",
+    }}
+  />
 </div>
 ```
 
@@ -156,53 +160,35 @@ Always consider accessibility when using icons.
 ```jsx
 // Icon with accessible label
 <button aria-label="Close">
-  <IconXClose />
+  <TxIcon.IconXClose style={{ width: "20px", height: "20px" }} />
 </button>
 
 // Icon with tooltip
-<TxTooltip title="Delete">
-  <button>
-    <IconXClose />
-  </button>
-</TxTooltip>
+<div title="Close">
+  <TxIcon.IconXClose style={{ width: "20px", height: "20px" }} />
+</div>
 ```
 
-## Custom Icons
+## Adding New Icons
 
-You can add your own SVG icons to the project.
+To add a new icon:
 
-1. Add your SVG file to `src/assets/icons/`
-2. Export it in `src/assets/icons/index.js`
+1. Add the SVG file to `/src/assets/icons/`
+2. Import it in `/src/assets/icons/index.js`:
 
 ```jsx
-// In src/assets/icons/index.js
-import { ReactComponent as IconCustom } from "./icon-custom.svg";
+import { ReactComponent as IconNewIcon } from "./icon-new-icon.svg";
 
 const SvgIcon = {
   // ... existing icons
-  IconCustom,
+  IconNewIcon,
 };
 
 export { SvgIcon };
 ```
 
-## Icon List
+3. Add it to TxIcon component in `/src/components/tx-icon/tx-icon.jsx`:
 
-| Icon Name        | Usage                  | Example                        |
-| ---------------- | ---------------------- | ------------------------------ |
-| IconCheck        | Success, confirmation  | Form validation, completed     |
-| IconXClose       | Close, dismiss, cancel | Modal close, remove item       |
-| IconLoader01     | Loading state          | Data fetching, processing      |
-| IconCursor04     | Interactive element    | Clickable items, links         |
-| IconEye01        | Show, visible          | Password visibility toggle     |
-| IconEyeSlash01   | Hide, invisible        | Password visibility toggle     |
-| IconKeySquare01  | Password, security     | Password input, authentication |
-| IconUserSquare01 | User, profile          | User menu, profile page        |
-
-## Notes
-
-- All icons are SVG format for scalability
-- Icons automatically scale without losing quality
-- Icons support all modern browsers
-- Icons can be animated using CSS
-- Consider using icon fonts for very large icon sets
+```jsx
+TxIcon.IconNewIcon = props => <SvgIcon.IconNewIcon {...props} />;
+```
