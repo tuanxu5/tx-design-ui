@@ -1,0 +1,50 @@
+---
+title: Watermark
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Watermark
+
+Add watermark overlay to content.
+
+## When To Use
+
+- Protect content
+- Mark drafts
+- Add branding
+
+## Basic Usage
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?args=&id=tx-design-ui-other-txwatermark--basic&viewMode=story"
+      width="100%"
+      height="400px"
+      style={{ border: "1px solid #ddd", borderRadius: "8px", background: "white" }}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+    ```jsx
+    import { TxWatermark } from "tx-design-ui";
+
+    <TxWatermark text="CONFIDENTIAL">
+      <p>Protected content</p>
+    </TxWatermark>
+    ```
+
+  </TabItem>
+</Tabs>
+
+## API
+
+| Property | Type      | Default | Description       |
+| -------- | --------- | ------- | ----------------- |
+| text     | `string`  | -       | Watermark text    |
+| fullPage | `boolean` | `false` | Full page overlay |
+| angle    | `number`  | `-45`   | Text angle        |
+| opacity  | `number`  | `0.1`   | Text opacity      |
+| color    | `string`  | -       | Text color        |
+| fontSize | `string`  | `48px`  | Font size         |

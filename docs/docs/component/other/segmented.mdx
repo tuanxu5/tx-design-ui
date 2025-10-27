@@ -1,0 +1,52 @@
+---
+title: Segmented
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Segmented
+
+Segmented control for switching between views.
+
+## When To Use
+
+- Switch between different views
+- Toggle related options
+- Filter content
+
+## Basic Usage
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?args=&id=tx-design-ui-other-txsegmented--basic&viewMode=story"
+      width="100%"
+      height="200px"
+      style={{ border: "1px solid #ddd", borderRadius: "8px", background: "white" }}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+    ```jsx
+    import { TxSegmented } from "tx-design-ui";
+
+    <TxSegmented
+      options={[
+        { label: "List", value: "list" },
+        { label: "Grid", value: "grid" },
+        { label: "Card", value: "card" },
+      ]}
+    />
+    ```
+
+  </TabItem>
+</Tabs>
+
+## API
+
+| Property | Type       | Default | Description      |
+| -------- | ---------- | ------- | ---------------- |
+| options  | `array`    | -       | Option items     |
+| value    | `string`   | -       | Selected value   |
+| onChange | `function` | -       | Change callback  |
+| block    | `boolean`  | `false` | Full width block |

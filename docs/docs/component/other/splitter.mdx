@@ -1,0 +1,49 @@
+---
+title: Splitter
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Splitter
+
+Resizable split panes for layout management.
+
+## When To Use
+
+- Create resizable layouts
+- Split content into panels
+- Provide flexible UI layouts
+
+## Basic Usage
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?args=&id=tx-design-ui-other-txsplitter--basic&viewMode=story"
+      width="100%"
+      height="500px"
+      style={{ border: "1px solid #ddd", borderRadius: "8px", background: "white" }}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+    ```jsx
+    import { TxSplitter } from "tx-design-ui";
+
+    <TxSplitter width="100%" height="400px">
+      <div>Left Panel</div>
+      <div>Right Panel</div>
+    </TxSplitter>
+    ```
+
+  </TabItem>
+</Tabs>
+
+## API
+
+| Property  | Type     | Default      | Description      |
+| --------- | -------- | ------------ | ---------------- |
+| direction | `string` | `horizontal` | Split direction  |
+| width     | `string` | `100%`       | Container width  |
+| height    | `string` | `400px`      | Container height |
+| children  | `node`   | -            | Panel contents   |

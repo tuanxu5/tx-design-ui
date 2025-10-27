@@ -1,0 +1,40 @@
+---
+title: Tree Select
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Tree Select
+
+Hierarchical tree select component.
+
+## When To Use
+
+- Select from hierarchical data
+- Category selection
+- Nested options
+
+## Basic Usage
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    ```jsx
+    import { TxTreeSelect } from "tx-design-ui";
+
+    const data = [
+      { label: "Item 1", value: "1" },
+      { label: "Item 2", value: "2" },
+    ];
+
+    <TxTreeSelect data={data} />
+    ```
+
+  </TabItem>
+</Tabs>
+
+## API
+
+| Property | Type    | Default | Description |
+| -------- | ------- | ------- | ----------- |
+| data     | `array` | `[]`    | Tree data   |

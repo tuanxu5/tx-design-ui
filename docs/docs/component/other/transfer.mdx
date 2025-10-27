@@ -1,0 +1,44 @@
+---
+title: Transfer
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Transfer
+
+Transfer list for moving items between columns.
+
+## When To Use
+
+- Move items between lists
+- Multi-select scenarios
+- Complex form selections
+
+## Basic Usage
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?args=&id=tx-design-ui-other-txtransfer--basic&viewMode=story"
+      width="100%"
+      height="400px"
+      style={{ border: "1px solid #ddd", borderRadius: "8px", background: "white" }}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+    ```jsx
+    import { TxTransfer } from "tx-design-ui";
+
+    <TxTransfer data={["Option 1", "Option 2", "Option 3"]} />
+    ```
+
+  </TabItem>
+</Tabs>
+
+## API
+
+| Property | Type    | Default | Description   |
+| -------- | ------- | ------- | ------------- |
+| data     | `array` | -       | Source data   |
+| titles   | `array` | -       | Column titles |

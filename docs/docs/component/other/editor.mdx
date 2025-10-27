@@ -1,0 +1,49 @@
+---
+title: Editor
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Editor
+
+Text editor component for rich content editing.
+
+## When To Use
+
+- Create rich text content
+- Text editing interfaces
+- Markdown editing
+
+## Basic Usage
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?args=&id=tx-design-ui-other-txeditor--interactive&viewMode=story"
+      width="100%"
+      height="500px"
+      style={{ border: "1px solid #ddd", borderRadius: "8px", background: "white" }}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+    ```jsx
+    import { TxEditor } from "tx-design-ui";
+    import { useState } from "react";
+
+    function MyEditor() {
+      const [value, setValue] = useState("");
+      return <TxEditor value={value} onChange={setValue} />;
+    }
+    ```
+
+  </TabItem>
+</Tabs>
+
+## API
+
+| Property    | Type       | Default | Description      |
+| ----------- | ---------- | ------- | ---------------- |
+| value       | `string`   | `""`    | Editor value     |
+| onChange    | `function` | -       | Change callback  |
+| placeholder | `string`   | -       | Placeholder text |

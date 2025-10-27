@@ -1,0 +1,49 @@
+---
+title: Grid
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Grid
+
+CSS Grid layout component.
+
+## When To Use
+
+- Create responsive layouts
+- Organize content in grids
+- Display card collections
+
+## Basic Usage
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?args=&id=tx-design-ui-other-txgrid--basic&viewMode=story"
+      width="100%"
+      height="300px"
+      style={{ border: "1px solid #ddd", borderRadius: "8px", background: "white" }}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+    ```jsx
+    import { TxGrid, TxGridItem } from "tx-design-ui";
+
+    <TxGrid columns="repeat(3, 1fr)" gap="16px">
+      <TxGridItem>Item 1</TxGridItem>
+      <TxGridItem>Item 2</TxGridItem>
+      <TxGridItem>Item 3</TxGridItem>
+    </TxGrid>
+    ```
+
+  </TabItem>
+</Tabs>
+
+## API
+
+| Property | Type     | Default | Description  |
+| -------- | -------- | ------- | ------------ |
+| columns  | `string` | -       | Grid columns |
+| gap      | `string` | `16px`  | Grid gap     |
+| children | `node`   | -       | Grid items   |

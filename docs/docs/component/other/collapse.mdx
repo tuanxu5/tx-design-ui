@@ -1,0 +1,39 @@
+---
+title: Collapse
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Collapse
+
+Collapsible panel component.
+
+## When To Use
+
+- Hide/Show content
+- Accordion interfaces
+- Expandable sections
+
+## Basic Usage
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    ```jsx
+    import { TxCollapse } from "tx-design-ui";
+
+    <TxCollapse title="Section Title">
+      Collapsible content here
+    </TxCollapse>
+    ```
+
+  </TabItem>
+</Tabs>
+
+## API
+
+| Property        | Type      | Default | Description            |
+| --------------- | --------- | ------- | ---------------------- |
+| title           | `string`  | -       | Panel title            |
+| children        | `node`    | -       | Collapsible content    |
+| defaultExpanded | `boolean` | `false` | Default expanded state |

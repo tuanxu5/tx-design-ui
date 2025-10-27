@@ -1,0 +1,47 @@
+---
+title: Rate
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Rate
+
+Star rating component for user feedback.
+
+## When To Use
+
+- Collect user ratings and reviews
+- Show product ratings
+- Display satisfaction scores
+
+## Basic Usage
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?args=&id=tx-design-ui-other-txrate--basic&viewMode=story"
+      width="100%"
+      height="200px"
+      style={{ border: "1px solid #ddd", borderRadius: "8px", background: "white" }}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+    ```jsx
+    import { TxRate } from "tx-design-ui";
+
+    <TxRate value={3} count={5} onChange={value => console.log(value)} />
+    ```
+
+  </TabItem>
+</Tabs>
+
+## API
+
+| Property | Type       | Default | Description         |
+| -------- | ---------- | ------- | ------------------- |
+| value    | `number`   | `0`     | Current rating      |
+| count    | `number`   | `5`     | Total stars         |
+| onChange | `function` | -       | Change callback     |
+| size     | `string`   | `20px`  | Star size           |
+| disabled | `boolean`  | `false` | Disable interaction |

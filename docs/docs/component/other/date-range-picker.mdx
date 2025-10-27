@@ -1,0 +1,43 @@
+---
+title: Date Range Picker
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Date Range Picker
+
+Select a range of dates.
+
+## When To Use
+
+- Filter by date range
+- Select time periods
+- Booking systems
+
+## Basic Usage
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?args=&id=tx-design-ui-other-txdaterangepicker--basic&viewMode=story"
+      width="100%"
+      height="200px"
+      style={{ border: "1px solid #ddd", borderRadius: "8px", background: "white" }}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+    ```jsx
+    import { TxDateRangePicker } from "tx-design-ui";
+
+    <TxDateRangePicker onChange={range => console.log(range)} />
+    ```
+
+  </TabItem>
+</Tabs>
+
+## API
+
+| Property | Type       | Default | Description         |
+| -------- | ---------- | ------- | ------------------- |
+| onChange | `function` | -       | Date range callback |

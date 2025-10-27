@@ -1,0 +1,51 @@
+---
+title: Tour
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Tour
+
+Guided tour component for onboarding users.
+
+## When To Use
+
+- Onboard new users
+- Highlight features
+- Provide contextual help
+
+## Basic Usage
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?args=&id=tx-design-ui-other-txtour--interactive&viewMode=story"
+      width="100%"
+      height="300px"
+      style={{ border: "1px solid #ddd", borderRadius: "8px", background: "white" }}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+    ```jsx
+    import { TxTour } from "tx-design-ui";
+
+    const steps = [
+      { title: "Welcome", content: "This is step 1" },
+      { title: "Settings", content: "This is step 2" },
+    ];
+
+    <TxTour steps={steps} open={true} onClose={() => {}} />
+    ```
+
+  </TabItem>
+</Tabs>
+
+## API
+
+| Property | Type       | Default | Description        |
+| -------- | ---------- | ------- | ------------------ |
+| steps    | `array`    | `[]`    | Tour steps         |
+| open     | `boolean`  | `false` | Show/hide tour     |
+| onClose  | `function` | -       | Close callback     |
+| current  | `number`   | `0`     | Current step index |

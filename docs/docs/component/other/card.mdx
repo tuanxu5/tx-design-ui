@@ -1,0 +1,70 @@
+---
+title: Card
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Card
+
+Card container component for content display.
+
+## When To Use
+
+- Display related content
+- Create content blocks
+- Show item details
+
+## Basic Usage
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?args=&id=tx-design-ui-other-txcard--basic&viewMode=story"
+      width="100%"
+      height="300px"
+      style={{ border: "1px solid #ddd", borderRadius: "8px", background: "white" }}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+    ```jsx
+    import { TxCard } from "tx-design-ui";
+
+    <TxCard title="Card Title">
+      Card content
+    </TxCard>
+    ```
+
+  </TabItem>
+</Tabs>
+
+## With Footer
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?args=&id=tx-design-ui-other-txcard--with-footer&viewMode=story"
+      width="100%"
+      height="300px"
+      style={{ border: "1px solid #ddd", borderRadius: "8px", background: "white" }}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+    ```jsx
+    <TxCard title="Card Title" footer={<button>Action</button>}>
+      Card with footer
+    </TxCard>
+    ```
+  </TabItem>
+</Tabs>
+
+## API
+
+| Property  | Type      | Default | Description         |
+| --------- | --------- | ------- | ------------------- |
+| title     | `string`  | -       | Card title          |
+| children  | `node`    | -       | Card content        |
+| footer    | `node`    | -       | Footer content      |
+| hoverable | `boolean` | `false` | Enable hover effect |
+| variant   | `string`  | -       | Card variant        |
+| padding   | `string`  | `24px`  | Card padding        |

@@ -1,0 +1,63 @@
+---
+title: Empty
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Empty
+
+Empty state component for no data scenarios.
+
+## When To Use
+
+- Show no data states
+- Display empty results
+- Provide feedback when content is missing
+
+## Basic Usage
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?args=&id=tx-design-ui-other-txempty--basic&viewMode=story"
+      width="100%"
+      height="300px"
+      style={{ border: "1px solid #ddd", borderRadius: "8px", background: "white" }}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+    ```jsx
+    import { TxEmpty } from "tx-design-ui";
+
+    <TxEmpty />
+    ```
+
+  </TabItem>
+</Tabs>
+
+## With Description
+
+<Tabs>
+  <TabItem value="preview" label="Preview" default>
+    <iframe
+      src="https://storybook-tx-design.pages.dev/iframe.html?args=&id=tx-design-ui-other-txempty--with-description&viewMode=story"
+      width="100%"
+      height="300px"
+      style={{ border: "1px solid #ddd", borderRadius: "8px", background: "white" }}
+    />
+  </TabItem>
+  <TabItem value="code" label="Code">
+    ```jsx
+    <TxEmpty image="📊" title="No Data" description="There is no data to display" />
+    ```
+  </TabItem>
+</Tabs>
+
+## API
+
+| Property    | Type     | Default   | Description      |
+| ----------- | -------- | --------- | ---------------- |
+| image       | `string` | `📭`      | Empty icon/image |
+| title       | `string` | `No Data` | Title text       |
+| description | `string` | -         | Description text |
